@@ -99,7 +99,7 @@ function getFromBrowserMemery() {
     }
     displayList();
     showAll();
-    updateItemCount();
+    //updateItemCount();
 }
 
 function removeItem(e) {
@@ -1013,10 +1013,12 @@ function showEdit() {
 //     console.log("showCompleted() called");
 // }
 
+/*     //Not sure I want or need this
 function updateItemCount() {
     let numItems = itemList.length;
     document.getElementById('toolCnt').innerHTML = numItems + " Tools"
 }
+*/
 
 function displayList() {
     if(filter == 1) {showAll();}
