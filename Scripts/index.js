@@ -65,7 +65,7 @@ function addNewItem() {
         
     } else{
         itemList.push(tool);
-        saveToBrowserMemory();
+        saveToBrowserMemorey();
         updateItemCount();
         document.getElementById('item').value = "";
         document.getElementById('location').value = "";
@@ -75,13 +75,17 @@ function addNewItem() {
     
 }
 
-function saveToBrowserMemory() {
+function saveToBrowserMemorey() {
     const json = JSON.stringify(itemList);
     localStorage.setItem("tool", json);
-    //saveToFile(json)
 }
 
-function getFromBrowsherMemery() {
+function saveToFirebase() {
+    firebase.database().ref("LSA410").child("id").val() //get value from firebase
+    firebase.database().ref("LSA410").child("id").set() //save value to firebase
+}
+
+function getFromBrowserMemery() {
     const strng = localStorage.getItem("tool");
     itemList = JSON.parse(strng);
     const strng2 = localStorage.getItem("done");
@@ -103,7 +107,7 @@ function removeItem(e) {
             if(e == item.id){
             itemList.splice(itemList.indexOf(item), 1);
             updateItemCount();
-            saveToBrowserMemory();
+            saveToBrowserMemorey();
             showEdit();
         }      
     })
@@ -111,7 +115,7 @@ function removeItem(e) {
         if(e == item.id){
             completedItems.splice(completedItems.indexOf(item), 1);
         updateItemCount();
-        saveToBrowserMemory();
+        saveToBrowserMemorey();
         displayList();
     }      
 })
