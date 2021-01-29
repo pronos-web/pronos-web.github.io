@@ -16,7 +16,8 @@ let nonDeseg = false;
 function addNewItem() {
     let toolID = document.getElementById('item').value;
     toolID = toolID.toUpperCase();
-    let location = document.getElementById('location').value;
+    let building = document.getElementById('building').value;
+    let bay = document.getElementById('bay').value;
     let contamination = document.querySelector('input[name = "contamination"]:checked').value;
     let prodType = document.querySelector('input[name = "production"]:checked').value;
     let purgeType = document.querySelector('input[name = "n2"]:checked').value;
@@ -1049,7 +1050,7 @@ document.querySelector('#showPurge').addEventListener('click', showPurge);
 document.querySelector('#showCu').addEventListener('click', showCu);
 
 document.querySelector('#addBtn').addEventListener('click', showForm);
-window.addEventListener('load', getFromBrowsherMemery);
+window.addEventListener('load', getFromBrowserMemery);
 
 // Get the element, add a click listener...
 document.getElementById('theList').addEventListener("click", function(e) {

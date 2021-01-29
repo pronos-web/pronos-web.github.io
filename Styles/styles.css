@@ -52,6 +52,16 @@ th {
     font-size: 16px;
 }
 
+#building, #bay {
+
+  margin-left: 15px;
+  padding-left: 5px;
+  width: 150px;
+  height: 24px;
+  border-color: #d3d3d3;
+  font-size: 16px;
+}
+
 #edit{
     display: inline;
 }
