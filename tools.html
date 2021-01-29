@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tool List</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body id="toolLoad">
+    <nav>
+        <a href="../index.html">Back to Portfolio</a>
+        <button id="addBtn">Edit</button>
+    </nav>
+<div id="addForm">
+    <form>
+
+        <input type="text" id="item" placeholder="Enter Tool ID">
+        <button type="button" id="addItem">ADD</button>
+        <input type="text" id="location" placeholder="Enter Tool Location i.e. '601'">
+        <div class="flex-container">
+            <div>
+                <input type="radio" id="1" name="contamination" value="Cu">
+                <label for="1">Copper</label><br>
+                <input type="radio" id="2" name="contamination" value="NC">
+                <label for="2">Non-Copper</label><br>
+            </div>
+            <div>
+                <input type="radio" id="3" name="production" value="Prod">
+                <label for="3">Prod</label><br>
+                <input type="radio" id="4" name="production" value="TW">
+                <label for="4">TW</label><br>
+            </div>
+            <div>
+                <input type="radio" id="5" name="n2" value="Purge">
+                <label for="5">Purge</label><br>
+                <input type="radio" id="6" name="n2" value="NonPurge">
+                <label for="6">Non-Purge</label><br>
+            </div> 
+        </div>
+
+
+    </form>
+</div>
+    
+    <h1>Tool List</h1>
+
+    <table id="filters">
+        <tr>
+            <td id="toolCnt" class="fltrButton">0 Tools</td>
+        </tr>
+        <tr>
+            <td id="showAll"><button type="button" class="fltrButton" id="all">All</button></td>
+            <td id="showCu"><button type="button" class="fltrButton" id="Cu">Cu</button></td>
+            <td id="showProd"><button type="button" class="fltrButton" id="active">Prod</button></td>
+            <td id="showPurge"><button type="button" class="fltrButton" id="Purge">Purge</button></td>
+            <td id="showDeseg"><button type="button" class="fltrButton" id="DS">Deseg</button></td>
+        </tr>
+        <tr>
+            <td class="fltrButton"></td>
+            <td id="showNC"><button type="button" class="fltrButton" id="NC">NC</button></td>
+            <td id="showTW"><button type="button" class="fltrButton" id="TW">TW</button></td>
+            <td id="showNonPurge"><button type="button" class="fltrButton" id="NonPurge">Non-Purge</button></td>
+            <td id="showNonDeseg"><button type="button" class="fltrButton" id="nonDS">Non-Deseg</button></td>
+
+        </tr>
+    </table>
+
+    <table id="theList">
+        <tbody id="listBody"></tbody>
+    </table> 
+ 
+
+    <script src="Scripts/index.js" type="module">
+        window.document.onload = getFromBrowsherMemery();
+    </script>
+</body>
+</html>
