@@ -52,11 +52,21 @@ th {
     font-size: 16px;
 }
 
-#building, #bay {
+#building{
 
   margin-left: 15px;
   padding-left: 5px;
   width: 150px;
+  height: 24px;
+  border-color: #d3d3d3;
+  font-size: 16px;
+}
+
+#bay {
+
+  margin-left: 5px;
+  padding-left: 5px;
+  width: 145px;
   height: 24px;
   border-color: #d3d3d3;
   font-size: 16px;
