@@ -920,7 +920,7 @@ function displayTools() {
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
                 <td class="bldg">${tool.building}</td>
-                <td class="listLoc">${tool.bay}</td>
+                <td class="bldg">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
