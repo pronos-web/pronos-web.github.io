@@ -947,8 +947,8 @@ function showEdit() {
     document.getElementById('TW').style.display = "none";
     document.getElementById('NC').style.display = "none";
     document.getElementById('NonPurge').style.display = "none";
-    document.getElementById('Deseg').style.display = "none";
-    document.getElementById('nonDeseg').style.display = "none";
+    document.getElementById('DS').style.display = "none";
+    document.getElementById('nonDS').style.display = "none";
     
     // Read itemList and display all fo the items
     let html = `
