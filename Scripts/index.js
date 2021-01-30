@@ -75,7 +75,8 @@ function addNewItem() {
         displayList(itemList);
         showEdit();
     }  
-    
+    console.log(building);
+    console.log(bay);
 }
 
 function saveToBrowserMemorey() {
