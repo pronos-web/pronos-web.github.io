@@ -27,7 +27,8 @@ function addNewItem() {
     document.querySelector('input[name = "n2"]:checked').checked = false;
     
     const tool = new Tool(toolID);
-    tool.location = location;
+    tool.buliding = building;
+    tool.bay = bay;
     if(contamination === "NC"){
         tool.cu = false;
         tool.nonCu = true;
@@ -67,9 +68,10 @@ function addNewItem() {
     } else{
         itemList.push(tool);
         saveToBrowserMemorey();
-        updateItemCount();
+        //updateItemCount();
         document.getElementById('item').value = "";
-        document.getElementById('location').value = "";
+        document.getElementById('building').value = "";
+        document.getElementById('bay').value = "";
         displayList(itemList);
         showEdit();
     }  
@@ -107,7 +109,7 @@ function removeItem(e) {
     itemList.forEach(function(item) {
             if(e == item.id){
             itemList.splice(itemList.indexOf(item), 1);
-            updateItemCount();
+            //updateItemCount();
             saveToBrowserMemorey();
             showEdit();
         }      
@@ -115,7 +117,7 @@ function removeItem(e) {
     completedItems.forEach(function(item) {
         if(e == item.id){
             completedItems.splice(completedItems.indexOf(item), 1);
-        updateItemCount();
+        //updateItemCount();
         saveToBrowserMemorey();
         displayList();
     }      
@@ -174,7 +176,8 @@ function showAll() {
                 <td class="listRows">${tool.cu}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
-                <td class="listLoc">Bay ${tool.location}</td>
+                <td class="listLoc">Bay ${tool.building}</td>
+                <td class="listLoc">Bay ${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
@@ -917,7 +920,8 @@ function displayTools() {
                 <td class="listRows">${tool.cu}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
-                <td class="listLoc">Bay ${tool.location}</td>
+                <td class="listLoc">Bay ${tool.building}</td>
+                <td class="listLoc">Bay ${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
@@ -966,7 +970,8 @@ function showEdit() {
                 <td class="listRows">${tool.cu}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
-                <td class="listRows">${tool.location}</td>
+                <td class="listRows">${tool.building}</td>
+                <td class="listRows">${tool.bay}</td>
                 <td>
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
