@@ -924,11 +924,11 @@ function displayTools() {
                 <td class="listRows">
                     ${tool.content}
                 </td>
-                <td class="listRows">${tool.cu}</td>
-                <td class="listRows">${tool.prod}</td>
-                <td class="listRows">${tool.purge}</td>
-                <td class="bldg">${tool.building}</td>
-                <td class="bldg">${tool.bay}</td>
+                <td class="a1">${tool.cu}</td>
+                <td class="a2">${tool.prod}</td>
+                <td class="a3">${tool.purge}</td>
+                <td class="a4">${tool.building}</td>
+                <td class="a5">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
@@ -1060,6 +1060,7 @@ function showForm() {
 
 document.querySelector('#addItem').addEventListener('click', addNewItem);
 document.querySelector('#showAll').addEventListener('click', showAll);
+document.querySelector('#showAllT').addEventListener('click', showAll);
 document.querySelector('#showProd').addEventListener('click', showProd);
 document.querySelector('#showTW').addEventListener('click', showTW);
 document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);

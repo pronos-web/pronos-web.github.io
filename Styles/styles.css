@@ -24,14 +24,40 @@ th {
     text-align: left;
     border-bottom: 1px solid black;
     font-size: 20px;
+    width: 100%;
 }
 
-.bldg {
+.a1 {
     text-align: left;
     border-bottom: 1px solid black;
     font-size: 20px;
-    width: 10px;
+    width: 20%;
 }
+
+.a2 {
+  text-align: left;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  width: 20%;
+}
+
+.a3 {
+  text-align: left;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  width: 20%;}
+
+.a4 {
+  text-align: left;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  width: 10%;}
+
+.a5 {
+  text-align: left;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  width: 20%;}
 
 .flex-container {
     display: flex;
