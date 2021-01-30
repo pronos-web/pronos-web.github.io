@@ -176,8 +176,8 @@ function showAll() {
                 <td class="listRows">${tool.cu}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
-                <td class="listLoc">Bay ${tool.building}</td>
-                <td class="listLoc">Bay ${tool.bay}</td>
+                <td class="listLoc">${tool.building}</td>
+                <td class="listLoc">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
@@ -920,8 +920,8 @@ function displayTools() {
                 <td class="listRows">${tool.cu}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
-                <td class="listLoc">Bay ${tool.building}</td>
-                <td class="listLoc">Bay ${tool.bay}</td>
+                <td class="listLoc">${tool.building}</td>
+                <td class="listLoc">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
@@ -938,7 +938,7 @@ function showEdit() {
     filter = 3;
     // Change bacground color of 'All' button to gray and others to white
     document.getElementById('all').style.backgroundColor = "dodgerblue";
-    document.getElementById('active').style.backgroundColor = "lightblue";
+    document.getElementById('active').style.backgroundColor = "#d3d3d3";
 
     // Hide fileter buttons
     document.getElementById('all').style.display = "none";
