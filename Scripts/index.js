@@ -175,7 +175,7 @@ function showAll() {
                 <td class="listRows">${tool.cu}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
-                <td class="listLoc">${tool.building}</td>
+                <td class="bldg">${tool.building}</td>
                 <td class="listLoc">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
@@ -919,7 +919,7 @@ function displayTools() {
                 <td class="listRows">${tool.cu}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
-                <td class="listLoc">${tool.building}</td>
+                <td class="bldg">${tool.building}</td>
                 <td class="listLoc">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
