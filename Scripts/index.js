@@ -27,7 +27,7 @@ function addNewItem() {
     document.querySelector('input[name = "n2"]:checked').checked = false;
     
     const tool = new Tool(toolID);
-    tool.buliding = building;
+    tool.builiding = building;
     tool.bay = bay;
     if(contamination === "NC"){
         tool.cu = false;
@@ -137,12 +137,12 @@ function showAll() {
     
     // Change bacground color of 'All' button to gray and others to white
     document.getElementById('all').style.backgroundColor = "dodgerblue";
-    document.getElementById('Cu').style.backgroundColor = "lightblue";
-    document.getElementById('TW').style.backgroundColor = "lightblue";
-    document.getElementById('active').style.backgroundColor = "lightblue";
-    document.getElementById('NC').style.backgroundColor = "lightblue";
-    document.getElementById('NonPurge').style.backgroundColor = "lightblue";
-    document.getElementById('Purge').style.backgroundColor = "lightblue";
+    document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
+    document.getElementById('TW').style.backgroundColor = "#d3d3d3";
+    document.getElementById('active').style.backgroundColor = "#d3d3d3";
+    document.getElementById('NC').style.backgroundColor = "#d3d3d3";
+    document.getElementById('NonPurge').style.backgroundColor = "#d3d3d3";
+    document.getElementById('Purge').style.backgroundColor = "#d3d3d3";
 
     // Show filter buttons
     document.getElementById('all').style.display = "inline";
@@ -197,9 +197,9 @@ function showProd(){
     if(poduction == false) {
         poduction = true;
         testWafer = false;
-        document.getElementById('all').style.backgroundColor = "lightblue";
+        document.getElementById('all').style.backgroundColor = "#d3d3d3";
         document.getElementById('active').style.backgroundColor = "dodgerblue";
-        document.getElementById('TW').style.backgroundColor = "lightblue";
+        document.getElementById('TW').style.backgroundColor = "#d3d3d3";
 
         itemList.forEach(
             tool => {
@@ -253,7 +253,7 @@ function showProd(){
         );
     }
     else {
-        document.getElementById('active').style.backgroundColor = "lightblue";
+        document.getElementById('active').style.backgroundColor = "#d3d3d3";
         poduction = false;
 
         itemList.forEach(
@@ -314,9 +314,9 @@ function showTW(){
     if(testWafer == false) {
         testWafer = true;
         poduction = false;
-        document.getElementById('all').style.backgroundColor = "lightblue";
+        document.getElementById('all').style.backgroundColor = "#d3d3d3";
         document.getElementById('TW').style.backgroundColor = "dodgerblue";
-        document.getElementById('active').style.backgroundColor = "lightblue";
+        document.getElementById('active').style.backgroundColor = "#d3d3d3";
 
         itemList.forEach(
             tool => {
@@ -371,7 +371,7 @@ function showTW(){
 
     }
     else {
-        document.getElementById('TW').style.backgroundColor = "lightblue";
+        document.getElementById('TW').style.backgroundColor = "#d3d3d3";
         testWafer = false;
 
         itemList.forEach(
@@ -432,9 +432,9 @@ function showCu(){
     if(copper == false) {
         copper = true;
         nonCopper = false;
-        document.getElementById('all').style.backgroundColor = "lightblue";
+        document.getElementById('all').style.backgroundColor = "#d3d3d3";
         document.getElementById('Cu').style.backgroundColor = "dodgerblue";
-        document.getElementById('NC').style.backgroundColor = "lightblue";
+        document.getElementById('NC').style.backgroundColor = "#d3d3d3";
 
         itemList.forEach(
             tool => {
@@ -488,7 +488,7 @@ function showCu(){
         );
     }
     else {
-        document.getElementById('Cu').style.backgroundColor = "lightblue";
+        document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
         copper = false;
 
         itemList.forEach(
@@ -550,9 +550,9 @@ function showNC(){
     if(nonCopper == false) {
         nonCopper = true;
         copper = false;
-        document.getElementById('all').style.backgroundColor = "lightblue";
+        document.getElementById('all').style.backgroundColor = "#d3d3d3";
         document.getElementById('NC').style.backgroundColor = "dodgerblue";
-        document.getElementById('Cu').style.backgroundColor = "lightblue";
+        document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
 
         itemList.forEach(
             tool => {
@@ -606,7 +606,7 @@ function showNC(){
         );
     }
     else {
-        document.getElementById('NC').style.backgroundColor = "lightblue";
+        document.getElementById('NC').style.backgroundColor = "#d3d3d3";
         nonCopper = false;
 
         itemList.forEach(
@@ -667,9 +667,9 @@ function showPurge(){
     if(purge == false) {
         purge = true;
         nonPurge = false;
-        document.getElementById('all').style.backgroundColor = "lightblue";
+        document.getElementById('all').style.backgroundColor = "#d3d3d3";
         document.getElementById('Purge').style.backgroundColor = "dodgerblue";
-        document.getElementById('NonPurge').style.backgroundColor = "lightblue";
+        document.getElementById('NonPurge').style.backgroundColor = "#d3d3d3";
 
         itemList.forEach(
             tool => {
@@ -723,7 +723,7 @@ function showPurge(){
         );
     }
     else {
-        document.getElementById('Purge').style.backgroundColor = "lightblue";
+        document.getElementById('Purge').style.backgroundColor = "#d3d3d3";
         purge = false;
 
         itemList.forEach(
@@ -784,9 +784,9 @@ function showNonPurge(){
     if(nonPurge == false) {
         nonPurge = true;
         purge = false;
-        document.getElementById('all').style.backgroundColor = "lightblue";
+        document.getElementById('all').style.backgroundColor = "#d3d3d3";
         document.getElementById('NonPurge').style.backgroundColor = "dodgerblue";
-        document.getElementById('Purge').style.backgroundColor = "lightblue";
+        document.getElementById('Purge').style.backgroundColor = "#d3d3d3";
 
         itemList.forEach(
             tool => {
@@ -840,7 +840,7 @@ function showNonPurge(){
         );
     }
     else {
-        document.getElementById('NonPurge').style.backgroundColor = "lightblue";
+        document.getElementById('NonPurge').style.backgroundColor = "#d3d3d3";
         nonPurge = false;
 
         itemList.forEach(
@@ -988,8 +988,8 @@ function showEdit() {
 // function showCompleted() {
 //     filter = 2;
 //     // Change bacground color of 'Completed' button to gray and others to white
-//     document.getElementById('all').style.backgroundColor = "lightblue";
-//     document.getElementById('active').style.backgroundColor = "lightblue";
+//     document.getElementById('all').style.backgroundColor = "#d3d3d3";
+//     document.getElementById('active').style.backgroundColor = "#d3d3d3";
     
 //     // Read itemList and display only those with completed = true
 //     let html = "";
