@@ -75,8 +75,6 @@ function addNewItem() {
         displayList(itemList);
         showEdit();
     }  
-    console.log(building);
-    console.log(bay);
 }
 
 function saveToBrowserMemorey() {
@@ -949,6 +947,8 @@ function showEdit() {
     document.getElementById('TW').style.display = "none";
     document.getElementById('NC').style.display = "none";
     document.getElementById('NonPurge').style.display = "none";
+    document.getElementById('Deseg').style.display = "none";
+    document.getElementById('nonDeseg').style.display = "none";
     
     // Read itemList and display all fo the items
     let html = `
