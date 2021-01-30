@@ -136,6 +136,7 @@ function showAll() {
     
     // Change bacground color of 'All' button to gray and others to white
     document.getElementById('all').style.backgroundColor = "dodgerblue";
+    document.getElementById('allT').style.backgroundColor = "dodgerblue";
     document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
     document.getElementById('TW').style.backgroundColor = "#d3d3d3";
     document.getElementById('active').style.backgroundColor = "#d3d3d3";
@@ -145,6 +146,7 @@ function showAll() {
 
     // Show filter buttons
     document.getElementById('all').style.display = "inline";
+    document.getElementById('allT').style.display = "inline";
     document.getElementById('Cu').style.display = "inline";
     document.getElementById('active').style.display = "inline";
     document.getElementById('Purge').style.display = "inline";
@@ -197,6 +199,7 @@ function showProd(){
         poduction = true;
         testWafer = false;
         document.getElementById('all').style.backgroundColor = "#d3d3d3";
+        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
         document.getElementById('active').style.backgroundColor = "dodgerblue";
         document.getElementById('TW').style.backgroundColor = "#d3d3d3";
 
@@ -314,6 +317,7 @@ function showTW(){
         testWafer = true;
         poduction = false;
         document.getElementById('all').style.backgroundColor = "#d3d3d3";
+        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
         document.getElementById('TW').style.backgroundColor = "dodgerblue";
         document.getElementById('active').style.backgroundColor = "#d3d3d3";
 
@@ -432,6 +436,7 @@ function showCu(){
         copper = true;
         nonCopper = false;
         document.getElementById('all').style.backgroundColor = "#d3d3d3";
+        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
         document.getElementById('Cu').style.backgroundColor = "dodgerblue";
         document.getElementById('NC').style.backgroundColor = "#d3d3d3";
 
@@ -550,6 +555,7 @@ function showNC(){
         nonCopper = true;
         copper = false;
         document.getElementById('all').style.backgroundColor = "#d3d3d3";
+        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
         document.getElementById('NC').style.backgroundColor = "dodgerblue";
         document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
 
@@ -667,6 +673,7 @@ function showPurge(){
         purge = true;
         nonPurge = false;
         document.getElementById('all').style.backgroundColor = "#d3d3d3";
+        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
         document.getElementById('Purge').style.backgroundColor = "dodgerblue";
         document.getElementById('NonPurge').style.backgroundColor = "#d3d3d3";
 
@@ -784,6 +791,7 @@ function showNonPurge(){
         nonPurge = true;
         purge = false;
         document.getElementById('all').style.backgroundColor = "#d3d3d3";
+        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
         document.getElementById('NonPurge').style.backgroundColor = "dodgerblue";
         document.getElementById('Purge').style.backgroundColor = "#d3d3d3";
 
@@ -937,10 +945,12 @@ function showEdit() {
     filter = 3;
     // Change bacground color of 'All' button to gray and others to white
     document.getElementById('all').style.backgroundColor = "dodgerblue";
+    document.getElementById('allT').style.backgroundColor = "dodgerblue";
     document.getElementById('active').style.backgroundColor = "#d3d3d3";
 
     // Hide fileter buttons
     document.getElementById('all').style.display = "none";
+    document.getElementById('allT').style.display = "none";
     document.getElementById('active').style.display = "none";
     document.getElementById('Cu').style.display = "none";
     document.getElementById('Purge').style.display = "none";
