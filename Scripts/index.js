@@ -27,7 +27,7 @@ function addNewItem() {
     document.querySelector('input[name = "n2"]:checked').checked = false;
     
     const tool = new Tool(toolID);
-    tool.builiding = building;
+    tool.building = building;
     tool.bay = bay;
     if(contamination === "NC"){
         tool.cu = false;
