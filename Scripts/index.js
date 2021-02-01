@@ -179,9 +179,9 @@ function showAll() {
             
             let CU = "";
             let PROD = "";
-            let PURG = "";
+            let PURGE = "";
             let DESEG = "";
-            if(copper){CU = "Cu";}
+            if(tool.cu){CU = "Cu";}
             else{CU = "NC";}
 /*            if(poduction == true){PROD = "Prod";}
             else{PROD = "TW";}
