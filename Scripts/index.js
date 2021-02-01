@@ -176,7 +176,7 @@ function showAll() {
         tool => {
             tool.show = true;
             if(tool.complete == false){
-                if (tool.cu == false){copper = Yes}
+                if (tool.cu == false){copper = "Yes"}
                 else {copper = No}
         html += 
            ` <tr class="listRows">
