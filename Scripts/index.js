@@ -176,9 +176,9 @@ function showAll() {
     itemList.forEach(
         tool => {
             tool.show = true;
-          /*  if(tool.complete == false){
-                if (tool.cu == false){copper = "Yes"}
-                else {copper = 'No'} */
+          if(tool.complete == false){
+                //if (tool.cu == false){copper = "Yes"}
+                //else {copper = 'No'}
         html += 
            ` <tr class="listRows">
                 <td class="listRows">
