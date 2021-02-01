@@ -176,14 +176,14 @@ function showAll() {
     let PROD = "";
     let PURG = "";
     let DESEG = "";
-    if(tool.cu){CU = "Cu"}
-    else{CU = "NC"}
-    if(tool.prod){PROD = "Prod"}
-    else{PROD = "TW"}
-    if(tool.purge){PURGE = "Prg"}
-    else{PURGE = "NonPrg"}
-    if(tool.deseg){DESEG = "Deseg"}
-    else{DESEG = ""}
+    if(tool.cu){CU = "Cu";}
+    else{CU = "NC";}
+    if(tool.prod){PROD = "Prod";}
+    else{PROD = "TW";}
+    if(tool.purge){PURGE = "Prg";}
+    else{PURGE = "NonPrg";}
+    if(tool.deseg){DESEG = "Deseg";}
+    else{DESEG = "";}
     
     itemList.forEach(
         tool => {
