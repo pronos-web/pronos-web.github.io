@@ -182,7 +182,7 @@ function showAll() {
                 <td class="listRows">
                     ${tool.content}
                 </td>
-                //<td class="listRows">${tool.cu}</td>
+                <td class="listRows">${tool.cu}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
                 <td class="listRows">${tool.building}</td>
