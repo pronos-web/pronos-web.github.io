@@ -183,13 +183,13 @@ function showAll() {
             let DESEG = "";
             if(tool.cu){CU = "Cu";}
             else{CU = "NC";}
-/*            if(poduction == true){PROD = "Prod";}
+            if(tool.prod == true){PROD = "Prod";}
             else{PROD = "TW";}
-            if(purge){PURGE = "Prg";}
+            if(tool.purge){PURGE = "Prg";}
             else{PURGE = "NonPrg";}
-            if(deseg){DESEG = "Deseg";}
+            if(tool.deseg){DESEG = "Deseg";}
             else{DESEG = "";}
-*/            
+            
           if(tool.complete == false){
         html += 
            ` <tr class="listRows">
@@ -197,8 +197,9 @@ function showAll() {
                     ${tool.content}
                 </td>
                 <td class="listRows">${CU}</td>
-                <td class="listRows">${tool.prod}</td>
-                <td class="listRows">${tool.purge}</td>
+                <td class="listRows">${PROD}</td>
+                <td class="listRows">${PURGE}</td>
+                <td class="listRows">${DESEG}</td>
                 <td class="listRows">${tool.building}</td>
                 <td class="listRows">${tool.bay}</td>
                 <td class="rmvBtn">
