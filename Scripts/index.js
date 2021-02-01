@@ -183,13 +183,13 @@ function showAll() {
             let DESEG = "";
             if(copper){CU = "Cu";}
             else{CU = "NC";}
-            if(poduction == true){PROD = "Prod";}
+/*            if(poduction == true){PROD = "Prod";}
             else{PROD = "TW";}
             if(purge){PURGE = "Prg";}
             else{PURGE = "NonPrg";}
             if(deseg){DESEG = "Deseg";}
             else{DESEG = "";}
-            
+*/            
           if(tool.complete == false){
         html += 
            ` <tr class="listRows">
