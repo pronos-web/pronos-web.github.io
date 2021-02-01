@@ -172,22 +172,24 @@ function showAll() {
             <th>Location</th>
         </tr>
     `;
-    let CU = "";
-    let PROD = "";
-    let PURG = "";
-    let DESEG = "";
-    if(tool.cu){CU = "Cu";}
-    else{CU = "NC";}
-    if(tool.prod){PROD = "Prod";}
-    else{PROD = "TW";}
-    if(tool.purge){PURGE = "Prg";}
-    else{PURGE = "NonPrg";}
-    if(tool.deseg){DESEG = "Deseg";}
-    else{DESEG = "";}
     
     itemList.forEach(
         tool => {
             tool.show = true;
+            
+            let CU = "";
+            let PROD = "";
+            let PURG = "";
+            let DESEG = "";
+            if(copper){CU = "Cu";}
+            else{CU = "NC";}
+            if(poduction == true){PROD = "Prod";}
+            else{PROD = "TW";}
+            if(purge){PURGE = "Prg";}
+            else{PURGE = "NonPrg";}
+            if(deseg){DESEG = "Deseg";}
+            else{DESEG = "";}
+            
           if(tool.complete == false){
         html += 
            ` <tr class="listRows">
