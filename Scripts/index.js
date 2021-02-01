@@ -1060,7 +1060,7 @@ function showForm() {
 
 document.querySelector('#addItem').addEventListener('click', addNewItem);
 document.querySelector('#showAll').addEventListener('click', showAll);
-document.querySelector('#showAllT').addEventListener('click', showAll);
+document.querySelector('#showAllT').addEventListener('click', showAllT);
 document.querySelector('#showProd').addEventListener('click', showProd);
 document.querySelector('#showTW').addEventListener('click', showTW);
 document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);
