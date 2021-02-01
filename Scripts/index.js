@@ -1,5 +1,6 @@
 import {Tool} from "./tool.js"
 
+
 let itemList = [];
 let completedItems = [];
 let filter = 1;
@@ -175,9 +176,9 @@ function showAll() {
     itemList.forEach(
         tool => {
             tool.show = true;
-            if(tool.complete == false){
+          /*  if(tool.complete == false){
                 if (tool.cu == false){copper = "Yes"}
-                else {copper = No}
+                else {copper = 'No'} */
         html += 
            ` <tr class="listRows">
                 <td class="listRows">
@@ -923,6 +924,7 @@ function displayTools() {
         <th>Prod</th>
         <th>Purge</th>
         <th>Location</th>
+        <th></th>
     </tr>
     `;
 
@@ -1077,6 +1079,7 @@ document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);
 document.querySelector('#showNC').addEventListener('click', showNC);
 document.querySelector('#showPurge').addEventListener('click', showPurge);
 document.querySelector('#showCu').addEventListener('click', showCu);
+TODO: //add function & event listener for showDeseg & showNonDeseg
 
 document.querySelector('#addBtn').addEventListener('click', showForm);
 window.addEventListener('load', getFromBrowserMemery);
