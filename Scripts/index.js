@@ -177,14 +177,11 @@ function showAll() {
         tool => {
             tool.show = true;
           if(tool.complete == false){
-                //if (tool.cu == false){copper = "Yes"}
-                //else {copper = 'No'}
         html += 
            ` <tr class="listRows">
                 <td class="listRows">
                     ${tool.content}
                 </td>
-                <td class="listRows">copper</td>
                 //<td class="listRows">${tool.cu}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
@@ -1008,38 +1005,39 @@ function showEdit() {
     console.log("showEdit() called");
 }
 
-// function showCompleted() {
-//     filter = 2;
-//     // Change bacground color of 'Completed' button to gray and others to white
-//     document.getElementById('all').style.backgroundColor = "#d3d3d3";
-//     document.getElementById('active').style.backgroundColor = "#d3d3d3";
+/* function showCompleted() {
+     filter = 2;
+     // Change bacground color of 'Completed' button to gray and others to white
+     document.getElementById('all').style.backgroundColor = "#d3d3d3";
+     document.getElementById('active').style.backgroundColor = "#d3d3d3";
     
-//     // Read itemList and display only those with completed = true
-//     let html = "";
+     // Read itemList and display only those with completed = true
+     let html = "";
 
-//     completedItems.forEach(
-//         tool => {
-//             if(tool.complete == true) {
-//             html += 
-//                 `
-//                 <tr>
-//                     <td class="leftColumn">
-//                         <label class="container2"> ${tool.content}
-//                             <input type="checkbox" checked="checked" value="${tool.id}">
-//                             <span class="checkmark" ></span>
-//                         </label>
-//                     </td>
-//                     <td>
-//                         <button type="button" id="removeItem" value="${tool.id}">X</button>
-//                     </td>
-//                 </tr>
-//                 `;
-//             }
-//         }
-//     );
-//     document.getElementById('listBody').innerHTML = html;
-//     console.log("showCompleted() called");
-// }
+     completedItems.forEach(
+         tool => {
+             if(tool.complete == true) {
+             html += 
+                 `
+                 <tr>
+                     <td class="leftColumn">
+                         <label class="container2"> ${tool.content}
+                             <input type="checkbox" checked="checked" value="${tool.id}">
+                             <span class="checkmark" ></span>
+                         </label>
+                     </td>
+                     <td>
+                         <button type="button" id="removeItem" value="${tool.id}">X</button>
+                     </td>
+                 </tr>
+                 `;
+             }
+         }
+     );
+     document.getElementById('listBody').innerHTML = html;
+     console.log("showCompleted() called");
+ }
+*/
 
 /*     //Not sure I want or need this
 function updateItemCount() {
