@@ -21,10 +21,12 @@ function addNewItem() {
     let contamination = document.querySelector('input[name = "contamination"]:checked').value;
     let prodType = document.querySelector('input[name = "production"]:checked').value;
     let purgeType = document.querySelector('input[name = "n2"]:checked').value;
+    let segmentation = document.querySelector('input[name = "desegragate"]:checked').value;
 
     document.querySelector('input[name = "contamination"]:checked').checked = false;
     document.querySelector('input[name = "production"]:checked').checked = false;
     document.querySelector('input[name = "n2"]:checked').checked = false;
+    document.querySelector('input[name = "desegragate"]:checked').checked = false;
     
     const tool = new Tool(toolID);
     tool.building = building;
@@ -45,7 +47,7 @@ function addNewItem() {
         tool.prod = true;
         tool.tw = false;
     }
-    if(deseg === "DS"){
+    if(desegmentation === "Deseg"){
         tool.nonDeseg = false;
         tool.deseg = true;
     }
@@ -65,14 +67,15 @@ function addNewItem() {
     console.table(tool);
     if(document.getElementById('item').value === ""){
         
-    } else{
+    } 
+    else{
         itemList.push(tool);
         saveToBrowserMemorey();
         //updateItemCount();
-        document.getElementById('item').value = "";
-        document.getElementById('building').value = "";
-        document.getElementById('bay').value = "";
-        displayList(itemList);
+       // document.getElementById('item').value = "";
+       // document.getElementById('building').value = "";
+      //  document.getElementById('bay').value = "";
+       // displayList(itemList);
         showEdit();
     }  
 }
@@ -143,6 +146,8 @@ function showAll() {
     document.getElementById('NC').style.backgroundColor = "#d3d3d3";
     document.getElementById('NonPurge').style.backgroundColor = "#d3d3d3";
     document.getElementById('Purge').style.backgroundColor = "#d3d3d3";
+    document.getElementById('Deseg').style.backgroundColor = "#d3d3d3";
+    document.getElementById('nonDeseg').style.backgroundColor = "#d3d3d3";
 
     // Show filter buttons
     document.getElementById('all').style.display = "inline";
@@ -153,6 +158,8 @@ function showAll() {
     document.getElementById('NC').style.display = "inline";
     document.getElementById('TW').style.display = "inline";
     document.getElementById('NonPurge').style.display = "inline";
+    document.getElementById('Deseg').style.display = "inline";
+    document.getElementById('nonDeseg').style.display = "inline";
     
     // Read itemList and display all fo the items
     let html = `
@@ -169,16 +176,19 @@ function showAll() {
         tool => {
             tool.show = true;
             if(tool.complete == false){
+                if (tool.cu == false){copper = Yes}
+                else {copper = No}
         html += 
            ` <tr class="listRows">
                 <td class="listRows">
                     ${tool.content}
                 </td>
-                <td class="listRows">${tool.cu}</td>
+                <td class="listRows">copper</td>
+                //<td class="listRows">${tool.cu}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
-                <td class="bldg">${tool.building}</td>
-                <td class="bldg">${tool.bay}</td>
+                <td class="listRows">${tool.building}</td>
+                <td class="listRows">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
