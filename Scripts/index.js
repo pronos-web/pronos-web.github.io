@@ -172,6 +172,18 @@ function showAll() {
             <th>Location</th>
         </tr>
     `;
+    let CU = "";
+    let PROD = "";
+    let PURG = "";
+    let DESEG = "";
+    if(tool.cu){CU = "Cu"}
+    else{CU = "NC"}
+    if(tool.prod){PROD = "Prod"}
+    else{PROD = "TW"}
+    if(tool.purge){PURGE = "Prg"}
+    else{PURGE = "NonPrg"}
+    if(tool.deseg){DESEG = "Deseg"}
+    else{DESEG = ""}
     
     itemList.forEach(
         tool => {
@@ -182,7 +194,7 @@ function showAll() {
                 <td class="listRows">
                     ${tool.content}
                 </td>
-                <td class="listRows">${tool.cu}</td>
+                <td class="listRows">${CU}</td>
                 <td class="listRows">${tool.prod}</td>
                 <td class="listRows">${tool.purge}</td>
                 <td class="listRows">${tool.building}</td>
