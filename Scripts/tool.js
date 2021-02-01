@@ -22,7 +22,7 @@ export class Tool {
         this.lsb = true;
         this.dfw = true;
         this.afw = true;
-        this.afq = ture;
+        this.afq = true;
         this.udl = true;
         this.udc = true;
     }
