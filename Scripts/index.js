@@ -47,7 +47,7 @@ function addNewItem() {
         tool.prod = true;
         tool.tw = false;
     }
-    if(desegmentation === "Deseg"){
+    if(segmentation === "Deseg"){
         tool.nonDeseg = false;
         tool.deseg = true;
     }
