@@ -181,6 +181,7 @@ nav {
     font-weight: bold;
     font-size: 18px;
     color: blue;
+    outline:none;
 }
 
 h1 {
