@@ -164,38 +164,21 @@ function showAll() {
     
     // Read itemList and display all fo the items
     let html = `
-        <tr>
-            <th>Tool ID</th>
-            <th></th>
-        </tr>
+    <tr>
+        <th>Tool ID</th>
+        <th>Location</th>
+        <th></th>
+    </tr>
     `;
-    
+
     itemList.forEach(
         tool => {
-            tool.show = true;
-            
-            let CU = "";
-            let PROD = "";
-            let PURGE = "";
-            let DESEG = "";
-            if(tool.cu){CU = "Cu";}
-            else{CU = "NC";}
-            if(tool.prod){PROD = "Prod";}
-            else{PROD = "TW";}
-            if(tool.purge){PURGE = "Prg";}
-            else{PURGE = "nPrg";}
-            if(tool.deseg){DESEG = "Deseg";}
-            else{DESEG = "";}
-            
-          if(tool.complete == false){
+            if(tool.show){
         html += 
-           ` <tr class="listRows">
-                <td class="a1">
-                    ${tool.content}
-                </td>
-                <td class="a3">${tool.building}</td>
-                <td class="a1">${tool.bay}</td>
-                <td class="a2"></td>
+        ` <tr class="listRows">
+                <td class="listRows">${tool.content}</td>
+                <td class="listRows">${tool.building}</td>
+                <td class="listRows">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
