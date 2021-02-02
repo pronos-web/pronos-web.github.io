@@ -166,9 +166,6 @@ function showAll() {
     let html = `
         <tr>
             <th>Tool ID</th>
-            <th>Cu</th>
-            <th>Prod</th>
-            <th>Purge</th>
             <th>Location</th>
         </tr>
     `;
@@ -196,10 +193,6 @@ function showAll() {
                 <td class="listRows">
                     ${tool.content}
                 </td>
-                <td class="listRows">${CU}</td>
-                <td class="listRows">${PROD}</td>
-                <td class="listRows">${PURGE}</td>
-                <td class="listRows">${DESEG}</td>
                 <td class="listRows">${tool.building}</td>
                 <td class="listRows">${tool.bay}</td>
                 <td class="rmvBtn">
@@ -932,9 +925,6 @@ function displayTools() {
     let html = `
     <tr>
         <th>Tool ID</th>
-        <th>Cu</th>
-        <th>Prod</th>
-        <th>Purge</th>
         <th>Location</th>
         <th></th>
     </tr>
@@ -945,14 +935,9 @@ function displayTools() {
             if(tool.show){
         html += 
         ` <tr class="listRows">
-                <td class="listRows">
-                    ${tool.content}
-                </td>
-                <td class="a1">${tool.cu}</td>
-                <td class="a2">${tool.prod}</td>
-                <td class="a3">${tool.purge}</td>
-                <td class="a4">${tool.building}</td>
-                <td class="a5">${tool.bay}</td>
+                <td class="listRows">${tool.content}</td>
+                <td class="listRows">${tool.building}</td>
+                <td class="listRows">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
@@ -988,9 +973,6 @@ function showEdit() {
     let html = `
         <tr>
             <th>Tool ID</th>
-            <th>Cu</th>
-            <th>Prod</th>
-            <th>Purge</th>
             <th>Location</th>
         </tr>
     `;
@@ -1002,9 +984,6 @@ function showEdit() {
             `
             <tr>
                 <td class="leftColumn">${tool.content}</td>
-                <td class="listRows">${tool.cu}</td>
-                <td class="listRows">${tool.prod}</td>
-                <td class="listRows">${tool.purge}</td>
                 <td class="listRows">${tool.building}</td>
                 <td class="listRows">${tool.bay}</td>
                 <td>
