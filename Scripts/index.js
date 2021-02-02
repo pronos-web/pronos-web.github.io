@@ -166,7 +166,7 @@ function showAll() {
     let html = `
         <tr>
             <th>Tool ID</th>
-            <th>Location</th>
+            <th></th>
         </tr>
     `;
     
