@@ -190,11 +190,13 @@ function showAll() {
           if(tool.complete == false){
         html += 
            ` <tr class="listRows">
-                <td class="listRows">
+                <td class="a1">
                     ${tool.content}
                 </td>
                 <td class="a1">${tool.building}</td>
-                <td class="listRows">${tool.bay}</td>
+                <td class="a1">${tool.bay}</td>
+                <td class="a1"></td>
+                <td class="a1"></td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
