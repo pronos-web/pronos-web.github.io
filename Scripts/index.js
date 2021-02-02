@@ -193,7 +193,7 @@ function showAll() {
                 <td class="a1">
                     ${tool.content}
                 </td>
-                <td class="a1">${tool.building}</td>
+                <td class="a3">${tool.building}</td>
                 <td class="a1">${tool.bay}</td>
                 <td class="a2"></td>
                 <td class="rmvBtn">
