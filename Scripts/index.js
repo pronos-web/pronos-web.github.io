@@ -183,10 +183,10 @@ function showAll() {
             let DESEG = "";
             if(tool.cu){CU = "Cu";}
             else{CU = "NC";}
-            if(tool.prod == true){PROD = "Prod";}
+            if(tool.prod){PROD = "Prod";}
             else{PROD = "TW";}
             if(tool.purge){PURGE = "Prg";}
-            else{PURGE = "NonPrg";}
+            else{PURGE = "nPrg";}
             if(tool.deseg){DESEG = "Deseg";}
             else{DESEG = "";}
             
@@ -1085,7 +1085,7 @@ function showForm() {
 
 document.querySelector('#addItem').addEventListener('click', addNewItem);
 document.querySelector('#showAll').addEventListener('click', showAll);
-document.querySelector('#showAllT').addEventListener('click', showAllT);
+document.querySelector('#showAllT').addEventListener('click', showAll);
 document.querySelector('#showProd').addEventListener('click', showProd);
 document.querySelector('#showTW').addEventListener('click', showTW);
 document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);
