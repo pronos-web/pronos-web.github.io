@@ -193,7 +193,7 @@ function showAll() {
                 <td class="listRows">
                     ${tool.content}
                 </td>
-                <td class="listRows">${tool.building}</td>
+                <td class="a1">${tool.building}</td>
                 <td class="listRows">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
