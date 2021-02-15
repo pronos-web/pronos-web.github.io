@@ -7,7 +7,10 @@ form {
     background-color: #d3d3d3;
 }
 
-a {color: blue;}
+a {
+  color: blue;
+  text-decoration: none;
+}
 
 th {
     font-size: 18px;
