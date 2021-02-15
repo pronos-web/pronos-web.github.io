@@ -178,9 +178,9 @@ nav {
 .fltrButton {
     background-color: #d3d3d3;
     border: none;
-    font-weight: bold;
-    font-size: 18px;
-    color: blue;
+    font-weight: normal;
+    font-size: 11px;
+    color: #000000;
     outline:none;
 }
 
@@ -334,20 +334,14 @@ h2 {
 
   #navigation {
     width: 100%;
-    border-style: solid;
-    border: #ff0000;
   }
 
   #hmbtn {
     text-align: left;
-    border-style: solid;
-    border: #00ff00;
   }
 
   #edtbtn {
     text-align: right;
-    border-style: solid;
-    border: #0000ff;
   }
   
 form {margin-top: 8px;}
