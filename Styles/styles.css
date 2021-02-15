@@ -334,14 +334,20 @@ h2 {
 
   #navigation {
     width: 100%;
+    border-style: solid;
+    border: #ff0000;
   }
 
   #hmbtn {
     text-align: left;
+    border-style: solid;
+    border: #00ff00;
   }
 
   #edtbtn {
     text-align: right;
+    border-style: solid;
+    border: #0000ff;
   }
   
 form {margin-top: 8px;}
