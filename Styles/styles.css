@@ -331,5 +331,13 @@ h2 {
     overflow: hidden;
     background-color: #f1f1f1;
   }
+
+  .hmbtn {
+    text-align: left;
+  }
+
+  .edtbtn {
+    text-align: right;
+  }
   
 form {margin-top: 8px;}
