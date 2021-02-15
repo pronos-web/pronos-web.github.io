@@ -332,11 +332,15 @@ h2 {
     background-color: #f1f1f1;
   }
 
-  .hmbtn {
+  #navigation {
+    width: 100%;
+  }
+
+  #hmbtn {
     text-align: left;
   }
 
-  .edtbtn {
+  #edtbtn {
     text-align: right;
   }
   
