@@ -13,6 +13,7 @@ let purge = false;
 let nonPurge = false;
 let deseg = false;
 let nonDeseg = false;
+let expand = false;
 
 function addNewItem() {
     let toolID = document.getElementById('item').value;
@@ -137,6 +138,10 @@ function showAll() {
     nonPurge = false;
     deseg = false;
     nonDeseg = false;
+    expand = false;
+
+    //Collaps show filter bar ready to expand
+    document.getElementById("fltr").innerHTML = "Filters +";
     
     // Change bacground color of 'All' button to gray and others to white
     //document.getElementById('all').style.backgroundColor = "#000000";
@@ -1078,7 +1083,6 @@ document.getElementById('theList').addEventListener("click", function(e) {
  *****************************************************************/
 // Collapsible div for filters
 let coll = document.getElementsByClassName("collapsible");
-let expand = false;
 let i;
 
 for (i = 0; i < coll.length; i++) {
