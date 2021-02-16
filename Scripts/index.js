@@ -1052,6 +1052,7 @@ document.querySelector('#showNC').addEventListener('click', showNC);
 document.querySelector('#showNC2').addEventListener('click', showNC);
 document.querySelector('#showPurge').addEventListener('click', showPurge);
 document.querySelector('#showCu').addEventListener('click', showCu);
+document.querySelector('#showCu2').addEventListener('click', showCu);
 TODO: //add function & event listener for showDeseg & showNonDeseg
 
 document.querySelector('#addBtn').addEventListener('click', showForm);
