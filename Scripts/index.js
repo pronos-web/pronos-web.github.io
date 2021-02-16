@@ -554,11 +554,8 @@ function showNC(){
     if(nonCopper == false) {
         nonCopper = true;
         copper = false;
-        document.getElementById('NC').style.backgroundColor = "dodgerblue";
-        document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
-
-        document.getElementById('Cutest').style.backgroundColor = "#ffffff";
-        document.getElementById('NCtest').style.backgroundColor = "#000000";
+        document.getElementById('Cu2').style.backgroundColor = "#ffffff";
+        document.getElementById('NC2').style.backgroundColor = "#000000";
 
         itemList.forEach(
             tool => {
@@ -612,8 +609,7 @@ function showNC(){
         );
     }
     else {
-        document.getElementById('NC').style.backgroundColor = "#d3d3d3";
-        document.getElementById('NCtest').style.backgroundColor = "#ffffff";
+        document.getElementById('NC2').style.backgroundColor = "#ffffff";
         nonCopper = false;
 
         itemList.forEach(
@@ -1055,7 +1051,7 @@ document.querySelector('#showProd').addEventListener('click', showProd);
 document.querySelector('#showTW').addEventListener('click', showTW);
 document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);
 document.querySelector('#showNC').addEventListener('click', showNC);
-document.querySelector('#test2').addEventListener('click', showNC);
+document.querySelector('#showNC2').addEventListener('click', showNC);
 document.querySelector('#showPurge').addEventListener('click', showPurge);
 document.querySelector('#showCu').addEventListener('click', showCu);
 TODO: //add function & event listener for showDeseg & showNonDeseg
