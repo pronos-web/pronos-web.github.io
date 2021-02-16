@@ -1042,7 +1042,8 @@ function showForm() {
         toggle = 1;
         document.querySelector('#addForm').style.display = "none";
         document.querySelector('#addBtn').textContent = "Edit";
-        showAll()
+        showAll();
+        displayTools();
     }
     
 }
