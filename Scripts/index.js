@@ -557,8 +557,8 @@ function showNC(){
         document.getElementById('NC').style.backgroundColor = "dodgerblue";
         document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
 
-        document.getElementById('showNC').checked = false;
-        document.getElementById('showCu').checked = true;
+        document.getElementById('showNC').checked = true;
+        document.getElementById('showCu').checked = false;
 
         itemList.forEach(
             tool => {
