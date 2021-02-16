@@ -1088,7 +1088,7 @@ for (i = 0; i < coll.length; i++) {
     }
     if (expand == false){
         expand = true;
-        document.getElementById("fltr").innerHTML = "Filter -";
+        document.getElementById("fltr").innerHTML = "Filter  -";
     }
     else {
         expand = false;
