@@ -151,7 +151,6 @@ function showAll() {
 
     // Show filter buttons
     //document.getElementById('all').style.display = "inline";
-    document.getElementById('filterTable').style.display = "inline";
     document.getElementById('fltr').style.display = "inline";
     document.getElementById('theList').style.display = "inline";
     document.getElementById('listTitle').style.display = "inline";

@@ -201,6 +201,10 @@ h2 {
   text-align: center;
 }
 
+#listTitle {
+  text-align: center;
+}
+
 #taskQty {
     background-color: #d3d3d3;
     color: orange;
