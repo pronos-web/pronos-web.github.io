@@ -179,17 +179,7 @@ nav {
 }
 
 .fltrButton {
-    background-color: #ffffff;
-    border: #000000;
-    border-radius: 100%;
-    font-weight: normal;
-    font-size: 12px;
-    color: #000000;
-    outline:none;
-}
-
-.fltrButton2 {
-  padding-left: 5px;
+  padding-left: 3px;
   background-color: #ffffff;
   border: #000000;
   border-radius: 100%;
