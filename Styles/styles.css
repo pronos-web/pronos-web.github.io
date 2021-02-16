@@ -10,9 +10,6 @@ form {
 a {
   color: blue;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 54px;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 th {
@@ -118,8 +115,6 @@ th {
 
 nav {
     margin-bottom: 10px;
-    font-size: 56px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 #addForm {
@@ -352,9 +347,6 @@ h2 {
   }
 
   #navigation {
-    font-weight: bold;
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
     width: 100%;
   }
 
