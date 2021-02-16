@@ -1038,7 +1038,6 @@ function showForm() {
 
 document.querySelector('#addItem').addEventListener('click', addNewItem);
 /* document.querySelector('#showAll').addEventListener('click', showAll);*/ //Not used yet
-document.querySelector('#showAllT').addEventListener('click', showAll);
 document.querySelector('#showProd').addEventListener('click', showProd);
 document.querySelector('#showProd2').addEventListener('click', showProd);
 document.querySelector('#showTW').addEventListener('click', showTW);
