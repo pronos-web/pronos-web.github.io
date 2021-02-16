@@ -256,6 +256,7 @@ h2 {
     height: 25px;
     width: 25px;
     background-color: #eee;
+    border-radius: 100%;
   }
   
   /* On mouse-over, add a grey background color */
@@ -265,7 +266,7 @@ h2 {
   
   /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #000000;
   }
 
   .container2 input:checked ~ .checkmark {
