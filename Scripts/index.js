@@ -198,10 +198,9 @@ function showProd(){
     if(poduction == false) {
         poduction = true;
         testWafer = false;
-        document.getElementById('all').style.backgroundColor = "#d3d3d3";
-        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
-        document.getElementById('active').style.backgroundColor = "dodgerblue";
-        document.getElementById('TW').style.backgroundColor = "#d3d3d3";
+
+        document.getElementById('active2').style.backgroundColor = "#000000";
+        document.getElementById('TW2').style.backgroundColor = "#ffffff";
 
         itemList.forEach(
             tool => {
@@ -255,7 +254,7 @@ function showProd(){
         );
     }
     else {
-        document.getElementById('active').style.backgroundColor = "#d3d3d3";
+        document.getElementById('active2').style.backgroundColor = "#ffffff";
         poduction = false;
 
         itemList.forEach(
@@ -316,10 +315,8 @@ function showTW(){
     if(testWafer == false) {
         testWafer = true;
         poduction = false;
-        document.getElementById('all').style.backgroundColor = "#d3d3d3";
-        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
-        document.getElementById('TW').style.backgroundColor = "dodgerblue";
-        document.getElementById('active').style.backgroundColor = "#d3d3d3";
+        document.getElementById('TW2').style.backgroundColor = "#000000";
+        document.getElementById('active2').style.backgroundColor = "#ffffff";
 
         itemList.forEach(
             tool => {
@@ -374,7 +371,7 @@ function showTW(){
 
     }
     else {
-        document.getElementById('TW').style.backgroundColor = "#d3d3d3";
+        document.getElementById('TW2').style.backgroundColor = "#ffffff";
         testWafer = false;
 
         itemList.forEach(
@@ -1046,7 +1043,9 @@ document.querySelector('#addItem').addEventListener('click', addNewItem);
 document.querySelector('#showAll').addEventListener('click', showAll);
 document.querySelector('#showAllT').addEventListener('click', showAll);
 document.querySelector('#showProd').addEventListener('click', showProd);
+document.querySelector('#showProd2').addEventListener('click', showProd);
 document.querySelector('#showTW').addEventListener('click', showTW);
+document.querySelector('#showTW2').addEventListener('click', showTW);
 document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);
 document.querySelector('#showNC').addEventListener('click', showNC);
 document.querySelector('#showNC2').addEventListener('click', showNC);
