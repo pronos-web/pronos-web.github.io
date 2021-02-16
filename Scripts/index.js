@@ -613,6 +613,7 @@ function showNC(){
     }
     else {
         document.getElementById('NC').style.backgroundColor = "#d3d3d3";
+        document.getElementById('showNC').checked = false;
         nonCopper = false;
 
         itemList.forEach(
