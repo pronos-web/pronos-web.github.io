@@ -153,7 +153,7 @@ function showAll() {
     //document.getElementById('all').style.display = "inline";
     document.getElementById('fltr').style.display = "inline";
     document.getElementById('theList').style.display = "inline";
-    document.getElementsById('listTitle').style.display = "inline";
+    document.getElementById('listTitle').style.display = "inline";
     // Maybe delete these below
     document.getElementById('Cu').style.display = "inline";
     document.getElementById('active').style.display = "inline";
@@ -937,7 +937,7 @@ function showEdit() {
     document.getElementById('filterTable').style.display = "none";
     document.getElementById('fltr').style.display = "none";
     document.getElementById('theList').style.display = "none";
-    document.getElementsById('listTitle').style.display = "none";
+    document.getElementById('listTitle').style.display = "none";
     // Maybe delete these below
     document.getElementById('active').style.display = "none";
     document.getElementById('Cu').style.display = "none";
