@@ -159,6 +159,7 @@ function showAll() {
     document.getElementById('fltr').style.display = "inline";
     document.getElementById('theList').style.display = "inline";
     document.getElementById('listTitle').style.display = "inline";
+    document.getElementById('filterTable').style.display = "none";
     // Maybe delete these below
     document.getElementById('Cu').style.display = "inline";
     document.getElementById('active').style.display = "inline";
