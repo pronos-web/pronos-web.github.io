@@ -665,10 +665,8 @@ function showPurge(){
     if(purge == false) {
         purge = true;
         nonPurge = false;
-        document.getElementById('all').style.backgroundColor = "#d3d3d3";
-        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
-        document.getElementById('Purge').style.backgroundColor = "dodgerblue";
-        document.getElementById('NonPurge').style.backgroundColor = "#d3d3d3";
+        document.getElementById('Purge2').style.backgroundColor = "#000000";
+        document.getElementById('NonPurge2').style.backgroundColor = "#ffffff";
 
         itemList.forEach(
             tool => {
@@ -722,7 +720,7 @@ function showPurge(){
         );
     }
     else {
-        document.getElementById('Purge').style.backgroundColor = "#d3d3d3";
+        document.getElementById('Purge2').style.backgroundColor = "#ffffff";
         purge = false;
 
         itemList.forEach(
@@ -783,10 +781,8 @@ function showNonPurge(){
     if(nonPurge == false) {
         nonPurge = true;
         purge = false;
-        document.getElementById('all').style.backgroundColor = "#d3d3d3";
-        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
-        document.getElementById('NonPurge').style.backgroundColor = "dodgerblue";
-        document.getElementById('Purge').style.backgroundColor = "#d3d3d3";
+        document.getElementById('NonPurge2').style.backgroundColor = "#000000";
+        document.getElementById('Purge2').style.backgroundColor = "#ffffff";
 
         itemList.forEach(
             tool => {
@@ -840,7 +836,7 @@ function showNonPurge(){
         );
     }
     else {
-        document.getElementById('NonPurge').style.backgroundColor = "#d3d3d3";
+        document.getElementById('NonPurge2').style.backgroundColor = "#ffffff";
         nonPurge = false;
 
         itemList.forEach(
@@ -1047,9 +1043,11 @@ document.querySelector('#showProd2').addEventListener('click', showProd);
 document.querySelector('#showTW').addEventListener('click', showTW);
 document.querySelector('#showTW2').addEventListener('click', showTW);
 document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);
+document.querySelector('#showNonPurge2').addEventListener('click', showNonPurge);
 document.querySelector('#showNC').addEventListener('click', showNC);
 document.querySelector('#showNC2').addEventListener('click', showNC);
 document.querySelector('#showPurge').addEventListener('click', showPurge);
+document.querySelector('#showPurge2').addEventListener('click', showPurge);
 document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
 TODO: //add function & event listener for showDeseg & showNonDeseg
