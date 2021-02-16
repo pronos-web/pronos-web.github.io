@@ -929,7 +929,9 @@ function showEdit() {
     document.getElementById('active').style.backgroundColor = "#ffffff";
 
     // Hide fileter buttons
-    //document.getElementById('all').style.display = "none";
+    //document.getElementById('all').style.display = "none"; 
+    document.getElementById('filterTable').style.display = "none";
+    document.getElementById('theList').style.display = "none";
     document.getElementById('active').style.display = "none";
     document.getElementById('Cu').style.display = "none";
     document.getElementById('Purge').style.display = "none";
