@@ -139,8 +139,7 @@ function showAll() {
     nonDeseg = false;
     
     // Change bacground color of 'All' button to gray and others to white
-    document.getElementById('all').style.backgroundColor = "#000000";
-    document.getElementById('allT').style.backgroundColor = "#000000";
+    //document.getElementById('all').style.backgroundColor = "#000000";
     document.getElementById('Cu').style.backgroundColor = "#ffffff";
     document.getElementById('TW').style.backgroundColor = "#ffffff";
     document.getElementById('active').style.backgroundColor = "#ffffff";
@@ -151,8 +150,7 @@ function showAll() {
     document.getElementById('nonDeseg').style.backgroundColor = "#ffffff";
 
     // Show filter buttons
-    document.getElementById('all').style.display = "inline";
-    document.getElementById('allT').style.display = "inline";
+    //document.getElementById('all').style.display = "inline";
     document.getElementById('Cu').style.display = "inline";
     document.getElementById('active').style.display = "inline";
     document.getElementById('Purge').style.display = "inline";
@@ -927,13 +925,11 @@ function displayTools() {
 function showEdit() {
     filter = 3;
     // Change bacground color of 'All' button to gray and others to white
-    document.getElementById('all').style.backgroundColor = "#000000";
-    document.getElementById('allT').style.backgroundColor = "#000000";
+    //document.getElementById('all').style.backgroundColor = "#000000";
     document.getElementById('active').style.backgroundColor = "#ffffff";
 
     // Hide fileter buttons
-    document.getElementById('all').style.display = "none";
-    document.getElementById('allT').style.display = "none";
+    //document.getElementById('all').style.display = "none";
     document.getElementById('active').style.display = "none";
     document.getElementById('Cu').style.display = "none";
     document.getElementById('Purge').style.display = "none";
