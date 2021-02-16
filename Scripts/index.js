@@ -558,7 +558,7 @@ function showNC(){
         document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
 
         document.getElementById('showNC').checked = true;
-        document.getElementById('showCu').checked = false;
+        document.getElementById('showCu').reset();
 
         itemList.forEach(
             tool => {
@@ -613,7 +613,7 @@ function showNC(){
     }
     else {
         document.getElementById('NC').style.backgroundColor = "#d3d3d3";
-        document.getElementById('showNC').checked = false;
+        document.getElementById('showNC').reset();
         nonCopper = false;
 
         itemList.forEach(
