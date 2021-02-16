@@ -557,8 +557,8 @@ function showNC(){
         document.getElementById('NC').style.backgroundColor = "dodgerblue";
         document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
 
-        document.getElementById('test1').style.backgroundColor = "#ffffff";
-        document.getElementById('test2').style.backgroundColor = "#000000";
+        document.getElementById('Cutest').style.backgroundColor = "#ffffff";
+        document.getElementById('NCtest2').style.backgroundColor = "#000000";
 
         itemList.forEach(
             tool => {
@@ -613,7 +613,7 @@ function showNC(){
     }
     else {
         document.getElementById('NC').style.backgroundColor = "#d3d3d3";
-        document.getElementById('showNC').reset;
+        document.getElementById('test2').style.backgroundColor = "#000000";
         nonCopper = false;
 
         itemList.forEach(
