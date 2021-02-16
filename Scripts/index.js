@@ -558,7 +558,7 @@ function showNC(){
         document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
 
         document.getElementById('showNC').style.backgroundColor = "#dodgerblue";
-        document.getElementById('showCu').style.backgroundColor = "#d3d3d3";
+        document.getElementById('showCu').style.backgroundColor = "#ffffff";
 
         itemList.forEach(
             tool => {
