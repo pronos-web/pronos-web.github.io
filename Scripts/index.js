@@ -435,10 +435,8 @@ function showCu(){
     if(copper == false) {
         copper = true;
         nonCopper = false;
-        document.getElementById('all').style.backgroundColor = "#d3d3d3";
-        document.getElementById('allT').style.backgroundColor = "#d3d3d3";
-        document.getElementById('Cu').style.backgroundColor = "dodgerblue";
-        document.getElementById('NC').style.backgroundColor = "#d3d3d3";
+        document.getElementById('Cu2').style.backgroundColor = "#000000";
+        document.getElementById('NC2').style.backgroundColor = "#ffffff";
 
         itemList.forEach(
             tool => {
@@ -492,7 +490,7 @@ function showCu(){
         );
     }
     else {
-        document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
+        document.getElementById('Cu2').style.backgroundColor = "#ffffff";
         copper = false;
 
         itemList.forEach(
