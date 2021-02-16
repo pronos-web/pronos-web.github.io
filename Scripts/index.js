@@ -892,6 +892,7 @@ function showNonPurge(){
 
     displayTools();
 }
+
 /*****************************************************************************************/
 
 function displayTools() {
