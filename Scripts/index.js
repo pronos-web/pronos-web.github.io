@@ -1074,6 +1074,7 @@ document.getElementById('theList').addEventListener("click", function(e) {
  *****************************************************************/
 // Collapsible div for filters
 let coll = document.getElementsByClassName("collapsible");
+let expand = false;
 let i;
 
 for (i = 0; i < coll.length; i++) {
@@ -1084,6 +1085,14 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "none";
     } else {
       content.style.display = "block";
+      document.getElementById(fltr).innerHTML = "Filter -";
+    }
+    if (expand == false){
+        expand = true;
+        document.getElementById(fltr).innerHTML = "Filter +";
+    }
+    else {
+        expand = false;
     }
   });
 }
