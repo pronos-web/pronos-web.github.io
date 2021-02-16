@@ -139,16 +139,16 @@ function showAll() {
     nonDeseg = false;
     
     // Change bacground color of 'All' button to gray and others to white
-    document.getElementById('all').style.backgroundColor = "dodgerblue";
-    document.getElementById('allT').style.backgroundColor = "dodgerblue";
-    document.getElementById('Cu').style.backgroundColor = "#d3d3d3";
-    document.getElementById('TW').style.backgroundColor = "#d3d3d3";
-    document.getElementById('active').style.backgroundColor = "#d3d3d3";
-    document.getElementById('NC').style.backgroundColor = "#d3d3d3";
-    document.getElementById('NonPurge').style.backgroundColor = "#d3d3d3";
-    document.getElementById('Purge').style.backgroundColor = "#d3d3d3";
-    document.getElementById('Deseg').style.backgroundColor = "#d3d3d3";
-    document.getElementById('nonDeseg').style.backgroundColor = "#d3d3d3";
+    document.getElementById('all').style.backgroundColor = "#000000";
+    document.getElementById('allT').style.backgroundColor = "#000000";
+    document.getElementById('Cu').style.backgroundColor = "#ffffff";
+    document.getElementById('TW').style.backgroundColor = "#ffffff";
+    document.getElementById('active').style.backgroundColor = "#ffffff";
+    document.getElementById('NC').style.backgroundColor = "#ffffff";
+    document.getElementById('NonPurge').style.backgroundColor = "#ffffff";
+    document.getElementById('Purge').style.backgroundColor = "#ffffff";
+    document.getElementById('Deseg').style.backgroundColor = "#d3d3ffffffd3";
+    document.getElementById('nonDeseg').style.backgroundColor = "#ffffff";
 
     // Show filter buttons
     document.getElementById('all').style.display = "inline";
@@ -927,9 +927,9 @@ function displayTools() {
 function showEdit() {
     filter = 3;
     // Change bacground color of 'All' button to gray and others to white
-    document.getElementById('all').style.backgroundColor = "dodgerblue";
-    document.getElementById('allT').style.backgroundColor = "dodgerblue";
-    document.getElementById('active').style.backgroundColor = "#d3d3d3";
+    document.getElementById('all').style.backgroundColor = "#000000";
+    document.getElementById('allT').style.backgroundColor = "#000000";
+    document.getElementById('active').style.backgroundColor = "#ffffff";
 
     // Hide fileter buttons
     document.getElementById('all').style.display = "none";
