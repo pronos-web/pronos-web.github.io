@@ -10,6 +10,8 @@ form {
 a {
   color: blue;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 th {
@@ -347,16 +349,10 @@ h2 {
 
   #hmbtn {
     text-align: left;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
   }
 
   #edtbtn {
     text-align: right;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
   }
   
 form {margin-top: 8px;}
