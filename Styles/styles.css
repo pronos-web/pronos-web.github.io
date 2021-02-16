@@ -117,6 +117,8 @@ th {
 
 nav {
     margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #addForm {
