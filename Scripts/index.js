@@ -924,7 +924,7 @@ function showNonPurge(){
 
 /*****************************************************************************************/
 
-function displayTools() {
+function displayTools() { 
     let html = `
     <tr>
         <th>Tool ID</th>
@@ -934,11 +934,13 @@ function displayTools() {
     `;
 
     itemList.forEach(
+        let loc = ${tool.building} + " " + ${tool.bay}
         tool => {
             if(tool.show){
         html += 
         ` <tr class="listRows">
                 <td class="listRows">${tool.content}</td>
+                <td class="listRows">l${loc}</td>
                 <td class="listRows">${tool.building}</td>
                 <td class="listRows">${tool.bay}</td>
                 <td class="rmvBtn">
