@@ -5,7 +5,7 @@ let itemList = [];
 let completedItems = [];
 let filter = 1;
 let toggle = 1;
-let poduction = false;
+let production = false;
 let testWafer = false;
 let copper = false;
 let nonCopper = false;
@@ -130,7 +130,7 @@ function removeItem(e) {
 
 function showAll() {
     filter = 3;
-    poduction = false;
+    production = false;
     testWafer = false;
     copper = false;
     nonCopper = false;
@@ -201,10 +201,29 @@ function showAll() {
 
 /*************************************************************************************/
 
+function clearFilters(){
+    document.getElementById('TW2').style.backgroundColor = "#ffffff";
+    document.getElementById('active2').style.backgroundColor = "#ffffff";
+    document.getElementById('Cu2').style.backgroundColor = "#ffffff";
+    document.getElementById('NC2').style.backgroundColor = "#ffffff";
+    document.getElementById('Purge2').style.backgroundColor = "#ffffff";
+    document.getElementById('NonPurge2').style.backgroundColor = "#ffffff";
+    document.getElementById('nonDeseg2').style.backgroundColor = "#ffffff";
+    document.getElementById('Deseg2').style.backgroundColor = "#ffffff";
+    production = false;
+    testWafer = false;
+    copper = false;
+    nonCopper = false;
+    purge = false;
+    nonPurge = false;
+    deseg = false;
+    nonDeseg = false;
+}
+
 function showProd(){
 
-    if(poduction == false) {
-        poduction = true;
+    if(production == false) {
+        production = true;
         testWafer = false;
 
         document.getElementById('active2').style.backgroundColor = "#000000";
@@ -263,11 +282,11 @@ function showProd(){
     }
     else {
         document.getElementById('active2').style.backgroundColor = "#ffffff";
-        poduction = false;
+        production = false;
 
         itemList.forEach(
             tool => {
-                if(!copper && !nonCopper && !poduction  && !testWafer  && !purge && !nonPurge){
+                if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
                     tool.show = true;
                     showAll();
                 }
@@ -322,7 +341,7 @@ function showProd(){
 function showTW(){
     if(testWafer == false) {
         testWafer = true;
-        poduction = false;
+        production = false;
         document.getElementById('TW2').style.backgroundColor = "#000000";
         document.getElementById('active2').style.backgroundColor = "#ffffff";
 
@@ -384,7 +403,7 @@ function showTW(){
 
         itemList.forEach(
             tool => {
-                if(!copper && !nonCopper && !poduction  && !testWafer  && !purge && !nonPurge){
+                if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
                     tool.show = true;
                     showAll();
                 }
@@ -447,17 +466,17 @@ function showCu(){
             tool => {
                 tool.show = false;
 
-                if(tool.cu && !poduction  && !testWafer  && !purge && !nonPurge){
+                if(tool.cu && !production  && !testWafer  && !purge && !nonPurge){
                     tool.show = true;
                 }
                 else{
-                    if(tool.cu && poduction  && tool.prod && !purge && !nonPurge){
+                    if(tool.cu && production  && tool.prod && !purge && !nonPurge){
                         tool.show = true;
                     }
-                    if(tool.cu && poduction  && tool.prod && purge && tool.purge){
+                    if(tool.cu && production  && tool.prod && purge && tool.purge){
                         tool.show = true;
                     }
-                    if(tool.cu && poduction  && tool.prod && nonPurge && tool.noPurge){
+                    if(tool.cu && production  && tool.prod && nonPurge && tool.noPurge){
                         tool.show = true;
                     }
 
@@ -471,20 +490,20 @@ function showCu(){
                         tool.show = true;
                     }
 
-                    if(tool.cu && purge && tool.purge && !poduction  && !testWafer){
+                    if(tool.cu && purge && tool.purge && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(tool.cu && purge && tool.purge && poduction  && tool.prod){
+                    if(tool.cu && purge && tool.purge && production  && tool.prod){
                         tool.show = true;
                     }
                     if(tool.cu && purge && tool.purge && testWafer && tool.tw){
                         tool.show = true;
                     }
                     
-                    if(tool.cu && nonPurge && tool.noPurge && !poduction  && !testWafer){
+                    if(tool.cu && nonPurge && tool.noPurge && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(tool.cu && nonPurge && tool.noPurge && poduction  && tool.prod){
+                    if(tool.cu && nonPurge && tool.noPurge && production  && tool.prod){
                         tool.show = true;
                     }
                     if(tool.cu && nonPurge && tool.noPurge && testWafer && tool.tw){
@@ -500,18 +519,18 @@ function showCu(){
 
         itemList.forEach(
             tool => {
-                if(!copper && !nonCopper && !poduction  && !testWafer  && !purge && !nonPurge){
+                if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
                     tool.show = true;
                     showAll();
                 }
                 else{
-                    if(poduction  && tool.prod && !purge && !nonPurge){
+                    if(production  && tool.prod && !purge && !nonPurge){
                         tool.show = true;
                     }
-                    if(poduction  && tool.prod && purge && tool.purge){
+                    if(production  && tool.prod && purge && tool.purge){
                         tool.show = true;
                     }
-                    if(poduction  && tool.prod && nonPurge && tool.noPurge){
+                    if(production  && tool.prod && nonPurge && tool.noPurge){
                         tool.show = true;
                     }
 
@@ -525,20 +544,20 @@ function showCu(){
                         tool.show = true;
                     }
 
-                    if(purge && tool.purge && !poduction  && !testWafer){
+                    if(purge && tool.purge && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(purge && tool.purge && poduction  && tool.prod){
+                    if(purge && tool.purge && production  && tool.prod){
                         tool.show = true;   
                     }
                     if(purge && tool.purge && testWafer && tool.tw){
                         tool.show = true;
                     }
 
-                    if(nonPurge && tool.noPurge && !poduction  && !testWafer){
+                    if(nonPurge && tool.noPurge && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(purge && tool.purge && poduction  && tool.prod){
+                    if(purge && tool.purge && production  && tool.prod){
                         tool.show = true;
                     }
                     if(purge && tool.purge && testWafer && tool.tw){
@@ -564,17 +583,17 @@ function showNC(){
             tool => {
                 tool.show = false;
 
-                if(tool.nonCu && !poduction  && !testWafer  && !purge && !nonPurge){
+                if(tool.nonCu && !production  && !testWafer  && !purge && !nonPurge){
                     tool.show = true;
                 }
                 else{
-                    if(tool.nonCu && poduction  && tool.prod && !purge && !nonPurge){
+                    if(tool.nonCu && production  && tool.prod && !purge && !nonPurge){
                         tool.show = true;
                     }
-                    if(tool.nonCu && poduction  && tool.prod && purge && tool.purge){
+                    if(tool.nonCu && production  && tool.prod && purge && tool.purge){
                         tool.show = true;
                     }
-                    if(tool.nonCu && poduction  && tool.prod && nonPurge && tool.noPurge){
+                    if(tool.nonCu && production  && tool.prod && nonPurge && tool.noPurge){
                         tool.show = true;
                     }
 
@@ -588,20 +607,20 @@ function showNC(){
                         tool.show = true;
                     }
 
-                    if(tool.nonCu && purge && tool.purge && !poduction  && !testWafer){
+                    if(tool.nonCu && purge && tool.purge && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(tool.nonCu && purge && tool.purge && poduction  && tool.prod){
+                    if(tool.nonCu && purge && tool.purge && production  && tool.prod){
                         tool.show = true;
                     }
                     if(tool.nonCu && purge && tool.purge && testWafer && tool.tw){
                         tool.show = true;
                     }
 
-                    if(tool.nonCu && nonPurge && tool.noPurge && !poduction  && !testWafer){
+                    if(tool.nonCu && nonPurge && tool.noPurge && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(tool.nonCu && nonPurge && tool.noPurge && poduction  && tool.prod){
+                    if(tool.nonCu && nonPurge && tool.noPurge && production  && tool.prod){
                         tool.show = true;
                     }
                     if(tool.nonCu && nonPurge && tool.noPurge && testWafer && tool.tw){
@@ -617,18 +636,18 @@ function showNC(){
 
         itemList.forEach(
             tool => {
-                if(!copper && !nonCopper && !poduction  && !testWafer  && !purge && !nonPurge){
+                if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
                     tool.show = true;
                     showAll();
                 }
                 else{
-                    if(poduction  && tool.prod && !purge && ! nonPurge){
+                    if(production  && tool.prod && !purge && ! nonPurge){
                         tool.show = true;
                     }
-                    if(poduction  && tool.prod && purge && tool.purge){
+                    if(production  && tool.prod && purge && tool.purge){
                         tool.show = true;
                     }
-                    if(poduction  && tool.prod && testWafer && tool.tw){
+                    if(production  && tool.prod && testWafer && tool.tw){
                         tool.show = true;
                     }
 
@@ -642,20 +661,20 @@ function showNC(){
                         tool.show = true;
                     }
 
-                    if(purge && tool.purge && !poduction  && !testWafer){
+                    if(purge && tool.purge && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(purge && tool.purge && poduction  && tool.prod){
+                    if(purge && tool.purge && production  && tool.prod){
                         tool.show = true;
                     }
                     if(purge && tool.purge && testWafer && tool.tw){
                         tool.show = true;
                     }
 
-                    if(nonPurge && tool.noPurge && !poduction  && !testWafer){
+                    if(nonPurge && tool.noPurge && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(nonPurge && tool.noPurge && poduction  && tool.prod){
+                    if(nonPurge && tool.noPurge && production  && tool.prod){
                         tool.show = true;
                     }
                     if(nonPurge && tool.noPurge && testWafer && tool.tw){
@@ -680,17 +699,17 @@ function showPurge(){
             tool => {
                 tool.show = false;
 
-                if(tool.purge && !poduction  && !testWafer  && !copper && !nonCopper){
+                if(tool.purge && !production  && !testWafer  && !copper && !nonCopper){
                     tool.show = true;
                 }
                 else{
-                    if(tool.purge && poduction  && tool.prod && !copper && !nonCopper){
+                    if(tool.purge && production  && tool.prod && !copper && !nonCopper){
                         tool.show = true;
                     }
-                    if(tool.purge && poduction  && tool.prod && copper && tool.copper){
+                    if(tool.purge && production  && tool.prod && copper && tool.copper){
                         tool.show = true;
                     }
-                    if(tool.purge && poduction  && tool.prod && nonCopper && tool.nonCopper){
+                    if(tool.purge && production  && tool.prod && nonCopper && tool.nonCopper){
                         tool.show = true;
                     }
                     
@@ -704,20 +723,20 @@ function showPurge(){
                         tool.show = true;
                     }
 
-                    if(tool.purge && copper && tool.cu && !poduction  && !testWafer){
+                    if(tool.purge && copper && tool.cu && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(tool.purge && copper && tool.cu && poduction  && tool.prod){
+                    if(tool.purge && copper && tool.cu && production  && tool.prod){
                         tool.show = true;
                     }
                     if(tool.purge && copper && tool.cu && testWafer && tool.tw){
                         tool.show = true;
                     }
 
-                    if(tool.purge && nonCopper && tool.nonCu && !poduction  && !testWafer){
+                    if(tool.purge && nonCopper && tool.nonCu && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(tool.purge && nonCopper && tool.nonCu && poduction  && tool.prod){
+                    if(tool.purge && nonCopper && tool.nonCu && production  && tool.prod){
                         tool.show = true;
                     }
                     if(tool.purge && nonCopper && tool.nonCu && testWafer && tool.tw){
@@ -733,18 +752,18 @@ function showPurge(){
 
         itemList.forEach(
             tool => {
-                if(!copper && !nonCopper && !poduction  && !testWafer  && !copper && !nonCopper){
+                if(!copper && !nonCopper && !production  && !testWafer  && !copper && !nonCopper){
                     tool.show = true;
                     showAll();
                 }
                 else{
-                    if(poduction  && tool.prod && !copper && !nonCopper){
+                    if(production  && tool.prod && !copper && !nonCopper){
                         tool.show = true;
                     }
-                    if(poduction  && tool.prod && copper && tool.cu){
+                    if(production  && tool.prod && copper && tool.cu){
                         tool.show = true;
                     }
-                    if(poduction  && tool.prod && testWafer && tool.tw){
+                    if(production  && tool.prod && testWafer && tool.tw){
                         tool.show = true;
                     }
 
@@ -758,20 +777,20 @@ function showPurge(){
                         tool.show = true;
                     }
 
-                    if(copper && tool.cu && !poduction  && !testWafer){
+                    if(copper && tool.cu && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(copper && tool.cu && poduction  && tool.prod){
+                    if(copper && tool.cu && production  && tool.prod){
                         tool.show = true;
                     }
                     if(copper && tool.cu && testWafer && tool.tw){
                         tool.show = true;
                     }
 
-                    if(nonCopper && tool.nonCu && !poduction  && !testWafer){
+                    if(nonCopper && tool.nonCu && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(nonCopper && tool.nonCu && poduction  && tool.prod){
+                    if(nonCopper && tool.nonCu && production  && tool.prod){
                         tool.show = true;
                     }
                     if(nonCopper && tool.nonCu && testWafer && tool.tw){
@@ -796,17 +815,17 @@ function showNonPurge(){
             tool => {
                 tool.show = false;
 
-                if(tool.noPurge && !poduction  && !testWafer && !copper && !nonCopper){
+                if(tool.noPurge && !production  && !testWafer && !copper && !nonCopper){
                     tool.show = true;
                 }
                 else{
-                    if(tool.noPurge && poduction && tool.prod && !copper && !nonCopper){
+                    if(tool.noPurge && production && tool.prod && !copper && !nonCopper){
                         tool.show = true;
                     }
-                    if(tool.nonPurge && poduction && tool.prod && copper && tool.cu){
+                    if(tool.nonPurge && production && tool.prod && copper && tool.cu){
                         tool.show = true;
                     }
-                    if(tool.noPurge && poduction && tool.prod && nonCopper && tool.nonCopper){
+                    if(tool.noPurge && production && tool.prod && nonCopper && tool.nonCopper){
                         tool.show = true;
                     }
 
@@ -820,20 +839,20 @@ function showNonPurge(){
                         tool.show = true;
                     }
 
-                    if(tool.noPurge && copper && tool.cu && !poduction  && !testWafer){
+                    if(tool.noPurge && copper && tool.cu && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(tool.noPurge && copper && tool.cu && poduction  && tool.prod){
+                    if(tool.noPurge && copper && tool.cu && production  && tool.prod){
                         tool.show = true;
                     }
                     if(tool.noPurge && copper && tool.cu && testWafer && tool.tw){
                         tool.show = true;
                     }
 
-                    if(tool.noPurge && nonCopper && tool.nonCu && !poduction  && !testWafer){
+                    if(tool.noPurge && nonCopper && tool.nonCu && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(tool.noPurge && nonCopper && tool.nonCu && poduction  && tool.prod){
+                    if(tool.noPurge && nonCopper && tool.nonCu && production  && tool.prod){
                         tool.show = true;
                     }
                     if(tool.noPurge && nonCopper && tool.nonCu && testWafer && tool.tw){
@@ -849,18 +868,18 @@ function showNonPurge(){
 
         itemList.forEach(
             tool => {
-                if(!copper && !nonCopper && !poduction  && !testWafer  && !purge && !nonPurge){
+                if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
                     tool.show = true;
                     showAll();
                 }
                 else{
-                    if(poduction  && tool.prod && !copper && !nonCopper){
+                    if(production  && tool.prod && !copper && !nonCopper){
                         tool.show = true;
                     }
-                    if(poduction  && tool.prod && copper && tool.cu){
+                    if(production  && tool.prod && copper && tool.cu){
                         tool.show = true;
                     }
-                    if(poduction  && tool.prod && nonCopper && tool.nonCu){
+                    if(production  && tool.prod && nonCopper && tool.nonCu){
                         tool.show = true;
                     }
 
@@ -874,20 +893,20 @@ function showNonPurge(){
                         tool.show = true;
                     }
 
-                    if(copper && tool.cu && !poduction && !testWafer){
+                    if(copper && tool.cu && !production && !testWafer){
                         tool.show = true;
                     }
-                    if(copper && tool.cu && poduction  && tool.prod){
+                    if(copper && tool.cu && production  && tool.prod){
                         tool.show = true;
                     }
                     if(copper && tool.cu && testWafer && tool.tw){
                         tool.show = true;
                     }
 
-                    if(nonCopper && tool.nonCu && !poduction  && !testWafer){
+                    if(nonCopper && tool.nonCu && !production  && !testWafer){
                         tool.show = true;
                     }
-                    if(nonCopper && tool.nonCu && poduction  && tool.prod){
+                    if(nonCopper && tool.nonCu && production  && tool.prod){
                         tool.show = true;
                     }
                     if(nonCopper && tool.nonCu && testWafer && tool.tw){
@@ -934,9 +953,8 @@ function displayTools() {
 
 function showEdit() {
     filter = 3;
-    // Change bacground color of 'All' button to gray and others to white
-    //document.getElementById('all').style.backgroundColor = "#000000";
-    document.getElementById('active').style.backgroundColor = "#ffffff";
+    // Reset filters so all tools are visible after edit
+    clearFilters();
 
     // Hide fileter buttons
     //document.getElementById('all').style.display = "none"; 
@@ -1043,7 +1061,6 @@ function showForm() {
         document.querySelector('#addForm').style.display = "none";
         document.querySelector('#addBtn').textContent = "Edit";
         showAll();
-        displayTools();
     }
     
 }
