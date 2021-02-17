@@ -177,25 +177,24 @@ function showAll() {
             <th>Tool ID</th>
             <th>Location</th>
             <th></th>
-        </tr>
-    </table>`;
+        </tr>`;
 
     itemList.forEach(
         tool => {
             if(tool.show){
         html += 
-        `
-        <button id="fltr" type="button" class="collapsible">
-        ${tool.content}                        ${tool.building} ${tool.bay}
-        </button>
-        <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+        `<tr class="listRows">
+            <td class="leftColumn">${tool.content}</td>
+            <td class="listRows">${tool.building} ${tool.bay}</td>
+            <td class="rmvBtn">
+                <button type="button" id="removeItem" value="${tool.id}">X</button>
+            </td>
+        </tr>
         `;
             }
         }  
     );
-    //html += '</table>';
+    html += '</table>';
 
     document.getElementById('listBody').innerHTML = html;
     console.log("showAll() called");
