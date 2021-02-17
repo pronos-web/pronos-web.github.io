@@ -172,11 +172,12 @@ function showAll() {
     
     // Read itemList and display all fo the items
     let html = `
-    <tr>
-        <th>Tool ID</th>
-        <th>Location</th>
-        <th></th>
-    </tr>
+    <table>
+        <tr>
+            <th>Tool ID</th>
+            <th>Location</th>
+            <th></th>
+        </tr>
     `;
 
     itemList.forEach(
@@ -193,6 +194,7 @@ function showAll() {
             }
         }  
     );
+    html += '</table>'
 
     document.getElementById('listBody').innerHTML = html;
     console.log("showAll() called");
@@ -926,11 +928,12 @@ function showNonPurge(){
 function displayTools() { 
     let toolLoc;
     let html = `
-    <tr>
-        <th>Tool ID</th>
-        <th>Location</th>
-        <th></th>
-    </tr>
+    <table>
+        <tr>
+            <th>Tool ID</th>
+            <th>Location</th>
+            <th></th>
+        </tr>
     `;
 
     itemList.forEach(
@@ -947,6 +950,7 @@ function displayTools() {
             }
         }  
     );
+    html += '</table>'
 
     document.getElementById('listBody').innerHTML = html;
     console.log("displayTools() called");
