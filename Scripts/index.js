@@ -200,7 +200,9 @@ function showAll() {
     console.log("showAll() called");
 }
 
-console.log(itemList.tool.id);
+console.log(itemList.forEach(tool => tool.id));
+    
+});
 /*************************************************************************************/
 
 function clearFilters(){
