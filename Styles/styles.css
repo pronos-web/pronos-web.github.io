@@ -18,6 +18,7 @@ a {
 th {
     font-size: 18px;
     padding: 10px;
+    align-content: left;
     
 }
 
@@ -25,7 +26,7 @@ th {
     text-align: left;
     border-bottom: 1px solid black;
     font-size: 20px;
-    width: 100%;
+    width: 50%;
 }
 .listLoc {
     text-align: left;
@@ -152,6 +153,7 @@ nav {
 .leftColumn {
     font-size: 20px;
     border-bottom: 1px solid black;
+    width: 50%;
 }
 
 #space {
