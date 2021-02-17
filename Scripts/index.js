@@ -185,7 +185,7 @@ function showAll() {
             if(tool.show){
         html += 
         ` <tr class="listRows">
-                <td class="listRows">${tool.content}</td>
+                <td class="leftColumn">${tool.content}</td>
                 <td class="listRows">${tool.building} ${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
@@ -941,7 +941,7 @@ function displayTools() {
             if(tool.show){
         html += 
         ` <tr class="listRows">
-                <td class="listRows">${tool.content}</td>
+                <td class="leftColumn">${tool.content}</td>
                 <td class="listRows">${tool.building} ${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
