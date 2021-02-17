@@ -218,6 +218,9 @@ function clearFilters(){
     nonPurge = false;
     deseg = false;
     nonDeseg = false;
+
+    itemList.forEach(tool => { tool.show = true;});
+}
 }
 
 function showProd(){
