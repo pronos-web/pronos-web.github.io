@@ -199,7 +199,7 @@ function showAll() {
     document.getElementById('listBody').innerHTML = html;
     console.log("showAll() called");
 
-    console.log(itemList.forEach(tool => tool.id));
+    console.log(itemList.forEach(tool => {tool.id}));
     //console.log(itemList.tool.id);
 }
 
