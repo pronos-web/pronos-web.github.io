@@ -343,6 +343,10 @@ h2 {
     outline: none;
     font-size: 15px;
   }
+
+  #fltr {
+    background-color: #d3d3d3;
+  }
   
   .active, .collapsible:hover {
     background-color: #555;
