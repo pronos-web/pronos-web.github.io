@@ -975,6 +975,7 @@ function showEdit() {
     
     // Read itemList and display all fo the items
     let html = `
+    <table>
         <tr>
             <th>Tool ID</th>
             <th>Location</th>
@@ -997,6 +998,7 @@ function showEdit() {
             }
         }  
     );
+    html += '</table>'
 
     document.getElementById('listBody').innerHTML = html;
     console.log("showEdit() called");
