@@ -196,6 +196,35 @@ function showAll() {
     );
     html += '</table>';
 
+ html += `
+ <button id="fltr" type="button" class="collapsible">Filters +</button>
+ <div id="filterTable" class="content">
+     <table>
+         <tr>
+             <td id="showCu2"><radio type="button" class="fltrButton" id="Cu2">O</button></td>
+             <td id="showCu"><radio type="button" class="fltrButton" id="Cu">Copper</button></td>
+             <td id="showProd2"><radio type="button" class="fltrButton" id="active2">O</button></td>
+             <td id="showProd"><radio type="button" class="fltrButton" id="active">Production</button></td>
+             <td id="showPurge2"><radio type="button" class="fltrButton" id="Purge2">O</button></td>
+             <td id="showPurge"><button type="button" class="fltrButton" id="Purge">Purge</button></td>
+             <td id="showDeseg2"><radio type="button" class="fltrButton" id="Deseg2">O</button></td>
+             <td id="showDeseg"><button type="button" class="fltrButton" id="Deseg">Deseg</button></td>
+         </tr>
+         <tr>
+             <td id="showNC2"><radio type="button" class="fltrButton" id="NC2">O </button></td>
+             <td id="showNC"><radio type="button" class="fltrButton" id="NC">Non-Copper</button></td>
+             <td id="showTW2"><radio type="button" class="fltrButton" id="TW2">O </button></td>
+             <td id="showTW"><radio type="button" class="fltrButton" id="TW">Test Wafer</button></td>
+             <td id="showNonPurge2"><radio type="button" class="fltrButton" id="NonPurge2">O </button></td>
+             <td id="showNonPurge"><button type="button" class="fltrButton" id="NonPurge">Non-Purge</button></td>
+             <td id="shownonDeseg2"><radio type="button" class="fltrButton" id="nonDeseg2">O </button></td>
+             <td id="shownonDeseg"><button type="button" class="fltrButton" id="nonDeseg">Non-Deseg</button></td>
+         </tr>
+     </table>
+ </div>`;
+
+
+
     document.getElementById('listBody').innerHTML = html;
     console.log("showAll() called");
 }
@@ -1108,7 +1137,6 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     let content = this.nextElementSibling;
-    console.log(content);
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
