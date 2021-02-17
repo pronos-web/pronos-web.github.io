@@ -221,7 +221,6 @@ function clearFilters(){
 
     itemList.forEach(tool => { tool.show = true;});
 }
-}
 
 function showProd(){
 
