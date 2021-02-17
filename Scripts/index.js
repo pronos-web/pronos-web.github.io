@@ -184,7 +184,7 @@ function showAll() {
             if(tool.show){
         html += 
         `<tr class="listRows">
-            <td class="leftColumn">${tool.content}</td>
+            <td class="leftColumn"><button onclick="myFunction(${tool.content})">${tool.content}</button></td>
             <td class="listRows">${tool.building} ${tool.bay}</td>
             <td class="rmvBtn">
                 <button type="button" id="removeItem" value="${tool.id}">X</button>
@@ -200,7 +200,9 @@ function showAll() {
     console.log("showAll() called");
 }
 
-
+function myFunction(x1){
+    console.log(x1);
+}
 
 /*************************************************************************************/
 
