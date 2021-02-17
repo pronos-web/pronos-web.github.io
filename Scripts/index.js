@@ -184,13 +184,13 @@ function showAll() {
         tool => {
             if(tool.show){
         html += 
-        ` <tr class="listRows">
-                <td class="leftColumn"><button id="fltr" type="button" class="collapsible">${tool.content}</button></td>
-                <td class="listRows">${tool.building} ${tool.bay}</td>
-                <td class="rmvBtn">
-                    <button type="button" id="removeItem" value="${tool.id}">X</button>
-                </td>
-            </tr>
+        `<tr class="listRows">
+            <td class="leftColumn"><button id="toolFltr" type="button" class="collapsible">${tool.content}</button></td>
+            <td class="listRows">${tool.building} ${tool.bay}</td>
+            <td class="rmvBtn">
+                <button type="button" id="removeItem" value="${tool.id}">X</button>
+            </td>
+        </tr>
             <div class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>

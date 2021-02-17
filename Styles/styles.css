@@ -344,8 +344,9 @@ h2 {
     font-size: 15px;
   }
 
-  #fltr {
+  #toolFltr {
     background-color: #d3d3d3;
+    color: #000000;
   }
   
   .active, .collapsible:hover {
