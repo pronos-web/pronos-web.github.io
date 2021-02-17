@@ -1100,12 +1100,6 @@ document.getElementById('theList').addEventListener("click", function(e) {
     } 
 })
 
-
-/*****************************************************************
- *  
- *  Testing New Ideas
- *  
- *****************************************************************/
 // Collapsible div for filters
 let coll = document.getElementsByClassName("collapsible");
 let i;
