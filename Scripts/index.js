@@ -940,7 +940,7 @@ function displayTools() {
         html += 
         ` <tr class="listRows">
                 <td class="listRows">${tool.content}</td>
-                <td class="listRows">l${tool.building} + ${tool.bay}</td>
+                <td class="listRows">${tool.building} ${tool.bay}</td>
                 <td class="listRows">${tool.building}</td>
                 <td class="listRows">${tool.bay}</td>
                 <td class="rmvBtn">
