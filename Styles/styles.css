@@ -19,6 +19,8 @@ th {
     font-size: 18px;
     padding: 10px;
     align-content: left;
+    padding-left: 10px;
+    width: 50%;
     
 }
 
@@ -26,6 +28,7 @@ th {
     text-align: left;
     border-bottom: 1px solid black;
     font-size: 20px;
+    padding-left: 10px;
     width: 50%;
 }
 .listLoc {
