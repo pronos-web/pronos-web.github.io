@@ -935,8 +935,8 @@ function displayTools() {
     `;
 
     itemList.forEach(
-        toolLoc = tool.building + " " + toolLoc.bay,
         tool => {
+            toolLoc = tool.building + " " + toolLoc.bay;
             if(tool.show){
         html += 
         ` <tr class="listRows">
