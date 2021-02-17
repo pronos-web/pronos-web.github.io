@@ -960,8 +960,8 @@ function showEdit() {
     //document.getElementById('all').style.display = "none"; 
     document.getElementById('filterTable').style.display = "none";
     document.getElementById('fltr').style.display = "none";
-    document.getElementById('theList').style.display = "none";
-    document.getElementById('listTitle').style.display = "none";
+    //document.getElementById('theList').style.display = "none";
+    //document.getElementById('listTitle').style.display = "none";
     // Maybe delete these below
     document.getElementById('active').style.display = "none";
     document.getElementById('Cu').style.display = "none";
