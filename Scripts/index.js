@@ -185,8 +185,7 @@ function showAll() {
         html += 
         ` <tr class="listRows">
                 <td class="listRows">${tool.content}</td>
-                <td class="listRows">${tool.building}</td>
-                <td class="listRows">${tool.bay}</td>
+                <td class="listRows">${tool.building} ${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
@@ -941,8 +940,6 @@ function displayTools() {
         ` <tr class="listRows">
                 <td class="listRows">${tool.content}</td>
                 <td class="listRows">${tool.building} ${tool.bay}</td>
-                <td class="listRows">${tool.building}</td>
-                <td class="listRows">${tool.bay}</td>
                 <td class="rmvBtn">
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
@@ -991,8 +988,7 @@ function showEdit() {
             `
             <tr>
                 <td class="leftColumn">${tool.content}</td>
-                <td class="listRows">${tool.building}</td>
-                <td class="listRows">${tool.bay}</td>
+                <td class="listRows">${tool.building} ${tool.bay}</td>
                 <td>
                     <button type="button" id="removeItem" value="${tool.id}">X</button>
                 </td>
