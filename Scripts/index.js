@@ -201,8 +201,7 @@ function showAll() {
 }
 
 console.log(itemList.forEach(tool => tool.id));
-    
-});
+
 /*************************************************************************************/
 
 function clearFilters(){
