@@ -193,7 +193,7 @@ function showAll() {
             if(tool.show){
         html += 
         `<tr class="listRows">
-            <td class="leftColumn"><input type="button" onclick="myFunction(${tool.content})" value="Click" />${tool.content}</td>
+            <td class="leftColumn"><input id="toolBtn" type="button" onclick="myFunction(${tool.content})" value="${tool.content}" /></td>
             <td class="listRows">${tool.building} ${tool.bay}</td>
             <td class="rmvBtn">
                 <button type="button" id="removeItem" value="${tool.id}">X</button>
@@ -1097,6 +1097,7 @@ document.querySelector('#showPurge2').addEventListener('click', showPurge);
 document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
 TODO: //add function & event listener for showDeseg & showNonDeseg
+document.querySelector('#toolBtn').addEventListener('click', myFunction()); //Testing tool buttons
 
 document.querySelector('#addBtn').addEventListener('click', showForm);
 window.addEventListener('load', getFromBrowserMemery);
