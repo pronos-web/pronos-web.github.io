@@ -113,7 +113,8 @@ function getFromBrowserMemery() {
 }
 
 function removeItem(e) {
-    console.log("removeItem() called for " + e)
+    console.log("removeItem() called for " + e.value);
+    console.log("removeItem() called for " + e.content);
     // Figure out how to do this
     itemList.forEach(function(item) {
             if(e == item.id){
