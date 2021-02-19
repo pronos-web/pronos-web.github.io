@@ -140,27 +140,27 @@ function myFunction(e){
             document.querySelector('#q1').innerHTML = item.content;
             console.log(item.content);
             document.querySelector('#q2').innerHTML = item.purge;
-            console.log(item.purge);
+            console.log("Z: " + item.purge);
             document.querySelector('#q3').innerHTML = item.prod;
-            console.log(item.purge);
+            console.log("Z: " + item.purge);
             document.querySelector('#q4').innerHTML = item.deseg;
             console.log(item.purge);
             document.querySelector('#q5').innerHTML = item.building;
-            console.log(item.building);
+            console.log("Z: " + item.building);
             document.querySelector('#q6').innerHTML = item.bay;
-            console.log(item.bay);
+            console.log("Z: " + item.bay);
            document.querySelector('#q7').innerHTML = item.flip;
-           console.log(item.flip);
+           console.log("Z: " + item.flip);
         }
-        console.log(e);
-        console.log(item.id);
-        console.log(item.content);
-        console.log(item.purge);
-        console.log(item.purge);
-        console.log(item.purge);
-        console.log(item.building);
-        console.log(item.bay);
-        console.log(item.flip);
+        console.log("e: " + e);
+        console.log("id: " + item.id);
+        console.log("Content: " + item.content);
+        console.log("Purge: " + item.purge);
+        console.log("Prod: " + "id: " + item.purge);
+        console.log("Deseg: " + item.purge);
+        console.log("Building: " + item.building);
+        console.log("Bay: " + "id: " + item.bay);
+        console.log("Flip: " + "id: " + item.flip);
    })
 }
 
