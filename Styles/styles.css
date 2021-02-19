@@ -24,7 +24,7 @@ th {
     
 }
 
-.listRows, {
+.listRows {
     text-align: left;
     border-bottom: 1px solid black;
     font-size: 20px;
@@ -33,6 +33,7 @@ th {
 }
 
 .tButton {
+  border: none;
   text-align: left;
   color: #0000ff;
   font-size: 18px;
