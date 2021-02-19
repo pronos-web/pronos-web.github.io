@@ -1147,7 +1147,8 @@ document.getElementById('theList').addEventListener("click", function(e) {
     } 
     if(e.target && e.target.id == "toolBtn") {
         // List item found call toolButton() and pass tool name
-		toolButtons(e.target.value);
+        toolButtons(e.target.value);
+        document.querySelector('#addBtn').innerHTML = "Back";
     }
 })
 
