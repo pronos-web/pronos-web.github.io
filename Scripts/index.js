@@ -139,6 +139,7 @@ function myFunction(e){
         if(e == item.id){
             document.querySelector('#q1').innerHTML = item.id;
     }      
+   })
 }
 
 function showAll() {
