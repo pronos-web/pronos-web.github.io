@@ -136,8 +136,9 @@ function myFunction(e){
     document.getElementById('tst').style.display = "block"; filterTable
     document.getElementById('filterTable2').style.display = "block";
     itemList.forEach(function(item) {
-        if(e == item.id){
-            document.querySelector('#q1').innerHTML = item.content;
+        if(e == item.content){ 
+            document.querySelector('#tsttst').innerHTML = item.content + "- Tool Info";
+            document.querySelector('#q1').innerHTML = item.cu;
             console.log(item.content);
             document.querySelector('#q2').innerHTML = item.purge;
             console.log("Z: " + item.purge);
