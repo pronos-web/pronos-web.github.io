@@ -1154,6 +1154,7 @@ document.querySelector('#showPurge').addEventListener('click', showPurge);
 document.querySelector('#showPurge2').addEventListener('click', showPurge);
 document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
+document.querySelector('#clrfltr').addEventListener('click', clearFilters);
 TODO: //add function & event listener for showDeseg & showNonDeseg
 
 document.querySelector('#addBtn').addEventListener('click', showForm);
