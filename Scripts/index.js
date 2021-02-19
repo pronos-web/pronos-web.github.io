@@ -134,7 +134,9 @@ function toolButtons(e){
     document.getElementById('theList').style.display = "none";
     document.getElementById('fltr').style.display = "none";
     document.getElementById('listTitle').style.display = "none";
-    document.getElementById('tst').style.display = "block"; filterTable
+    document.getElementById('listTitle').style.display = "none";
+    document.getElementById('tst').style.display = "block";
+    document.getElementById('filterTable').style.display = "none";
     document.getElementById('filterTable2').style.display = "block";
     toggle = 2;
     document.querySelector('#addBtn').innerHTML = "Done";
@@ -1166,8 +1168,7 @@ document.getElementById('theList').addEventListener("click", function(e) {
 		removeItem(e.target.value);
     } 
     if(e.target && e.target.id == "toolBtn") {
-        // List item found!  Output the ID!
-        console.log("e.target.value: " + e.target.value)
+        // List item found call toolButton() and pass tool name
 		toolButtons(e.target.value);
     }
 })
