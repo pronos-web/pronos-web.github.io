@@ -137,31 +137,21 @@ function myFunction(e){
     document.getElementById('filterTable2').style.display = "block";
     itemList.forEach(function(item) {
         if(e == item.content){ 
-            document.querySelector('#tst').innerHTML = item.content + "- Tool Info";
-            document.querySelector('#q1').innerHTML = item.cu;
-            console.log(item.content);
-            document.querySelector('#q2').innerHTML = item.purge;
-            console.log("Z: " + item.purge);
-            document.querySelector('#q3').innerHTML = item.prod;
-            console.log("Z: " + item.purge);
-            document.querySelector('#q4').innerHTML = item.deseg;
-            console.log(item.purge);
+            document.querySelector('#tst').innerHTML = item.content + " Tool Info";
+            if(item.cu === true){document.querySelector('#q1').innerHTML = "Cu";}
+            else {document.querySelector('#q1').innerHTML = "NC";}
+            if(item.purge === true){document.querySelector('#q2').innerHTML = "Yes";}
+            else {document.querySelector('#q2').innerHTML = "No";}
+            if(item.prod === true){document.querySelector('#q3').innerHTML = "Prod";}
+            else{document.querySelector('#q3').innerHTML = "TW";}
+            if(item.deseg === true){document.querySelector('#q4').innerHTML = "Yes";}
+            else {document.querySelector('#q4').innerHTML = "No";}
             document.querySelector('#q5').innerHTML = item.building;
-            console.log("Z: " + item.building);
             document.querySelector('#q6').innerHTML = item.bay;
-            console.log("Z: " + item.bay);
-           document.querySelector('#q7').innerHTML = item.flip;
-           console.log("Z: " + item.flip);
+            if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
+            else{document.querySelector('#q7').innerHTML = "No";}
+           
         }
-        console.log("e: " + e);
-        console.log("id: " + item.id);
-        console.log("Content: " + item.content);
-        console.log("Purge: " + item.purge);
-        console.log("Prod: " + "id: " + item.purge);
-        console.log("Deseg: " + item.purge);
-        console.log("Building: " + item.building);
-        console.log("Bay: " + "id: " + item.bay);
-        console.log("Flip: " + "id: " + item.flip);
    })
 }
 
