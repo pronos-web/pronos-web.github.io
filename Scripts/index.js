@@ -128,8 +128,8 @@ function removeItem(e) {
 })
 }
 
-function myFunction(e){
-    console.log("myFunction() caled");
+function toolButtons(e){
+    console.log("toolButtons() caled");
     document.getElementById('theList').style.display = "none";
     document.getElementById('fltr').style.display = "none";
     document.getElementById('listTitle').style.display = "none";
@@ -215,7 +215,7 @@ function showAll() {
         html += 
         `<tr class="listRows">
             <td class="leftColumn">
-                <button type="button" id="toolBtn" onclick="myFunction(${tool})"value="${tool.content}">${tool.content}</button>
+                <button class="tButton" type="button" id="toolBtn" onclick="toolButtons(${tool})"value="${tool.content}">${tool.content}</button>
             </td>
             <td class="listRows">${tool.building} ${tool.bay}</td>
             <td class="rmvBtn">
@@ -236,7 +236,7 @@ function showAll() {
 /*************************************************************************************/
 
 function clearFilters(){
-    myFunction("clearFunction Calld")
+    toolButtons("clearFunction Calld")
     document.getElementById('TW2').style.backgroundColor = "#ffffff";
     document.getElementById('active2').style.backgroundColor = "#ffffff";
     document.getElementById('Cu2').style.backgroundColor = "#ffffff";
@@ -974,17 +974,20 @@ function displayTools() {
         tool => {
             if(tool.show){
         html += 
-        ` <tr class="listRows">
-                <td class="leftColumn">${tool.content}</td>
-                <td class="listRows">${tool.building} ${tool.bay}</td>
-                <td class="rmvBtn">
-                    <button type="button" id="removeItem" value="${tool.id}">X</button>
-                </td>
-            </tr>`;
+        `<tr class="listRows">
+            <td class="leftColumn">
+                <button class="tButton" type="button" id="toolBtn" onclick="toolButtons(${tool})"value="${tool.content}">${tool.content}</button>
+            </td>
+            <td class="listRows">${tool.building} ${tool.bay}</td>
+            <td class="rmvBtn">
+                <button type="button" id="removeItem" value="${tool.id}">X</button>
+            </td>
+        </tr>
+        `;
             }
         }  
     );
-    html += '</table>'
+    html += '</table>';
 
     document.getElementById('listBody').innerHTML = html;
     console.log("displayTools() called");
@@ -1022,21 +1025,22 @@ function showEdit() {
     
     itemList.forEach(
         tool => {
-            if(tool.complete == false){
+            if(tool.show){
         html += 
-            `
-            <tr>
-                <td class="leftColumn">${tool.content}</td>
-                <td class="listRows">${tool.building} ${tool.bay}</td>
-                <td>
-                    <button type="button" id="removeItem" value="${tool.id}">X</button>
-                </td>
-            </tr>
-            `;
+        `<tr class="listRows">
+            <td class="leftColumn">
+                <button class="tButton" type="button" id="toolBtn" onclick="toolButtons(${tool})"value="${tool.content}">${tool.content}</button>
+            </td>
+            <td class="listRows">${tool.building} ${tool.bay}</td>
+            <td class="rmvBtn">
+                <button type="button" id="removeItem" value="${tool.id}">X</button>
+            </td>
+        </tr>
+        `;
             }
         }  
     );
-    html += '</table>'
+    html += '</table>';
 
     document.getElementById('listBody').innerHTML = html;
     console.log("showEdit() called");
@@ -1136,7 +1140,7 @@ document.getElementById('theList').addEventListener("click", function(e) {
     } 
     if(e.target && e.target.id == "toolBtn") {
 		// List item found!  Output the ID!
-		myFunction(e.target.value);
+		toolButtons(e.target.value);
     }
 })
 
