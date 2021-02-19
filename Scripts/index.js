@@ -1097,7 +1097,7 @@ document.querySelector('#showPurge2').addEventListener('click', showPurge);
 document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
 TODO: //add function & event listener for showDeseg & showNonDeseg
-document.querySelector('#toolBtn').addEventListener('click', myFunction()); //Testing tool buttons
+document.querySelector('#toolBtn').addEventListener('click', myFunction); //Testing tool buttons
 
 document.querySelector('#addBtn').addEventListener('click', showForm);
 window.addEventListener('load', getFromBrowserMemery);
