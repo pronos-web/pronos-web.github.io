@@ -203,6 +203,7 @@ function showAll() {
     document.getElementById('listTitle').style.display = "inline";
     document.getElementById('filterTable').style.display = "none"; 
     document.getElementById('tst').style.display = "none"; 
+        
     // Maybe delete these below
     document.getElementById('Cu').style.display = "inline";
     document.getElementById('active').style.display = "inline";
@@ -1043,6 +1044,7 @@ function showEdit() {
     // Hide fileter buttons
     document.getElementById('filterTable').style.display = "none";
     document.getElementById('fltr').style.display = "none";
+    document.getElementById('rmvBtn').style.display = "inline";
     
     // Read itemList and display all of the items
     let html = `
@@ -1132,7 +1134,7 @@ document.getElementById('theList').addEventListener("click", function(e) {
     } 
 })
 
-/*
+
 document.getElementById('listBody').addEventListener("click", function(e) {
     console.log("Event listener for listBody: toolButton clicked")
 	// e.target is the clicked element!
@@ -1143,7 +1145,7 @@ document.getElementById('listBody').addEventListener("click", function(e) {
         document.querySelector('#addBtn').innerHTML = "Back";
     }
 })
-*/
+
 
 // Collapsible div for filters
 let coll = document.getElementsByClassName("collapsible");
