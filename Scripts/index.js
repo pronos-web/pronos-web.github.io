@@ -1148,6 +1148,7 @@ document.getElementById('theList').addEventListener("click", function(e) {
 })
 
 document.getElementById('listBody').addEventListener("click", function(e) {
+    console.log("Event listener for listBody: toolButton clicked")
 	// e.target is the clicked element!
 	// If it was a list item
     if(e.target && e.target.id == "toolBtn") {
