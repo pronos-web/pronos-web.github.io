@@ -135,6 +135,9 @@ function myFunction(e){
     document.getElementById('listTitle').style.display = "none";
     document.getElementById('tst').style.display = "block"; filterTable
     document.getElementById('filterTable2').style.display = "block";
+    toggle = 2;
+    document.querySelector('#addForm').style.display = "inline";
+    document.querySelector('#addBtn').innerHTML = "Done";
     itemList.forEach(function(item) {
         if(e == item.content){ 
             document.querySelector('#tst').innerHTML = item.content + " Tool Info";
@@ -186,7 +189,8 @@ function showAll() {
     document.getElementById('fltr').style.display = "inline";
     document.getElementById('theList').style.display = "inline";
     document.getElementById('listTitle').style.display = "inline";
-    document.getElementById('filterTable').style.display = "none";
+    document.getElementById('filterTable').style.display = "none"; 
+    document.getElementById('tst').style.display = "none"; 
     // Maybe delete these below
     document.getElementById('Cu').style.display = "inline";
     document.getElementById('active').style.display = "inline";
