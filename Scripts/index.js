@@ -139,11 +139,7 @@ function toolButtons(e){
     document.getElementById('filterTable').style.display = "none";
     document.getElementById('filterTable2').style.display = "block";
     toggle = 2;
-    document.querySelector('#addBtn').innerHTML = "Done";
-    if( production || testWafer || copper  ||nonCopper ||purge ||nonPurge ||deseg ||nonDeseg){
-        document.getElementById('clrfltr').style.display = "none";
-    }
-    else {document.getElementById('clrfltr').style.display = "block"}
+
     itemList.forEach(function(item) {
         if(e == item.content){ 
             document.querySelector('#tst').innerHTML = item.content + " Tool Info";
@@ -1138,6 +1134,11 @@ function showForm() {
         document.querySelector('#addForm').style.display = "none";
         document.querySelector('#addBtn').textContent = "Edit";
         document.getElementById('filterTable2').style.display = "none";
+        document.querySelector('#addBtn').innerHTML = "Done";
+        if( production || testWafer || copper  ||nonCopper ||purge ||nonPurge ||deseg ||nonDeseg){
+            document.getElementById('clrfltr').style.display = "none";
+        }
+        else {document.getElementById('clrfltr').style.display = "block"}
 
         showAll();
     }
