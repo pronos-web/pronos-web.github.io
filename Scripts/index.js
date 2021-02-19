@@ -201,12 +201,18 @@ function showAll() {
 }
 
 function myFunction(x1){
+    console.log("myFunction called");
     console.log(x1);
+    document.getElementById('theList').style.display = "none";
+    document.getElementById('fltr').style.display = "none";
+    document.getElementById('listTitle').style.display = "none";
+    document.getElementById('tst').style.display = "display";
 }
 
 /*************************************************************************************/
 
 function clearFilters(){
+    myFunction("clearFunction Calld")
     document.getElementById('TW2').style.backgroundColor = "#ffffff";
     document.getElementById('active2').style.backgroundColor = "#ffffff";
     document.getElementById('Cu2').style.backgroundColor = "#ffffff";
@@ -1111,8 +1117,8 @@ let i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    //let content = this.nextElementSibling; collapsible
-    let content = collapsible.nextElementSibling;
+    let content = this.nextElementSibling; collapsible
+    //let content = collapsible.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
