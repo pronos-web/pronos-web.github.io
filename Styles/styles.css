@@ -342,7 +342,7 @@ h2 {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  .collapsible {
+  .collapsible, .notCollapsible {
     background-color: #777;
     color: #ffffff;
     cursor: pointer;
