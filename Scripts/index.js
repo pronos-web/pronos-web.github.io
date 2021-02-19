@@ -14,6 +14,7 @@ let nonPurge = false;
 let deseg = false;
 let nonDeseg = false;
 let expand = false;
+let filters = 0;
 
 function addNewItem() {
     let toolID = document.getElementById('item').value;
@@ -171,7 +172,11 @@ function showAll() {
 
     //Collaps show filter bar ready to expand
     document.getElementById("fltr").innerHTML = "Filters +";
-    
+
+
+    //Hide Clear Filters button
+    document.getElementById('clrfltr').style.display = "none";
+
     // Change bacground color of 'All' button to gray and others to white
     //document.getElementById('all').style.backgroundColor = "#000000";
     document.getElementById('Cu').style.backgroundColor = "#ffffff";
@@ -236,7 +241,9 @@ function showAll() {
 /*************************************************************************************/
 
 function clearFilters(){
-    toolButtons("clearFunction Calld")
+    console.log("toolButtons(clearFunction Calld");
+
+    //Reset filter button color to white
     document.getElementById('TW2').style.backgroundColor = "#ffffff";
     document.getElementById('active2').style.backgroundColor = "#ffffff";
     document.getElementById('Cu2').style.backgroundColor = "#ffffff";
@@ -245,6 +252,11 @@ function clearFilters(){
     document.getElementById('NonPurge2').style.backgroundColor = "#ffffff";
     document.getElementById('nonDeseg2').style.backgroundColor = "#ffffff";
     document.getElementById('Deseg2').style.backgroundColor = "#ffffff";
+
+    //Hide Clear Filters button
+    document.getElementById('clrfltr').style.display = "none";
+
+    //Set filter variables to false
     production = false;
     testWafer = false;
     copper = false;
@@ -253,12 +265,17 @@ function clearFilters(){
     nonPurge = false;
     deseg = false;
     nonDeseg = false;
+    filters = 0;
 
+    //Display all tools
     itemList.forEach(tool => { tool.show = true;});
 }
 
 function showProd(){
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
 
+    console.log("showProd() called")
     if(production == false) {
         production = true;
         testWafer = false;
@@ -376,6 +393,8 @@ function showProd(){
 }
 
 function showTW(){
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
     if(testWafer == false) {
         testWafer = true;
         production = false;
@@ -493,6 +512,8 @@ function showTW(){
 }
 
 function showCu(){
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
     if(copper == false) {
         copper = true;
         nonCopper = false;
@@ -610,6 +631,8 @@ function showCu(){
 }
 
 function showNC(){
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
     if(nonCopper == false) {
         nonCopper = true;
         copper = false;
@@ -726,6 +749,8 @@ function showNC(){
 }
 
 function showPurge(){
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
     if(purge == false) {
         purge = true;
         nonPurge = false;
@@ -842,6 +867,8 @@ function showPurge(){
 }
 
 function showNonPurge(){
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
     if(nonPurge == false) {
         nonPurge = true;
         purge = false;
@@ -1139,7 +1166,8 @@ document.getElementById('theList').addEventListener("click", function(e) {
 		removeItem(e.target.value);
     } 
     if(e.target && e.target.id == "toolBtn") {
-		// List item found!  Output the ID!
+        // List item found!  Output the ID!
+        console.log("e.target.value: " + e.target.value)
 		toolButtons(e.target.value);
     }
 })
