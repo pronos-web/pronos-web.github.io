@@ -1050,8 +1050,6 @@ function showEdit() {
    <tr>
        <th>Tool ID</th>
        <th>Cu</th>
-       <th>Prod</th>
-       <th>Purge</th>
        <th>Location</th>
    </tr>
 `;
@@ -1063,10 +1061,7 @@ itemList.forEach(
        `
        <tr>
            <td class="leftColumn">${tool.content}</td>
-           <td class="listRows">${tool.cu}</td>
-           <td class="listRows">${tool.prod}</td>
-           <td class="listRows">${tool.purge}</td>
-           <td class="listRows">${tool.location}</td>
+            <td class="listRows">${tool.building} ${tool.building}</td>
            <td>
                <button type="button" id="removeItem" value="${tool.id}">X</button>
            </td>
