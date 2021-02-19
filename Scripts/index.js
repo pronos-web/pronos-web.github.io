@@ -137,8 +137,13 @@ function myFunction(e){
     document.getElementById('filterTable2').style.display = "block";
     itemList.forEach(function(item) {
         if(e == item.id){
-            document.querySelector('#q1').innerHTML = item.id;
-    }      
+            document.querySelector('#q1').innerHTML = item.content;
+            document.querySelector('#q2').innerHTML = item.purge;
+            document.querySelector('#q3').innerHTML = item.prod;
+            document.querySelector('#q4').innerHTML = item.deseg;
+            document.querySelector('#q5').innerHTML = item.building;
+            document.querySelector('#q6').innerHTML = item.bay;
+    }       document.querySelector('#q7').innerHTML = item.flip;
    })
 }
 
@@ -199,7 +204,7 @@ function showAll() {
         html += 
         `<tr class="listRows">
             <td class="leftColumn">
-                <button type="button" id="toolBtn" onclick="myFunction(${tool})"value="${tool.id}">${tool.id}</button>
+                <button type="button" id="toolBtn" onclick="myFunction(${tool})"value="${tool.content}">${tool.content}</button>
             </td>
             <td class="listRows">${tool.building} ${tool.bay}</td>
             <td class="rmvBtn">
