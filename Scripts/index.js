@@ -136,7 +136,6 @@ function myFunction(e){
     document.getElementById('tst').style.display = "block"; filterTable
     document.getElementById('filterTable2').style.display = "block";
     toggle = 2;
-    document.querySelector('#addForm').style.display = "inline";
     document.querySelector('#addBtn').innerHTML = "Done";
     itemList.forEach(function(item) {
         if(e == item.content){ 
@@ -1101,6 +1100,8 @@ function showForm() {
         toggle = 1;
         document.querySelector('#addForm').style.display = "none";
         document.querySelector('#addBtn').textContent = "Edit";
+        document.getElementById('filterTable2').style.display = "none";
+
         showAll();
     }
     
