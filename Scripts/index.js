@@ -1038,7 +1038,7 @@ function showEdit() {
     console.log("showEdit() called")
     filter = 3;
     // Reset filters so all tools are visible after edit
-    //clearFilters();
+    clearFilters();
 
     // Hide fileter buttons
     document.getElementById('filterTable').style.display = "none";
@@ -1132,6 +1132,7 @@ document.getElementById('theList').addEventListener("click", function(e) {
     } 
 })
 
+/*
 document.getElementById('listBody').addEventListener("click", function(e) {
     console.log("Event listener for listBody: toolButton clicked")
 	// e.target is the clicked element!
@@ -1142,6 +1143,7 @@ document.getElementById('listBody').addEventListener("click", function(e) {
         document.querySelector('#addBtn').innerHTML = "Back";
     }
 })
+*/
 
 // Collapsible div for filters
 let coll = document.getElementsByClassName("collapsible");
