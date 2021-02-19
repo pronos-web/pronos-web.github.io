@@ -1145,12 +1145,16 @@ document.getElementById('theList').addEventListener("click", function(e) {
 		// List item found!  Output the ID!
 		removeItem(e.target.value);
     } 
-    /*
+})
+
+document.getElementById('listBody').addEventListener("click", function(e) {
+	// e.target is the clicked element!
+	// If it was a list item
     if(e.target && e.target.id == "toolBtn") {
         // List item found call toolButton() and pass tool name
         toolButtons(e.target.value);
         document.querySelector('#addBtn').innerHTML = "Back";
-    }*/
+    }
 })
 
 // Collapsible div for filters
