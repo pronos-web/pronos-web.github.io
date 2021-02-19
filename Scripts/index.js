@@ -129,13 +129,17 @@ function removeItem(e) {
 }
 
 function myFunction(e){
-    console.log(e);
-    console.log("");
+    console.log("myFunction() caled");
     document.getElementById('theList').style.display = "none";
     document.getElementById('fltr').style.display = "none";
     document.getElementById('listTitle').style.display = "none";
     document.getElementById('tst').style.display = "block"; filterTable
-    document.getElementById('filterTable').style.display = "block";
+    document.getElementById('filterTable2').style.display = "block";
+    itemList.forEach(function(item) {
+        if(e == item.id){
+            document.querySelector('#q1').innerHTML = item.id;
+    }      
+}
 }
 
 function showAll() {
@@ -195,7 +199,7 @@ function showAll() {
         html += 
         `<tr class="listRows">
             <td class="leftColumn">
-                <button type="button" id="toolBtn" onclick="myFunction(${tool})"value="${tool.id}"></button>
+                <button type="button" id="toolBtn" onclick="myFunction(${tool})"value="${tool.id}">${tool.id}</button>
             </td>
             <td class="listRows">${tool.building} ${tool.bay}</td>
             <td class="rmvBtn">
