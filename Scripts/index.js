@@ -128,13 +128,14 @@ function removeItem(e) {
 })
 }
 
-function myFunction(tool){
-    console.log("myFunction called");
-    console.log(tool.id);
+function myFunction(e){
+    console.log(e);
+    console.log("");
     document.getElementById('theList').style.display = "none";
     document.getElementById('fltr').style.display = "none";
     document.getElementById('listTitle').style.display = "none";
-    document.getElementById('tst').style.display = "block";
+    document.getElementById('tst').style.display = "block"; filterTable
+    document.getElementById('filterTable').style.display = "block";
 }
 
 function showAll() {
@@ -194,7 +195,7 @@ function showAll() {
         html += 
         `<tr class="listRows">
             <td class="leftColumn">
-                <button type="button" id="toolBtn" onclick="myFunction(${tool})"value="${tool.id}">X</button>
+                <button type="button" id="toolBtn" onclick="myFunction(${tool})"value="${tool.id}"></button>
             </td>
             <td class="listRows">${tool.building} ${tool.bay}</td>
             <td class="rmvBtn">
