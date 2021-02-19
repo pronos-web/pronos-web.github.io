@@ -17,6 +17,7 @@ let expand = false;
 let filters = 0;
 
 function addNewItem() {
+    console.log("New item added");
     let toolID = document.getElementById('item').value;
     toolID = toolID.toUpperCase();
     let building = document.getElementById('building').value;
@@ -84,6 +85,7 @@ function addNewItem() {
 }
 
 function saveToBrowserMemorey() {
+    console.log("getFromBrowserMemery called");
     const json = JSON.stringify(itemList);
     localStorage.setItem("tool", json);
 }
@@ -94,6 +96,7 @@ function saveToFirebase() {
 }
 
 function getFromBrowserMemery() {
+    console.log("getFromBrowserMemery called");
     const strng = localStorage.getItem("tool");
     itemList = JSON.parse(strng);
     const strng2 = localStorage.getItem("done");
@@ -110,6 +113,7 @@ function getFromBrowserMemery() {
 }
 
 function removeItem(e) {
+    console.log("removeItem() called for " + e)
     // Figure out how to do this
     itemList.forEach(function(item) {
             if(e == item.id){
@@ -130,7 +134,9 @@ function removeItem(e) {
 }
 
 function toolButtons(e){
-    console.log("toolButtons() caled");
+    console.log("toolButtons() called for " + e);
+
+    //Hide list and buttons
     document.getElementById('theList').style.display = "none";
     document.getElementById('fltr').style.display = "none";
     document.getElementById('listTitle').style.display = "none";
@@ -138,8 +144,10 @@ function toolButtons(e){
     document.getElementById('tst').style.display = "block";
     document.getElementById('filterTable').style.display = "none";
     document.getElementById('filterTable2').style.display = "block";
+    document.getElementById('clrfltr').style.display = "none";
     toggle = 2;
 
+    //Display informaton for selected tool
     itemList.forEach(function(item) {
         if(e == item.content){ 
             document.querySelector('#tst').innerHTML = item.content + " Tool Info";
@@ -239,11 +247,10 @@ function showAll() {
     console.log("showAll() called");
 }
 
-
 /*************************************************************************************/
 
 function clearFilters(){
-    console.log("toolButtons(clearFunction Calld");
+    console.log("clearFilters() Called");
 
     //Reset filter button color to white
     document.getElementById('TW2').style.backgroundColor = "#ffffff";
@@ -274,10 +281,11 @@ function clearFilters(){
 }
 
 function showProd(){
+    console.log("showProd() called")
+
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
 
-    console.log("showProd() called")
     if(production == false) {
         production = true;
         testWafer = false;
@@ -395,6 +403,7 @@ function showProd(){
 }
 
 function showTW(){
+    console.log("showTW() called")
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(testWafer == false) {
@@ -514,6 +523,7 @@ function showTW(){
 }
 
 function showCu(){
+    console.log("showCu() called")
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(copper == false) {
@@ -633,6 +643,7 @@ function showCu(){
 }
 
 function showNC(){
+    console.log("showNC() called")
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(nonCopper == false) {
@@ -751,6 +762,7 @@ function showNC(){
 }
 
 function showPurge(){
+    console.log("showPurge() called")
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(purge == false) {
@@ -869,6 +881,8 @@ function showPurge(){
 }
 
 function showNonPurge(){
+    console.log("showNonPurge() called")
+
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(nonPurge == false) {
@@ -1023,6 +1037,7 @@ function displayTools() {
 }
 
 function showEdit() {
+    console.log("showEdit() called")
     filter = 3;
     // Reset filters so all tools are visible after edit
     clearFilters();
@@ -1075,78 +1090,35 @@ function showEdit() {
     console.log("showEdit() called");
 }
 
-/* function showCompleted() {
-     filter = 2;
-     // Change bacground color of 'Completed' button to gray and others to white
-     document.getElementById('all').style.backgroundColor = "#d3d3d3";
-     document.getElementById('active').style.backgroundColor = "#d3d3d3";
-    
-     // Read itemList and display only those with completed = true
-     let html = "";
-
-     completedItems.forEach(
-         tool => {
-             if(tool.complete == true) {
-             html += 
-                 `
-                 <tr>
-                     <td class="leftColumn">
-                         <label class="container2"> ${tool.content}
-                             <input type="checkbox" checked="checked" value="${tool.id}">
-                             <span class="checkmark" ></span>
-                         </label>
-                     </td>
-                     <td>
-                         <button type="button" id="removeItem" value="${tool.id}">X</button>
-                     </td>
-                 </tr>
-                 `;
-             }
-         }
-     );
-     document.getElementById('listBody').innerHTML = html;
-     console.log("showCompleted() called");
- }
-*/
-
-/*     //Not sure I want or need this
-function updateItemCount() {
-    let numItems = itemList.length;
-    document.getElementById('toolCnt').innerHTML = numItems + " Tools"
-}
-*/
-
 function displayList() {
+    console.log("displyList() called")
     if(filter == 1) {showAll();}
     else if(filter == 2) {showCompleted();}
     else {showAll();}    
 }
 
 function showForm() {
+    console.log("showForm() called")
+    //Display form for adding tools & change 'Edit' button to 'Done'
     if(toggle === 1){
         toggle = 2;
         document.querySelector('#addForm').style.display = "inline";
         document.querySelector('#addBtn').innerHTML = "Done";  
-        showEdit();      
+        showEdit();
     }
+    //Hide form for adding tools & change 'Done' button to 'Edit'
+    //Also hide tool info table
     else{
         toggle = 1;
         document.querySelector('#addForm').style.display = "none";
         document.querySelector('#addBtn').textContent = "Edit";
         document.getElementById('filterTable2').style.display = "none";
-        document.querySelector('#addBtn').innerHTML = "Done";
-        if( production || testWafer || copper  ||nonCopper ||purge ||nonPurge ||deseg ||nonDeseg){
-            document.getElementById('clrfltr').style.display = "none";
-        }
-        else {document.getElementById('clrfltr').style.display = "block"}
-
         showAll();
     }
     
 }
 
 document.querySelector('#addItem').addEventListener('click', addNewItem);
-/* document.querySelector('#showAll').addEventListener('click', showAll);*/ //Not used yet
 document.querySelector('#showProd').addEventListener('click', showProd);
 document.querySelector('#showProd2').addEventListener('click', showProd);
 document.querySelector('#showTW').addEventListener('click', showTW);
