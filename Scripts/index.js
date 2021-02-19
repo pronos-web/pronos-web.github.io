@@ -137,7 +137,7 @@ function myFunction(e){
     document.getElementById('filterTable2').style.display = "block";
     itemList.forEach(function(item) {
         if(e == item.content){ 
-            document.querySelector('#tsttst').innerHTML = item.content + "- Tool Info";
+            document.querySelector('#tst').innerHTML = item.content + "- Tool Info";
             document.querySelector('#q1').innerHTML = item.cu;
             console.log(item.content);
             document.querySelector('#q2').innerHTML = item.purge;
