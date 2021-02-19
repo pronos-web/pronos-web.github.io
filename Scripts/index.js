@@ -140,7 +140,6 @@ function myFunction(e){
             document.querySelector('#q1').innerHTML = item.id;
     }      
 }
-}
 
 function showAll() {
     filter = 3;
