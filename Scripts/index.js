@@ -118,7 +118,6 @@ function removeItem(e) {
     itemList.forEach(function(item) {
             if(e == item.id){
             itemList.splice(itemList.indexOf(item), 1);
-            //updateItemCount();
             saveToBrowserMemorey();
             showEdit();
         }      
@@ -126,7 +125,6 @@ function removeItem(e) {
     completedItems.forEach(function(item) {
         if(e == item.id){
             completedItems.splice(completedItems.indexOf(item), 1);
-        //updateItemCount();
         saveToBrowserMemorey();
         displayList();
     }      
@@ -1040,24 +1038,11 @@ function showEdit() {
     console.log("showEdit() called")
     filter = 3;
     // Reset filters so all tools are visible after edit
-    clearFilters();
+    //clearFilters();
 
     // Hide fileter buttons
-    //document.getElementById('all').style.display = "none"; 
     document.getElementById('filterTable').style.display = "none";
     document.getElementById('fltr').style.display = "none";
-    //document.getElementById('theList').style.display = "none";
-    //document.getElementById('listTitle').style.display = "none";
-    // Maybe delete these below
-    document.getElementById('active').style.display = "none";
-    document.getElementById('Cu').style.display = "none";
-    document.getElementById('Purge').style.display = "none";
-    document.getElementById('TW').style.display = "none";
-    document.getElementById('NC').style.display = "none";
-    document.getElementById('NonPurge').style.display = "none";
-    document.getElementById('Deseg').style.display = "none";
-    document.getElementById('nonDeseg').style.display = "none";
-    document.getElementById('removeItem').style.display = "inline";
     
     // Read itemList and display all of the items
     let html = `
