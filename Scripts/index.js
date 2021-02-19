@@ -280,7 +280,7 @@ function clearFilters(){
 }
 
 function showProd(){
-    console.log("showProd() called")
+    console.log("showProd() called");
 
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
@@ -402,7 +402,7 @@ function showProd(){
 }
 
 function showTW(){
-    console.log("showTW() called")
+    console.log("showTW() called");
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(testWafer == false) {
@@ -522,7 +522,7 @@ function showTW(){
 }
 
 function showCu(){
-    console.log("showCu() called")
+    console.log("showCu() called");
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(copper == false) {
@@ -642,7 +642,7 @@ function showCu(){
 }
 
 function showNC(){
-    console.log("showNC() called")
+    console.log("showNC() called");
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(nonCopper == false) {
@@ -761,7 +761,7 @@ function showNC(){
 }
 
 function showPurge(){
-    console.log("showPurge() called")
+    console.log("showPurge() called");
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(purge == false) {
@@ -880,7 +880,7 @@ function showPurge(){
 }
 
 function showNonPurge(){
-    console.log("showNonPurge() called")
+    console.log("showNonPurge() called");
 
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
@@ -1036,7 +1036,7 @@ function displayTools() {
 }
 
 function showEdit() {
-    console.log("showEdit() called")
+    console.log("showEdit() called");
     filter = 3;
     // Reset filters so all tools are visible after edit
     clearFilters();
@@ -1044,7 +1044,6 @@ function showEdit() {
     // Hide fileter buttons
     document.getElementById('filterTable').style.display = "none";
     document.getElementById('fltr').style.display = "none";
-    document.getElementById('rmvBtn').style.display = "inline";
     
     // Read itemList and display all of the items
     let html = `
@@ -1078,14 +1077,14 @@ function showEdit() {
 }
 
 function displayList() {
-    console.log("displyList() called")
+    console.log("displyList() called");
     if(filter == 1) {showAll();}
     else if(filter == 2) {showCompleted();}
     else {showAll();}    
 }
 
 function showForm() {
-    console.log("showForm() called")
+    console.log("showForm() called");
     //Display form for adding tools & change 'Edit' button to 'Done'
     if(toggle === 1){
         toggle = 2;
