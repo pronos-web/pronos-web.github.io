@@ -1049,8 +1049,8 @@ function showEdit() {
    let html = `
    <tr>
        <th>Tool ID</th>
-       <th>Cu</th>
        <th>Location</th>
+       <th></th>
    </tr>
 `;
 
