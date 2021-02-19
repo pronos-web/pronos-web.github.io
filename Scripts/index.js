@@ -1045,35 +1045,39 @@ function showEdit() {
     document.getElementById('filterTable').style.display = "none";
     document.getElementById('fltr').style.display = "none";
     
-    // Read itemList and display all of the items
-    let html = `
-    <table>
-        <tr>
-            <th>Tool ID</th>
-            <th>Location</th>
-        </tr>
-    `;
-    
-    itemList.forEach(
-        tool => {
-            if(tool.show){
-        html += 
-        `<tr class="listRows">
-            <td class="leftColumn">
-                <button class="tButton" type="button" id="toolBtn" onclick="toolButtons(${tool})"value="${tool.content}">${tool.content}</button>
-            </td>
-            <td class="listRows">${tool.building} ${tool.bay}</td>
-            <td class="rmvBtn">
-                <button type="button" id="removeItem" value="${tool.id}">X</button>
-            </td>
-        </tr>
-        `;
-            }
-        }  
-    );
-    html += '</table>';
+   // Read itemList and display all fo the items
+   let html = `
+   <tr>
+       <th>Tool ID</th>
+       <th>Cu</th>
+       <th>Prod</th>
+       <th>Purge</th>
+       <th>Location</th>
+   </tr>
+`;
 
-    document.getElementById('listBody').innerHTML = html;
+itemList.forEach(
+   tool => {
+       if(tool.complete == false){
+   html += 
+       `
+       <tr>
+           <td class="leftColumn">${tool.content}</td>
+           <td class="listRows">${tool.cu}</td>
+           <td class="listRows">${tool.prod}</td>
+           <td class="listRows">${tool.purge}</td>
+           <td class="listRows">${tool.location}</td>
+           <td>
+               <button type="button" id="removeItem" value="${tool.id}">X</button>
+           </td>
+       </tr>
+       `;
+       }
+   }  
+);
+
+document.getElementById('listBody').innerHTML = html;
+console.log("showEdit() called");
 }
 
 function displayList() {
