@@ -128,6 +128,15 @@ function removeItem(e) {
 })
 }
 
+function myFunction(x1){
+    console.log("myFunction called");
+    console.log(x1);
+    document.getElementById('theList').style.display = "none";
+    document.getElementById('fltr').style.display = "none";
+    document.getElementById('listTitle').style.display = "none";
+    document.getElementById('tst').style.display = "block";
+}
+
 function showAll() {
     filter = 3;
     production = false;
@@ -200,14 +209,6 @@ function showAll() {
     console.log("showAll() called");
 }
 
-function myFunction(x1){
-    console.log("myFunction called");
-    console.log(x1);
-    document.getElementById('theList').style.display = "none";
-    document.getElementById('fltr').style.display = "none";
-    document.getElementById('listTitle').style.display = "none";
-    document.getElementById('tst').style.display = "block";
-}
 
 /*************************************************************************************/
 
