@@ -193,7 +193,7 @@ function showAll() {
             if(tool.show){
         html += 
         `<tr class="listRows">
-            <td class="leftColumn"><button onclick="myFunction(${tool.content})">${tool.content}</button></td>
+            <td class="leftColumn><input id="clickMe" type="button" value="${tool.content}" onclick="myFunction();" /></td>
             <td class="listRows">${tool.building} ${tool.bay}</td>
             <td class="rmvBtn">
                 <button type="button" id="removeItem" value="${tool.id}">X</button>
