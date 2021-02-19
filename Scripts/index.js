@@ -1057,6 +1057,7 @@ function showEdit() {
     document.getElementById('NonPurge').style.display = "none";
     document.getElementById('Deseg').style.display = "none";
     document.getElementById('nonDeseg').style.display = "none";
+    document.getElementById('removeItem').style.display = "inline";
     
     // Read itemList and display all fo the items
     let html = `
