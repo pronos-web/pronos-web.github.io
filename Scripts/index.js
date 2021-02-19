@@ -1061,7 +1061,7 @@ itemList.forEach(
        `
        <tr>
            <td class="leftColumn">${tool.content}</td>
-            <td class="listRows">${tool.building} ${tool.building}</td>
+            <td class="listRows">${tool.building} ${tool.bay}</td>
            <td>
                <button type="button" id="removeItem" value="${tool.id}">X</button>
            </td>
