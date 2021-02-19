@@ -128,9 +128,9 @@ function removeItem(e) {
 })
 }
 
-function myFunction(x1){
+function myFunction(tool){
     console.log("myFunction called");
-    console.log(x1);
+    console.log(tool.id);
     document.getElementById('theList').style.display = "none";
     document.getElementById('fltr').style.display = "none";
     document.getElementById('listTitle').style.display = "none";
@@ -193,7 +193,9 @@ function showAll() {
             if(tool.show){
         html += 
         `<tr class="listRows">
-            <td class="leftColumn"><input id="toolBtn" type="button" onclick="myFunction(${tool.content})" value="${tool.content}" /></td>
+            <td class="leftColumn">
+                <button type="button" id="toolBtn" onclick="myFunction(${tool})"value="${tool.id}">X</button>
+            </td>
             <td class="listRows">${tool.building} ${tool.bay}</td>
             <td class="rmvBtn">
                 <button type="button" id="removeItem" value="${tool.id}">X</button>
@@ -1097,7 +1099,6 @@ document.querySelector('#showPurge2').addEventListener('click', showPurge);
 document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
 TODO: //add function & event listener for showDeseg & showNonDeseg
-document.querySelector('#toolBtn').addEventListener('click', myFunction); //Testing tool buttons
 
 document.querySelector('#addBtn').addEventListener('click', showForm);
 window.addEventListener('load', getFromBrowserMemery);
@@ -1110,6 +1111,10 @@ document.getElementById('theList').addEventListener("click", function(e) {
 		// List item found!  Output the ID!
 		removeItem(e.target.value);
     } 
+    if(e.target && e.target.id == "toolBtn") {
+		// List item found!  Output the ID!
+		myFunction(e.target.value);
+    }
 })
 
 // Collapsible div for filters
