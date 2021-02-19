@@ -8,7 +8,7 @@ form {
 }
 
 a {
-  color: blue;
+  color: #0000ff;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
@@ -24,13 +24,22 @@ th {
     
 }
 
-.listRows, .tButton {
+.listRows, {
     text-align: left;
     border-bottom: 1px solid black;
     font-size: 20px;
     padding-left: 10px;
     width: 50%;
 }
+
+.tButton {
+  text-align: left;
+  color: #0000ff;
+  font-size: 18px;
+  background-color: #d3d3d3;
+  width: 100%;
+}
+
 .listLoc {
     text-align: left;
     border-bottom: 1px solid black;
@@ -133,7 +142,7 @@ nav {
     border: none;
     font-weight: bold;
     font-size: 18px;
-    color: blue;
+    color:#0000ff;
     margin-left: 225px;
 }
 
@@ -375,5 +384,5 @@ h2 {
     text-align: right;
     border: none;
   }
-  
+
 form {margin-top: 8px;}
