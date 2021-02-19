@@ -1059,7 +1059,7 @@ function showEdit() {
     document.getElementById('nonDeseg').style.display = "none";
     document.getElementById('removeItem').style.display = "inline";
     
-    // Read itemList and display all fo the items
+    // Read itemList and display all of the items
     let html = `
     <table>
         <tr>
@@ -1088,7 +1088,6 @@ function showEdit() {
     html += '</table>';
 
     document.getElementById('listBody').innerHTML = html;
-    console.log("showEdit() called");
 }
 
 function displayList() {
@@ -1146,11 +1145,12 @@ document.getElementById('theList').addEventListener("click", function(e) {
 		// List item found!  Output the ID!
 		removeItem(e.target.value);
     } 
+    /*
     if(e.target && e.target.id == "toolBtn") {
         // List item found call toolButton() and pass tool name
         toolButtons(e.target.value);
         document.querySelector('#addBtn').innerHTML = "Back";
-    }
+    }*/
 })
 
 // Collapsible div for filters
