@@ -83,7 +83,7 @@ function addNewItem() {
        // displayList(itemList);
         showEdit();
     }  
-    document.getElementById("item").innerHTML = "";
+    document.getElementById("item").value = "";
 }
 
 function saveToBrowserMemorey() {
