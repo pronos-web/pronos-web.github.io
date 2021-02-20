@@ -81,7 +81,7 @@ th {
   width: 20%;}
 
 .flex-container {
-    display:none;
+    display: inline;
     flex-wrap: nowrap;
     background-color: #3d3d3d;
     width: 99%;
@@ -100,7 +100,7 @@ th {
 
     margin-left: 15px;
     padding-left: 5px;
-    width: 45%;
+    width: 25%;
     height: 24px;
     border-color: #d3d3d3;
     font-size: 16px;
@@ -150,8 +150,9 @@ nav {
 #addItem {
   height: 26px;
   font-weight: bold;
-  align-items: center;
+  align-items: right;
 }
+
 #removeItem {
   height: 18px;
   font-weight: bold;
