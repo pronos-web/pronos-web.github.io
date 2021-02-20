@@ -21,6 +21,7 @@ function addNewItem() {
     let toolID = document.getElementById('item').value;
     toolID = toolID.toUpperCase();
     let building = document.getElementById('building').value;
+    building = building.toUpperCase();
     let bay = document.getElementById('bay').value;
     let contamination = document.querySelector('input[name = "contamination"]:checked').value;
     let prodType = document.querySelector('input[name = "production"]:checked').value;
@@ -1084,6 +1085,8 @@ function displayList() {
 
 function showForm() {
     console.log("showForm() called");
+    clearFilters();
+    
     //Display form for adding tools & change 'Edit' button to 'Done'
     if(toggle === 1){
         toggle = 2;
