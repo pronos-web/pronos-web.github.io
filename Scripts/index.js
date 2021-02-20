@@ -84,6 +84,8 @@ function addNewItem() {
         showEdit();
     }  
     document.getElementById("item").value = "";
+    document.getElementById("building").value = "";
+    document.getElementById("bay").value = "";
 }
 
 function saveToBrowserMemorey() {
