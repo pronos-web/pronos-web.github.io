@@ -1108,7 +1108,7 @@ function showForm() {
     
 }
 
-document.querySelector('#item').addEventListener('click', addNewItem);
+document.querySelector('#addItem').addEventListener('click', addNewItem);
 document.querySelector('#showProd').addEventListener('click', showProd);
 document.querySelector('#showProd2').addEventListener('click', showProd);
 document.querySelector('#showTW').addEventListener('click', showTW);
