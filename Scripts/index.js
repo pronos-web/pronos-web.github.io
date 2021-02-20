@@ -71,7 +71,7 @@ function addNewItem() {
     
     console.table(tool);
     if(document.getElementById('item').value === ""){
-        
+        //Add prompt that field is required
     } 
     else{
         itemList.push(tool);
@@ -83,7 +83,7 @@ function addNewItem() {
        // displayList(itemList);
         showEdit();
     }  
-    document.getElementById("item").placeholder = "Enter Tool ID";
+    document.getElementById("item").innerHTML = "";
 }
 
 function saveToBrowserMemorey() {
@@ -1086,7 +1086,7 @@ function displayList() {
 function showForm() {
     console.log("showForm() called");
     clearFilters();
-    
+
     //Display form for adding tools & change 'Edit' button to 'Done'
     if(toggle === 1){
         toggle = 2;
