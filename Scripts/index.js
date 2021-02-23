@@ -68,7 +68,7 @@ function addNewItem() {
     }
     
     console.table(tool);
-    if(document.getElementById('item').value === ""){
+    if(document.getElementById('toolTyp').value === ""){
         //Add prompt that field is required
     } 
     else{
