@@ -20,7 +20,7 @@ function addNewItem() {
     console.log("New item added");
     let toolID = document.getElementById("toolTyp").value;
     let toolNumb = document.getElementById("numb").value;
-    toolId += toolNumb;
+    toolId = toolId + toolNumb;
     console.log(toolId);
     let building = document.getElementById("toolBld").value;
     let bay = document.getElementById('bay').value;
