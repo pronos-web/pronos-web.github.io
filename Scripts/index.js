@@ -20,8 +20,8 @@ function addNewItem() {
     console.log("New item added");
     let toolID = document.getElementById("toolTyp").value;
     let toolNumb = document.getElementById("numb").value;
-    toolId = toolId + toolNumb;
     console.log(toolId);
+    console.log(toolNumb);
     let building = document.getElementById("toolBld").value;
     let bay = document.getElementById('bay').value;
     let contamination = document.querySelector('input[name = "contamination"]:checked').value;
