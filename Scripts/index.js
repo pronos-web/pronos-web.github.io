@@ -20,15 +20,18 @@ function addNewItem() {
     console.log("New item added");
     let toolID = document.getElementById("toolTyp").value;
     let toolNumb = document.getElementById("numb").value;
-    console.log(document.getElementById("toolTyp").value);
-    console.log(toolNumb);
-    console.log(toolID)
     let building = document.getElementById("toolBld").value;
     let bay = document.getElementById('bay').value;
     let contamination = document.querySelector('input[name = "contamination"]:checked').value;
     let prodType = document.querySelector('input[name = "production"]:checked').value;
     let purgeType = document.querySelector('input[name = "n2"]:checked').value;
     let segmentation = document.querySelector('input[name = "desegragate"]:checked').value;
+
+    console.log(toolNumb);
+    console.log(toolID)
+
+    let test = toolID + toolNumb;
+    console.log(test);
 
     document.querySelector('input[name = "contamination"]:checked').checked = false;
     document.querySelector('input[name = "production"]:checked').checked = false;
