@@ -23,6 +23,7 @@
         <div>
         <label for="toolTyp" class="dropdowns">Tool Type:</label>
         <select id="toolTyp" name="toolType" class="dropdowns">
+        <option value="" selected disabled hidden>&lt;Select&gt;</option>
             <option value="LSA">LSA</option>
             <option value="LSB">LSB</option>
         </select>
@@ -31,6 +32,7 @@
         <div>
         <label for="toolBld" class="dropdowns">Building:</label>
         <select id="toolBld" name="toolBuilding" class="dropdowns">
+            <option value="" selected disabled hidden>&lt;Select&gt;</option>
             <option value="D1C">D1C</option>
             <option value="D1D">D1D</option>
             <option value="D1X">D1X</option>
@@ -40,7 +42,7 @@
         </div>
         <button type="button" id="addItem">Save</button>
         <div class="flex-container">
-            <div>
+            <div class="marks">
                 <input type="radio" id="1" name="contamination" value="Cu">
                 <label for="1">Copper</label><br>
                 <input type="radio" id="2" name="contamination" value="NC">

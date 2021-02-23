@@ -161,8 +161,12 @@ nav {
 }
 
 .dropdowns {
-font-size: 24px;
+font-size: 20px;
 font-weight: bold;
+}
+
+.marks {
+  border-bottom: 1px solid #000000;
 }
 
 #removeItem {
