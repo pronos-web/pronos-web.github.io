@@ -82,8 +82,9 @@ function addNewItem() {
         saveToBrowserMemorey();
         //updateItemCount();
        // document.getElementById('item').value = "";
-       // document.getElementById('building').value = "";
-      //  document.getElementById('bay').value = "";
+        document.getElementById('#building')[0].selectedIndex = 0;
+         document.getElementById('bay').value = "";
+         document.getElementById('bay').value = "";
        // displayList(itemList);
         showEdit();
     }  
