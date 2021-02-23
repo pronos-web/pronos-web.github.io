@@ -148,10 +148,16 @@ nav {
 }
 
 #addItem {
-  height: 26px;
   font-weight: bold;
-  align-items: right;
-  display: block;
+  background-color: #777;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 5px 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
 }
 
 #removeItem {
