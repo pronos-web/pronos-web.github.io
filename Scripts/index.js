@@ -81,7 +81,7 @@ function addNewItem() {
         itemList.push(tool);
         saveToBrowserMemorey();
        // document.getElementById('item').value = "";
-        document.getElementById('#building').selectedIndex = 0;
+        document.getElementById('building').value = "";
         document.getElementById('numb').value = "";
         document.getElementById('bay').value = "";
        // displayList(itemList);
