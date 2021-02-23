@@ -20,14 +20,19 @@
     </nav>
 <div id="addForm">
     <form>
-        <input type="text" id="item" placeholder="Enter Tool Type">
         <label for="toolTyp">Tool Type:</label>
         <select id="toolTyp" name="toolType">
             <option value="LSA">LSA</option>
             <option value="LSB">LSB</option>
         </select>
         <input type="text" id="numb" placeholder="Enter Tool Number">
-        <input type="text" id="building" placeholder="Enter Bld i.e. 'D1X'">
+        <label for="toolBld">Building:</label>
+        <select id="toolBld" name="toolBuilding">
+            <option value="D1C">D1C</option>
+            <option value="D1D">D1D</option>
+            <option value="D1X">D1X</option>
+            <option value="RP1">RP1</option>
+        </select>
         <input type="text" id="bay" placeholder="Enter Bay i.e. '601'">
         <button type="button" id="addItem">Save</button>
         <div class="flex-container">
