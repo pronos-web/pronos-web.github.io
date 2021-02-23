@@ -18,8 +18,7 @@ let filters = 0;
 
 function addNewItem() {
     console.log("New item added");
-//    let toolID = document.getElementById('item').value;
-    toolID = toolID.toUpperCase();
+    let toolID = document.querySelector('select[name = "toolTyp"]:checked').value;
     let building = document.querySelector('select[name = "toolBuilding"]:checked').value;
     building = building.toUpperCase();
     let bay = document.getElementById('bay').value;
