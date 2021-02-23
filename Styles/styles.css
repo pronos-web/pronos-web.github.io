@@ -160,6 +160,10 @@ nav {
   font-size: 15px;
 }
 
+.dropdowns {
+font-size: 18px;
+}
+
 #removeItem {
   height: 18px;
   font-weight: bold;
