@@ -30,7 +30,7 @@ function addNewItem() {
     console.log(toolNumb);
     console.log(toolID)
 
-    let test = toolID + toolNumb;
+    toolID = toolID + toolNumb;
     console.log(test);
 
     document.querySelector('input[name = "contamination"]:checked').checked = false;
