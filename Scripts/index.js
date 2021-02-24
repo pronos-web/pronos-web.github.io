@@ -85,7 +85,27 @@ function addNewItem() {
         document.querySelector('#bld1').innerHTML = "Building *";
         document.querySelector('#bld1').style.color = 'red';
         document.querySelector('#bay').style.width = '35%';
-    } 
+    }
+    /**********************************************************/
+    if(!document.getElementById('1').value || !document.getElementById('2').value){
+        //Add prompt that field is required
+        document.querySelector('#req1').display = 'inline'
+    }
+    if(!document.getElementById('1').value || !document.getElementById('2').value ){
+        //Add prompt that field is required
+        document.querySelector('#bld1').innerHTML = "Building *";
+        document.querySelector('#bld1').style.color = 'red';
+    }
+    if(document.getElementById('req3').value === ""){
+        //Add prompt that field is required
+        document.querySelector('#bld1').innerHTML = "Building *";
+        document.querySelector('#bld1').style.color = 'red';
+    }
+    if(document.getElementById('req4').value === ""){
+        //Add prompt that field is required
+        document.querySelector('#bld1').innerHTML = "Building *";
+        document.querySelector('#bld1').style.color = 'red';
+    }
     else{
         itemList.push(tool);
         saveToBrowserMemorey();
