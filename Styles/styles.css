@@ -89,7 +89,7 @@ th {
   
 .flex-container > div {
   background-color: #d3d3d3;
-  width: 25%;
+  width: 100%;
   margin: 1px;
   text-align: left;
   font-size: 14px;
@@ -163,17 +163,13 @@ nav {
 }
 
 .dropdowns {
-font-size: 20px;
+font-size: 18px;
 font-weight: bold;
 }
 
 .dropdown {
   font-size: 18px;
   }
-
-.marks {
-  border-bottom: 1px solid #000000;
-}
 
 #removeItem {
   height: 18px;
