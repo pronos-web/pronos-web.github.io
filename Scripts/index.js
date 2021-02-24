@@ -32,12 +32,7 @@ function addNewItem() {
 
     toolID = toolID + toolNumb;
 
-    //document.querySelector('input[name = "contamination"]:checked').checked = false;
-    //document.querySelector('input[name = "production"]:checked').checked = false;
-    //document.querySelector('input[name = "n2"]:checked').checked = false;
-    //document.querySelector('input[name = "desegragate"]:checked').checked = false;
-
-    if(!document.getElementById('1').checked  && !document.getElementById('2').checked ){
+        if(!document.getElementById('1').checked  && !document.getElementById('2').checked ){
         //Add prompt that field is required
         document.querySelector('#req1').style.display = "inline";
     }
@@ -94,12 +89,7 @@ function addNewItem() {
         document.querySelector('#bay').style.width = '35%';
     }
     /**********************************************************/
-    if(!document.getElementById('1').value || !document.getElementById('2').value){
-        //Add prompt that field is required
-        document.querySelector('#req1').display = 'inline';
-    }
-    else {let contamination = document.querySelector('input[name = "contamination"]:checked').value;}
-    if(!document.getElementById('1').value || !document.getElementById('2').value ){
+   if(!document.getElementById('1').value || !document.getElementById('2').value ){
         //Add prompt that field is required
         document.querySelector('#bld1').innerHTML = "Building *";
         document.querySelector('#bld1').style.color = 'red';
@@ -130,7 +120,12 @@ function clearAddItem() {
         document.querySelector('#bld1').innerHTML = "Building:";
         document.querySelector('#bld1').style.color = 'black';
         document.querySelector('#bay').style.width = '35%';
-        document.querySelector('#req1').style.visibility = "hidden";
+        document.querySelector('#req1').style.display = "none";
+
+    document.querySelector('input[name = "contamination"]:checked').checked = false;
+    document.querySelector('input[name = "production"]:checked').checked = false;
+    document.querySelector('input[name = "n2"]:checked').checked = false;
+    document.querySelector('input[name = "desegragate"]:checked').checked = false;
 }
 
 function saveToBrowserMemorey() {
