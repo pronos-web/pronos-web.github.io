@@ -166,7 +166,7 @@ function toolExist(toolID){
         tool => {
             console.log("tool content: " + tool.content);
             console.log("tool toolID: " + toolID);
-            if(toolID == tool.value){
+            if(toolID == tool.content){
                 //Do Something
                 console.log("Tool already exist");
             }
