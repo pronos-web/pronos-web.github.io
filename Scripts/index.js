@@ -46,6 +46,8 @@ function addNewItem() {
     if (document.getElementById('toolTyp').value != "" 
         && document.getElementById('numb').value != ""){
             toolID = toolID + toolNumb;
+            //See if tool aready exist
+            toolExist(toolID);
         }
 
     if(document.getElementById('toolBld').value === ""){
@@ -155,6 +157,24 @@ function clearAddItem() {
         document.querySelector('#req4').style.display = "none";
         document.querySelector('#numb').placeholder = "Enter tool #";
         document.querySelector('#bay').placeholder = "Enter bay #";
+
+}
+
+function toolExist(toolID){
+    if(toolID)
+    itemList.forEach(
+        tool => {
+            console.log("tool value: " + tool.value);
+            if(toolID == tool.value){
+                //Do Something
+                console.log("Tool already exist");
+            }
+            else{
+                //Do Something
+                console.log("Tool not found");
+            }
+        }
+    );
 
 }
 
