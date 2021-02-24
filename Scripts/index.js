@@ -32,12 +32,52 @@ function addNewItem() {
 
     toolID = toolID + toolNumb;
 
-        if(!document.getElementById('1').checked  && !document.getElementById('2').checked ){
+    console.table(tool);
+    if(document.getElementById('toolTyp').value === ""){
         //Add prompt that field is required
-        document.querySelector('#req1').style.display = "inline";
+        document.querySelector('#tool1').innerHTML = "Tool Type *";
+        document.querySelector('#tool1').style.color = 'red';
+        document.querySelector('#numb').style.width = '35%';
     }
-    else {let contamination = document.querySelector('input[name = "contamination"]:checked').value;}
-    
+    if(document.getElementById('toolBld').value === ""){
+        //Add prompt that field is required
+        document.querySelector('#bld1').innerHTML = "Building *";
+        document.querySelector('#bld1').style.color = 'red';
+        document.querySelector('#bay').style.width = '35%';
+    }
+
+    if(!document.getElementById('1').checked  && !document.getElementById('2').checked ){
+    //Add prompt that field is required
+    document.querySelector('#req1').style.display = "inline";
+    }
+    else {
+        let contamination = document.querySelector('input[name = "contamination"]:checked').value;
+        document.querySelector('#req1').style.display = "none";
+    }
+    if(!document.getElementById('2').checked  && !document.getElementById('3').checked ){
+        //Add prompt that field is required
+        document.querySelector('#req2').style.display = "inline";
+        }
+    else {
+        let contamination = document.querySelector('input[name = "production"]:checked').value;
+        document.querySelector('#req2').style.display = "none";
+    }
+    if(!document.getElementById('4').checked  && !document.getElementById('5').checked ){
+        //Add prompt that field is required
+        document.querySelector('#req3').style.display = "inline";
+        }
+    else {
+        let contamination = document.querySelector('input[name = "n2"]:checked').value;
+        document.querySelector('#req3').style.display = "none";
+    }
+    if(!document.getElementById('6').checked  && !document.getElementById('7').checked ){
+        //Add prompt that field is required
+        document.querySelector('#req4').style.display = "inline";
+        }
+    else {
+        let contamination = document.querySelector('input[name = "desegragate"]:checked').value;
+        document.querySelector('#req4').style.display = "none";
+    }
     
     const tool = new Tool(toolID);
     tool.building = building;
@@ -74,42 +114,11 @@ function addNewItem() {
         tool.purge = true;
         tool.noPurge = false;
     }
-    
-    console.table(tool);
-    if(document.getElementById('toolTyp').value === ""){
-        //Add prompt that field is required
-        document.querySelector('#tool1').innerHTML = "Tool Type *";
-        document.querySelector('#tool1').style.color = 'red';
-        document.querySelector('#numb').style.width = '35%';
-    }
-    if(document.getElementById('toolBld').value === ""){
-        //Add prompt that field is required
-        document.querySelector('#bld1').innerHTML = "Building *";
-        document.querySelector('#bld1').style.color = 'red';
-        document.querySelector('#bay').style.width = '35%';
-    }
-    /**********************************************************/
-   if(!document.getElementById('1').value || !document.getElementById('2').value ){
-        //Add prompt that field is required
-        document.querySelector('#bld1').innerHTML = "Building *";
-        document.querySelector('#bld1').style.color = 'red';
-    }
-    if(document.getElementById('req3').value === ""){
-        //Add prompt that field is required
-        document.querySelector('#bld1').innerHTML = "Building *";
-        document.querySelector('#bld1').style.color = 'red';
-    }
-    if(document.getElementById('req4').value === ""){
-        //Add prompt that field is required
-        document.querySelector('#bld1').innerHTML = "Building *";
-        document.querySelector('#bld1').style.color = 'red';
-    }
-    else{
-        itemList.push(tool);
-        saveToBrowserMemorey();
-        showEdit();
-        clearAddItem();
-    }  
+
+    document.querySelector('input[name = "contamination"]:checked').checked = false;
+    document.querySelector('input[name = "production"]:checked').checked = false;
+    document.querySelector('input[name = "n2"]:checked').checked = false;
+    document.querySelector('input[name = "desegragate"]:checked').checked = false;
 }
 
 function clearAddItem() {
@@ -121,12 +130,7 @@ function clearAddItem() {
         document.querySelector('#bld1').style.color = 'black';
         document.querySelector('#bay').style.width = '35%';
         document.querySelector('#req1').style.display = "none";
-/*
-    document.querySelector('input[name = "contamination"]:checked').checked = false;
-    document.querySelector('input[name = "production"]:checked').checked = false;
-    document.querySelector('input[name = "n2"]:checked').checked = false;
-    document.querySelector('input[name = "desegragate"]:checked').checked = false;
-    */
+
 }
 
 function saveToBrowserMemorey() {
