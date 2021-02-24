@@ -121,11 +121,12 @@ function clearAddItem() {
         document.querySelector('#bld1').style.color = 'black';
         document.querySelector('#bay').style.width = '35%';
         document.querySelector('#req1').style.display = "none";
-
+/*
     document.querySelector('input[name = "contamination"]:checked').checked = false;
     document.querySelector('input[name = "production"]:checked').checked = false;
     document.querySelector('input[name = "n2"]:checked').checked = false;
     document.querySelector('input[name = "desegragate"]:checked').checked = false;
+    */
 }
 
 function saveToBrowserMemorey() {
