@@ -19,15 +19,14 @@ let filters = 0;
 function addNewItem() {
     console.log("New item added");
     let toolID;
-    let toolNumb = document.getElementById("numb").value;
-    let building = document.getElementById("toolBld").value;
-    let bay = document.getElementById('bay').value;
+    let toolNumb;
+    let building;
+    let bay;
     let contamination;
     let prodType;
     let purgeType;
     let segmentation;
-
-    console.table(tool);
+    
     if(document.getElementById('toolTyp').value === ""){
         //Add prompt that field is required
         document.querySelector('#tool1').innerHTML = "Tool Type *";
@@ -56,13 +55,16 @@ function addNewItem() {
         document.querySelector('#bld1').style.color = 'red';
         document.querySelector('#bay').style.width = '35%';
     }
+    else {
+        building = document.getElementById("toolBld").value;
+    }
     if(document.getElementById('bay').value === ""){
         //Add prompt that field is required
         document.querySelector('#bay').innerHTML = "* Required field";
         document.querySelector('#bay').style.color = 'Red';
     }
     else {
-        toolNumb = document.getElementById("numb").value;
+        bay = document.getElementById('bay').value;
     }
 
     if(!document.getElementById('1').checked  && !document.getElementById('2').checked ){
@@ -99,6 +101,7 @@ function addNewItem() {
     }
     
     const tool = new Tool(toolID);
+    
     tool.building = building;
     tool.bay = bay;
     if(contamination === "NC"){
