@@ -78,14 +78,19 @@ function addNewItem() {
         //Add prompt that field is required
         document.querySelector('#tool1').innerHTML = "Tool Type *";
         document.querySelector('#tool1').style.color = 'red';
+        document.querySelector('#numb').style.width = '35%';
 
     } 
     else{
         itemList.push(tool);
         saveToBrowserMemorey();
         showEdit();
-        document.getElementById("myForm").reset();
+        clearAddItem();
     }  
+}
+
+function clearAddItem() {
+    document.getElementById("myForm").reset();
 }
 
 function saveToBrowserMemorey() {
@@ -1093,7 +1098,8 @@ function showForm() {
     if(toggle === 1){
         toggle = 2;
         document.querySelector('#addForm').style.display = "inline";
-        document.querySelector('#addBtn').innerHTML = "Done";  
+        document.querySelector('#addBtn').innerHTML = "Done"; 
+        clearAddItem(); 
         showEdit();
     }
     //Hide form for adding tools & change 'Done' button to 'Edit'
@@ -1102,6 +1108,7 @@ function showForm() {
         toggle = 1;
         document.querySelector('#addForm').style.display = "none";
         document.querySelector('#addBtn').textContent = "Edit";
+        clearAddItem();
         document.getElementById('filterTable2').style.display = "none";
         showAll();
     }
