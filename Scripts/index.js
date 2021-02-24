@@ -88,7 +88,7 @@ function addNewItem() {
        // displayList(itemList);
         showEdit();
     }  
-    document.getElementById("myForm").reset;
+    document.getElementById("myForm").reset();
     //document.getElementById("building").value = "";
     //document.getElementById("bay").value = "";
 }
