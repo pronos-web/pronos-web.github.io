@@ -39,7 +39,6 @@ function addNewItem() {
     if(document.getElementById('numb').value === ""){
         //Add prompt that field is required
         document.querySelector('#numb').placeholder  = "* Required field";
-        document.querySelector('#numb').placeholder.style.color = 'red';
     }
     else {
         toolNumb = document.getElementById("numb").value;
@@ -61,7 +60,6 @@ function addNewItem() {
     if(document.getElementById('bay').value === ""){
         //Add prompt that field is required
         document.querySelector('#bay').placeholder  = "* Required field";
-        document.querySelector('#bay').placeholder.style.color = 'red';
     }
     else {
         bay = document.getElementById('bay').value;
