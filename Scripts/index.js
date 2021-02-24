@@ -37,7 +37,7 @@ function addNewItem() {
     //document.querySelector('input[name = "n2"]:checked').checked = false;
     //document.querySelector('input[name = "desegragate"]:checked').checked = false;
 
-    if(!document.getElementById('1').value || !document.getElementById('2').value){
+    if(!document.getElementById('1').checked  && !document.getElementById('2').checked ){
         //Add prompt that field is required
         document.querySelector('#req1').display = 'inline'
     }
