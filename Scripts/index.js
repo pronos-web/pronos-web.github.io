@@ -39,7 +39,7 @@ function addNewItem() {
 
     if(!document.getElementById('1').checked  && !document.getElementById('2').checked ){
         //Add prompt that field is required
-        document.querySelector('#req1').style.visibility = "visible";
+        document.querySelector('#req1').style.display = "inline";
     }
     else {let contamination = document.querySelector('input[name = "contamination"]:checked').value;}
     
