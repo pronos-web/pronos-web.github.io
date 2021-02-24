@@ -76,6 +76,9 @@ function addNewItem() {
     console.table(tool);
     if(document.getElementById('toolTyp').value === ""){
         //Add prompt that field is required
+        document.querySelector('#tool1').innerHTML = "Tool Type *";
+        document.querySelector('#tool1').style.color = red;
+
     } 
     else{
         itemList.push(tool);
