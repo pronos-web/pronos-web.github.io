@@ -79,9 +79,9 @@ th {
   border-bottom: 1px solid black;
   font-size: 20px;
   width: 20%;}
-/*
+
 .flex-container {
-    display: flex;
+    display: inline-flexbox;
     flex-wrap: wrap;
     flex-direction: column;
     background-color: #3d3d3d;
@@ -97,23 +97,7 @@ th {
   padding-left: 10px;
   border-bottom: 1px solid #000000;
 }
-*/
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  background-color: #d3d3d3;
-  width: 99%;
-}
-
-.flex-container > div {
-  background-color: #d3d3d3;
-  width: 50px;
-  margin: 10px;
-  text-align: left;
-  font-size: 14px;
-}
 
 
 #item, #location, #numb {
@@ -187,7 +171,7 @@ font-weight: bold;
 }
 
 .dropdown {
-  font-size: 18px;
+  font-size: 12px;
   }
 
 #removeItem {
