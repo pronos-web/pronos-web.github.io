@@ -1191,6 +1191,7 @@ document.querySelector('#showCu2').addEventListener('click', showCu);
 document.querySelector('#clrfltr').addEventListener('click', clearFilters);
 TODO: //add function & event listener for showDeseg & showNonDeseg
 
+
 document.querySelector('#addBtn').addEventListener('click', showForm);
 window.addEventListener('load', getFromBrowserMemery);
 
@@ -1202,6 +1203,13 @@ document.getElementById('theList').addEventListener("click", function(e) {
 		// List item found!  Output the ID!
 		removeItem(e.target.value);
     } 
+})
+
+document.getElementById('numb').addEventListener("click", function(e) {
+	document.getElementById('numb').value = ""; 
+})
+document.getElementById('bay').addEventListener("click", function(e) {
+	document.getElementById('bay').value = ""; 
 })
 
 
