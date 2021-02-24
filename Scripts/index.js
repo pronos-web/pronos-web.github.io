@@ -18,19 +18,14 @@ let filters = 0;
 
 function addNewItem() {
     console.log("New item added");
-    let toolID = document.getElementById("toolTyp").value;
+    let toolID;
     let toolNumb = document.getElementById("numb").value;
     let building = document.getElementById("toolBld").value;
     let bay = document.getElementById('bay').value;
-    //let contamination = document.querySelector('input[name = "contamination"]:checked').value;
-    let prodType = document.querySelector('input[name = "production"]:checked').value;
-    let purgeType = document.querySelector('input[name = "n2"]:checked').value;
-    let segmentation = document.querySelector('input[name = "desegragate"]:checked').value;
-
-    console.log(toolNumb);
-    console.log(toolID)
-
-    toolID = toolID + toolNumb;
+    let contamination;
+    let prodType;
+    let purgeType;
+    let segmentation;
 
     console.table(tool);
     if(document.getElementById('toolTyp').value === ""){
@@ -39,11 +34,35 @@ function addNewItem() {
         document.querySelector('#tool1').style.color = 'red';
         document.querySelector('#numb').style.width = '35%';
     }
+    else {
+        toolID = document.getElementById("toolTyp").value;
+    }
+    if(document.getElementById('numb').value === ""){
+        //Add prompt that field is required
+        document.querySelector('#numb').innerHTML = "* Required field";
+        document.querySelector('#numb').style.color = 'Red';
+    }
+    else {
+        toolNumb = document.getElementById("numb").value;
+    }
+    If (document.getElementById('toolTyp').value != "" 
+        && document.getElementById('numb').value != ""){
+            toolID = toolID + toolNumb;
+        }
+
     if(document.getElementById('toolBld').value === ""){
         //Add prompt that field is required
         document.querySelector('#bld1').innerHTML = "Building *";
         document.querySelector('#bld1').style.color = 'red';
         document.querySelector('#bay').style.width = '35%';
+    }
+    if(document.getElementById('bay').value === ""){
+        //Add prompt that field is required
+        document.querySelector('#bay').innerHTML = "* Required field";
+        document.querySelector('#bay').style.color = 'Red';
+    }
+    else {
+        toolNumb = document.getElementById("numb").value;
     }
 
     if(!document.getElementById('1').checked  && !document.getElementById('2').checked ){
@@ -51,7 +70,7 @@ function addNewItem() {
     document.querySelector('#req1').style.display = "inline";
     }
     else {
-        let contamination = document.querySelector('input[name = "contamination"]:checked').value;
+        contamination = document.querySelector('input[name = "contamination"]:checked').value;
         document.querySelector('#req1').style.display = "none";
     }
     if(!document.getElementById('2').checked  && !document.getElementById('3').checked ){
@@ -59,7 +78,7 @@ function addNewItem() {
         document.querySelector('#req2').style.display = "inline";
         }
     else {
-        let contamination = document.querySelector('input[name = "production"]:checked').value;
+        prodType = document.querySelector('input[name = "production"]:checked').value;
         document.querySelector('#req2').style.display = "none";
     }
     if(!document.getElementById('4').checked  && !document.getElementById('5').checked ){
@@ -67,7 +86,7 @@ function addNewItem() {
         document.querySelector('#req3').style.display = "inline";
         }
     else {
-        let contamination = document.querySelector('input[name = "n2"]:checked').value;
+        purgeType = document.querySelector('input[name = "n2"]:checked').value;
         document.querySelector('#req3').style.display = "none";
     }
     if(!document.getElementById('6').checked  && !document.getElementById('7').checked ){
@@ -75,7 +94,7 @@ function addNewItem() {
         document.querySelector('#req4').style.display = "inline";
         }
     else {
-        let contamination = document.querySelector('input[name = "desegragate"]:checked').value;
+        segmentation = document.querySelector('input[name = "desegragate"]:checked').value;
         document.querySelector('#req4').style.display = "none";
     }
     
