@@ -87,15 +87,15 @@ th {
     width: 99%;
   }
   
-  .flex-container > div {
-    background-color: #d3d3d3;
-    width: 49%;
-    margin: 1px;
-    text-align: left;
-    font-size: 14px;
-    padding-left: 10px;
-    border-bottom: 1px solid #000000;
-  }
+.flex-container > div {
+  background-color: #d3d3d3;
+  width: 45%;
+  margin: 1px;
+  text-align: left;
+  font-size: 14px;
+  padding-left: 10px;
+  border-bottom: 1px solid #000000;
+}
 
 #item, #location, #numb {
 
@@ -159,6 +159,7 @@ nav {
   text-align: center;
   outline: none;
   font-size: 15px;
+  margin-top: 2px;
 }
 
 .dropdowns {

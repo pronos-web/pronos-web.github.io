@@ -80,7 +80,6 @@ function addNewItem() {
     else{
         itemList.push(tool);
         saveToBrowserMemorey();
-        document.getElementById("myForm").reset;
        // document.getElementById('item').value = "";
        // document.getElementById('building').value = "";
        //TODO figure out how to reset select inputs...
@@ -89,6 +88,7 @@ function addNewItem() {
        // displayList(itemList);
         showEdit();
     }  
+    document.getElementById("myForm").reset;
     //document.getElementById("building").value = "";
     //document.getElementById("bay").value = "";
 }
