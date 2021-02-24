@@ -83,6 +83,7 @@ th {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     background-color: #3d3d3d;
     width: 99%;
   }
