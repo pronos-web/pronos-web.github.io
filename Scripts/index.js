@@ -165,6 +165,7 @@ function toolExist(toolID){
     itemList.forEach(
         tool => {
             console.log("tool content: " + tool.content);
+            console.log("tool toolID: " + toolID);
             if(toolID == tool.value){
                 //Do Something
                 console.log("Tool already exist");
