@@ -45,7 +45,7 @@ function addNewItem() {
     else {
         toolNumb = document.getElementById("numb").value;
     }
-    If (document.getElementById('toolTyp').value != "" 
+    if (document.getElementById('toolTyp').value != "" 
         && document.getElementById('numb').value != ""){
             toolID = toolID + toolNumb;
         }
