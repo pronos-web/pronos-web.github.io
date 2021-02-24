@@ -32,10 +32,10 @@ function addNewItem() {
 
     toolID = toolID + toolNumb;
 
-    document.querySelector('input[name = "contamination"]:checked').checked = false;
-    document.querySelector('input[name = "production"]:checked').checked = false;
-    document.querySelector('input[name = "n2"]:checked').checked = false;
-    document.querySelector('input[name = "desegragate"]:checked').checked = false;
+    //document.querySelector('input[name = "contamination"]:checked').checked = false;
+    //document.querySelector('input[name = "production"]:checked').checked = false;
+    //document.querySelector('input[name = "n2"]:checked').checked = false;
+    //document.querySelector('input[name = "desegragate"]:checked').checked = false;
     
     const tool = new Tool(toolID);
     tool.building = building;
