@@ -79,6 +79,11 @@ function addNewItem() {
         document.querySelector('#tool1').innerHTML = "Tool Type *";
         document.querySelector('#tool1').style.color = 'red';
         document.querySelector('#numb').style.width = '35%';
+    if(document.getElementById('toolTyp').value === ""){
+        //Add prompt that field is required
+        document.querySelector('#toolBld').innerHTML = "Building *";
+        document.querySelector('#bld1').style.color = 'red';
+        document.querySelector('#bay').style.width = '35%';
 
     } 
     else{
@@ -91,6 +96,9 @@ function addNewItem() {
 
 function clearAddItem() {
     document.getElementById("myForm").reset();
+    document.querySelector('#tool1').innerHTML = "Tool Type";
+        document.querySelector('#tool1').style.color = 'black';
+        document.querySelector('#numb').style.width = '40%';
 }
 
 function saveToBrowserMemorey() {
