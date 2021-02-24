@@ -153,6 +153,8 @@ function clearAddItem() {
         document.querySelector('#req2').style.display = "none";
         document.querySelector('#req3').style.display = "none";
         document.querySelector('#req4').style.display = "none";
+        document.querySelector('#numb').placeholder = "Enter tool #";
+        document.querySelector('#bay').placeholder = "Enter bay #";
 
 }
 
