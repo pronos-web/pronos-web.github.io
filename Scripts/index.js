@@ -96,7 +96,7 @@ function addNewItem() {
     /**********************************************************/
     if(!document.getElementById('1').value || !document.getElementById('2').value){
         //Add prompt that field is required
-        document.querySelector('#req1').display = 'inline'
+        document.querySelector('#req1').display = 'inline';
     }
     else {let contamination = document.querySelector('input[name = "contamination"]:checked').value;}
     if(!document.getElementById('1').value || !document.getElementById('2').value ){
