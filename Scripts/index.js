@@ -36,6 +36,13 @@ function addNewItem() {
     //document.querySelector('input[name = "production"]:checked').checked = false;
     //document.querySelector('input[name = "n2"]:checked').checked = false;
     //document.querySelector('input[name = "desegragate"]:checked').checked = false;
+
+    if(!document.getElementById('1').value || !document.getElementById('2').value){
+        //Add prompt that field is required
+        document.querySelector('#req1').display = 'inline'
+    }
+    else {let contamination = document.querySelector('input[name = "contamination"]:checked').value;}
+    
     
     const tool = new Tool(toolID);
     tool.building = building;
