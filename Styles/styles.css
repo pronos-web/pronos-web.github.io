@@ -81,7 +81,7 @@ th {
   width: 20%;}
 
 .flex-container {
-    display:none;
+    display:inline;
     flex-wrap: wrap;
     flex-direction: column;
     background-color: #3d3d3d;
@@ -98,7 +98,7 @@ th {
   border-bottom: 1px solid #000000;
 }
 #req1, #req2, #req3, #req4 {
-  visibility:collapse;
+  display: none;
   color: #ff0000;
   font-size: 12px;
 }
