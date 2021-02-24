@@ -148,7 +148,7 @@ function clearAddItem() {
         document.querySelector('#numb').style.width = '40%';
         document.querySelector('#bld1').innerHTML = "Building:";
         document.querySelector('#bld1').style.color = 'black';
-        document.querySelector('#bay').style.width = '75%';
+        document.querySelector('#bay').style.width = '45%';
         document.querySelector('#req1').style.display = "none";
         document.querySelector('#req2').style.display = "none";
         document.querySelector('#req3').style.display = "none";
