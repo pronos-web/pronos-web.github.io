@@ -77,7 +77,7 @@ function addNewItem() {
     if(document.getElementById('toolTyp').value === ""){
         //Add prompt that field is required
         document.querySelector('#tool1').innerHTML = "Tool Type *";
-        document.querySelector('#tool1').style.color = red;
+        document.querySelector('#tool1').style.color = 'red';
 
     } 
     else{
