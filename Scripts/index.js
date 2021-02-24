@@ -22,7 +22,7 @@ function addNewItem() {
     let toolNumb = document.getElementById("numb").value;
     let building = document.getElementById("toolBld").value;
     let bay = document.getElementById('bay').value;
-    let contamination = document.querySelector('input[name = "contamination"]:checked').value;
+    //let contamination = document.querySelector('input[name = "contamination"]:checked').value;
     let prodType = document.querySelector('input[name = "production"]:checked').value;
     let purgeType = document.querySelector('input[name = "n2"]:checked').value;
     let segmentation = document.querySelector('input[name = "desegragate"]:checked').value;
@@ -91,6 +91,7 @@ function addNewItem() {
         //Add prompt that field is required
         document.querySelector('#req1').display = 'inline'
     }
+    else {let contamination = document.querySelector('input[name = "contamination"]:checked').value;}
     if(!document.getElementById('1').value || !document.getElementById('2').value ){
         //Add prompt that field is required
         document.querySelector('#bld1').innerHTML = "Building *";
