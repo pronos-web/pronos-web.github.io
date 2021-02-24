@@ -38,8 +38,8 @@ function addNewItem() {
     }
     if(document.getElementById('numb').value === ""){
         //Add prompt that field is required
-        document.querySelector('#numb').innerHTML = "* Required field";
-        document.querySelector('#numb').style.color = 'Red';
+        document.querySelector('#numb').placeholder  = "* Required field";
+        document.querySelector('#numb').placeholder.style.color = 'Red';
     }
     else {
         toolNumb = document.getElementById("numb").value;
@@ -60,8 +60,8 @@ function addNewItem() {
     }
     if(document.getElementById('bay').value === ""){
         //Add prompt that field is required
-        document.querySelector('#bay').innerHTML = "* Required field";
-        document.querySelector('#bay').style.color = 'Red';
+        document.querySelector('#bay').placeholder  = "* Required field";
+        document.querySelector('#bay').placeholder.style.color = 'Red';
     }
     else {
         bay = document.getElementById('bay').value;
