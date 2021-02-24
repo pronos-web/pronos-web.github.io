@@ -161,14 +161,15 @@ function clearAddItem() {
 }
 
 function toolExist(toolID){
-    if(toolID)
+    let toolExist = false;
+
     itemList.forEach(
         tool => {
             console.log("tool content: " + tool.content);
             console.log("tool toolID: " + toolID);
             if(toolID == tool.content){
-                //Do Something
                 console.log("Tool already exist");
+                toolExist = true;
             }
             else{
                 //Do Something
@@ -176,7 +177,10 @@ function toolExist(toolID){
             }
         }
     );
-
+    if(toolExist){
+        clearAddItem();
+        alert("Tool Already Exist")
+    }
 }
 
 function saveToBrowserMemorey() {
