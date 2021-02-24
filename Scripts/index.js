@@ -80,7 +80,7 @@ function addNewItem() {
     else{
         itemList.push(tool);
         saveToBrowserMemorey();
-        document.getElementById("addForm").reset();
+        document.getElementById("myForm").reset;
        // document.getElementById('item').value = "";
        // document.getElementById('building').value = "";
        //TODO figure out how to reset select inputs...
