@@ -98,6 +98,7 @@ th {
   border-bottom: 1px solid #000000;
 }
 #req1, #req2, #req3, #req4 {
+  display: none;
   color: #ff0000;
   font-size: 12px;
 }
