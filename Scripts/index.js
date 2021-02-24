@@ -80,7 +80,7 @@ function addNewItem() {
         document.querySelector('#tool1').style.color = 'red';
         document.querySelector('#numb').style.width = '35%';
     }
-    if(document.getElementById('toolTyp').value === ""){
+    if(document.getElementById('toolBld').value === ""){
         //Add prompt that field is required
         document.querySelector('#toolBld').innerHTML = "Building *";
         document.querySelector('#bld1').style.color = 'red';
