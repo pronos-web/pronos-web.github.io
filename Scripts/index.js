@@ -1262,7 +1262,7 @@ document.getElementById('numb').addEventListener("keydown", function(e) {
       //document.getElementById("bay").innerHTML = "ex: 03";
     }
 })
-document.getElementById('bay').addEventListener("keydown", function(e) {
+document.getElementById('bay').addEventListener("keypress", function(e) {
 	document.getElementById('bay').value = "Key pressed"; 
 })
 
