@@ -104,7 +104,7 @@ function addNewItem() {
         document.querySelector('#req4').style.display = "none";
     }
     
-    if(!exist && document.getElementById('item').value != ""){
+    if(!exist){
         const tool = new Tool(toolID);
     
         tool.building = building;
