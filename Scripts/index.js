@@ -15,7 +15,7 @@ let deseg = false;
 let nonDeseg = false;
 let expand = false;
 let filters = 0;
-let exist = false;
+let exist = true;
 
 function addNewItem() {
     console.log("New item added");
