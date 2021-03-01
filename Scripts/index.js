@@ -1214,32 +1214,6 @@ function showForm() {
 
 /**************************************************************************/
 
-function toolIsNumber(evt) {
-    var ch = String.fromCharCode(evt.which);
-    if(/[^a-zA-Z]/.test(ch)) {
-      evt.preventDefault();
-      document.getElementById("numb").style.border = "thick solid #ff0000";
-      document.getElementById("bay").placeholder = "You must enter a number]";
-    }
-    else {
-      document.getElementById("bay").style.color = "gray"
-      document.getElementById("bay").innerHTML = "ex: \"John\"";
-    }
-  }
-
-  function bayIsNumber(evt) {
-    var ch = String.fromCharCode(evt.which);
-    if(/[^a-zA-Z]/.test(ch)) {
-      evt.preventDefault();
-      document.getElementById("bay").style.border = "thick solid #ff0000";
-      document.getElementById("bay").placeholder = "You must enter a number]";
-    }
-    else {
-      document.getElementById("bay").style.color = "gray"
-      document.getElementById("bay").innerHTML = "ex: \"John\"";
-    }
-  }
-
 document.querySelector('#addItem').addEventListener('click', addNewItem);
 document.querySelector('#showProd').addEventListener('click', showProd);
 document.querySelector('#showProd2').addEventListener('click', showProd);
@@ -1277,7 +1251,16 @@ document.getElementById('bay').addEventListener("click", function(e) {
 	document.getElementById('bay').value = ""; 
 })
 document.getElementById('numb').addEventListener("keydown", function(e) {
-	document.getElementById('numb').value = "Key pressed"; 
+    var ch = String.fromCharCode(evt.which);
+    if(!System.Text.RegularExpressions.Regex.IsMatch("^[0-9]", textbox.Text)) {
+      evt.preventDefault();
+      document.getElementById("numb").style.border = "thick solid #ff0000";
+      document.getElementById("bay").placeholder = "You must enter a number]";
+    }
+    else {
+      //document.getElementById("bay").style.color = "gray"
+      //document.getElementById("bay").innerHTML = "ex: 03";
+    }
 })
 document.getElementById('bay').addEventListener("keydown", function(e) {
 	document.getElementById('bay').value = "Key pressed"; 
