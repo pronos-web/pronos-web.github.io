@@ -32,7 +32,7 @@ function addNewItem() {
         //Add prompt that field is required
         document.querySelector('#tool1').innerHTML = "Tool Type *";
         document.querySelector('#tool1').style.color = 'red';
-        document.querySelector('#numb').style.width = '35%';
+        document.querySelector('#numb').style.width = '32%';
     }
     else {
         toolID = document.getElementById("toolTyp").value;
@@ -143,10 +143,10 @@ function addNewItem() {
         }
     }
 
-    document.querySelector('input[name = "contamination"]:checked').checked = false;
-    document.querySelector('input[name = "production"]:checked').checked = false;
-    document.querySelector('input[name = "n2"]:checked').checked = false;
-    document.querySelector('input[name = "desegragate"]:checked').checked = false;
+    //document.querySelector('input[name = "contamination"]:checked').checked = false;
+    //document.querySelector('input[name = "production"]:checked').checked = false;
+    //document.querySelector('input[name = "n2"]:checked').checked = false;
+    //document.querySelector('input[name = "desegragate"]:checked').checked = false;
 
 }
 
@@ -164,6 +164,8 @@ function clearAddItem() {
         document.querySelector('#req4').style.display = "none";
         document.querySelector('#numb').placeholder = "Enter tool #";
         document.querySelector('#bay').placeholder = "Enter bay #";
+        document.getElementById("numb").style.border = "none";
+        document.getElementById("bay").style.border = "none";
 
 }
 
@@ -316,9 +318,6 @@ function showAll() {
     document.getElementById('NonPurge').style.display = "inline";
     document.getElementById('Deseg').style.display = "inline";
     document.getElementById('nonDeseg').style.display = "inline";
-
-    document.getElementById("numb").style.border = "none";
-    document.getElementById("bay").style.border = "none";
     
     // Read itemList and display all fo the items
     let html = `
