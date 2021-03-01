@@ -156,7 +156,7 @@ function clearAddItem() {
     document.getElementById("myForm").reset();
     document.querySelector('#tool1').innerHTML = "Tool Type:";
         document.querySelector('#tool1').style.color = 'black';
-        document.querySelector('#numb').style.width = '37%';
+        document.querySelector('#numb').style.width = '40%';
         document.querySelector('#bld1').innerHTML = "Building:";
         document.querySelector('#bld1').style.color = 'black';
         document.querySelector('#bay').style.width = '42%';
@@ -1276,7 +1276,12 @@ document.getElementById('numb').addEventListener("click", function(e) {
 document.getElementById('bay').addEventListener("click", function(e) {
 	document.getElementById('bay').value = ""; 
 })
-
+document.getElementById('numb').addEventListener("keydown", function(e) {
+	document.getElementById('numb').value = "Key pressed"; 
+})
+document.getElementById('bay').addEventListener("keydown", function(e) {
+	document.getElementById('bay').value = "Key pressed"; 
+})
 
 document.getElementById('listBody').addEventListener("click", function(e) {
     console.log("Event listener for listBody: toolButton clicked")
