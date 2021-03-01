@@ -166,8 +166,8 @@ function clearAddItem() {
         document.querySelector('#req4').style.display = "none";
         document.querySelector('#numb').placeholder = "Enter tool #";
         document.querySelector('#bay').placeholder = "Enter bay #";
-        document.getElementById("numb").style.border-color = "#d3d3d3";
-        document.getElementById("bay").style.border-color = "#d3d3d3";
+        document.getElementById("numb").style.borderColor = "#d3d3d3";
+        document.getElementById("bay").style.borderColor = "#d3d3d3";
 }
 
 function toolExist(toolID){
