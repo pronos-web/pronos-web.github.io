@@ -148,13 +148,8 @@ function addNewItem() {
         showEdit();
 
         console.table(tool);
+        clearAddItem();
     }
-
-    //document.querySelector('input[name = "contamination"]:checked').checked = false;
-    //document.querySelector('input[name = "production"]:checked').checked = false;
-    //document.querySelector('input[name = "n2"]:checked').checked = false;
-    //document.querySelector('input[name = "desegragate"]:checked').checked = false;
-    clearAddItem();
 }
 
 function clearAddItem() {
@@ -171,9 +166,8 @@ function clearAddItem() {
         document.querySelector('#req4').style.display = "none";
         document.querySelector('#numb').placeholder = "Enter tool #";
         document.querySelector('#bay').placeholder = "Enter bay #";
-        document.getElementById("numb").style.border = "none";
-        document.getElementById("bay").style.border = "none";
-
+        document.getElementById("numb").style.border-color = "#d3d3d3";
+        document.getElementById("bay").style.border-color = "#d3d3d3";
 }
 
 function toolExist(toolID){
