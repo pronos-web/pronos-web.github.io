@@ -79,7 +79,7 @@ function addNewItem() {
         contamination = document.querySelector('input[name = "contamination"]:checked').value;
         document.querySelector('#req1').style.display = "none";
     }
-    if(!document.getElementById('2').checked  && !document.getElementById('3').checked ){
+    if(!document.getElementById('3').checked  && !document.getElementById('4').checked ){
         //Add prompt that field is required
         document.querySelector('#req2').style.display = "inline";
         }
@@ -87,7 +87,7 @@ function addNewItem() {
         prodType = document.querySelector('input[name = "production"]:checked').value;
         document.querySelector('#req2').style.display = "none";
     }
-    if(!document.getElementById('4').checked  && !document.getElementById('5').checked ){
+    if(!document.getElementById('5').checked  && !document.getElementById('6').checked ){
         //Add prompt that field is required
         document.querySelector('#req3').style.display = "inline";
         }
@@ -95,7 +95,7 @@ function addNewItem() {
         purgeType = document.querySelector('input[name = "n2"]:checked').value;
         document.querySelector('#req3').style.display = "none";
     }
-    if(!document.getElementById('6').checked  && !document.getElementById('7').checked ){
+    if(!document.getElementById('7').checked  && !document.getElementById('8').checked ){
         //Add prompt that field is required
         document.querySelector('#req4').style.display = "inline";
         }
@@ -104,7 +104,7 @@ function addNewItem() {
         document.querySelector('#req4').style.display = "none";
     }
     
-    if(!exist){
+    if(!exist && document.getElementById('item').value != ""){
         const tool = new Tool(toolID);
     
         tool.building = building;
@@ -141,6 +141,16 @@ function addNewItem() {
             tool.purge = true;
             tool.noPurge = false;
         }
+
+        itemList.push(tool);
+        saveToBrowserMemory();
+        updateItemCount();
+        document.getElementById('item').value = "";
+        document.getElementById('location').value = "";
+        displayList(itemList);
+        showEdit();
+
+        console.table(tool);
     }
 
     //document.querySelector('input[name = "contamination"]:checked').checked = false;
