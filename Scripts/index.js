@@ -39,6 +39,7 @@ function addNewItem() {
     if(document.getElementById('numb').value === ""){
         //Add prompt that field is required
         document.querySelector('#numb').placeholder  = "* Required field";
+        document.getElementById("numb").style.border = "thick solid #ff0000";
     }
     else {
         toolNumb = document.getElementById("numb").value;
@@ -62,6 +63,8 @@ function addNewItem() {
     if(document.getElementById('bay').value === ""){
         //Add prompt that field is required
         document.querySelector('#bay').placeholder  = "* Required field";
+        document.getElementById("bay").style.border = "thick solid #ff0000";
+
     }
     else {
         bay = document.getElementById('bay').value;
@@ -178,8 +181,9 @@ function toolExist(toolID){
         }
     );
     if(toolExist){
-        clearAddItem();
         alert("Tool Already Exist")
+        //find out how to return a value
+        //in JS
     }
 }
 
@@ -1204,6 +1208,34 @@ function showForm() {
     }
     
 }
+
+/**************************************************************************/
+
+function toolIsNumber(evt) {
+    var ch = String.fromCharCode(evt.which);
+    if(/[^a-zA-Z]/.test(ch)) {
+      evt.preventDefault();
+      document.getElementById("numb").style.border = "thick solid #ff0000";
+      document.getElementById("bay").placeholder = "You must enter a number]";
+    }
+    else {
+      document.getElementById("bay").style.color = "gray"
+      document.getElementById("bay").innerHTML = "ex: \"John\"";
+    }
+  }
+
+  function bayIsNumber(evt) {
+    var ch = String.fromCharCode(evt.which);
+    if(/[^a-zA-Z]/.test(ch)) {
+      evt.preventDefault();
+      document.getElementById("bay").style.border = "thick solid #ff0000";
+      document.getElementById("bay").placeholder = "You must enter a number]";
+    }
+    else {
+      document.getElementById("bay").style.color = "gray"
+      document.getElementById("bay").innerHTML = "ex: \"John\"";
+    }
+  }
 
 document.querySelector('#addItem').addEventListener('click', addNewItem);
 document.querySelector('#showProd').addEventListener('click', showProd);

@@ -27,7 +27,11 @@
             <option class="dropdown" value="LSA">LSA</option>
             <option class="dropdown" value="LSB">LSB</option>
         </select>
-        <input type="text" id="numb" placeholder="Enter Tool Number">
+        <input 
+            type="text" 
+            id="numb" 
+            onkeypress="toolIsNumber(event)"
+            placeholder="Enter Tool Number">
         </div>
         <div>
         <label for="toolBld" class="dropdowns" id="bld1">Building:</label>
@@ -38,7 +42,11 @@
             <option class="dropdown" value="D1X">D1X</option>
             <option class="dropdown" value="RP1">RP1</option>
         </select>
-        <input type="text" id="bay" placeholder="Enter Bay i.e. '601'">
+        <input 
+            type="text" 
+            id="bay" 
+            onkeypress="bayIsNumber(event)"
+            placeholder="Enter Bay i.e. '601'">
         </div>
         <div class="flex-container">
             <div>
@@ -74,7 +82,7 @@
     </form>
 </div>
 
-<div class="titleFormat">
+<div class="titleFormat"> 
     <h2 id="listTitle">Tool List</h2>
 </div>
 
