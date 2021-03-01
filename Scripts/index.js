@@ -143,10 +143,7 @@ function addNewItem() {
         }
 
         itemList.push(tool);
-        saveToBrowserMemory();
-        updateItemCount();
-        document.getElementById('item').value = "";
-        document.getElementById('location').value = "";
+        saveToBrowserMemorey();
         displayList(itemList);
         showEdit();
 
@@ -225,7 +222,6 @@ function getFromBrowserMemery() {
     }
     displayList();
     showAll();
-    //updateItemCount();
 }
 
 function removeItem(e) {
