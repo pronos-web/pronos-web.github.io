@@ -1251,7 +1251,7 @@ document.getElementById('bay').addEventListener("click", function(e) {
 	document.getElementById('bay').value = ""; 
 })
 document.getElementById('numb').addEventListener("keydown", function(e) {
-    var ch = String.fromCharCode(evt.which);
+    //var ch = String.fromCharCode(evt.which);
     if(!System.Text.RegularExpressions.Regex.IsMatch("^[0-9]", textbox.Text)) {
       evt.preventDefault();
       document.getElementById("numb").style.border = "thick solid #ff0000";
