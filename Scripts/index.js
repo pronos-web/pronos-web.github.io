@@ -156,7 +156,7 @@ function clearAddItem() {
     document.getElementById("myForm").reset();
     document.querySelector('#tool1').innerHTML = "Tool Type:";
         document.querySelector('#tool1').style.color = 'black';
-        //document.querySelector('#numb').style.width = '40%';
+        document.querySelector('#numb').style.width = '37%';
         document.querySelector('#bld1').innerHTML = "Building:";
         document.querySelector('#bld1').style.color = 'black';
         document.querySelector('#bay').style.width = '42%';
