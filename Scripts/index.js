@@ -15,6 +15,7 @@ let deseg = false;
 let nonDeseg = false;
 let expand = false;
 let filters = 0;
+let exist = false;
 
 function addNewItem() {
     console.log("New item added");
@@ -48,7 +49,7 @@ function addNewItem() {
         && document.getElementById('numb').value != ""){
             toolID = toolID + toolNumb;
             //See if tool aready exist
-            toolExist(toolID);
+            exist = toolExist(toolID);
         }
 
     if(document.getElementById('toolBld').value === ""){
@@ -103,47 +104,50 @@ function addNewItem() {
         document.querySelector('#req4').style.display = "none";
     }
     
-    const tool = new Tool(toolID);
+    if(!exist){
+        const tool = new Tool(toolID);
     
-    tool.building = building;
-    tool.bay = bay;
-    if(contamination === "NC"){
-        tool.cu = false;
-        tool.nonCu = true;
-    }
-    else{
-        tool.cu = true;
-        tool.nonCu = false;
-    }
-    if(prodType === "TW"){
-        tool.prod = false;
-        tool.tw = true;
-    }
-    else{
-        tool.prod = true;
-        tool.tw = false;
-    }
-    if(segmentation === "Deseg"){
-        tool.nonDeseg = false;
-        tool.deseg = true;
-    }
-    else{
-        tool.deseg = true;
-        tool.nonDeseg = false;
-    }
-    if(purgeType === "NonPurge"){
-        tool.purge = false;
-        tool.noPurge = true;
-    }
-    else{
-        tool.purge = true;
-        tool.noPurge = false;
+        tool.building = building;
+        tool.bay = bay;
+        if(contamination === "NC"){
+            tool.cu = false;
+            tool.nonCu = true;
+        }
+        else{
+            tool.cu = true;
+            tool.nonCu = false;
+        }
+        if(prodType === "TW"){
+            tool.prod = false;
+            tool.tw = true;
+        }
+        else{
+            tool.prod = true;
+            tool.tw = false;
+        }
+        if(segmentation === "Deseg"){
+            tool.nonDeseg = false;
+            tool.deseg = true;
+        }
+        else{
+            tool.deseg = true;
+            tool.nonDeseg = false;
+        }
+        if(purgeType === "NonPurge"){
+            tool.purge = false;
+            tool.noPurge = true;
+        }
+        else{
+            tool.purge = true;
+            tool.noPurge = false;
+        }
     }
 
     document.querySelector('input[name = "contamination"]:checked').checked = false;
     document.querySelector('input[name = "production"]:checked').checked = false;
     document.querySelector('input[name = "n2"]:checked').checked = false;
     document.querySelector('input[name = "desegragate"]:checked').checked = false;
+
 }
 
 function clearAddItem() {
@@ -172,19 +176,16 @@ function toolExist(toolID){
             console.log("tool toolID: " + toolID);
             if(toolID == tool.content){
                 console.log("Tool already exist");
-                toolExist = true;
+                alert("Tool Already Exist")
+                return true;
             }
             else{
                 //Do Something
                 console.log("Tool not found");
+                return false;
             }
         }
     );
-    if(toolExist){
-        alert("Tool Already Exist")
-        //find out how to return a value
-        //in JS
-    }
 }
 
 function saveToBrowserMemorey() {
@@ -315,6 +316,9 @@ function showAll() {
     document.getElementById('NonPurge').style.display = "inline";
     document.getElementById('Deseg').style.display = "inline";
     document.getElementById('nonDeseg').style.display = "inline";
+
+    document.getElementById("numb").style.border = "none";
+    document.getElementById("bay").style.border = "none";
     
     // Read itemList and display all fo the items
     let html = `
