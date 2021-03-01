@@ -154,7 +154,7 @@ function addNewItem() {
     //document.querySelector('input[name = "production"]:checked').checked = false;
     //document.querySelector('input[name = "n2"]:checked').checked = false;
     //document.querySelector('input[name = "desegragate"]:checked').checked = false;
-
+    clearAddItem();
 }
 
 function clearAddItem() {
