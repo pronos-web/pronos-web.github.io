@@ -29,6 +29,9 @@ let exist = true;
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+  let database = firebase.database();
+  console.log(database);
+
 function addNewItem() {
     console.log("New item added");
     let toolID;
