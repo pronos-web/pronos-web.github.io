@@ -29,7 +29,7 @@ let exist = true;
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  let database = firebase.JSON; 
+  let database = firebase.database; 
   console.log(database);
 
 function addNewItem() {
