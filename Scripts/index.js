@@ -16,6 +16,19 @@ let expand = false;
 let filters = 0;
 let exist = true;
 
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBP4Gzw2s6yQ6D24WZD2HoQneq0wpEXKQ8",
+    authDomain: "pronos-cb1d7.firebaseapp.com",
+    databaseURL: "https://pronos-cb1d7-default-rtdb.firebaseio.com",
+    projectId: "pronos-cb1d7",
+    storageBucket: "pronos-cb1d7.appspot.com",
+    messagingSenderId: "863376825229",
+    appId: "1:863376825229:web:bbfa6c7926dcd302cb7bc4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
 function addNewItem() {
     console.log("New item added");
     let toolID;
