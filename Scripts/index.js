@@ -29,7 +29,14 @@ let exist = true;
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  let database = firebase.database; 
+  import firebase from "firebase/app";
+  import "firebase/database";
+  
+  function getReference() {
+    // [START rtdb_get_reference]
+    var database = firebase.database();
+    // [END rtdb_get_reference]
+  }
   console.log(database);
 
 function addNewItem() {
