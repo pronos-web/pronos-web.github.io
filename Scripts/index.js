@@ -1,6 +1,5 @@
 import {Tool} from "./tool.js"
 
-var database = firebase.database();
 let itemList = [];
 let completedItems = [];
 let filter = 1;
@@ -16,8 +15,6 @@ let nonDeseg = false;
 let expand = false;
 let filters = 0;
 let exist = true;
-
-console.log(database);
 
 function addNewItem() {
     console.log("New item added");
