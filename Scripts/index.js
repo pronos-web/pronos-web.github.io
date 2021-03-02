@@ -29,7 +29,7 @@ let exist = true;
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  import firebase from "firebase/app";
+  import firebase from "https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js";
   import "firebase/database";
   
   function getReference() {
