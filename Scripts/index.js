@@ -141,6 +141,7 @@ function addNewItem() {
             tool.nonCu = false;
             var toolContent = dbContent.ref().child('Tool').child(toolId).set({
                 Contamination: "Cu",
+            });
         }
         if(prodType === "TW"){
             tool.prod = false;
