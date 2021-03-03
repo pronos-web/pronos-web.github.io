@@ -27,7 +27,7 @@ function  submitclick() {
       Deseg: "Yes",
       Purge: "Yes"
     });
-    onsole.log("submitclick() finished")
+    console.log("submitclick() finished")
   }
 /****************************************************************/
 
