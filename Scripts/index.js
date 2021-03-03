@@ -148,30 +148,52 @@ function addNewItem() {
         if(prodType === "TW"){
             tool.prod = false;
             tool.tw = true;
+            var dbContent = firebase.database();
+            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+                Prod_TW: "TW",
+            });
         }
         else{
             tool.prod = true;
             tool.tw = false;
+            var dbContent = firebase.database();
+            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+                Prod_TW: "Prod",
+            });
         }
         if(segmentation === "Deseg"){
             tool.nonDeseg = false;
             tool.deseg = true;
+            var dbContent = firebase.database();
+            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+                Deseg: "Yes",
+            });
         }
         else{
             tool.deseg = true;
             tool.nonDeseg = false;
+            var dbContent = firebase.database();
+            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+                Deseg: "No",
+            });
         }
         if(purgeType === "NonPurge"){
             tool.purge = false;
             tool.noPurge = true;
+            var dbContent = firebase.database();
+            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+                Purge: "No",
+            });
         }
         else{
             tool.purge = true;
             tool.noPurge = false;
+            var dbContent = firebase.database();
+            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+                Purge: "Yes",
+            });
         }
-
         
-
         itemList.push(tool);
         saveToBrowserMemorey();
         displayList(itemList);
