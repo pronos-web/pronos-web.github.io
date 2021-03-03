@@ -124,7 +124,7 @@ function addNewItem() {
         tool.building = building;
         tool.bay = bay;
         
-        var dbContent = firebase.database();
+        var dbContent = firebase.database().ref();
         var toolContent = dbContent.ref().child('Tool').child(toolID).set({
             Building: building,
             Bay: bay
@@ -133,7 +133,7 @@ function addNewItem() {
             tool.cu = false;
             tool.nonCu = true;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
                 Contamination: "NC",
             });
         }
@@ -141,7 +141,7 @@ function addNewItem() {
             tool.cu = true;
             tool.nonCu = false;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
                 Contamination: "Cu",
             });
         }
@@ -149,7 +149,7 @@ function addNewItem() {
             tool.prod = false;
             tool.tw = true;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
                 Prod_TW: "TW",
             });
         }
@@ -157,7 +157,7 @@ function addNewItem() {
             tool.prod = true;
             tool.tw = false;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
                 Prod_TW: "Prod",
             });
         }
@@ -165,7 +165,7 @@ function addNewItem() {
             tool.nonDeseg = false;
             tool.deseg = true;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
                 Deseg: "Yes",
             });
         }
@@ -173,7 +173,7 @@ function addNewItem() {
             tool.deseg = true;
             tool.nonDeseg = false;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
                 Deseg: "No",
             });
         }
@@ -181,7 +181,7 @@ function addNewItem() {
             tool.purge = false;
             tool.noPurge = true;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
                 Purge: "No",
             });
         }
@@ -189,7 +189,7 @@ function addNewItem() {
             tool.purge = true;
             tool.noPurge = false;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
+            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
                 Purge: "Yes",
             });
         }
