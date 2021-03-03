@@ -21,11 +21,11 @@ function  submitclick() {
     console.log("submitclick() started")
     //Creates the ID LSA403 and assigns values to it
     var db = firebase.database();
-    var users = db.ref().child('LSA410').set({
-      Contamination: "NC",
-      ProdOrTW: "Prod",
-      Deseg: "Yes",
-      Purge: "Yes"
+    var users = db.ref().child('Tool').set({
+      LSA402:Contamination: "NC",
+      LSA402:ProdOrTW: "Prod",
+      LSA402:Deseg: "Yes",
+      LSA402:Purge: "Yes"
     });
     console.log("submitclick() finished")
   }
