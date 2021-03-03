@@ -16,6 +16,21 @@ let expand = false;
 let filters = 0;
 let exist = true;
 
+/****************************************************************/
+function  submitclick() {
+    console.log("submitclick() started")
+    //Creates the ID LSA403 and assigns values to it
+    var db = firebase.database();
+    var users = db.ref().child('LSA410').set({
+      Contamination: "NC",
+      ProdOrTW: "Prod",
+      Deseg: "Yes",
+      Purge: "Yes"
+    });
+    onsole.log("submitclick() finished")
+  }
+/****************************************************************/
+
 function addNewItem() {
     console.log("New item added");
     let toolID;
@@ -202,6 +217,7 @@ function saveToFirebase() {
 }
 
 function getFromBrowserMemery() {
+    submitclick();
     console.log("getFromBrowserMemery called");
     const strng = localStorage.getItem("tool");
     itemList = JSON.parse(strng);
