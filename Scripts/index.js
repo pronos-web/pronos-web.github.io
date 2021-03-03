@@ -125,7 +125,7 @@ function addNewItem() {
         tool.bay = bay;
         
         var dbContent = firebase.database();
-        var toolContent = dbContent.ref().child('Tool').child(toolId).set({
+        var toolContent = dbContent.ref().child('Tool').child(toolID).set({
             Building: building,
             Bay: bay
         });
