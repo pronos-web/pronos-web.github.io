@@ -25,7 +25,7 @@ function  saveToFirebase() {
         Name: "LSA402",
     });
     var dbContent = firebase.database();
-    var toolContent = dbContent.ref().child('LSA402').set({
+    var toolContent = dbContent.ref().child('Tool:LSA402').set({
         Contamination: "NC",
         ProdOrTW: "Prod",
         Deseg: "Yes",
