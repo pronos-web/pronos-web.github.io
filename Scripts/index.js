@@ -20,10 +20,6 @@ let exist = true;
 function  saveToFirebase() {
     console.log("saveToFirebase() started")
     //Creates the ID LSA403 and assigns values to it
-    var dbTools = firebase.database();
-    var toolName = dbTools.ref().child('Tool').set({
-        Name: "LSA402",
-    });
     var dbContent = firebase.database();
     var toolContent = dbContent.ref().child('Tool').child('LSA402').set({
         Contamination: "NC",
@@ -127,13 +123,24 @@ function addNewItem() {
     
         tool.building = building;
         tool.bay = bay;
+        
+        var dbContent = firebase.database();
+        var toolContent = dbContent.ref().child('Tool').child(toolId).set({
+            Building: building,
+            Bay: bay
+        });
         if(contamination === "NC"){
             tool.cu = false;
             tool.nonCu = true;
+            var toolContent = dbContent.ref().child('Tool').child(toolId).set({
+                Contamination: "NC",
+            });
         }
         else{
             tool.cu = true;
             tool.nonCu = false;
+            var toolContent = dbContent.ref().child('Tool').child(toolId).set({
+                Contamination: "Cu",
         }
         if(prodType === "TW"){
             tool.prod = false;
@@ -159,6 +166,8 @@ function addNewItem() {
             tool.purge = true;
             tool.noPurge = false;
         }
+
+        
 
         itemList.push(tool);
         saveToBrowserMemorey();
