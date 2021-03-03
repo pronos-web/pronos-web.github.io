@@ -20,11 +20,12 @@ let exist = true;
 function  saveToFirebase() {
     console.log("saveToFirebase() started")
     //Creates the ID LSA403 and assigns values to it
-    var db = firebase.database();
-    var users = db.ref().child('Tool').set({
+    var dbTools = firebase.database();
+    var toolName = dbTools.ref().child('Tool').set({
         Name: "LSA402",
     });
-    var users = db.ref().child('LSA402').set({
+    var dbContent = firebase.database();
+    var toolContent = dbContent.ref().child('LSA402').set({
         Contamination: "NC",
         ProdOrTW: "Prod",
         Deseg: "Yes",
