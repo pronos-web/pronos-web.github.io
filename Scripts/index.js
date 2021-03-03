@@ -133,7 +133,7 @@ function addNewItem() {
             tool.cu = false;
             tool.nonCu = true;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolId).set({
+            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
                 Contamination: "NC",
             });
         }
@@ -141,7 +141,7 @@ function addNewItem() {
             tool.cu = true;
             tool.nonCu = false;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolId).set({
+            var toolContent = dbContent.ref().child('Tool').child(toolID).set({
                 Contamination: "Cu",
             });
         }
