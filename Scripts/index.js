@@ -133,17 +133,17 @@ function addNewItem() {
             tool.cu = false;
             tool.nonCu = true;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).child({
-                Contamination: "NC"
-            });
+            var toolContent = dbContent.ref().child('Tool').child(toolID).child(
+                Contamination, "NC"
+            );
         }
         else{
             tool.cu = true;
             tool.nonCu = false;
             var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).child({
-                Contamination: "Cu",
-            });
+            var toolContent = dbContent.ref().child('Tool').child(toolID).child(
+                Contamination, "Cu"
+            );
         }
         if(prodType === "TW"){
             tool.prod = false;
