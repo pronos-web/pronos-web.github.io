@@ -215,11 +215,6 @@ function saveToBrowserMemorey() {
     localStorage.setItem("tool", json);
 }
 
-function saveToFirebase() {
-    firebase.database().ref("LSA410").child("id").val() //get value from firebase
-    firebase.database().ref("LSA410").child("id").set() //save value to firebase
-}
-
 function getFromBrowserMemery() {
     saveToFirebase();
     console.log("getFromBrowserMemery called");
