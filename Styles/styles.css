@@ -1,10 +1,13 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.25);
+}
 
 body {
-    background-color: #d3d3d3;
+    background-color:  var(--primary-color);
 }
 
 form {
-    background-color: #d3d3d3;
+    background-color:  var(--primary-color);
 }
 
 a {
@@ -37,7 +40,7 @@ th {
   text-align: left;
   color: #0000ff;
   font-size: 18px;
-  background-color: #d3d3d3;
+  background-color:  var(--primary-color);
   width: 100%;
 }
 
@@ -89,7 +92,7 @@ th {
   }
   
 .flex-container > div {
-  background-color: #d3d3d3;
+  background-color:  var(--primary-color);
   width: 100%;
   margin: 1px;
   text-align: left;
@@ -109,7 +112,7 @@ th {
     padding-left: 5px;
     width: 40%;
     height: 22px;
-    border-color: #d3d3d3;
+    border-color:  var(--primary-color);
     font-size: 16px;
 }
 
@@ -119,7 +122,7 @@ th {
   padding-left: 5px;
   width: 75%;
   height: 22px;
-  border-color: #d3d3d3;
+  border-color:  var(--primary-color);
   font-size: 16px;
 }
 
@@ -128,7 +131,7 @@ th {
   padding-left: 6px;
   width: 41%;
   height: 24px;
-  border-color: #d3d3d3;
+  border-color:  var(--primary-color);
   font-size: 16px;
 }
 
@@ -145,7 +148,7 @@ nav {
 }
 
 #addBtn {
-    background-color: #d3d3d3;
+    background-color:  var(--primary-color);
     border: none;
     font-weight: bold;
     font-size: 18px;
@@ -180,7 +183,7 @@ font-weight: bold;
   height: 18px;
   font-weight: bold;
   font-size: 18px;
-  background-color: #d3d3d3;
+  background-color:  var(--primary-color);
   color: red;
   border: 0px;
 }
@@ -252,7 +255,7 @@ h2 {
 }
 
 #taskQty {
-    background-color: #d3d3d3;
+    background-color:  var(--primary-color);
     color: orange;
 }
 
@@ -324,7 +327,7 @@ h2 {
   }
 
   .container2 input:checked ~ .checkmark {
-    background-color: #d3d3d3;
+    background-color:  var(--primary-color);
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -380,7 +383,7 @@ h2 {
   }
 
   #toolFltr {
-    background-color: #d3d3d3;
+    background-color:  var(--primary-color);
     color: #000000;
   }
   
