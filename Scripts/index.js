@@ -218,8 +218,8 @@ function clearAddItem() {
         document.querySelector('#req4').style.display = "none";
         document.querySelector('#numb').placeholder = "Enter tool #";
         document.querySelector('#bay').placeholder = "Enter bay #";
-        document.getElementById("numb").style.borderColor = "#d3d3d3";
-        document.getElementById("bay").style.borderColor = "#d3d3d3";
+        document.getElementById("numb").style.borderColor = "var(--primary-color)";
+        document.getElementById("bay").style.borderColor = "var(--primary-color)";
 }
 
 function toolExist(toolID){
@@ -346,7 +346,7 @@ function showAll() {
     document.getElementById('NC').style.backgroundColor = "#ffffff";
     document.getElementById('NonPurge').style.backgroundColor = "#ffffff";
     document.getElementById('Purge').style.backgroundColor = "#ffffff";
-    document.getElementById('Deseg').style.backgroundColor = "#d3d3ffffffd3";
+    document.getElementById('Deseg').style.backgroundColor = "#ffffff";
     document.getElementById('nonDeseg').style.backgroundColor = "#ffffff";
 
     // Show filter buttons
