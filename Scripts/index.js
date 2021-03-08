@@ -1244,7 +1244,6 @@ function showForm() {
         toggle = 2;
         document.querySelector('#addForm').style.display = "inline";
         document.querySelector('#addBtn').innerHTML = "Done"; 
-        document.getElementById("addBtn").style.backgroundColor = "var(--primary-color)";
         clearAddItem(); 
         showEdit();
     }
