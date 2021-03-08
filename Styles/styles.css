@@ -86,7 +86,7 @@ th {
     display:inline;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #3d3d3d;
+    background-color: var(--primary-color);
     width: 99%;
   }
   
