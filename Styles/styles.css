@@ -147,7 +147,7 @@ nav {
 }
 
 #addBtn {
-    background-color: var(--primary-color);
+    background-color: rgb(13, 110, 139);
     outline: none;
     border: none;
     font-weight: bold;
@@ -184,7 +184,7 @@ font-weight: bold;
   font-weight: bold;
   font-size: 18px;
   background-color: var(--primary-color);
-  color: red;
+  color: #ff0000;
   border: 0px;
 }
 .rmvBtn {
@@ -238,7 +238,7 @@ font-weight: bold;
 
 h1 {
     text-align: center;
-    color: green;
+    color: rgb(0, 128, 0);
     text-decoration: underline;
 }
 
