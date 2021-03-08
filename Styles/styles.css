@@ -3,11 +3,11 @@
 }
 
 body {
-    background-color:  var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 form {
-    background-color:  var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 a {
@@ -91,7 +91,7 @@ th {
   }
   
 .flex-container > div {
-  background-color:  var(--primary-color);
+  background-color: var(--primary-color);
   width: 100%;
   margin: 1px;
   text-align: left;
@@ -147,8 +147,8 @@ nav {
 }
 
 #addBtn {
-    background-color: rgba(13, 110, 139, 0.25);
-    outline: dashed;
+    background-color: var(--primary-color);
+    outline: none;
     border: none;
     font-weight: bold;
     font-size: 18px;
@@ -183,7 +183,7 @@ font-weight: bold;
   height: 18px;
   font-weight: bold;
   font-size: 18px;
-  background-color:  var(--primary-color);
+  background-color: var(--primary-color);
   color: red;
   border: 0px;
 }
@@ -255,7 +255,7 @@ h2 {
 }
 
 #taskQty {
-    background-color:  var(--primary-color);
+    background-color: var(--primary-color);
     color: orange;
 }
 
@@ -327,7 +327,7 @@ h2 {
   }
 
   .container2 input:checked ~ .checkmark {
-    background-color:  var(--primary-color);
+    background-color: var(--primary-color);
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -383,12 +383,12 @@ h2 {
   }
 
   #toolFltr {
-    background-color:  var(--primary-color);
+    background-color: var(--primary-color);
     color: #000000;
   }
   
   .active, .collapsible:hover {
-    background-color: #555;
+    background-color: var(--primary-color);
   }
   
   .content {
