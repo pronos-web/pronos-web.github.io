@@ -40,6 +40,7 @@ th {
   text-align: left;
   color: #0000ff;
   font-size: 18px;
+  background-color:  var(--primary-color);
   width: 100%;
 }
 
@@ -86,7 +87,7 @@ th {
     display:inline;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: var(--primary-color);
+    background-color: #3d3d3d;
     width: 99%;
   }
   
@@ -147,6 +148,7 @@ nav {
 }
 
 #addBtn {
+    background-color:  var(--primary-color);
     border: none;
     font-weight: bold;
     font-size: 18px;
@@ -408,7 +410,6 @@ h2 {
   }
 
   #edtbtn {
-    background-color:  var(--primary-color);
     text-align: right;
     border: none;
   }
