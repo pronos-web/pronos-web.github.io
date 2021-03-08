@@ -410,6 +410,7 @@ h2 {
   }
 
   #edtbtn {
+    background-color:  var(--primary-color);
     text-align: right;
     border: none;
   }
