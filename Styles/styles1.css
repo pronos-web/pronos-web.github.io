@@ -23,7 +23,7 @@ body {
 }
 
 .showcase {
-    background-color: var(--primary-color);
+    background-color: rgba(13, 110, 139, 0.25);
     color: #ffffff;
     height: 100vh;
     position: relative;
