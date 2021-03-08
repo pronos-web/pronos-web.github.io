@@ -1243,7 +1243,7 @@ function showForm() {
     if(toggle === 1){
         toggle = 2;
         document.querySelector('#addForm').style.display = "inline";
-        document.querySelector('#addBtn').innerHTML = "Done!"; 
+        document.querySelector('#addBtn').innerHTML = "Done"; 
         clearAddItem(); 
         showEdit();
     }
