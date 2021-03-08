@@ -147,7 +147,7 @@ nav {
 }
 
 #addBtn {
-    background-color: rgb(13, 110, 139);
+    background-color: rgba(13, 110, 139, 0.0);
     outline: none;
     border: none;
     font-weight: bold;
