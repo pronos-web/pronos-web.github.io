@@ -36,6 +36,7 @@ th {
 }
 
 .tButton {
+  background-color: rgba(13, 110, 139, 0.0);
   border: none;
   text-align: left;
   color: #0000ff;
@@ -183,7 +184,7 @@ font-weight: bold;
   height: 18px;
   font-weight: bold;
   font-size: 18px;
-  background-color: var(--primary-color);
+  background-color: rgba(13, 110, 139, 0.0);
   color: #ff0000;
   border: 0px;
 }
