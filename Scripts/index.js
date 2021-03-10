@@ -17,15 +17,17 @@ let filters = 0;
 let exist = true;
 
 /****************************************************************/
-function  saveToFirebase() {
+function  saveToFirebase(a, b, c, d, e, f, g) {
     console.log("saveToFirebase() started")
     //Creates the ID LSA403 and assigns values to it
     var dbContent = firebase.database();
-    var toolContent = dbContent.ref().child('Tool').child('LSA402').set({
-        Contamination: "NC",
-        ProdOrTW: "Prod",
-        Deseg: "Yes",
-        Purge: "Yes"
+    var toolContent = dbContent.ref().child('Tool').child(g).set({
+        Building: a,
+        Bay: b,
+        Contamination: c,
+        ProdOrTW: d,
+        Deseg: e,
+        Purge: f
     });
     console.log("saveToFirebase() finished")
   }
@@ -79,7 +81,6 @@ function addNewItem() {
         //Add prompt that field is required
         document.querySelector('#bay').placeholder  = "* Required field";
         document.getElementById("bay").style.border = "thick solid #ff0000";
-
     }
     else {
         bay = document.getElementById('bay').value;
@@ -120,81 +121,44 @@ function addNewItem() {
     
     if(!exist){
         const tool = new Tool(toolID);
-    
         tool.building = building;
         tool.bay = bay;
-        
-        var dbContent = firebase.database();
-        var toolContent = dbContent.ref().child('Tool').child(toolID).set({
-            Building: building,
-            Bay: bay
-        });
+
         if(contamination === "NC"){
             tool.cu = false;
             tool.nonCu = true;
-            var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID);
-            toolContent.put(Contamination, "NC");
-            dbContent.updateChildren(toolContent);
         }
         else{
             tool.cu = true;
             tool.nonCu = false;
-            var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID);
-            toolContent.put(Contamination, "NC");
-            dbContent.updateChildren(toolContent);
         }
         if(prodType === "TW"){
             tool.prod = false;
             tool.tw = true;
-            var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
-                Prod_TW: "TW",
-            });
         }
         else{
             tool.prod = true;
             tool.tw = false;
-            var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
-                Prod_TW: "Prod",
-            });
         }
         if(segmentation === "Deseg"){
             tool.nonDeseg = false;
             tool.deseg = true;
-            var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
-                Deseg: "Yes",
-            });
         }
         else{
             tool.deseg = true;
             tool.nonDeseg = false;
-            var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
-                Deseg: "No",
-            });
         }
         if(purgeType === "NonPurge"){
             tool.purge = false;
             tool.noPurge = true;
-            var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
-                Purge: "No",
-            });
         }
         else{
             tool.purge = true;
             tool.noPurge = false;
-            var dbContent = firebase.database();
-            var toolContent = dbContent.ref().child('Tool').child(toolID).push().setValue({
-                Purge: "Yes",
-            });
         }
         
         itemList.push(tool);
+        saveToFirebase(building, bay, contamination, prodType,segmentation, purgeType, toolID);
         saveToBrowserMemorey();
         displayList(itemList);
         showEdit();
@@ -244,13 +208,12 @@ function toolExist(toolID){
 }
 
 function saveToBrowserMemorey() {
-    console.log("getFromBrowserMemery called");
+    console.log("saveToBrowserMemery called");
     const json = JSON.stringify(itemList);
     localStorage.setItem("tool", json);
 }
 
 function getFromBrowserMemery() {
-    saveToFirebase();
     console.log("getFromBrowserMemery called");
     const strng = localStorage.getItem("tool");
     itemList = JSON.parse(strng);
