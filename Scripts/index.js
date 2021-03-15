@@ -220,8 +220,6 @@ function getFromBrowserMemery() {
     var test01 = dbContent.ref().child('Tool');
     test01.on('value', function(datasnapshot){
         listItems = datasnapshot.val();
-        console.log("This is the format of the data: ");
-        console.log(listItems);
         showAll();
     })
 
@@ -309,7 +307,6 @@ function showAll() {
     //Collaps show filter bar ready to expand
     document.getElementById("fltr").innerHTML = "Filters +";
 
-
     //Hide Clear Filters button
     document.getElementById('clrfltr').style.display = "none";
 
@@ -342,8 +339,10 @@ function showAll() {
     document.getElementById('Deseg').style.display = "inline";
     document.getElementById('nonDeseg').style.display = "inline";
 
+    //Verify content of listItems
     console.log("Testing 1");
-    console.log(listItems);
+    //console.log(listItems);
+    console.log(listItems.Tool);
     
     // Read itemList and display all fo the items
     let html = `
