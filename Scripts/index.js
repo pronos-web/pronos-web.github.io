@@ -1,6 +1,7 @@
 import {Tool} from "./tool.js"
 
 let itemList = [];
+let listItems =[];
 let completedItems = [];
 let filter = 1;
 let toggle = 1;
@@ -20,14 +21,7 @@ let exist = true;
 function  saveToFirebase(a, b, c, d, e, f, g) {
     console.log("saveToFirebase() started")
     //Creates the ID LSA403 and assigns values to it
-    var dbContent = firebase.database();
-    var test01 = dbContent.ref().child('Tool');
-    test01.on('value', function(datasnapshot){
-        var test02 = datasnapshot.val();
-        console.log("This is the format of the data: ");
-        console.log(test02);
-    })
-    
+    var dbContent = firebase.database();    
     var toolContent = dbContent.ref().child('Tool').child(g).set({
         Building: a,
         Bay: b,
@@ -221,17 +215,27 @@ function saveToBrowserMemorey() {
 }
 
 function getFromBrowserMemery() {
+    //New code
+    var test01 = dbContent.ref().child('Tool');
+    test01.on('value', function(datasnapshot){
+        var test02 = datasnapshot.val();
+        console.log("This is the format of the data: ");
+        console.log(test02);
+        listItems = JSON.parse(test02);
+    })
+
+    // Original code below
     console.log("getFromBrowserMemery called");
     const strng = localStorage.getItem("tool");
     itemList = JSON.parse(strng);
-    const strng2 = localStorage.getItem("done");
-    completedItems = JSON.parse(strng2);
-    if(!itemList){
-        itemList = [];
-    }
-    if(!completedItems){
-        completedItems = [];
-    }
+    // const strng2 = localStorage.getItem("done");
+    // completedItems = JSON.parse(strng2);
+    // if(!itemList){
+    //     itemList = [];
+    // }
+    // if(!completedItems){
+    //     completedItems = [];
+    // }
     displayList();
     showAll();
 }
@@ -346,7 +350,7 @@ function showAll() {
             <th></th>
         </tr>`;
 
-    itemList.forEach(
+    listItems.forEach(
         tool => {
             if(tool.show){
         html += 
