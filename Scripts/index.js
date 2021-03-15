@@ -341,7 +341,7 @@ function showAll() {
     document.getElementById('Deseg').style.display = "inline";
     document.getElementById('nonDeseg').style.display = "inline";
 
-    listItems.forEach(console.log(listItems.val()));
+    listItems.forEach(console.log(listItems.value));
     
     // Read itemList and display all fo the items
     let html = `
