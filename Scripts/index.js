@@ -222,9 +222,8 @@ function getFromBrowserMemery() {
         listItems = datasnapshot.val();
         console.log("This is the format of the data: ");
         console.log(listItems);
+        showAll();
     })
-    console.log("This is the format of the data outside the function: ");
-    console.log(listItems);
 
     // Original code below
     console.log("getFromBrowserMemery called");
@@ -345,10 +344,6 @@ function showAll() {
 
     console.log("Testing 1");
     console.log(listItems);
-    console.log("Testing 2");
-    console.log(listItems.forEach);
-    console.log("Testing 3");
-    console.log(listItems.forEach.Tool);
     
     // Read itemList and display all fo the items
     let html = `
