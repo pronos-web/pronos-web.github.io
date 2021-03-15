@@ -340,6 +340,8 @@ function showAll() {
     document.getElementById('NonPurge').style.display = "inline";
     document.getElementById('Deseg').style.display = "inline";
     document.getElementById('nonDeseg').style.display = "inline";
+
+    listItems.forEach(console.log(listItems.val()));
     
     // Read itemList and display all fo the items
     let html = `
@@ -350,7 +352,7 @@ function showAll() {
             <th></th>
         </tr>`;
 
-    listItems.forEach(
+    itemList.forEach(
         tool => {
             if(tool.show){
         html += 
