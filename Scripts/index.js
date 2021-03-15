@@ -220,7 +220,8 @@ function getFromBrowserMemery() {
    // var test01 = dbContent.ref().child('Tool');
     var test01 = dbContent.ref();
     test01.on('value', function(datasnapshot){
-        listItems = datasnapshot.val();
+        const strng3 = datasnapshot.val();
+        itemList = JSON.parse(strng3);
         showAll();
     })
 
