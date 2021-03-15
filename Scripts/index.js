@@ -222,6 +222,7 @@ function getFromBrowserMemery() {
         var listItems = datasnapshot.val();
         console.log("This is the format of the data: ");
         console.log(listItems);
+        showAll();
     })
 
     // Original code below
