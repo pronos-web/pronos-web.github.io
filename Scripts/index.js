@@ -343,6 +343,8 @@ function showAll() {
     //Verify content of listItems
     console.log("Testing 1");
     console.log(listItems);
+    console.log("Testing 1.1");
+    console.log(listItems[0]);
     console.log("Testing 2");
     console.log(itemList);
     
