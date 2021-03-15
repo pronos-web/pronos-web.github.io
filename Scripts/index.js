@@ -21,7 +21,7 @@ function  saveToFirebase(a, b, c, d, e, f, g) {
     console.log("saveToFirebase() started")
     //Creates the ID LSA403 and assigns values to it
     var dbContent = firebase.database();
-    var test01 = dbContent.ref().child('Tool').child().get();
+    var test01 = dbContent.ref().child('Tool').child();
     console.log("This is the format of the data: ");
     console.log(test01);
     var toolContent = dbContent.ref().child('Tool').child(g).set({
