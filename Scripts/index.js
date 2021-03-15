@@ -341,10 +341,12 @@ function showAll() {
     document.getElementById('Deseg').style.display = "inline";
     document.getElementById('nonDeseg').style.display = "inline";
 
-    listItems.forEach(
-            console.log("Testing for each: "),
-            //console.log(tool.Tool)
-        );
+    console.log("Testing 1");
+    console.log(listItems);
+    console.log("Testing 2");
+    console.log(listItems.forEach);
+    console.log("Testing 3");
+    console.log(listItems.forEach.Tool);
     
     // Read itemList and display all fo the items
     let html = `
