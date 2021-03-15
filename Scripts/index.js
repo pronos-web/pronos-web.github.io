@@ -341,8 +341,8 @@ function showAll() {
 
     //Verify content of listItems
     console.log("Testing 1");
-    //console.log(listItems);
-    console.log(listItems.Tool);
+    console.log(listItems);
+    console.log(listItems.tool);
     
     // Read itemList and display all fo the items
     let html = `
