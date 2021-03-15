@@ -220,8 +220,7 @@ function getFromBrowserMemery() {
    // var test01 = dbContent.ref().child('Tool');
     var test01 = dbContent.ref();
     test01.on('value', function(datasnapshot){
-        const strng3 = datasnapshot.val();
-        itemList = JSON.parse(strng3);
+        listItems = datasnapshot.val();
         showAll();
     })
 
@@ -345,11 +344,7 @@ function showAll() {
     console.log("Testing 1");
     console.log(listItems);
     console.log("Testing 2");
-    console.log(listItems.Tool.Building);
-    console.log("Testing 3");
-    listItems.forEach(
-        console.log(Tool.Bay)
-    );
+    console.log(itemList);
     
     // Read itemList and display all fo the items
     let html = `
