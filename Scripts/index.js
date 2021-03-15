@@ -219,11 +219,11 @@ function getFromBrowserMemery() {
     var dbContent = firebase.database(); 
     var test01 = dbContent.ref().child('Tool');
     test01.on('value', function(datasnapshot){
-        var listItems = datasnapshot.val();
+        listItems = datasnapshot.val();
         console.log("This is the format of the data: ");
-        console.log(listItems);
-        showAll();
+        //console.log(listItems);
     })
+    console.log(listItems);
 
     // Original code below
     console.log("getFromBrowserMemery called");
