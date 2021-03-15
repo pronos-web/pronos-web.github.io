@@ -219,10 +219,9 @@ function getFromBrowserMemery() {
     var dbContent = firebase.database(); 
     var test01 = dbContent.ref().child('Tool');
     test01.on('value', function(datasnapshot){
-        var test02 = datasnapshot.val();
+        var listItems = datasnapshot.val();
         console.log("This is the format of the data: ");
-        console.log(test02);
-        listItems = JSON.parse(test02);
+        console.log(listItems);
     })
 
     // Original code below
