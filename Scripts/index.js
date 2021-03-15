@@ -221,8 +221,9 @@ function getFromBrowserMemery() {
     test01.on('value', function(datasnapshot){
         listItems = datasnapshot.val();
         console.log("This is the format of the data: ");
-        //console.log(listItems);
+        console.log(listItems);
     })
+    console.log("This is the format of the data outside the function: ");
     console.log(listItems);
 
     // Original code below
