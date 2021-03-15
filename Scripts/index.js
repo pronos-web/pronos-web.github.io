@@ -216,6 +216,7 @@ function saveToBrowserMemorey() {
 
 function getFromBrowserMemery() {
     //New code
+    var dbContent = firebase.database(); 
     var test01 = dbContent.ref().child('Tool');
     test01.on('value', function(datasnapshot){
         var test02 = datasnapshot.val();
