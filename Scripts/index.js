@@ -343,6 +343,9 @@ function showAll() {
     console.log("Testing 1");
     console.log(listItems);
     console.log(listItems.tool);
+    listItems.forEach(
+        console.log(tool.content)
+    );
     
     // Read itemList and display all fo the items
     let html = `
