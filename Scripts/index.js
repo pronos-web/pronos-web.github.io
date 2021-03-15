@@ -342,10 +342,9 @@ function showAll() {
     document.getElementById('nonDeseg').style.display = "inline";
 
     listItems.forEach(
-        tool => {
-            console.log("Testing for each: ")
+            console.log("Testing for each: "),
             console.log(tool.Tool)
-        });
+        );
     
     // Read itemList and display all fo the items
     let html = `
