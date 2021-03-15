@@ -344,10 +344,10 @@ function showAll() {
     console.log("Testing 1");
     console.log(listItems);
     console.log("Testing 2");
-    console.log(listItems.Tool.Tool);
+    console.log(listItems.Tool.Building);
     console.log("Testing 3");
     listItems.forEach(
-        console.log(Tool.Tool)
+        console.log(Tool.Bay)
     );
     
     // Read itemList and display all fo the items
