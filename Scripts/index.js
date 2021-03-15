@@ -343,7 +343,8 @@ function showAll() {
 
     listItems.forEach(
         tool => {
-            console.log(tool.Tool)
+            console.log("Testing for each: ");
+            console.log(tool.Tool);
         });
     
     // Read itemList and display all fo the items
