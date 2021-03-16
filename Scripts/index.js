@@ -35,7 +35,7 @@ function  saveToFirebase(a, b, c, d, e, f, g) {
   }
 
 var items = [];
-var databaseRef = database.ref("Tool");
+var databaseRef = firebase.database().ref("Tool");
 
 databaseRef.on('child_added', function(snapshot) {
     var item = snapshot.val(); 
@@ -51,6 +51,8 @@ databaseRef.on('child_added', function(snapshot) {
         title: item.title, 
         content: item.content
     });
+    console.log("Items: ");
+    console.log(items);
 });
 
 /****************************************************************/
