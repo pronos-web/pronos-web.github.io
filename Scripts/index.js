@@ -242,8 +242,10 @@ function getFromBrowserMemery() {
 
 function removeItem(e) {
     // Figure out how to do this
+    let itemName;
     itemList.forEach(function(item) {
-            if(e == item.id){
+        if(e == item.id){
+            itemName = itme.content;
             itemList.splice(itemList.indexOf(item), 1);
             saveToBrowserMemorey();
             showEdit();
@@ -256,7 +258,7 @@ function removeItem(e) {
         displayList();
         }      
     })
-    console.log("This is the tool to remove: " + e.target.value);
+    console.log("This is the tool to remove: " + itemName);
 }
 
 function toolButtons(e){
