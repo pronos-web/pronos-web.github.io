@@ -58,12 +58,12 @@ databaseRef.on('child_added', function(snapshot) {
     // add the event to the UI
     var elm = document.createElement('li');
     elm.id = 'item-'+snapshot.key;
-    elm.innerText = item.value + " " + item.Building + " " + item.Bay;
+    elm.innerText = item.Tool + " " + item.Building + " " + item.Bay;
     document.querySelector('#item-list').appendChild(elm);
 
     // add the event to our list
     items.push({
-        Tool: item,
+        Tool: item.Tool,
         Building: item.Building, 
         Bay: item.Bay
     });
