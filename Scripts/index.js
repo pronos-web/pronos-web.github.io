@@ -413,6 +413,7 @@ function clearFilters(){
 
     //Display all tools
     itemList.forEach(tool => { tool.show = true;});
+    showAll();
 }
 
 function showProd(){
