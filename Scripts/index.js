@@ -272,7 +272,6 @@ function removeItem(e) {
         displayList();
         }      
     })
-    console.log("This is the tool to remove: " + itemName);
 }
 
 function toolButtons(e){
@@ -359,11 +358,9 @@ function showAll() {
 
     //Verify content of listItems
     console.log("Testing 1");
-    console.log(listItems);
+    console.log(listItems.child('LSA01'));
     console.log("Testing 1.1");
-    //console.log(listItems.child('Bay'));
-    console.log("Testing 1.2");
-    //console.log(listItems.child('LSA01/Bay'));
+    console.log(listItems);
     console.log("Testing 2");
     console.log(itemList);
     
