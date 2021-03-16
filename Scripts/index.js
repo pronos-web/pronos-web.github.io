@@ -358,7 +358,7 @@ function showAll() {
 
     //Verify content of listItems
     console.log("Testing 1");
-    console.log(listItems.child('LSA01'));
+    console.log(listItems[1]);
     console.log("Testing 1.1");
     console.log(listItems);
     console.log("Testing 2");
