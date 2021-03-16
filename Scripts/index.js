@@ -360,8 +360,7 @@ function showAll() {
     console.log("Testing 1");
     console.log(listItems)
     if(listItems.length != 0){
-        var newTest = JSON.parse(listItems);
-        console.log(newTest);
+        console.log(listItems[0]);
     }
     
     console.log("Testing 2");
