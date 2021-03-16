@@ -240,12 +240,26 @@ function getFromBrowserMemery() {
     showAll();
 }
 
+// function getData() {
+//     tasks = [];
+//     firebase.database.ref('/tasks/').on('child_added', function (snapshot) {
+//       snapshot.forEach(function (childSnapshot) {
+//         var childData = childSnapshot.val();
+//         tasks.push(childData);
+//       });
+//       for (let i = 0; i < tasks.length; i++) {
+//         const task = tasks[i];
+//       }
+//     })
+//   }
+
 function removeItem(e) {
     // Figure out how to do this
     let itemName;
     itemList.forEach(function(item) {
         if(e == item.id){
             itemName = item.content;
+            firebase.database().ref('Tool').child(itemName).remove();
             itemList.splice(itemList.indexOf(item), 1);
             saveToBrowserMemorey();
             showEdit();
