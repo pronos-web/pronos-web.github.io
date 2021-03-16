@@ -48,8 +48,8 @@ databaseRef.on('child_added', function(snapshot) {
 
     // add the event to our list
     items.push({
-        title: item.title, 
-        content: item.content
+        Building: item.Building, 
+        Bay: item.Bay
     });
     console.log("Items: ");
     console.log(items);
