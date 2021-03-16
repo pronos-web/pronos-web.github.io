@@ -245,7 +245,7 @@ function removeItem(e) {
     let itemName;
     itemList.forEach(function(item) {
         if(e == item.id){
-            itemName = itme.content;
+            itemName = item.content;
             itemList.splice(itemList.indexOf(item), 1);
             saveToBrowserMemorey();
             showEdit();
