@@ -254,8 +254,9 @@ function removeItem(e) {
             completedItems.splice(completedItems.indexOf(item), 1);
         saveToBrowserMemorey();
         displayList();
-    }      
-})
+        }      
+    })
+    console.log("This is the tool to remove: " + e);
 }
 
 function toolButtons(e){
@@ -1279,24 +1280,10 @@ document.getElementById('theList').addEventListener("click", function(e) {
 document.getElementById('numb').addEventListener("click", function(e) {
 	document.getElementById('numb').value = ""; 
 })
+
 document.getElementById('bay').addEventListener("click", function(e) {
 	document.getElementById('bay').value = ""; 
 })
-// document.getElementById('numb').addEventListener("keydown", function(e) {
-//     //var ch = String.fromCharCode(evt.which);
-//     if(!System.Text.RegularExpressions.Regex.IsMatch(/^[0-9]*$/.evt)) {
-//       evt.preventDefault();
-//       document.getElementById("numb").style.border = "thick solid #ff0000";
-//       document.getElementById("bay").placeholder = "You must enter a number]";
-//     }
-//     else {
-//       //document.getElementById("bay").style.color = "gray"
-//       //document.getElementById("bay").innerHTML = "ex: 03";
-//     }
-// })
-// document.getElementById('bay').addEventListener("keypress", function(e) {
-// 	document.getElementById('bay').value = "Key pressed"; 
-// })
 
 document.getElementById('listBody').addEventListener("click", function(e) {
     console.log("Event listener for listBody: toolButton clicked")
@@ -1308,7 +1295,6 @@ document.getElementById('listBody').addEventListener("click", function(e) {
         document.querySelector('#addBtn').innerHTML = "Back";
     }
 })
-
 
 // Collapsible div for filters
 let coll = document.getElementsByClassName("collapsible");
