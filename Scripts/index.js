@@ -256,7 +256,7 @@ function removeItem(e) {
         displayList();
         }      
     })
-    console.log("This is the tool to remove: " + e.Tool);
+    console.log("This is the tool to remove: " + e.content);
 }
 
 function toolButtons(e){
