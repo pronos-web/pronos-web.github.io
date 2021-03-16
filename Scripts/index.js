@@ -56,10 +56,10 @@ databaseRef.on('child_added', function(snapshot) {
     var item = snapshot.val(); 
 
     // add the event to the UI
-    var elm = document.createElement('li');
-    elm.id = 'item-'+ snapshot.key;
-    elm.innerText = snapshot.key + " " + item.Building + " " + item.Bay;
-    document.querySelector('#item-list').appendChild(elm);
+    // var elm = document.createElement('li');
+    // elm.id = 'item-'+ snapshot.key;
+    // elm.innerText = snapshot.key + " " + item.Building + " " + item.Bay;
+    // document.querySelector('#item-list').appendChild(elm);
 
     // add the event to the Table
     var elm2 = document.createElement('td');
