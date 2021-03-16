@@ -29,7 +29,8 @@ function  saveToFirebase(a, b, c, d, e, f, g) {
         Contamination: c,
         ProdOrTW: d,
         Deseg: e,
-        Purge: f
+        Purge: f,
+        Tool: g
     });
     console.log("saveToFirebase() finished")
   }
@@ -67,8 +68,6 @@ databaseRef.on('child_added', function(snapshot) {
         Building: item.Building, 
         Bay: item.Bay
     });
-    console.log("Items: ");
-    console.log(items);
 });
 
 /****************************************************************/
