@@ -37,6 +37,21 @@ function  saveToFirebase(a, b, c, d, e, f, g) {
 var items = [];
 var databaseRef = firebase.database().ref("Tool");
 
+/**************************************************************
+ * 
+ * Add event listener to add list item when new child is added
+ * maybe try to make it a table like other functions do.
+ * Probably need to add listener to remove list items. Probably
+ * can splice 'items' to achieve that. 
+ * 
+ * Also, will need to push all children to items so they are 
+ * available to display tool info.
+ * 
+ * Can I add button like in showAll()?
+ * 
+ * How will filters work?
+ * 
+ *************************************************************/
 databaseRef.on('child_added', function(snapshot) {
     var item = snapshot.val(); 
 
