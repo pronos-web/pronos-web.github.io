@@ -18,6 +18,7 @@ let filters = 0;
 let exist = true;
 
 /****************************************************************/
+
 function  saveToFirebase(a, b, c, d, e, f, g) {
     console.log("saveToFirebase() started")
     //Creates the ID LSA403 and assigns values to it
@@ -32,6 +33,26 @@ function  saveToFirebase(a, b, c, d, e, f, g) {
     });
     console.log("saveToFirebase() finished")
   }
+
+var items = [];
+var databaseRef = database.ref("Tool");
+
+databaseRef.on('child_added', function(snapshot) {
+    var item = snapshot.val(); 
+
+    // add the event to the UI
+    var elm = document.createElement('li');
+    elm.id = 'item-'+snapshot.key;
+    elm.innerText = item.title;
+    document.querySelector('#item-list').appendChild(elm);
+
+    // add the event to our list
+    items.push({
+        title: item.title, 
+        content: item.content
+    });
+});
+
 /****************************************************************/
 
 function addNewItem() {
@@ -216,26 +237,17 @@ function saveToBrowserMemorey() {
 
 function getFromBrowserMemery() {
     //New code
-    var dbContent = firebase.database(); 
-   // var test01 = dbContent.ref().child('Tool');
-    var test01 = dbContent.ref().child('Tool');
-    test01.on('value', function(datasnapshot){
-        listItems = datasnapshot.val();
-        showAll();
-    })
+    // var dbContent = firebase.database(); 
+    // var test01 = dbContent.ref().child('Tool');
+    // test01.on('value', function(datasnapshot){
+    //     listItems = datasnapshot.val();
+    //     showAll();
+    // })
 
     // Original code below
     console.log("getFromBrowserMemery called");
     const strng = localStorage.getItem("tool");
     itemList = JSON.parse(strng);
-    // const strng2 = localStorage.getItem("done");
-    // completedItems = JSON.parse(strng2);
-    // if(!itemList){
-    //     itemList = [];
-    // }
-    // if(!completedItems){
-    //     completedItems = [];
-    // }
     displayList();
     showAll();
 }
@@ -356,16 +368,6 @@ function showAll() {
     document.getElementById('Deseg').style.display = "inline";
     document.getElementById('nonDeseg').style.display = "inline";
 
-    //Verify content of listItems
-    console.log("Testing 1");
-    console.log(listItems)
-    if(listItems.length != 0){
-        console.log(listItems[0]);
-    }
-    
-    console.log("Testing 2");
-    console.log(itemList);
-    
     // Read itemList and display all fo the items
     let html = `
     <table>
