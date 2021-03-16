@@ -67,7 +67,7 @@ databaseRef.on('child_added', function(snapshot) {
     var elm2 = document.createElement('td');
     elm2.id = 'elm2-'+ snapshot.key;
     elm2.innerText = snapshot.key;
-    document.querySelector('#newBody').appendChild(2);
+    document.querySelector('#newBody').appendChild(elm2);
     
     var elm3 = document.createElement('td');
     elm3.id = 'elm3-'+ snapshot.key;
