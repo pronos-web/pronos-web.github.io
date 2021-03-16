@@ -101,6 +101,12 @@ th {
   padding-left: 10px;
   border-bottom: 1px solid #000000;
 }
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #req1, #req2, #req3, #req4 {
   display: none;
   color: #ff0000;
