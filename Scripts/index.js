@@ -359,8 +359,11 @@ function showAll() {
     //Verify content of listItems
     console.log("Testing 1");
     console.log(listItems)
-    //var newTest = JSON.parse(listItems);
-    console.log(newTest);
+    if(listItems.length != 0){
+        var newTest = JSON.parse(listItems);
+        console.log(newTest);
+    }
+    
     console.log("Testing 2");
     console.log(itemList);
     
