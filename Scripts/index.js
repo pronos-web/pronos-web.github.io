@@ -68,6 +68,7 @@ databaseRef.on('child_added', function(snapshot) {
         Building: item.Building, 
         Bay: item.Bay
     });
+    console.log("elm.id: " + elm.id);
 });
 
 /****************************************************************/
