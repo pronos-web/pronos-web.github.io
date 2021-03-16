@@ -73,8 +73,8 @@ databaseRef.on('child_added', function(snapshot) {
     btn.id = 'toolBtn';
     btn.onclick = toolButtons(snapshot.key);
     btn.value = snapshot.key;
-    document.querySelector('').appendChild(btn)
-    document.querySelector('#newBody').appendChild(elm2);
+    document.querySelector(elm2.id).appendChild(btn)
+    //document.querySelector('#newBody').appendChild(elm2);
     
     var elm3 = document.createElement('td');
     elm3.id = 'elm3-'+ snapshot.key;
