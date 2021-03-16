@@ -62,14 +62,17 @@ databaseRef.on('child_added', function(snapshot) {
     // document.querySelector('#item-list').appendChild(elm);
 
     // add the event to the Table
+    var elm1 = document.createElement('tr')
+    document.querySelector('#newBody').appendChild(elm1);
     var elm2 = document.createElement('td');
     elm2.id = 'elm2-'+ snapshot.key;
     elm2.innerText = snapshot.key;
+    document.querySelector('#newBody').appendChild(2);
     
     var elm3 = document.createElement('td');
     elm3.id = 'elm3-'+ snapshot.key;
     elm3.innerText = item.Building + " " + item.Bay;
-    document.querySelector('#item-list').appendChild(elm3);
+    document.querySelector('#newBody').appendChild(elm3);
 
     // add the event to our list
     items.push({
