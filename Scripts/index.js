@@ -29,8 +29,7 @@ function  saveToFirebase(a, b, c, d, e, f, g) {
         Contamination: c,
         ProdOrTW: d,
         Deseg: e,
-        Purge: f,
-        Tool: g
+        Purge: f
     });
     console.log("saveToFirebase() finished")
   }
@@ -62,13 +61,22 @@ databaseRef.on('child_added', function(snapshot) {
     elm.innerText = snapshot.key + " " + item.Building + " " + item.Bay;
     document.querySelector('#item-list').appendChild(elm);
 
+    // add the event to the Table
+    var elm2 = document.createElement('td');
+    elm2.id = 'elm2-'+ snapshot.key;
+    elm2.innerText = snapshot.key;
+    
+    var elm3 = document.createElement('td');
+    elm3.id = 'elm3-'+ snapshot.key;
+    elm3.innerText = item.Building + " " + item.Bay;
+    document.querySelector('#item-list').appendChild(elm3);
+
     // add the event to our list
     items.push({
         Tool: snapshot.key,
         Building: item.Building, 
         Bay: item.Bay
     });
-    console.log("elm.id: " + snapshot.key);
 });
 
 /****************************************************************/
