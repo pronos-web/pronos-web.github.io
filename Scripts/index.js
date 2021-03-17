@@ -68,7 +68,7 @@ databaseRef.on('child_added', function(snapshot) {
    // elm2.id = 'elm2-'+ snapshot.key;
     elm2.setAttribute("id", elm2.id);
     //elm2.innerText = snapshot.key;
-    var btn = document.createElement('button', "snot");
+    var btn = document.createElement('button', snapshot.key);
     btn.setAttribute("id", 'elm2-'+ snapshot.key);
     console.log(btn.id);
     btn.setAttribute("class", "tButton");
