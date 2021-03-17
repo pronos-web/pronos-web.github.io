@@ -105,7 +105,11 @@ th {
 .centered {
   margin-left: auto;
   margin-right: auto;
-  font-size: 24px;
+  font-size: 44px;
+}
+
+#leftTD {
+  padding-right: 10px;
 }
 
 #req1, #req2, #req3, #req4 {
