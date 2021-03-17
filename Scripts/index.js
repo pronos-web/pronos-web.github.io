@@ -65,7 +65,6 @@ databaseRef.on('child_added', function(snapshot) {
     // define button attributes
     var btn = document.createElement('button', 'snapshot.key');
     btn.setAttribute("id", 'elm2-'+ snapshot.key);
-    console.log(btn.id);
     btn.setAttribute("class", "tButton");
     btn.setAttribute("type", "button");
     btn.onclick = function() { toolButtons(snapshot.key) };
@@ -104,7 +103,6 @@ databaseRef.on('child_added', function(snapshot) {
     // define button attributes
     var btn = document.createElement('button', 'snapshot.key');
     btn.setAttribute("id", 'elm2-'+ snapshot.key);
-    console.log(btn.id);
     btn.setAttribute("class", "tButton");
     btn.setAttribute("type", "button");
     btn.onclick = function() { toolButtons(snapshot.key) };
@@ -123,7 +121,7 @@ databaseRef.on('child_added', function(snapshot) {
     var elm4 = document.createElement('td');
     elm4.id = 'elm4-'+ snapshot.key;
     elm4.innerText = "X";
-    elm4.setAttribute("color", "#ff0000");
+    elm4.setAttribute("style", "background-color: #ff0000;");
     document.querySelector('#newBody').appendChild(elm4);
 
 });
