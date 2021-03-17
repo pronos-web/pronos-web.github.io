@@ -124,6 +124,12 @@ databaseRef.on('child_added', function(snapshot) {
     elm4.setAttribute("style", "background-color: #ff0000;");
     document.querySelector('#newBody').appendChild(elm4);
 
+    // add the tool and details to the items list
+    items.push({
+        Tool: snapshot.key,
+        Building: item.Building, 
+        Bay: item.Bay
+    });
 });
 }
 
