@@ -68,7 +68,7 @@ databaseRef.on('child_added', function(snapshot) {
    // elm2.id = 'elm2-'+ snapshot.key;
     elm2.setAttribute("id", elm2.id);
     //elm2.innerText = snapshot.key;
-    var btn = document.createElement('button', snapshot.key);
+    var btn = document.createElement('button', 'snapshot.key');
     btn.setAttribute("id", 'elm2-'+ snapshot.key);
     console.log(btn.id);
     btn.setAttribute("class", "tButton");
@@ -83,7 +83,7 @@ databaseRef.on('child_added', function(snapshot) {
     
     var elm3 = document.createElement('td');
     elm3.id = 'elm3-'+ snapshot.key;
-    elm3.innerText = item.Building + " " + item.Bay;
+    elm3.innerText = item.Bay;
     document.querySelector('#newBody').appendChild(elm3);
 
     // add the event to our list
