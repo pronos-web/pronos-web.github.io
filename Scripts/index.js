@@ -336,6 +336,9 @@ function toolButtons(e){
     document.getElementById('filterTable').style.display = "none";
     document.getElementById('filterTable2').style.display = "block";
     document.getElementById('clrfltr').style.display = "none";
+    document.getElementById('listTable').style.display = "none";
+    document.querySelector('#addBtn').innerHTML = "Back";
+
     toggle = 2;
 
     //Display informaton for selected tool
