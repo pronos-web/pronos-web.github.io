@@ -73,12 +73,13 @@ databaseRef.on('child_added', function(snapshot) {
     console.log(btn.id);
     btn.setAttribute("class", "tButton");
     btn.setAttribute("type", "button");
-    document.querySelector('#'+btn.id).textContent = snapshot.key;
 
     btn.onclick = function() { toolButtons(snapshot.key) };
 
     document.querySelector('#newBody').appendChild(btn)
     //document.querySelector('#newBody').appendChild(elm2);
+
+    document.querySelector('#'+btn.id).textContent = snapshot.key;
     
     var elm3 = document.createElement('td');
     elm3.id = 'elm3-'+ snapshot.key;
