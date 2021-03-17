@@ -70,7 +70,7 @@ databaseRef.on('child_added', function(snapshot) {
     //elm2.innerText = snapshot.key;
     var btn = document.createElement('button', snapshot.key);
     btn.setAttribute("id", "btoolBtn");
-    btn.setAttribute("class", "centered");
+    btn.setAttribute("class", "tButton");
     btn.setAttribute("type", "button");
 
     btn.onclick = function() { toolButtons(snapshot.key) };
@@ -1296,6 +1296,7 @@ function showForm() {
         toggle = 1;
         document.querySelector('#addForm').style.display = "none";
         document.querySelector('#addBtn').textContent = "Edit";
+        document.getElementById('listTable').style.display = "block";
         clearAddItem();
         document.getElementById('filterTable2').style.display = "none";
         showAll();
