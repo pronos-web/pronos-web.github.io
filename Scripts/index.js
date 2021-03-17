@@ -73,7 +73,7 @@ databaseRef.on('child_added', function(snapshot) {
     btn.setAttribute("id", keyid);
     btn.setAttribute("class", "tButton");
     btn.setAttribute("type", "button");
-    document.querySelector(keyid).textContent = snapshot.key;
+    document.querySelector(keyid.value).textContent = snapshot.key;
 
     btn.onclick = function() { toolButtons(snapshot.key) };
 
