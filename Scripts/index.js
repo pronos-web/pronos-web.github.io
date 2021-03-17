@@ -34,9 +34,6 @@ function  saveToFirebase(a, b, c, d, e, f, g) {
     console.log("saveToFirebase() finished")
   }
 
-var items = [];
-var databaseRef = firebase.database().ref("Tool");
-
 /**************************************************************
  * 
  * Add event listener to add list item when new child is added
@@ -52,6 +49,8 @@ var databaseRef = firebase.database().ref("Tool");
  * How will filters work?
  * 
  *************************************************************/
+var items = [];
+var databaseRef = firebase.database().ref("Tool");
 databaseRef.on('child_added', function(snapshot) {
     var item = snapshot.val(); 
 
@@ -93,6 +92,54 @@ databaseRef.on('child_added', function(snapshot) {
         Bay: item.Bay
     });
 });
+
+var items = [];
+var databaseRef = firebase.database().ref("Tool");
+databaseRef.on('child_removed', function(snapshot) {
+    var item = snapshot.val(); 
+
+    // add the event to the UI
+    // var elm = document.createElement('li');
+    // elm.id = 'item-'+ snapshot.key;
+    // elm.innerText = snapshot.key + " " + item.Building + " " + item.Bay;
+    // document.querySelector('#item-list').appendChild(elm);
+
+    // add the event to the Table
+    var elm1 = document.createElement('tr')
+    document.querySelector('#newBody').appendChild(elm1);
+    var elm2 = document.createElement('td');
+   // elm2.id = 'elm2-'+ snapshot.key;
+    elm2.setAttribute("id", elm2.id);
+    //elm2.innerText = snapshot.key;
+    var btn = document.createElement('button', 'snapshot.key');
+    btn.setAttribute("id", 'elm2-'+ snapshot.key);
+    console.log(btn.id);
+    btn.setAttribute("class", "tButton");
+    btn.setAttribute("type", "button");
+
+    btn.onclick = function() { toolButtons(snapshot.key) };
+
+    document.querySelector('#newBody').appendChild(btn)
+    //document.querySelector('#newBody').appendChild(elm2);
+
+    document.querySelector('#'+btn.id).textContent = snapshot.key;
+    
+    var elm3 = document.createElement('td');
+    elm3.id = 'elm3-'+ snapshot.key;
+    elm3.innerText = item.Building + " " + item.Bay;
+    document.querySelector('#newBody').appendChild(elm3);
+
+    // add the event to our list
+    items.push({
+        Tool: snapshot.key,
+        Building: item.Building, 
+        Bay: item.Bay
+    });
+});
+
+function updateList() {
+
+}
 
 /****************************************************************/
 
