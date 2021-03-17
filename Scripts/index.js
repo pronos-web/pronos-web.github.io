@@ -73,7 +73,7 @@ databaseRef.on('child_added', function(snapshot) {
     btn.setAttribute("class", "centered");
     btn.setAttribute("type", "button");
 
-    execBtn.onclick = function() { toolButtons(snapshot.key) };
+    btn.onclick = function() { toolButtons(snapshot.key) };
 
     document.querySelector('#newBody').appendChild(btn)
     //document.querySelector('#newBody').appendChild(elm2);
