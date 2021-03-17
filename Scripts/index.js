@@ -121,7 +121,7 @@ databaseRef.on('child_added', function(snapshot) {
     var elm4 = document.createElement('td');
     elm4.id = 'elm4-'+ snapshot.key;
     elm4.innerText = "X";
-    elm4.setAttribute("style", "background-color: #ff0000;");
+    elm4.setAttribute("style", "color: #ff0000;");
     document.querySelector('#newBody').appendChild(elm4);
 
     // add the tool and details to the items list
