@@ -65,11 +65,11 @@ databaseRef.on('child_added', function(snapshot) {
     var elm1 = document.createElement('tr')
     document.querySelector('#newBody').appendChild(elm1);
     var elm2 = document.createElement('td');
-    //elm2.id = 'elm2-'+ snapshot.key;
+    elm2.id = 'elm2-'+ snapshot.key;
     elm2.setAttribute("id", elm2.id);
     //elm2.innerText = snapshot.key;
     var btn = document.createElement('button', "snot");
-    btn.setAttribute("id", "btoolBtn");
+    btn.setAttribute("id", elm2.id);
     btn.setAttribute("class", "tButton");
     btn.setAttribute("type", "button");
     document.querySelector(elm2.id).textContent = snapshot.key;
