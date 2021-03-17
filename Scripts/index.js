@@ -66,13 +66,14 @@ databaseRef.on('child_added', function(snapshot) {
     document.querySelector('#newBody').appendChild(elm1);
     var elm2 = document.createElement('td');
     elm2.id = 'elm2-'+ snapshot.key;
+    var keyid = 'elm2-'+ snapshot.key;
     elm2.setAttribute("id", elm2.id);
     //elm2.innerText = snapshot.key;
     var btn = document.createElement('button', "snot");
-    btn.setAttribute("id", elm2.id);
+    btn.setAttribute("id", keyid);
     btn.setAttribute("class", "tButton");
     btn.setAttribute("type", "button");
-    document.querySelector(elm2.id).textContent = snapshot.key;
+    document.querySelector(keyid).textContent = snapshot.key;
 
     btn.onclick = function() { toolButtons(snapshot.key) };
 
