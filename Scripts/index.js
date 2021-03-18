@@ -379,8 +379,6 @@ function getFromBrowserMemery() {
 
 
 function removeItem(e) {
-    console.log(e);
-    console.log(item.id);
     // Figure out how to do this
     let itemName;
     itemList.forEach(function(item) {
@@ -1408,21 +1406,19 @@ window.addEventListener('load', getFromBrowserMemery);
 
 // Get the element, add a click listener...
 document.getElementById('theList').addEventListener("click", function(e) {
-	// e.target is the clicked element!
+	// e.target is the clicked element
 	// If it was a list item
 	if(e.target && e.target.id == "removeItem") {
 		// List item found!  Output the ID!
 		removeItem(e.target.value);
     } 
 })
+
 // Get the element, add a click listener...
 document.getElementById('newList').addEventListener("click", function(e) {
-	// e.target is the clicked element!
-	// If it was a list item
-    console.log(e.target);
+    console.log(e.target.value);
     console.log('Target.id:' + e.target.id);
 	if(e.target && e.target.id == "removeItem") {
-		// List item found!  Output the ID!
 		removeItem(e.target.value);
     } 
 })
