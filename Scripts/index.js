@@ -87,19 +87,27 @@ databaseRef.on('child_added', function(snapshot) {
     });
 });
 
-function editList() {
+function recreatTable(){
     // clear table
     document.querySelector("#newList").innerHTML = "";
+
     // recreate table
     var tbl = document.createElement('table');
     tbl.setAttribute("id", 'newList');
     tbl.setAttribute("class", "centered");
     document.querySelector('#listTable').appendChild(tbl);
+
     //recreate table body
     var tbod = document.createElement('tbody');
     tbod.setAttribute("id", 'newBody')
     document.querySelector('#newList').appendChild(tbod);
-    
+}
+
+function editList() {
+    // clear table
+    document.querySelector("#newList").innerHTML = "";
+    recreatTable();
+
     // Add tools to table
     var databaseRef = firebase.database().ref("Tool");
     databaseRef.on('child_added', function(snapshot) {
@@ -1401,6 +1409,7 @@ function showForm() {
         document.getElementById('listTable').style.display = "block";
         clearAddItem();
         document.getElementById('filterTable2').style.display = "none";
+        recreatTable();
         updateList();
         showAll();
     }
