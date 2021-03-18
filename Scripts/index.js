@@ -382,10 +382,10 @@ function getFromBrowserMemery() {
 function removeItem(e) {
     // Figure out how to do this
     let itemName;
-    itemList.forEach(function(item) {
+    listItems.forEach(function(item) {
         if(e == item.id){
             console.log(e);
-            console.log(item.value);
+            console.log(item.content);
             itemName = item.content;
             firebase.database().ref('Tool').child(itemName).remove();
             itemList.splice(itemList.indexOf(item), 1);
