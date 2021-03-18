@@ -384,7 +384,8 @@ function removeItem(e) {
     let itemName;
     itemList.forEach(function(item) {
         if(e == item.id){
-            console.log(item.id);
+            console.log(e);
+            console.log(item.value);
             itemName = item.content;
             firebase.database().ref('Tool').child(itemName).remove();
             itemList.splice(itemList.indexOf(item), 1);
