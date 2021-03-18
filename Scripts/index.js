@@ -88,7 +88,19 @@ databaseRef.on('child_added', function(snapshot) {
 });
 
 function editList() {
+    // clear table
     document.querySelector("#newList").innerHTML = "";
+    // recreate table
+    var tbl = document.createElement('table');
+    tbl.setAttribute("id", 'newList');
+    tbl.setAttribute("class", "centered");
+    document.querySelector('#listTable').appendChild(tbl);
+    //recreate table body
+    var tbod = document.createElement('tbody');
+    tbod.setAttribute("id", 'newBody')
+    document.querySelector('#newList').appendChild(tbod);
+    
+    // Add tools to table
     var databaseRef = firebase.database().ref("Tool");
     databaseRef.on('child_added', function(snapshot) {
     var item = snapshot.val(); 
