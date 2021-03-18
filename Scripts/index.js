@@ -125,7 +125,8 @@ function editList() {
 
     // add third cell to delete the item from the list
     var elm4 = document.createElement('td');
-    elm4.id = 'elm4-'+ snapshot.key;
+    elm4.id = snapshot.key;
+    elm4.value = snapshot.key;
     elm4.innerText = "X";
     elm4.setAttribute("style", "color: #ff0000;");
     document.querySelector('#newBody').appendChild(elm4);
@@ -383,6 +384,7 @@ function removeItem(e) {
     let itemName;
     itemList.forEach(function(item) {
         if(e == item.id){
+            console.log(item.id);
             itemName = item.content;
             firebase.database().ref('Tool').child(itemName).remove();
             itemList.splice(itemList.indexOf(item), 1);
