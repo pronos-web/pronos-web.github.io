@@ -34,21 +34,6 @@ function  saveToFirebase(a, b, c, d, e, f, g) {
     console.log("saveToFirebase() finished")
   }
 
-/**************************************************************
- * 
- * Add event listener to add list item when new child is added
- * maybe try to make it a table like other functions do.
- * Probably need to add listener to remove list items. Probably
- * can splice 'items' to achieve that. 
- * 
- * Also, will need to push all children to items so they are 
- * available to display tool info.
- * 
- * Can I add button like in showAll()?
- * 
- * How will filters work?
- * 
- *************************************************************/
 var items = [];
 var databaseRef = firebase.database().ref("Tool");
 databaseRef.on('child_added', function(snapshot) {
@@ -183,13 +168,6 @@ function updateList() {
     elm3.id = 'elm3-'+ snapshot.key;
     elm3.innerText = item.Building + " " + item.Bay;
     document.querySelector('#newBody').appendChild(elm3);
-
-    // add third cell to delete the item from the list
-    var elm4 = document.createElement('td');
-    elm4.id = 'elm4-'+ snapshot.key;
-    elm4.innerText = "X";
-    elm4.setAttribute("style", "color: #ff0000;");
-    document.querySelector('#newBody').appendChild(elm4);
 
     // add the tool and details to the items list
     items.push({
@@ -399,18 +377,6 @@ function getFromBrowserMemery() {
     showAll();
 }
 
-// function getData() {
-//     tasks = [];
-//     firebase.database.ref('/tasks/').on('child_added', function (snapshot) {
-//       snapshot.forEach(function (childSnapshot) {
-//         var childData = childSnapshot.val();
-//         tasks.push(childData);
-//       });
-//       for (let i = 0; i < tasks.length; i++) {
-//         const task = tasks[i];
-//       }
-//     })
-//   }
 
 function removeItem(e) {
     // Figure out how to do this
