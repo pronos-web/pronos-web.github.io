@@ -88,6 +88,7 @@ databaseRef.on('child_added', function(snapshot) {
 });
 
 function editList() {
+    document.querySelector("#newList").innerHTML = "";
     var databaseRef = firebase.database().ref("Tool");
 databaseRef.on('child_added', function(snapshot) {
     var item = snapshot.val(); 
