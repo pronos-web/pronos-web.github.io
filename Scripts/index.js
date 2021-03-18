@@ -1417,7 +1417,7 @@ document.getElementById('theList').addEventListener("click", function(e) {
 document.getElementById('newList').addEventListener("click", function(e) {
 	// e.target is the clicked element!
 	// If it was a list item
-    console.log('Target:' + e.target);
+    console.log('Target.content:' + e.target.content);
     console.log('Target.id:' + e.target.id);
 	if(e.target && e.target.id == "removeItem") {
 		// List item found!  Output the ID!
