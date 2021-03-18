@@ -1413,6 +1413,18 @@ document.getElementById('theList').addEventListener("click", function(e) {
 		removeItem(e.target.value);
     } 
 })
+// Get the element, add a click listener...
+document.getElementById('newList').addEventListener("click", function(e) {
+	// e.target is the clicked element!
+	// If it was a list item
+    console.log(e.target);
+    console.log(e.target.id);
+	if(e.target && e.target.id == "removeItem") {
+		// List item found!  Output the ID!
+		removeItem(e.target.value);
+    } 
+})
+
 
 document.getElementById('numb').addEventListener("click", function(e) {
 	document.getElementById('numb').value = ""; 
