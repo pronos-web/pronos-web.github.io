@@ -66,12 +66,17 @@ databaseRef.on('child_added', function(snapshot) {
     document.querySelector('#newBody').appendChild(elm3);
 
     // add the tool and details to the items list
-    items.push({
+    listItems.push({
         Tool: snapshot.key,
         Building: item.Building, 
-        Bay: item.Bay
+        Bay: item.Bay,
+        Contamination: item.Contamination,
+        Deseg: item.Deseg,
+        ProdOrTW: item.ProdOrTW,
+        Purge: item.Purge
     });
 });
+console.table(listItems);
 
 function creatTableHeader() {
 
@@ -163,12 +168,17 @@ function editList() {
     document.querySelector('#newBody').appendChild(elm4);
 
     // add the tool and details to the items list
-    items.push({
+    listItems.push({
         Tool: snapshot.key,
         Building: item.Building, 
-        Bay: item.Bay
+        Bay: item.Bay,
+        Contamination: item.Contamination,
+        Deseg: item.Deseg,
+        ProdOrTW: item.ProdOrTW,
+        Purge: item.Purge
     });
 });
+console.table(itemList);
 }
 
 function updateList() {
@@ -202,10 +212,14 @@ function updateList() {
     document.querySelector('#newBody').appendChild(elm3);
 
     // add the tool and details to the items list
-    items.push({
+    listItems.push({
         Tool: snapshot.key,
         Building: item.Building, 
-        Bay: item.Bay
+        Bay: item.Bay,
+        Contamination: item.Contamination,
+        Deseg: item.Deseg,
+        ProdOrTW: item.ProdOrTW,
+        Purge: item.Purge
     });
 });
 }
@@ -336,13 +350,13 @@ function addNewItem() {
             tool.noPurge = false;
         }
         
-        itemList.push(tool);
+        //itemList.push(tool);
         saveToFirebase(building, bay, contamination, prodType,segmentation, purgeType, toolID);
         saveToBrowserMemorey();
         displayList(itemList);
         showEdit();
 
-        console.table(tool);
+        //console.table(tool);
         clearAddItem();
     }
 }
