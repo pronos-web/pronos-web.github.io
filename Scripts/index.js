@@ -96,7 +96,9 @@ function creatTableHeader() {
     // format cells
     document.getElementById("cell1").style.fontWeight = "900";
     document.getElementById("cell2").style.fontWeight = "900";
+    document.getElementById("cell1").style.paddingRight  = "150px";
     document.getElementById("cell1").style.borderBottom  = "solid #000000";
+    document.getElementById("cell2").style.borderBottom  = "solid #000000";
 }
 
 function formatTable() {
