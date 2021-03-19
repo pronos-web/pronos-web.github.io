@@ -1325,6 +1325,7 @@ function displayTools() {
     html += '</table>';
 
     document.getElementById('listBody').innerHTML = html;
+    document.getElementById('listBody').style.display = "none";
     console.log("displayTools() called");
 }
 
