@@ -76,8 +76,7 @@ databaseRef.on('child_added', function(snapshot) {
         Purge: item.Purge
     });
 });
-console.log(listItems.Tool);
-console.log(listItems.Contamination);
+console.log(listItems);
 
 function creatTableHeader() {
 
@@ -169,21 +168,18 @@ function editList() {
     document.querySelector('#newBody').appendChild(elm4);
 
     // add the tool and details to the items list
-    // listItems.push({
-    //     Tool: snapshot.key,
-    //     Building: item.Building, 
-    //     Bay: item.Bay,
-    //     Contamination: item.Contamination,
-    //     Deseg: item.Deseg,
-    //     ProdOrTW: item.ProdOrTW,
-    //     Purge: item.Purge
-    // });
-    //console.log(listItems.Tool).value;
-    //console.log(listItems.Contamination.val);
+    listItem = [];
+    listItems.push({
+        Tool: snapshot.key,
+        Building: item.Building, 
+        Bay: item.Bay,
+        Contamination: item.Contamination,
+        Deseg: item.Deseg,
+        ProdOrTW: item.ProdOrTW,
+        Purge: item.Purge
+    });
 });
 console.log(listItems);
-//console.log(listItems.Tool.value);
-//console.log(listItems.Contamination.val);
 }
 
 function updateList() {
@@ -217,15 +213,16 @@ function updateList() {
     document.querySelector('#newBody').appendChild(elm3);
 
     // add the tool and details to the items list
-    // listItems.push({
-    //     Tool: snapshot.key,
-    //     Building: item.Building, 
-    //     Bay: item.Bay,
-    //     Contamination: item.Contamination,
-    //     Deseg: item.Deseg,
-    //     ProdOrTW: item.ProdOrTW,
-    //     Purge: item.Purge
-    // });
+    listItem = [];
+    listItems.push({
+        Tool: snapshot.key,
+        Building: item.Building, 
+        Bay: item.Bay,
+        Contamination: item.Contamination,
+        Deseg: item.Deseg,
+        ProdOrTW: item.ProdOrTW,
+        Purge: item.Purge
+    });
 });
 }
 
