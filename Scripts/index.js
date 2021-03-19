@@ -1421,10 +1421,10 @@ document.getElementById('theList').addEventListener("click", function(e) {
 
 // Get the element, add a click listener...
 document.getElementById('newList').addEventListener("click", function(e) {
-    console.log(e.target.value);
-    console.log('Target.id:' + e.target.id);
+    console.log(e.target);
+    console.log(e.target.id);
 	if(e.target && e.target.id == "removeItem") {
-		removeItem(e.target.value);
+		removeItem(e.target.id);
     } 
 })
 
