@@ -108,9 +108,8 @@ th {
   font-size: 24px;
 }
 
-.leftTD {
+.centered > td{
   padding-right: 30px;
-  margin-right: 10px;
 }
 
 #req1, #req2, #req3, #req4 {
