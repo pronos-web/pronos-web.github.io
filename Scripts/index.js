@@ -122,6 +122,8 @@ function recreatTable(){
 }
 
 function editList() {
+    listItem = [];
+    
     // clear table
     document.querySelector("#newList").innerHTML = "";
     recreatTable();
@@ -168,7 +170,6 @@ function editList() {
     document.querySelector('#newBody').appendChild(elm4);
 
     // add the tool and details to the items list
-    listItem = [];
     listItems.push({
         Tool: snapshot.key,
         Building: item.Building, 
@@ -183,6 +184,7 @@ console.log(listItems);
 }
 
 function updateList() {
+    listItem = [];
     var databaseRef = firebase.database().ref("Tool");
     databaseRef.on('child_added', function(snapshot) {
     var item = snapshot.val(); 
@@ -213,7 +215,6 @@ function updateList() {
     document.querySelector('#newBody').appendChild(elm3);
 
     // add the tool and details to the items list
-    listItem = [];
     listItems.push({
         Tool: snapshot.key,
         Building: item.Building, 
