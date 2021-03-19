@@ -384,7 +384,7 @@ function removeItem(e) {
     var items = [];
     var databaseRef = firebase.database().ref("Tool");
     var item = databaseRef.child(e);
-    console.log(item);
+    console.log(item.key);
     // Figure out how to do this
     let itemName;
     listItems.forEach(function(item) {
