@@ -73,6 +73,24 @@ databaseRef.on('child_added', function(snapshot) {
     });
 });
 
+function creatTableHeader() {
+    var hdr = document.createElement('table');
+    hdr.setAttribute("id", 'tblHead');
+    hdr.setAttribute("class", "centered");
+    document.querySelector('#hdTable').appendChild(tbl);
+
+    // add row to the Table
+    var cell1 = document.createElement('tr')
+    cell1.setAttribute.apply("text", "Tool ID");
+    document.querySelector('#newBody').appendChild(cell1);
+    
+    // add cell to the table row
+    var cell2 = document.createElement('td');
+    cell2.setAttribute.apply("text", "Location");
+    document.querySelector('#newBody').appendChild(cell2);
+}
+
+
 function recreatTable(){
     // clear table
     document.querySelector("#newList").innerHTML = "";
@@ -1395,6 +1413,7 @@ TODO: //add function & event listener for showDeseg & showNonDeseg
 
 document.querySelector('#addBtn').addEventListener('click', showForm);
 window.addEventListener('load', getFromBrowserMemery);
+window.addEventListener('load', creatTableHeader);
 
 // Get the element, add a click listener...
 document.getElementById('theList').addEventListener("click", function(e) {
