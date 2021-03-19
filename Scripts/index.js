@@ -782,7 +782,7 @@ function showProd(){
     // } 
 
     displayTools();
-    filterContent()
+    filterContent();
 }
 
 function showTW(){
