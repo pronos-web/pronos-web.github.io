@@ -65,8 +65,8 @@ databaseRef.on('child_added', function(snapshot) {
     elm3.innerText = item.Building + " " + item.Bay;
     document.querySelector('#newBody').appendChild(elm3);
 
-    document.getElementById(elm2.id).style.borderBottom  = "thin solid #000000";
-    document.getElementById(elm3.id).style.borderBottom  = "thin solid #000000";
+    document.getElementById(elm2.id).style.borderBottom  = "solid #000000";
+    document.getElementById(elm3.id).style.borderBottom  = "solid #000000";
 
     // add the tool and details to the items list
     items.push({
