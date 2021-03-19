@@ -535,6 +535,7 @@ function showAll() {
     html += '</table>';
 
     document.getElementById('listBody').innerHTML = html;
+    document.getElementById('listBody').style.display = "none";
     console.log("showAll() called");
 }
 
@@ -1367,6 +1368,7 @@ itemList.forEach(
 );
 
 document.getElementById('listBody').innerHTML = html;
+document.getElementById('listBody').style.display = "none";
 console.log("showEdit() called");
 }
 
