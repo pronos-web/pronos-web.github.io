@@ -76,7 +76,8 @@ databaseRef.on('child_added', function(snapshot) {
         Purge: item.Purge
     });
 });
-console.table(listItems);
+console.log(listItems.Tool);
+console.log(listItems.Contamination);
 
 function creatTableHeader() {
 
@@ -178,7 +179,8 @@ function editList() {
         Purge: item.Purge
     });
 });
-console.table(itemList);
+console.log(listItems.Tool);
+console.log(listItems.Contamination);
 }
 
 function updateList() {
