@@ -80,10 +80,10 @@ function creatTableHeader() {
     hdr.setAttribute("class", "centered");
     document.querySelector('#hdTable').appendChild(hdr);
 
-    // // create table body
-    // var tbod = document.createElement('tbody');
-    // tbod.setAttribute("id", 'tblBody')
-    // document.querySelector('#tblHead').appendChild(tbod);
+    // create table body
+    var tbod = document.createElement('tbody');
+    tbod.setAttribute("id", 'tblBody')
+    document.querySelector('#tblHead').appendChild(tbod);
 
     // add row to the Table
     var row1 = document.createElement('tr')
