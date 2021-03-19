@@ -99,6 +99,10 @@ function creatTableHeader() {
     cell2.setAttribute("id", "cell2");
     cell2.innerText = "Location";
 
+    formatTable();
+}
+
+function formatTable() {
     // format cells
     document.getElementById("#cell1").style.fontWeight = "900";
     document.getElementById("#cell2").style.fontWeight = "900";
