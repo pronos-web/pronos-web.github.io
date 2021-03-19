@@ -399,14 +399,14 @@ function removeItem(e) {
     //         //saveToBrowserMemorey();
     //         showEdit();
     //     }      
-    })
-    completedItems.forEach(function(item) {
-        if(e == item.id){
-            completedItems.splice(completedItems.indexOf(item), 1);
-        saveToBrowserMemorey();
-        displayList();
-        }      
-    })
+    //})
+    // completedItems.forEach(function(item) {
+    //     if(e == item.id){
+    //         completedItems.splice(completedItems.indexOf(item), 1);
+    //     saveToBrowserMemorey();
+    //     displayList();
+    //     }      
+    // })
 }
 
 function toolButtons(e){
