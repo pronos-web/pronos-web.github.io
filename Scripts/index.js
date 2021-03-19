@@ -74,29 +74,35 @@ databaseRef.on('child_added', function(snapshot) {
 });
 
 function creatTableHeader() {
+    // create a table
     var hdr = document.createElement('table');
     hdr.setAttribute("id", 'tblHead');
     hdr.setAttribute("class", "centered");
     document.querySelector('#hdTable').appendChild(hdr);
 
+    // create table body
+    var tbod = document.createElement('tbody');
+    tbod.setAttribute("id", 'tblBody')
+    document.querySelector('#tblHead').appendChild(tbod);
+
     // add row to the Table
     var row1 = document.createElement('tr')
     row1.setAttribute("id", "row1");
-    document.querySelector('#tblHead').appendChild(row1);
+    document.querySelector('#tblBody').appendChild(row1);
 
     // add cell to the table row
     var cell1 = document.createElement('td');
     cell1.setAttribute("id", "cell1");
-    document.querySelector('#tblHead').appendChild(cell2);
+    cell1.innerText = "Tool ID";
+    document.querySelector('#tblBody').appendChild(cell2);
     
     // add cell to the table row
     var cell2 = document.createElement('td');
     cell2.setAttribute("id", "cell2");
-    document.querySelector('#tblHead').appendChild(cell2);
+    cell2.innerText = "Location";
+    document.querySelector('#tblBody').appendChild(cell2);
 
-    // add value to cells
-    document.querySelector('#cell1').innerHTML = "Tool ID";
-    document.querySelector('#cell2').innerHTML = "Location";
+    // format cells
     document.getElementById("#cell1").style.fontWeight = "900";
     document.getElementById("#cell2").style.fontWeight = "900";
     document.getElementById("#row1").style.borderBottom  = "thin solid #000000";
