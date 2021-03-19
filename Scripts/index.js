@@ -159,7 +159,7 @@ function editList() {
     elm4.setAttribute("style", "color: #ff0000;");
     document.querySelector('#newBody').appendChild(elm4);
 
-    document.getElementById('#'+btn.id).style.paddingRight = "130px";
+    document.getElementById('#'+btn.id).style.paddingRight = "30px";
 
     // add the tool and details to the items list
     items.push({
