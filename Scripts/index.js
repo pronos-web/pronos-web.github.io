@@ -159,6 +159,7 @@ function editList() {
     elm4.innerText = "X";
     elm4.setAttribute('style', 'color: #ff0000;');
     elm4.style.fontSize = '16px';
+    elm4.style.fontWeight = '900';
     document.querySelector('#newBody').appendChild(elm4);
 
     // add the tool and details to the items list
