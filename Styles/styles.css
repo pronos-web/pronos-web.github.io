@@ -28,6 +28,10 @@ th {
     
 }
 
+tr {
+  border-bottom: 1px solid black;
+}
+
 .listRows {
     text-align: left;
     border-bottom: 1px solid black;
@@ -43,7 +47,7 @@ th {
   color: #0000ff;
   font-size: 20px;
   width: 100%;
-  padding-right: 100px;
+  padding-right: 150px;
 }
 
 .listLoc {
