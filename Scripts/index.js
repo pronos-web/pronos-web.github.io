@@ -99,7 +99,7 @@ function creatTableHeader() {
     cell2.setAttribute("id", "cell2");
     cell2.innerText = "Location";
 
-    formatTable();
+    //formatTable();
 }
 
 function formatTable() {
