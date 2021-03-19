@@ -122,7 +122,7 @@ function recreatTable(){
 }
 
 function editList() {
-    listItem = []; 
+    listItems.length = 0;
 
     // clear table
     document.querySelector("#newList").innerHTML = "";
@@ -184,7 +184,7 @@ console.log(listItems);
 }
 
 function updateList() {
-    listItem = [];
+    listItems.length = 0;
     var databaseRef = firebase.database().ref("Tool");
     databaseRef.on('child_added', function(snapshot) {
     var item = snapshot.val(); 
