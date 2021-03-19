@@ -178,12 +178,12 @@ function editList() {
         ProdOrTW: item.ProdOrTW,
         Purge: item.Purge
     });
-    console.log(listItems.Tool);
-    console.log(listItems.Contamination);
+    console.log(listItems.Tool).value;
+    console.log(listItems.Contamination.val);
 });
 console.log(listItems);
-console.log(listItems.Tool);
-console.log(listItems.Contamination);
+console.log(listItems.Tool.value);
+console.log(listItems.Contamination.val);
 }
 
 function updateList() {
