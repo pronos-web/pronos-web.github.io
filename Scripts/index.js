@@ -246,54 +246,58 @@ function filterContent() {
         !deseg,
         !nonDeseg)
 
-        console.log("FilterContent() if worked");
+        console.log("FilterContent() 'If' worked");
+        console.log(item.ProdOrTW);
+        console.log(item.key);
+        if(item.ProdOrTW == "Prod"){
 
-        // add row to the Table
-        var elm1 = document.createElement('tr')
-        document.querySelector('#newBody').appendChild(elm1);
+            // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
 
-        // add cell to the table row
-        var elm2 = document.createElement('td');
-        elm2.setAttribute("id", elm2.id);
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
 
-        // define button attributes
-        var btn = document.createElement('button', 'snapshot.key');
-        btn.setAttribute("id", 'elm2-'+ snapshot.key);
-        btn.setAttribute("class", "tButton");
-        btn.setAttribute("type", "button");
-        btn.onclick = function() { toolButtons(snapshot.key) };
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
 
-        // add buttion to cell
-        document.querySelector('#newBody').appendChild(btn)
-        document.querySelector('#'+btn.id).textContent = snapshot.key;
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
 
-        // add second cell with building and bay
-        var elm3 = document.createElement('td');
-        elm3.id = 'elm3-'+ snapshot.key;
-        elm3.innerText = item.Building + " " + item.Bay;
-        elm3.style.fontSize = '18px';
-        document.querySelector('#newBody').appendChild(elm3);
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
 
-        // add third cell to delete the item from the list
-        var elm4 = document.createElement('td');
-        elm4.id = snapshot.key;
-        elm4.value = snapshot.key;
-        elm4.innerText = "X";
-        elm4.setAttribute('style', 'color: #ff0000;');
-        elm4.style.fontSize = '16px';
-        elm4.style.fontWeight = '900';
-        document.querySelector('#newBody').appendChild(elm4);
-
-        // add the tool and details to the items list
-        listItems.push({
-            Tool: snapshot.key,
-            Building: item.Building, 
-            Bay: item.Bay,
-            Contamination: item.Contamination,
-            Deseg: item.Deseg,
-            ProdOrTW: item.ProdOrTW,
-            Purge: item.Purge
-        });
+            // add third cell to delete the item from the list
+            var elm4 = document.createElement('td');
+            elm4.id = snapshot.key;
+            elm4.value = snapshot.key;
+            elm4.innerText = "X";
+            elm4.setAttribute('style', 'color: #ff0000;');
+            elm4.style.fontSize = '16px';
+            elm4.style.fontWeight = '900';
+            document.querySelector('#newBody').appendChild(elm4);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }
     });
 
 console.log(listItems);
