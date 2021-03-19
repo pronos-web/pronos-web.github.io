@@ -93,6 +93,10 @@ function creatTableHeader() {
     document.querySelector('#tblBody').appendChild(cell2);
 
     //formatTable();
+    // format cells
+    document.getElementById("cell1").style.fontWeight = "900";
+    document.getElementById("cell2").style.fontWeight = "900";
+    document.getElementById("row1").style.borderBottom  = "thin solid #000000";
 }
 
 function formatTable() {
