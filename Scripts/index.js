@@ -81,12 +81,12 @@ function creatTableHeader() {
 
     // add row to the Table
     var cell1 = document.createElement('tr')
-    cell1.setAttribute.apply("id", "cell1");
+    cell1.setAttribute("id", "cell1");
     document.querySelector('#newBody').appendChild(cell1);
     
     // add cell to the table row
     var cell2 = document.createElement('td');
-    cell1.setAttribute.apply("id", "cell1");
+    cell1.setAttribute("id", "cell1");
     document.querySelector('#newBody').appendChild(cell2);
 
     // add value to cells
