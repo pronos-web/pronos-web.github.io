@@ -156,7 +156,8 @@ function editList() {
     elm4.id = snapshot.key;
     elm4.value = snapshot.key;
     elm4.innerText = "X";
-    elm4.setAttribute('style', 'font-size:14px, color: #ff0000;');
+    elm4.setAttribute('style', 'color: #ff0000;');
+    elm4.fontSize = '12px';
     document.querySelector('#newBody').appendChild(elm4);
 
     // add the tool and details to the items list
