@@ -779,7 +779,7 @@ function showProd(){
     //             }
     //         }
     //     );
-    // } 
+     } 
 
     displayTools();
     filterContent();
