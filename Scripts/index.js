@@ -149,6 +149,7 @@ function editList() {
     var elm3 = document.createElement('td');
     elm3.id = 'elm3-'+ snapshot.key;
     elm3.innerText = item.Building + " " + item.Bay;
+    elm3.style.fontSize = '18px';
     document.querySelector('#newBody').appendChild(elm3);
 
     // add third cell to delete the item from the list
