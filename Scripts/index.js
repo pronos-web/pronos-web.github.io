@@ -94,13 +94,13 @@ function creatTableHeader() {
     var cell1 = document.createElement('td');
     cell1.setAttribute("id", "cell1");
     cell1.innerText = "Tool ID";
-    document.querySelector('#tblBody').appendChild(cell2);
+    document.querySelector('#row1').appendChild(cell2);
     
     // add cell to the table row
     var cell2 = document.createElement('td');
     cell2.setAttribute("id", "cell2");
     cell2.innerText = "Location";
-    document.querySelector('#tblBody').appendChild(cell2);
+    document.querySelector('#row1').appendChild(cell2);
 
     // format cells
     document.getElementById("#cell1").style.fontWeight = "900";
