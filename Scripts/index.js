@@ -122,8 +122,8 @@ function recreatTable(){
 }
 
 function editList() {
-    listItem = [];
-    
+    listItem = []; 
+
     // clear table
     document.querySelector("#newList").innerHTML = "";
     recreatTable();
