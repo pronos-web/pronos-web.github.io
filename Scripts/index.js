@@ -81,13 +81,17 @@ function creatTableHeader() {
 
     // add row to the Table
     var cell1 = document.createElement('tr')
-    cell1.setAttribute.apply("text", "Tool ID");
+    cell1.setAttribute.apply("id", "cell1");
     document.querySelector('#newBody').appendChild(cell1);
     
     // add cell to the table row
     var cell2 = document.createElement('td');
-    cell2.setAttribute.apply("text", "Location");
+    cell1.setAttribute.apply("id", "cell1");
     document.querySelector('#newBody').appendChild(cell2);
+
+    // add value to cells
+    document.querySelector('#cell1').innerHTML = "Tool ID";
+    document.querySelector('#cell2').innerHTML = "Location";
 }
 
 
