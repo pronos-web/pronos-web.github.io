@@ -28,7 +28,7 @@ th {
     
 }
 
-tr {
+.centered > tbody > tr {
   border-bottom: 1px solid black;
 }
 
