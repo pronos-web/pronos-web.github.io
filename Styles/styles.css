@@ -108,7 +108,7 @@ th {
   font-size: 24px;
 }
 
-.centered > td{
+.centered > tbody > td{
   padding-right: 30px;
 }
 
