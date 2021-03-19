@@ -2,7 +2,6 @@ import {Tool} from "./tool.js"
 
 let itemList = [];
 let listItems =[];
-let completedItems = [];
 let filter = 1;
 let toggle = 1;
 let production = false;
@@ -13,6 +12,10 @@ let purge = false;
 let nonPurge = false;
 let deseg = false;
 let nonDeseg = false;
+let d1c = false;
+let d1d = false;
+let d1x = false;
+let rp1 = false;
 let expand = false;
 let filters = 0;
 let exist = true;
@@ -244,11 +247,14 @@ function filterContent() {
         !purge,
         !nonPurge,
         !deseg,
-        !nonDeseg)
+        !nonDeseg,
+        !d1c,
+        !d1d,
+        !d1x,
+        !rp1){
 
-        console.log("FilterContent() 'If' worked");
-        console.log(item.ProdOrTW);
-        console.log(item.key);
+            const listA = JSON.parse(listItems);
+
         if(item.ProdOrTW == "Prod"){
 
             // add row to the Table
@@ -276,16 +282,6 @@ function filterContent() {
             elm3.innerText = item.Building + " " + item.Bay;
             elm3.style.fontSize = '18px';
             document.querySelector('#newBody').appendChild(elm3);
-
-            // add third cell to delete the item from the list
-            var elm4 = document.createElement('td');
-            elm4.id = snapshot.key;
-            elm4.value = snapshot.key;
-            elm4.innerText = "X";
-            elm4.setAttribute('style', 'color: #ff0000;');
-            elm4.style.fontSize = '16px';
-            elm4.style.fontWeight = '900';
-            document.querySelector('#newBody').appendChild(elm4);
             
             // add the tool and details to the items list
             listItems.push({
@@ -297,7 +293,7 @@ function filterContent() {
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
-        }
+        }}
     });
 
 console.log(listItems);
@@ -1512,8 +1508,8 @@ document.querySelector('#showPurge').addEventListener('click', showPurge);
 document.querySelector('#showPurge2').addEventListener('click', showPurge);
 document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);
 document.querySelector('#showNonPurge2').addEventListener('click', showNonPurge);
-document.querySelector('#showNC').addEventListener('click', showNC);
-//document.querySelector('#showNC').addEventListener('click', filterContent);
+//document.querySelector('#showNC').addEventListener('click', showNC);
+document.querySelector('#showNC').addEventListener('click', filterContent);
 document.querySelector('#showNC2').addEventListener('click', showNC);
 document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
