@@ -380,6 +380,7 @@ function getFromBrowserMemery() {
 
 
 function removeItem(e) {
+    console.log("removeItem(e) called");
     // Figure out how to do this
     let itemName;
     listItems.forEach(function(item) {
@@ -1420,6 +1421,7 @@ document.getElementById('theList').addEventListener("click", function(e) {
 
 // Get the element, add a click listener...
 document.getElementById('newList').addEventListener("click", function(e) {
+    console.log("Event listener for newList: 'X' clicked");
 		removeItem(e.target.id);
 })
 
@@ -1433,7 +1435,7 @@ document.getElementById('bay').addEventListener("click", function(e) {
 })
 
 document.getElementById('listBody').addEventListener("click", function(e) {
-    console.log("Event listener for listBody: toolButton clicked")
+    console.log("Event listener for listBody: toolButton clicked");
 	// e.target is the clicked element!
 	// If it was a list item
     if(e.target && e.target.id == "toolBtn") {
