@@ -380,18 +380,17 @@ function getFromBrowserMemery() {
 
 
 function removeItem(e) {
-    console.log(e);
-    console.log(item.content);
     // Figure out how to do this
     let itemName;
     listItems.forEach(function(item) {
         if(e == item.id){
             console.log(e);
+            console.log(item.id);
             console.log(item.content);
-            itemName = item.content;
-            firebase.database().ref('Tool').child(itemName).remove();
-            itemList.splice(itemList.indexOf(item), 1);
-            saveToBrowserMemorey();
+            //itemName = item.content;
+            //firebase.database().ref('Tool').child(itemName).remove();
+            //itemList.splice(itemList.indexOf(item), 1);
+            //saveToBrowserMemorey();
             showEdit();
         }      
     })
