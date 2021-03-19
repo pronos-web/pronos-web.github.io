@@ -82,17 +82,17 @@ function creatTableHeader() {
     // add row to the Table
     var row1 = document.createElement('tr')
     row1.setAttribute("id", "row1");
-    document.querySelector('#newBody').appendChild(row1);
+    document.querySelector('#hdTable').appendChild(row1);
 
     // add cell to the table row
     var cell1 = document.createElement('td');
     cell1.setAttribute("id", "cell1");
-    document.querySelector('#newBody').appendChild(cell2);
+    document.querySelector('#hdTable').appendChild(cell2);
     
     // add cell to the table row
     var cell2 = document.createElement('td');
     cell2.setAttribute("id", "cell2");
-    document.querySelector('#newBody').appendChild(cell2);
+    document.querySelector('#hdTable').appendChild(cell2);
 
     // add value to cells
     document.querySelector('#cell1').innerHTML = "Tool ID";
