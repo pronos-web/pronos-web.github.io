@@ -381,32 +381,13 @@ function getFromBrowserMemery() {
 
 function removeItem(e) {
     console.log("removeItem(e) called");
-    // var items = [];
+
      var databaseRef = firebase.database().ref("Tool");
      var item = databaseRef.child(e);
      console.log(item.key);
      firebase.database().ref('Tool').child(item.key).remove();
-    // Figure out how to do this
-    // let itemName;
-    // listItems.forEach(function(item) {
-    //     console.log(e);
-    //     console.log(item.id);
-    //     console.log(item.content);
-    //     if(e == item.id){
-    //         //itemName = item.content;
-    //         //firebase.database().ref('Tool').child(itemName).remove();
-    //         //itemList.splice(itemList.indexOf(item), 1);
-    //         //saveToBrowserMemorey();
-    //         showEdit();
-    //     }      
-    //})
-    // completedItems.forEach(function(item) {
-    //     if(e == item.id){
-    //         completedItems.splice(completedItems.indexOf(item), 1);
-    //     saveToBrowserMemorey();
-    //     displayList();
-    //     }      
-    // })
+
+     editList();
 }
 
 function toolButtons(e){
