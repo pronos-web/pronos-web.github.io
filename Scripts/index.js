@@ -179,6 +179,7 @@ function editList() {
         Purge: item.Purge
     });
 });
+console.log(listItems);
 console.log(listItems.Tool);
 console.log(listItems.Contamination);
 }
