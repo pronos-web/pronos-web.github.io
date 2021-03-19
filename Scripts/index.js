@@ -77,7 +77,7 @@ function creatTableHeader() {
     var hdr = document.createElement('table');
     hdr.setAttribute("id", 'tblHead');
     hdr.setAttribute("class", "centered");
-    document.querySelector('#hdTable').appendChild(tbl);
+    document.querySelector('#hdTable').appendChild(hdr);
 
     // add row to the Table
     var cell1 = document.createElement('tr')
