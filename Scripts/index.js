@@ -46,6 +46,7 @@ databaseRef.on('child_added', function(snapshot) {
     // add cell to the table row
     var elm2 = document.createElement('td');
     elm2.setAttribute("id", elm2.id);
+    elm2.setAttribute("class", "leftTD");
 
     // define button attributes
     var btn = document.createElement('button', 'snapshot.key');
