@@ -74,20 +74,11 @@ databaseRef.on('child_added', function(snapshot) {
 });
 
 function creatTableHeader() {
-    // create a table
-    var hdr = document.createElement('table');
-    hdr.setAttribute("id", 'tblHead');
-    hdr.setAttribute("class", "centered");
-    document.querySelector('#hdTable').appendChild(hdr);
-
-    // create table body
-    var tbod = document.createElement('tbody');
-    tbod.setAttribute("id", 'tblBody')
-    document.querySelector('#tblHead').appendChild(tbod);
 
     // add row to the Table
     var row1 = document.createElement('tr')
     row1.setAttribute("id", "row1");
+    document.querySelector('#tblBody').appendChild(row1);
 
     // add cell to the table row
     var cell1 = document.createElement('td');
