@@ -382,10 +382,10 @@ function getFromBrowserMemery() {
 function removeItem(e) {
     console.log("removeItem(e) called");
     // var items = [];
-    // var databaseRef = firebase.database().ref("Tool");
-    firebase.database().ref('Tool').child(e.key).remove();
-    // var item = databaseRef.child(e);
-    // console.log(item.key);
+     var databaseRef = firebase.database().ref("Tool");
+     var item = databaseRef.child(e);
+     console.log(item.key);
+     firebase.database().ref('Tool').child(item.key).remove();
     // Figure out how to do this
     // let itemName;
     // listItems.forEach(function(item) {
