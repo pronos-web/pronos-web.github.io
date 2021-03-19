@@ -169,21 +169,21 @@ function editList() {
     document.querySelector('#newBody').appendChild(elm4);
 
     // add the tool and details to the items list
-    listItems.push({
-        Tool: snapshot.key,
-        Building: item.Building, 
-        Bay: item.Bay,
-        Contamination: item.Contamination,
-        Deseg: item.Deseg,
-        ProdOrTW: item.ProdOrTW,
-        Purge: item.Purge
-    });
+    // listItems.push({
+    //     Tool: snapshot.key,
+    //     Building: item.Building, 
+    //     Bay: item.Bay,
+    //     Contamination: item.Contamination,
+    //     Deseg: item.Deseg,
+    //     ProdOrTW: item.ProdOrTW,
+    //     Purge: item.Purge
+    // });
     //console.log(listItems.Tool).value;
-    console.log(listItems.Contamination.val);
+    //console.log(listItems.Contamination.val);
 });
 console.log(listItems);
 //console.log(listItems.Tool.value);
-console.log(listItems.Contamination.val);
+//console.log(listItems.Contamination.val);
 }
 
 function updateList() {
@@ -217,15 +217,15 @@ function updateList() {
     document.querySelector('#newBody').appendChild(elm3);
 
     // add the tool and details to the items list
-    listItems.push({
-        Tool: snapshot.key,
-        Building: item.Building, 
-        Bay: item.Bay,
-        Contamination: item.Contamination,
-        Deseg: item.Deseg,
-        ProdOrTW: item.ProdOrTW,
-        Purge: item.Purge
-    });
+    // listItems.push({
+    //     Tool: snapshot.key,
+    //     Building: item.Building, 
+    //     Bay: item.Bay,
+    //     Contamination: item.Contamination,
+    //     Deseg: item.Deseg,
+    //     ProdOrTW: item.ProdOrTW,
+    //     Purge: item.Purge
+    // });
 });
 }
 
