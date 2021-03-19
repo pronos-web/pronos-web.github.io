@@ -34,7 +34,6 @@ function  saveToFirebase(a, b, c, d, e, f, g) {
     console.log("saveToFirebase() finished")
   }
 
-var items = [];
 var databaseRef = firebase.database().ref("Tool");
 databaseRef.on('child_added', function(snapshot) {
     var item = snapshot.val(); 
@@ -225,6 +224,79 @@ function updateList() {
         Purge: item.Purge
     });
 });
+}
+
+function filterContent() {
+    listItems.length = 0;
+
+    // clear table
+    document.querySelector("#newList").innerHTML = "";
+    recreatTable();
+
+        // Add tools to table
+        var databaseRef = firebase.database().ref("Tool");
+        databaseRef.on('child_added', function(snapshot) {
+        var item = snapshot.val(); 
+    if(production,
+        !testWafer,
+        !copper,
+        !nonCopper,
+        !purge,
+        !nonPurge,
+        !deseg,
+        !nonDeseg)
+
+        console.log("FilterContent() if worked");
+
+        // add row to the Table
+        var elm1 = document.createElement('tr')
+        document.querySelector('#newBody').appendChild(elm1);
+
+        // add cell to the table row
+        var elm2 = document.createElement('td');
+        elm2.setAttribute("id", elm2.id);
+
+        // define button attributes
+        var btn = document.createElement('button', 'snapshot.key');
+        btn.setAttribute("id", 'elm2-'+ snapshot.key);
+        btn.setAttribute("class", "tButton");
+        btn.setAttribute("type", "button");
+        btn.onclick = function() { toolButtons(snapshot.key) };
+
+        // add buttion to cell
+        document.querySelector('#newBody').appendChild(btn)
+        document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+        // add second cell with building and bay
+        var elm3 = document.createElement('td');
+        elm3.id = 'elm3-'+ snapshot.key;
+        elm3.innerText = item.Building + " " + item.Bay;
+        elm3.style.fontSize = '18px';
+        document.querySelector('#newBody').appendChild(elm3);
+
+        // add third cell to delete the item from the list
+        var elm4 = document.createElement('td');
+        elm4.id = snapshot.key;
+        elm4.value = snapshot.key;
+        elm4.innerText = "X";
+        elm4.setAttribute('style', 'color: #ff0000;');
+        elm4.style.fontSize = '16px';
+        elm4.style.fontWeight = '900';
+        document.querySelector('#newBody').appendChild(elm4);
+
+        // add the tool and details to the items list
+        listItems.push({
+            Tool: snapshot.key,
+            Building: item.Building, 
+            Bay: item.Bay,
+            Contamination: item.Contamination,
+            Deseg: item.Deseg,
+            ProdOrTW: item.ProdOrTW,
+            Purge: item.Purge
+        });
+    });
+
+console.log(listItems);
 }
 
 /****************************************************************/
@@ -603,113 +675,114 @@ function showProd(){
         document.getElementById('active2').style.backgroundColor = "#000000";
         document.getElementById('TW2').style.backgroundColor = "#ffffff";
 
-        itemList.forEach(
-            tool => {
-                tool.show = false;
+        // itemList.forEach(
+        //     tool => {
+        //         tool.show = false;
 
-                if(tool.prod && !copper && !nonCopper && !purge && !nonPurge){
-                    tool.show = true;
-                }
-                else{
-                    if(tool.prod && copper && tool.cu && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(tool.prod && copper && tool.cu && purge && tool.cu){
-                        tool.show = true;
-                    }
-                    if(tool.prod && copper && tool.cu && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
+        //         if(tool.prod && !copper && !nonCopper && !purge && !nonPurge){
+        //             tool.show = true;
+        //         }
+        //         else{
+        //             if(tool.prod && copper && tool.cu && !purge && !nonPurge){
+        //                 tool.show = true;
+        //             }
+        //             if(tool.prod && copper && tool.cu && purge && tool.cu){
+        //                 tool.show = true;
+        //             }
+        //             if(tool.prod && copper && tool.cu && nonPurge && tool.noPurge){
+        //                 tool.show = true;
+        //             }
 
-                    if(tool.prod && nonCopper && tool.nonCu && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(tool.prod && nonCopper && tool.nonCu && purge && tool.cu){
-                        tool.show = true;
-                    }
-                    if(tool.prod && nonCopper && tool.nonCu && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
+        //             if(tool.prod && nonCopper && tool.nonCu && !purge && !nonPurge){
+        //                 tool.show = true;
+        //             }
+        //             if(tool.prod && nonCopper && tool.nonCu && purge && tool.cu){
+        //                 tool.show = true;
+        //             }
+        //             if(tool.prod && nonCopper && tool.nonCu && nonPurge && tool.noPurge){
+        //                 tool.show = true;
+        //             }
 
-                    if(tool.prod && purge && tool.purge && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(tool.prod && purge && tool.purge && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(tool.prod && purge && tool.purge && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
+        //             if(tool.prod && purge && tool.purge && !copper && !nonCopper){
+        //                 tool.show = true;
+        //             }
+        //             if(tool.prod && purge && tool.purge && copper && tool.cu){
+        //                 tool.show = true;
+        //             }
+        //             if(tool.prod && purge && tool.purge && nonCopper && tool.nonCopper){
+        //                 tool.show = true;
+        //             }
 
-                    if(tool.prod && nonPurge && tool.noPurge && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(tool.prod && nonPurge && tool.noPurge && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(tool.prod && nonPurge && tool.noPurge && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
+        //             if(tool.prod && nonPurge && tool.noPurge && !copper && !nonCopper){
+        //                 tool.show = true;
+        //             }
+        //             if(tool.prod && nonPurge && tool.noPurge && copper && tool.cu){
+        //                 tool.show = true;
+        //             }
+        //             if(tool.prod && nonPurge && tool.noPurge && nonCopper && tool.nonCopper){
+        //                 tool.show = true;
+        //             }
+        //         }
+        //     }
+        // );
     }
     else {
         document.getElementById('active2').style.backgroundColor = "#ffffff";
         production = false;
 
-        itemList.forEach(
-            tool => {
-                if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
-                    tool.show = true;
-                    showAll();
-                }
-                else{
-                    if(copper  && tool.cu && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(copper  && tool.cu && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(copper  && tool.cu && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
+    //     itemList.forEach(
+    //         tool => {
+    //             if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
+    //                 tool.show = true;
+    //                 showAll();
+    //             }
+    //             else{
+    //                 if(copper  && tool.cu && !purge && !nonPurge){
+    //                     tool.show = true;
+    //                 }
+    //                 if(copper  && tool.cu && purge && tool.purge){
+    //                     tool.show = true;
+    //                 }
+    //                 if(copper  && tool.cu && nonPurge && tool.noPurge){
+    //                     tool.show = true;
+    //                 }
 
-                    if(nonCopper  && tool.nonCu && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(nonCopper  && tool.nonCu && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(nonCopper  && tool.nonCu && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
+    //                 if(nonCopper  && tool.nonCu && !purge && !nonPurge){
+    //                     tool.show = true;
+    //                 }
+    //                 if(nonCopper  && tool.nonCu && purge && tool.purge){
+    //                     tool.show = true;
+    //                 }
+    //                 if(nonCopper  && tool.nonCu && nonPurge && tool.noPurge){
+    //                     tool.show = true;
+    //                 }
 
-                    if(purge && tool.purge && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(purge && tool.purge && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(purge && tool.purge && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
+    //                 if(purge && tool.purge && !copper && !nonCopper){
+    //                     tool.show = true;
+    //                 }
+    //                 if(purge && tool.purge && copper && tool.cu){
+    //                     tool.show = true;
+    //                 }
+    //                 if(purge && tool.purge && nonCopper && tool.nonCopper){
+    //                     tool.show = true;
+    //                 }
 
-                    if(nonPurge && tool.noPurge && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(nonPurge && tool.noPurge && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(nonPurge && tool.noPurge && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
-    } 
+    //                 if(nonPurge && tool.noPurge && !copper && !nonCopper){
+    //                     tool.show = true;
+    //                 }
+    //                 if(nonPurge && tool.noPurge && copper && tool.cu){
+    //                     tool.show = true;
+    //                 }
+    //                 if(nonPurge && tool.noPurge && nonCopper && tool.nonCopper){
+    //                     tool.show = true;
+    //                 }
+    //             }
+    //         }
+    //     );
+    // } 
 
     displayTools();
+    filterContent()
 }
 
 function showTW(){
@@ -1431,12 +1504,13 @@ document.querySelector('#showProd').addEventListener('click', showProd);
 document.querySelector('#showProd2').addEventListener('click', showProd);
 document.querySelector('#showTW').addEventListener('click', showTW);
 document.querySelector('#showTW2').addEventListener('click', showTW);
+document.querySelector('#showPurge').addEventListener('click', showPurge);
+document.querySelector('#showPurge2').addEventListener('click', showPurge);
 document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);
 document.querySelector('#showNonPurge2').addEventListener('click', showNonPurge);
 document.querySelector('#showNC').addEventListener('click', showNC);
+//document.querySelector('#showNC').addEventListener('click', filterContent);
 document.querySelector('#showNC2').addEventListener('click', showNC);
-document.querySelector('#showPurge').addEventListener('click', showPurge);
-document.querySelector('#showPurge2').addEventListener('click', showPurge);
 document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
 document.querySelector('#clrfltr').addEventListener('click', clearFilters);
