@@ -80,18 +80,26 @@ function creatTableHeader() {
     document.querySelector('#hdTable').appendChild(hdr);
 
     // add row to the Table
-    var cell1 = document.createElement('tr')
+    var row1 = document.createElement('tr')
+    row1.setAttribute("id", "row1");
+    document.querySelector('#newBody').appendChild(row1);
+
+    // add cell to the table row
+    var cell1 = document.createElement('td');
     cell1.setAttribute("id", "cell1");
-    document.querySelector('#newBody').appendChild(cell1);
+    document.querySelector('#newBody').appendChild(cell2);
     
     // add cell to the table row
     var cell2 = document.createElement('td');
-    cell1.setAttribute("id", "cell1");
+    cell2.setAttribute("id", "cell2");
     document.querySelector('#newBody').appendChild(cell2);
 
     // add value to cells
     document.querySelector('#cell1').innerHTML = "Tool ID";
     document.querySelector('#cell2').innerHTML = "Location";
+    document.getElementById("#cell1").style.fontWeight = "900";
+    document.getElementById("#cell2").style.fontWeight = "900";
+    document.getElementById("#row1").style.borderBottom  = "thin solid #000000";
 }
 
 
