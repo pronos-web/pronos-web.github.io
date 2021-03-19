@@ -95,7 +95,7 @@ function creatTableHeader() {
     // format cells
     document.getElementById("cell1").style.fontWeight = "900";
     document.getElementById("cell2").style.fontWeight = "900";
-    document.getElementById("cell1").style.paddingRight  = "150px";
+    document.getElementById("cell1").style.paddingRight  = "140px";
     document.getElementById("cell1").style.borderBottom  = "solid #000000";
     document.getElementById("cell2").style.borderBottom  = "solid #000000";
 }
@@ -158,8 +158,6 @@ function editList() {
     elm4.innerText = "X";
     elm4.setAttribute("style", "color: #ff0000;");
     document.querySelector('#newBody').appendChild(elm4);
-
-    document.getElementById('#'+btn.id).style.paddingRight = "30px";
 
     // add the tool and details to the items list
     items.push({
