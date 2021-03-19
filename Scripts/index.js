@@ -381,6 +381,10 @@ function getFromBrowserMemery() {
 
 function removeItem(e) {
     console.log("removeItem(e) called");
+    var items = [];
+    var databaseRef = firebase.database().ref("Tool");
+    var item = databaseRef.val();
+    console.log(item);
     // Figure out how to do this
     let itemName;
     listItems.forEach(function(item) {
