@@ -240,23 +240,10488 @@ function filterContent() {
         var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) {
         var item = snapshot.val(); 
-    if(production,
-        !testWafer,
-        !copper,
-        !nonCopper,
-        !purge,
-        !nonPurge,
-        !deseg,
-        !nonDeseg,
-        !d1c,
-        !d1d,
-        !d1x,
-        !rp1){
 
-            const listA = JSON.parse(listItems);
+/**************** One Filter Selsected *************************/
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
 
         if(item.ProdOrTW == "Prod"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
 
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.ProdOrTW == "TW"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+    
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+    
+        if(item.Contamination == "Cu"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "NC"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "Purge"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "NonPurge"){
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+    
+        if(item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+    
+        if(item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+/**************** Two Filter Selsected ****************/
+/****************  Prod/TW + one other ****************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+
+        if(item.ProdOrTW == "Prod" &&
+        item.Contamination == "Cu"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.ProdOrTW == "Prod" &&
+        item.Contamination == "NC"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+    
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+
+        if(item.ProdOrTW == "TW" && item.Contamination == "Cu"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.ProdOrTW == "TW" && 
+        item.Contamination == "NC"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "Purge" &&
+        item.ProdOrTW == "Prod" ){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }
+    }
+    
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "NonPurge" &&
+        item.ProdOrTW == "Prod" ){
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "Purge" &&
+        item.ProdOrTW == "TW" ){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "NonPurge" &&
+        item.ProdOrTW == "TW" ){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+/****************  Copper + one other ****************/
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+
+        if(item.Purge == "Purge" &&
+        item.Contamination == "Cu"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "NonPurge" &&
+        item.Contamination == "NC"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+    
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+    
+        if(item.Deseg == "Deseg" && 
+        item.Contamination == "Cu"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Deseg == "nonDeseg" && 
+        item.Contamination == "NC"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+/******************* NC plus one other *******************/
+
+if( !production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "Purge" &&
+        item.Contamination == "NC" ){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "NonPurge" &&
+        item.Contamination == "NC" ){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Deseg == "Deseg" &&
+        item.Contamination == "NC" ){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( !production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Deseg == "nonDeseg" &&
+        item.Contamination == "NC" ){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+/************** Purge plus one other **************/
+        
+if( !production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "Purge" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+
+/***** one flter plus bulding *******************/
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+        
+/********************** two plus Building ************************/
+
+/********************* D1C ********************************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+/********************** D1D *****************************/
+        
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+/************************ D1X ****************************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+/********************* RP1 *******************************/
+        
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+
+/********************** Three plus Building ************************/
+
+/********************* D1C ****************************/
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+/********************* D1D ****************************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+/********************* D1X ****************************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+    
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+        
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+/********************* RP1 ****************************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+    
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+        
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+
+/**************** Three Filter Selsected *************************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "NonPurge"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg"){
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+    
+if( production,
+    !testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+
+        
+
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "NonPurge"){
+            
             // add row to the Table
             var elm1 = document.createElement('tr')
             document.querySelector('#newBody').appendChild(elm1);
@@ -294,9 +10759,5063 @@ function filterContent() {
                 Purge: item.Purge
             });
         }}
-    });
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
 
-console.log(listItems);
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+        
+        
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg"){	
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }
+    }
+
+if( !production,
+    testWafer,
+    !copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr');
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }
+    
+    }
+
+        
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg"){	
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+/*************** Four Filter plus Bulding ***********************/
+
+/****************  D1C **************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+/****************  D1D **************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }
+}
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+/****************  D1X **************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+/****************  RP1 **************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+/**************** Four Filter Selsected *************************/
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg"){
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg"){
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production,
+    !testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    copper,
+    !nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg"){
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    purge,
+    !nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    deseg,
+    !nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "Deseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production,
+    testWafer,
+    !copper,
+    nonCopper,
+    !purge,
+    nonPurge,
+    !deseg,
+    nonDeseg,
+    !d1c,
+    !d1d,
+    !d1x,
+    !rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "NC" &&
+        item.Purge == "nonPurge" &&
+        item.Deseg == "nonDeseg"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }
+    }
+    });
 }
 
 /****************************************************************/
@@ -1561,7 +17080,7 @@ document.getElementById('listBody').addEventListener("click", function(e) {
 let coll = document.getElementsByClassName("collapsible");
 let i;
 
-for (i = 0; i < coll.length; i++) {
+for (i = 0; i < coll.length; i==) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     let content = this.nextElementSibling;
