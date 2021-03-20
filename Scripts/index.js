@@ -335,7 +335,7 @@ if( production &&
             elm3.style.fontSize = '18px';
             document.querySelector('#newBody').appendChild(elm3);
             
-            add the tool and details to the items list
+           // add the tool and details to the items list
             listItems.push({
                 Tool: snapshot.key,
                 Building: item.Building, 
