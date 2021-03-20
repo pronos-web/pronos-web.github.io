@@ -289,7 +289,7 @@ if( production &&
             //     Building: item.Building, 
             //     Bay: item.Bay,
             //     Contamination: item.Contamination,
-            //     Deseg: item.deseg &&
+            //     Deseg: item.deseg,
             //     ProdOrTW: item.ProdOrTW,
             //     Purge: item.Purge
             // });
@@ -342,7 +342,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -397,7 +397,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -450,7 +450,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -503,7 +503,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -555,7 +555,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -608,7 +608,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -661,7 +661,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -714,7 +714,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -767,7 +767,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -821,7 +821,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -875,7 +875,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -932,7 +932,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -986,7 +986,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1040,7 +1040,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1094,7 +1094,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1148,7 +1148,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1202,7 +1202,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1256,7 +1256,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1310,7 +1310,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1364,7 +1364,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1418,7 +1418,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1474,7 +1474,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1528,7 +1528,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1584,7 +1584,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1638,7 +1638,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1694,7 +1694,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1748,7 +1748,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1802,7 +1802,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1856,7 +1856,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1912,7 +1912,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -1966,7 +1966,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2023,7 +2023,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2077,7 +2077,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2131,7 +2131,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2185,7 +2185,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2239,7 +2239,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2293,7 +2293,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2347,7 +2347,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2401,7 +2401,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2455,7 +2455,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2509,7 +2509,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2563,7 +2563,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2617,7 +2617,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2677,7 +2677,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2732,7 +2732,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2787,7 +2787,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2842,7 +2842,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2897,7 +2897,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -2952,7 +2952,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3009,7 +3009,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3064,7 +3064,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3119,7 +3119,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3174,7 +3174,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3229,7 +3229,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3284,7 +3284,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3341,7 +3341,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3396,7 +3396,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3451,7 +3451,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3506,7 +3506,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3561,7 +3561,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3616,7 +3616,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3673,7 +3673,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3728,7 +3728,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3783,7 +3783,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3838,7 +3838,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3893,7 +3893,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -3948,7 +3948,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4008,7 +4008,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4064,7 +4064,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4120,7 +4120,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4176,7 +4176,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4232,7 +4232,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4288,7 +4288,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4344,7 +4344,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4400,7 +4400,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4456,7 +4456,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4512,7 +4512,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4569,7 +4569,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4625,7 +4625,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4681,7 +4681,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4737,7 +4737,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4793,7 +4793,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4849,7 +4849,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4905,7 +4905,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -4961,7 +4961,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5017,7 +5017,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5073,7 +5073,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5129,7 +5129,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5185,7 +5185,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5241,7 +5241,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5297,7 +5297,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5353,7 +5353,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5409,7 +5409,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5467,7 +5467,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5523,7 +5523,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5579,7 +5579,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5635,7 +5635,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5691,7 +5691,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5747,7 +5747,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5803,7 +5803,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5859,7 +5859,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5915,7 +5915,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -5971,7 +5971,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6028,7 +6028,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6084,7 +6084,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6140,7 +6140,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6196,7 +6196,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6252,7 +6252,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6308,7 +6308,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6364,7 +6364,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6420,7 +6420,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6476,7 +6476,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6532,7 +6532,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6588,7 +6588,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6644,7 +6644,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6701,7 +6701,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6757,7 +6757,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6813,7 +6813,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6869,7 +6869,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6927,7 +6927,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -6983,7 +6983,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7039,7 +7039,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7095,7 +7095,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7151,7 +7151,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7207,7 +7207,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7263,7 +7263,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7319,7 +7319,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7375,7 +7375,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7431,7 +7431,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7488,7 +7488,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7544,7 +7544,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7600,7 +7600,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7656,7 +7656,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7712,7 +7712,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7768,7 +7768,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7824,7 +7824,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7880,7 +7880,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7936,7 +7936,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -7993,7 +7993,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8051,7 +8051,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8107,7 +8107,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8165,7 +8165,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8223,7 +8223,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8279,7 +8279,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8335,7 +8335,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8393,7 +8393,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8449,7 +8449,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8505,7 +8505,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8561,7 +8561,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8617,7 +8617,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8673,7 +8673,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8731,7 +8731,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8787,7 +8787,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8843,7 +8843,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8901,7 +8901,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -8960,7 +8960,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9016,7 +9016,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9074,7 +9074,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9130,7 +9130,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9186,7 +9186,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9242,7 +9242,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9298,7 +9298,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9356,7 +9356,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9412,7 +9412,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9469,7 +9469,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9527,7 +9527,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9583,7 +9583,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9640,7 +9640,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9697,7 +9697,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9753,7 +9753,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9809,7 +9809,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9868,7 +9868,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9923,7 +9923,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -9978,7 +9978,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10033,7 +10033,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10088,7 +10088,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10143,7 +10143,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10199,7 +10199,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10253,7 +10253,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10308,7 +10308,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10364,7 +10364,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10423,7 +10423,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10478,7 +10478,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10534,7 +10534,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10589,7 +10589,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10644,7 +10644,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10699,7 +10699,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10754,7 +10754,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10809,7 +10809,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10864,7 +10864,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10920,7 +10920,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -10975,7 +10975,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11031,7 +11031,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11090,7 +11090,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11145,7 +11145,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11200,7 +11200,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11255,7 +11255,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11316,7 +11316,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11373,7 +11373,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11430,7 +11430,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11487,7 +11487,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11544,7 +11544,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11601,7 +11601,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11658,7 +11658,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11715,7 +11715,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11772,7 +11772,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11829,7 +11829,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11886,7 +11886,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -11944,7 +11944,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12001,7 +12001,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12057,7 +12057,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12114,7 +12114,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12171,7 +12171,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12230,7 +12230,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12287,7 +12287,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12344,7 +12344,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12401,7 +12401,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12458,7 +12458,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12515,7 +12515,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12572,7 +12572,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12629,7 +12629,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12686,7 +12686,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12743,7 +12743,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12800,7 +12800,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12857,7 +12857,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12914,7 +12914,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -12971,7 +12971,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13028,7 +13028,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13085,7 +13085,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13144,7 +13144,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13201,7 +13201,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13258,7 +13258,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13315,7 +13315,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13372,7 +13372,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13429,7 +13429,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13486,7 +13486,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13543,7 +13543,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13600,7 +13600,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13657,7 +13657,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13714,7 +13714,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13771,7 +13771,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13828,7 +13828,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13885,7 +13885,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13942,7 +13942,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -13999,7 +13999,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14058,7 +14058,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14115,7 +14115,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14172,7 +14172,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14229,7 +14229,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14286,7 +14286,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14343,7 +14343,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14400,7 +14400,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14458,7 +14458,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14515,7 +14515,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14572,7 +14572,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14629,7 +14629,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14686,7 +14686,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14743,7 +14743,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14800,7 +14800,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14857,7 +14857,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14914,7 +14914,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -14972,7 +14972,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15028,7 +15028,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15084,7 +15084,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15140,7 +15140,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15196,7 +15196,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15251,7 +15251,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15306,7 +15306,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15362,7 +15362,7 @@ if( production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15418,7 +15418,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15474,7 +15474,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15530,7 +15530,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15586,7 +15586,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15641,7 +15641,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15697,7 +15697,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15753,7 +15753,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
@@ -15809,7 +15809,7 @@ if( !production &&
                 Building: item.Building, 
                 Bay: item.Bay,
                 Contamination: item.Contamination,
-                Deseg: item.deseg &&
+                Deseg: item.deseg,
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
