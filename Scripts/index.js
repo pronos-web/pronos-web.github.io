@@ -15815,6 +15815,7 @@ if( !production &&
             });
         }
     }
+    else updateList();
     });
 }
 
