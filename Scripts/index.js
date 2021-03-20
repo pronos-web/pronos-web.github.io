@@ -16193,593 +16193,96 @@ function showProd(){
 
         document.getElementById('active2').style.backgroundColor = "#000000";
         document.getElementById('TW2').style.backgroundColor = "#ffffff";
-
-        // itemList.forEach(
-        //     tool => {
-        //         tool.show = false;
-
-        //         if(tool.prod && !copper && !nonCopper && !purge && !nonPurge){
-        //             tool.show = true;
-        //         }
-        //         else{
-        //             if(tool.prod && copper && tool.cu && !purge && !nonPurge){
-        //                 tool.show = true;
-        //             }
-        //             if(tool.prod && copper && tool.cu && purge && tool.cu){
-        //                 tool.show = true;
-        //             }
-        //             if(tool.prod && copper && tool.cu && nonPurge && tool.noPurge){
-        //                 tool.show = true;
-        //             }
-
-        //             if(tool.prod && nonCopper && tool.nonCu && !purge && !nonPurge){
-        //                 tool.show = true;
-        //             }
-        //             if(tool.prod && nonCopper && tool.nonCu && purge && tool.cu){
-        //                 tool.show = true;
-        //             }
-        //             if(tool.prod && nonCopper && tool.nonCu && nonPurge && tool.noPurge){
-        //                 tool.show = true;
-        //             }
-
-        //             if(tool.prod && purge && tool.purge && !copper && !nonCopper){
-        //                 tool.show = true;
-        //             }
-        //             if(tool.prod && purge && tool.purge && copper && tool.cu){
-        //                 tool.show = true;
-        //             }
-        //             if(tool.prod && purge && tool.purge && nonCopper && tool.nonCopper){
-        //                 tool.show = true;
-        //             }
-
-        //             if(tool.prod && nonPurge && tool.noPurge && !copper && !nonCopper){
-        //                 tool.show = true;
-        //             }
-        //             if(tool.prod && nonPurge && tool.noPurge && copper && tool.cu){
-        //                 tool.show = true;
-        //             }
-        //             if(tool.prod && nonPurge && tool.noPurge && nonCopper && tool.nonCopper){
-        //                 tool.show = true;
-        //             }
-        //         }
-        //     }
-        // );
     }
     else {
         document.getElementById('active2').style.backgroundColor = "#ffffff";
         production = false;
+    }
 
-    //     itemList.forEach(
-    //         tool => {
-    //             if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
-    //                 tool.show = true;
-    //                 showAll();
-    //             }
-    //             else{
-    //                 if(copper  && tool.cu && !purge && !nonPurge){
-    //                     tool.show = true;
-    //                 }
-    //                 if(copper  && tool.cu && purge && tool.purge){
-    //                     tool.show = true;
-    //                 }
-    //                 if(copper  && tool.cu && nonPurge && tool.noPurge){
-    //                     tool.show = true;
-    //                 }
-
-    //                 if(nonCopper  && tool.nonCu && !purge && !nonPurge){
-    //                     tool.show = true;
-    //                 }
-    //                 if(nonCopper  && tool.nonCu && purge && tool.purge){
-    //                     tool.show = true;
-    //                 }
-    //                 if(nonCopper  && tool.nonCu && nonPurge && tool.noPurge){
-    //                     tool.show = true;
-    //                 }
-
-    //                 if(purge && tool.purge && !copper && !nonCopper){
-    //                     tool.show = true;
-    //                 }
-    //                 if(purge && tool.purge && copper && tool.cu){
-    //                     tool.show = true;
-    //                 }
-    //                 if(purge && tool.purge && nonCopper && tool.nonCopper){
-    //                     tool.show = true;
-    //                 }
-
-    //                 if(nonPurge && tool.noPurge && !copper && !nonCopper){
-    //                     tool.show = true;
-    //                 }
-    //                 if(nonPurge && tool.noPurge && copper && tool.cu){
-    //                     tool.show = true;
-    //                 }
-    //                 if(nonPurge && tool.noPurge && nonCopper && tool.nonCopper){
-    //                     tool.show = true;
-    //                 }
-    //             }
-    //         }
-    //     );
-     } 
-
-    displayTools();
     filterContent();
 }
 
 function showTW(){
     console.log("showTW() called");
+
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(testWafer == false) {
         testWafer = true;
         production = false;
+
         document.getElementById('TW2').style.backgroundColor = "#000000";
         document.getElementById('active2').style.backgroundColor = "#ffffff";
-
-        itemList.forEach(
-            tool => {
-                tool.show = false;
-
-                if(tool.tw && !copper && !nonCopper && !purge && !nonPurge){
-                    tool.show = true;
-                }
-                else{
-                    if(tool.tw && copper && tool.cu && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(tool.tw && copper && tool.cu && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(tool.tw && copper && tool.cu && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
-
-                    if(tool.tw && nonCopper && tool.nonCu && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(tool.tw && nonCopper && tool.nonCu && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(tool.tw && nonCopper && tool.nonCu && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
-
-                    if(tool.tw && purge && tool.purge && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(tool.tw && purge && tool.purge && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(tool.tw && purge && tool.purge && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
-
-                    if(tool.tw && nonPurge && tool.noPurge && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(tool.tw && nonPurge && tool.noPurge && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(tool.tw && nonPurge && tool.noPurge&& nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
 
     }
     else {
         document.getElementById('TW2').style.backgroundColor = "#ffffff";
         testWafer = false;
 
-        itemList.forEach(
-            tool => {
-                if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
-                    tool.show = true;
-                    showAll();
-                }
-                else{
-                    if(copper  && tool.cu && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(copper  && tool.cu && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(copper  && tool.cu && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
-
-                    if(nonCopper  && tool.nonCu && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(nonCopper  && tool.nonCu && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(nonCopper  && tool.nonCu && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
-
-                    if(purge && tool.purge && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(purge && tool.purge && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(purge && tool.purge && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
-
-                    if(nonPurge && tool.noPurge && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(nonPurge && tool.noPurge && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(nonPurge && tool.noPurge && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
+ 
     }   
 
-    displayTools();
+    filterContent();
 }
 
 function showCu(){
     console.log("showCu() called");
+
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(copper == false) {
         copper = true;
         nonCopper = false;
+
         document.getElementById('Cu2').style.backgroundColor = "#000000";
         document.getElementById('NC2').style.backgroundColor = "#ffffff";
-
-        itemList.forEach(
-            tool => {
-                tool.show = false;
-
-                if(tool.cu && !production  && !testWafer  && !purge && !nonPurge){
-                    tool.show = true;
-                }
-                else{
-                    if(tool.cu && production  && tool.prod && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(tool.cu && production  && tool.prod && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(tool.cu && production  && tool.prod && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
-
-                    if(tool.cu && testWafer  && tool.tw && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(tool.cu && testWafer  && tool.tw && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(tool.cu && testWafer  && tool.tw && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
-
-                    if(tool.cu && purge && tool.purge && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(tool.cu && purge && tool.purge && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(tool.cu && purge && tool.purge && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-                    
-                    if(tool.cu && nonPurge && tool.noPurge && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(tool.cu && nonPurge && tool.noPurge && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(tool.cu && nonPurge && tool.noPurge && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
     }
     else {
         document.getElementById('Cu2').style.backgroundColor = "#ffffff";
         copper = false;
-
-        itemList.forEach(
-            tool => {
-                if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
-                    tool.show = true;
-                    showAll();
-                }
-                else{
-                    if(production  && tool.prod && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(production  && tool.prod && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(production  && tool.prod && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
-
-                    if(testWafer  && tool.tw && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(testWafer  && tool.tw && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(testWafer  && tool.tw && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
-
-                    if(purge && tool.purge && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(purge && tool.purge && production  && tool.prod){
-                        tool.show = true;   
-                    }
-                    if(purge && tool.purge && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(nonPurge && tool.noPurge && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(purge && tool.purge && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(purge && tool.purge && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                }
-            }
-        );
     } 
 
-    displayTools();
+    filterContent();
 }
 
 function showNC(){
     console.log("showNC() called");
+
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(nonCopper == false) {
         nonCopper = true;
         copper = false;
+
         document.getElementById('Cu2').style.backgroundColor = "#ffffff";
         document.getElementById('NC2').style.backgroundColor = "#000000";
-
-        itemList.forEach(
-            tool => {
-                tool.show = false;
-
-                if(tool.nonCu && !production  && !testWafer  && !purge && !nonPurge){
-                    tool.show = true;
-                }
-                else{
-                    if(tool.nonCu && production  && tool.prod && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(tool.nonCu && production  && tool.prod && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(tool.nonCu && production  && tool.prod && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
-
-                    if(tool.nonCu && testWafer  && tool.tw && !purge && !nonPurge){
-                        tool.show = true;
-                    }
-                    if(tool.nonCu && testWafer  && tool.tw && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(tool.nonCu && testWafer  && tool.tw && nonPurge && tool.noPurge){
-                        tool.show = true;
-                    }
-
-                    if(tool.nonCu && purge && tool.purge && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(tool.nonCu && purge && tool.purge && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(tool.nonCu && purge && tool.purge && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(tool.nonCu && nonPurge && tool.noPurge && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(tool.nonCu && nonPurge && tool.noPurge && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(tool.nonCu && nonPurge && tool.noPurge && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
     }
     else {
         document.getElementById('NC2').style.backgroundColor = "#ffffff";
         nonCopper = false;
-
-        itemList.forEach(
-            tool => {
-                if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
-                    tool.show = true;
-                    showAll();
-                }
-                else{
-                    if(production  && tool.prod && !purge && ! nonPurge){
-                        tool.show = true;
-                    }
-                    if(production  && tool.prod && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(production  && tool.prod && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(testWafer  && tool.tw && !purge && ! nonPurge){
-                        tool.show = true;
-                    }
-                    if(testWafer  && tool.tw && purge && tool.purge){
-                        tool.show = true;
-                    }
-                    if(testWafer  && tool.tw && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(purge && tool.purge && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(purge && tool.purge && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(purge && tool.purge && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(nonPurge && tool.noPurge && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(nonPurge && tool.noPurge && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(nonPurge && tool.noPurge && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
     }   
 
-    displayTools();
+    filterContent();
 }
 
 function showPurge(){
     console.log("showPurge() called");
+
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
     if(purge == false) {
         purge = true;
         nonPurge = false;
+
         document.getElementById('Purge2').style.backgroundColor = "#000000";
         document.getElementById('NonPurge2').style.backgroundColor = "#ffffff";
-
-        itemList.forEach(
-            tool => {
-                tool.show = false;
-
-                if(tool.purge && !production  && !testWafer  && !copper && !nonCopper){
-                    tool.show = true;
-                }
-                else{
-                    if(tool.purge && production  && tool.prod && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(tool.purge && production  && tool.prod && copper && tool.copper){
-                        tool.show = true;
-                    }
-                    if(tool.purge && production  && tool.prod && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
-                    
-                    if(tool.purge && testWafer  && tool.tw && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(tool.purge && testWafer  && tool.tw && copper && tool.copper){
-                        tool.show = true;
-                    }
-                    if(tool.purge && testWafer  && tool.tw && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
-
-                    if(tool.purge && copper && tool.cu && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(tool.purge && copper && tool.cu && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(tool.purge && copper && tool.cu && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(tool.purge && nonCopper && tool.nonCu && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(tool.purge && nonCopper && tool.nonCu && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(tool.purge && nonCopper && tool.nonCu && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
     }
     else {
         document.getElementById('Purge2').style.backgroundColor = "#ffffff";
         purge = false;
-
-        itemList.forEach(
-            tool => {
-                if(!copper && !nonCopper && !production  && !testWafer  && !copper && !nonCopper){
-                    tool.show = true;
-                    showAll();
-                }
-                else{
-                    if(production  && tool.prod && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(production  && tool.prod && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(production  && tool.prod && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(testWafer  && tool.tw && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(testWafer  && tool.tw && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(testWafer  && tool.tw && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(copper && tool.cu && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(copper && tool.cu && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(copper && tool.cu && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(nonCopper && tool.nonCu && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(nonCopper && tool.nonCu && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(nonCopper && tool.nonCu && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
     } 
 
-    displayTools();
+    filterContent();
 }
 
 function showNonPurge(){
@@ -16790,116 +16293,56 @@ function showNonPurge(){
     if(nonPurge == false) {
         nonPurge = true;
         purge = false;
+
         document.getElementById('NonPurge2').style.backgroundColor = "#000000";
         document.getElementById('Purge2').style.backgroundColor = "#ffffff";
-
-        itemList.forEach(
-            tool => {
-                tool.show = false;
-
-                if(tool.noPurge && !production  && !testWafer && !copper && !nonCopper){
-                    tool.show = true;
-                }
-                else{
-                    if(tool.noPurge && production && tool.prod && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(tool.nonPurge && production && tool.prod && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(tool.noPurge && production && tool.prod && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
-
-                    if(tool.noPurge && testWafer && tool.tw && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(tool.noPurge && testWafer && tool.tw && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(tool.noPurge && testWafer && tool.tw && nonCopper && tool.nonCopper){
-                        tool.show = true;
-                    }
-
-                    if(tool.noPurge && copper && tool.cu && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(tool.noPurge && copper && tool.cu && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(tool.noPurge && copper && tool.cu && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(tool.noPurge && nonCopper && tool.nonCu && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(tool.noPurge && nonCopper && tool.nonCu && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(tool.noPurge && nonCopper && tool.nonCu && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
     }
     else {
         document.getElementById('NonPurge2').style.backgroundColor = "#ffffff";
         nonPurge = false;
-
-        itemList.forEach(
-            tool => {
-                if(!copper && !nonCopper && !production  && !testWafer  && !purge && !nonPurge){
-                    tool.show = true;
-                    showAll();
-                }
-                else{
-                    if(production  && tool.prod && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(production  && tool.prod && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(production  && tool.prod && nonCopper && tool.nonCu){
-                        tool.show = true;
-                    }
-
-                    if(testWafer  && tool.tw && !copper && !nonCopper){
-                        tool.show = true;
-                    }
-                    if(testWafer  && tool.tw && copper && tool.cu){
-                        tool.show = true;
-                    }
-                    if(testWafer  && tool.tw && nonCopper && tool.nonCu){
-                        tool.show = true;
-                    }
-
-                    if(copper && tool.cu && !production && !testWafer){
-                        tool.show = true;
-                    }
-                    if(copper && tool.cu && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(copper && tool.cu && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-
-                    if(nonCopper && tool.nonCu && !production  && !testWafer){
-                        tool.show = true;
-                    }
-                    if(nonCopper && tool.nonCu && production  && tool.prod){
-                        tool.show = true;
-                    }
-                    if(nonCopper && tool.nonCu && testWafer && tool.tw){
-                        tool.show = true;
-                    }
-                }
-            }
-        );
     }   
 
-    displayTools();
+    filterContent();
+}
+
+function showDeseg(){
+    console.log("showPurge() called");
+
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
+    if(deseg == false) {
+        deseg = true;
+        nonDeseg = false;
+
+        document.getElementById('Deseg2').style.backgroundColor = "#000000";
+        document.getElementById('nonDeseg2').style.backgroundColor = "#ffffff";
+    }
+    else {
+        document.getElementById('Deseg2').style.backgroundColor = "#ffffff";
+        deseg = false;
+    } 
+
+    filterContent();
+}
+
+function showNonDeseg(){
+    console.log("showNonPurge() called");
+
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
+    if(nonDesegnonDeseg == false) {
+        nonDeseg = true;
+        deseg = false;
+
+        document.getElementById('nonDeseg2').style.backgroundColor = "#000000";
+        document.getElementById('Deseg2').style.backgroundColor = "#ffffff";
+    }
+    else {
+        document.getElementById('nonDeseg2').style.backgroundColor = "#ffffff";
+        nonDeseg = false;
+    }   
+
+    filterContent();
 }
 
 /*****************************************************************************************/
@@ -17027,8 +16470,11 @@ document.querySelector('#showPurge').addEventListener('click', showPurge);
 document.querySelector('#showPurge2').addEventListener('click', showPurge);
 document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);
 document.querySelector('#showNonPurge2').addEventListener('click', showNonPurge);
-//document.querySelector('#showNC').addEventListener('click', showNC);
-document.querySelector('#showNC').addEventListener('click', filterContent);
+document.querySelector('#showDeseg').addEventListener('click', showDeseg);
+document.querySelector('#showDeseg2').addEventListener('click', showDeseg);
+document.querySelector('#shownonDeseg').addEventListener('click', showNonDeseg);
+document.querySelector('#shownonDeseg2').addEventListener('click', showNonDeseg);
+document.querySelector('#showNC').addEventListener('click', showNC);
 document.querySelector('#showNC2').addEventListener('click', showNC);
 document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
