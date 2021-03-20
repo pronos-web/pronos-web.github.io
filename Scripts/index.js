@@ -561,7 +561,7 @@ if( !production &&
             });
         }}
     
-if( production &&
+if( !production &&
     !testWafer &&
     !copper &&
     !nonCopper &&
