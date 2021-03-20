@@ -16330,7 +16330,7 @@ function showNonDeseg(){
 
     //Show Clear Filters button
     document.getElementById('clrfltr').style.display = "block";
-    if(nonDesegnonDeseg == false) {
+    if(nonDeseg == false) {
         nonDeseg = true;
         deseg = false;
 
