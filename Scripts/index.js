@@ -284,15 +284,15 @@ if( production,
             document.querySelector('#newBody').appendChild(elm3);
             
             // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.Deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
+            // listItems.push({
+            //     Tool: snapshot.key,
+            //     Building: item.Building, 
+            //     Bay: item.Bay,
+            //     Contamination: item.Contamination,
+            //     Deseg: item.Deseg,
+            //     ProdOrTW: item.ProdOrTW,
+            //     Purge: item.Purge
+            // });
         }}
 
 if( !production,
