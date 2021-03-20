@@ -245,9 +245,9 @@ function filterContent() {
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -298,9 +298,9 @@ if( production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -352,9 +352,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -406,9 +406,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -459,9 +459,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -512,9 +512,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -564,9 +564,9 @@ if( production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -617,9 +617,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -670,9 +670,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -723,9 +723,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -776,9 +776,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -830,9 +830,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -887,9 +887,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -941,9 +941,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -996,9 +996,9 @@ if( production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1049,9 +1049,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1103,9 +1103,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1158,9 +1158,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1211,9 +1211,9 @@ if( production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1265,9 +1265,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1319,9 +1319,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1373,9 +1373,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -1429,9 +1429,9 @@ if( production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1483,9 +1483,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1538,9 +1538,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1593,9 +1593,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -1649,9 +1649,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1703,9 +1703,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1757,9 +1757,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1811,9 +1811,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -1867,9 +1867,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -1921,9 +1921,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -1978,9 +1978,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -2032,9 +2032,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -2086,9 +2086,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -2140,9 +2140,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -2194,9 +2194,9 @@ if( production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -2248,9 +2248,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -2302,9 +2302,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -2356,9 +2356,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -2410,9 +2410,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -2464,9 +2464,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -2518,9 +2518,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -2572,9 +2572,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -2631,9 +2631,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -2686,9 +2686,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -2741,9 +2741,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -2796,9 +2796,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -2851,9 +2851,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -2906,9 +2906,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -2963,9 +2963,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3018,9 +3018,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3073,9 +3073,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3128,9 +3128,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3183,9 +3183,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3238,9 +3238,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -3295,9 +3295,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3350,9 +3350,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3405,9 +3405,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3460,9 +3460,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3515,9 +3515,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3570,9 +3570,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -3627,9 +3627,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3682,9 +3682,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3737,9 +3737,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3792,9 +3792,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3847,9 +3847,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -3902,9 +3902,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -3961,9 +3961,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -4017,9 +4017,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -4029,6 +4029,230 @@ if( production &&
     
         if(item.Prod == "Prod" &&
         item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    copper &&
+    !nonCopper &&
+    !purge &&
+    !nonPurge &&
+    deseg &&
+    !nonDeseg &&
+    d1c &&
+    !d1d &&
+    !d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    copper &&
+    !nonCopper &&
+    !purge &&
+    !nonPurge &&
+    !deseg &&
+    nonDeseg &&
+    d1c &&
+    !d1d &&
+    !d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    !copper &&
+    nonCopper &&
+    purge &&
+    !nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    d1c &&
+    !d1d &&
+    !d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1C"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    !copper &&
+    nonCopper &&
+    !purge &&
+    nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    d1c &&
+    !d1d &&
+    !d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
         item.Purge == "NonPurge" &&
         item.Building == "D1C"){
         
@@ -4072,234 +4296,10 @@ if( production &&
 
 if( production &&
     !testWafer &&
-    copper &&
-    !noncopper &&
-    !purge &&
-    !nonpurge &&
-    deseg &&
-    !nonDeseg &&
-    d1c &&
-    !d1d &&
-    !d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "Cu" &&
-        item.Deseg == "Deseg" &&
-        item.Building == "D1C"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    copper &&
-    !noncopper &&
-    !purge &&
-    !nonpurge &&
-    !deseg &&
-    nonDeseg &&
-    d1c &&
-    !d1d &&
-    !d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "Cu" &&
-        item.Deseg == "nonDeseg" &&
-        item.Building == "D1C"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
     !copper &&
-    noncopper &&
-    purge &&
-    !nonpurge &&
-    !deseg &&
-    !nonDeseg &&
-    d1c &&
-    !d1d &&
-    !d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "NC" &&
-        item.Purge == "Purge" &&
-        item.Building == "D1C"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
-    !deseg &&
-    !nonDeseg &&
-    d1c &&
-    !d1d &&
-    !d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "NC" &&
-        item.Purge == "NonPurge" &&
-        item.Building == "D1C"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    !copper &&
-    noncopper &&
-    !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -4353,9 +4353,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -4409,9 +4409,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -4465,9 +4465,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -4522,9 +4522,9 @@ if( production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -4578,9 +4578,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -4634,9 +4634,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -4690,9 +4690,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -4746,9 +4746,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -4802,9 +4802,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -4858,9 +4858,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     d1c &&
@@ -4914,9 +4914,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -4970,9 +4970,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -5026,9 +5026,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -5082,9 +5082,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -5138,9 +5138,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -5194,9 +5194,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -5250,9 +5250,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -5306,9 +5306,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -5362,9 +5362,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -5420,9 +5420,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -5476,9 +5476,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -5488,6 +5488,230 @@ if( production &&
     
         if(item.Prod == "Prod" &&
         item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    copper &&
+    !nonCopper &&
+    !purge &&
+    !nonPurge &&
+    deseg &&
+    !nonDeseg &&
+    !d1c &&
+    d1d &&
+    !d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    copper &&
+    !nonCopper &&
+    !purge &&
+    !nonPurge &&
+    !deseg &&
+    nonDeseg &&
+    !d1c &&
+    d1d &&
+    !d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    !copper &&
+    nonCopper &&
+    purge &&
+    !nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    !d1c &&
+    d1d &&
+    !d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1D"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    !copper &&
+    nonCopper &&
+    !purge &&
+    nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    !d1c &&
+    d1d &&
+    !d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
         item.Purge == "NonPurge" &&
         item.Building == "D1D"){
         
@@ -5531,234 +5755,10 @@ if( production &&
 
 if( production &&
     !testWafer &&
-    copper &&
-    !noncopper &&
-    !purge &&
-    !nonpurge &&
-    deseg &&
-    !nonDeseg &&
-    !d1c &&
-    d1d &&
-    !d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "Cu" &&
-        item.Deseg == "Deseg" &&
-        item.Building == "D1D"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    copper &&
-    !noncopper &&
-    !purge &&
-    !nonpurge &&
-    !deseg &&
-    nonDeseg &&
-    !d1c &&
-    d1d &&
-    !d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "Cu" &&
-        item.Deseg == "nonDeseg" &&
-        item.Building == "D1D"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
     !copper &&
-    noncopper &&
-    purge &&
-    !nonpurge &&
-    !deseg &&
-    !nonDeseg &&
-    !d1c &&
-    d1d &&
-    !d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "NC" &&
-        item.Purge == "Purge" &&
-        item.Building == "D1D"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
-    !deseg &&
-    !nonDeseg &&
-    !d1c &&
-    d1d &&
-    !d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "NC" &&
-        item.Purge == "NonPurge" &&
-        item.Building == "D1D"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    !copper &&
-    noncopper &&
-    !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -5812,9 +5812,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -5868,9 +5868,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -5924,9 +5924,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -5981,9 +5981,9 @@ if( production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6037,9 +6037,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6093,9 +6093,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6149,9 +6149,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -6205,9 +6205,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -6261,9 +6261,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6317,9 +6317,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6373,9 +6373,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6429,9 +6429,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -6485,9 +6485,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6541,9 +6541,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6597,9 +6597,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -6654,9 +6654,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6710,9 +6710,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -6766,9 +6766,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6822,9 +6822,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -6880,9 +6880,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6936,9 +6936,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -6948,6 +6948,230 @@ if( production &&
     
         if(item.Prod == "Prod" &&
         item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    copper &&
+    !nonCopper &&
+    !purge &&
+    !nonPurge &&
+    deseg &&
+    !nonDeseg &&
+    !d1c &&
+    !d1d &&
+    d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    copper &&
+    !nonCopper &&
+    !purge &&
+    !nonPurge &&
+    !deseg &&
+    nonDeseg &&
+    !d1c &&
+    !d1d &&
+    d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "Cu" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    !copper &&
+    nonCopper &&
+    purge &&
+    !nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    !d1c &&
+    !d1d &&
+    d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Purge == "Purge" &&
+        item.Building == "D1X"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    !copper &&
+    nonCopper &&
+    !purge &&
+    nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    !d1c &&
+    !d1d &&
+    d1x &&
+    !rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
         item.Purge == "NonPurge" &&
         item.Building == "D1X"){
         
@@ -6991,234 +7215,10 @@ if( production &&
 
 if( production &&
     !testWafer &&
-    copper &&
-    !noncopper &&
-    !purge &&
-    !nonpurge &&
-    deseg &&
-    !nonDeseg &&
-    !d1c &&
-    !d1d &&
-    d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "Cu" &&
-        item.Deseg == "Deseg" &&
-        item.Building == "D1X"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    copper &&
-    !noncopper &&
-    !purge &&
-    !nonpurge &&
-    !deseg &&
-    nonDeseg &&
-    !d1c &&
-    !d1d &&
-    d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "Cu" &&
-        item.Deseg == "nonDeseg" &&
-        item.Building == "D1X"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
     !copper &&
-    noncopper &&
-    purge &&
-    !nonpurge &&
-    !deseg &&
-    !nonDeseg &&
-    !d1c &&
-    !d1d &&
-    d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "NC" &&
-        item.Purge == "Purge" &&
-        item.Building == "D1X"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
-    !deseg &&
-    !nonDeseg &&
-    !d1c &&
-    !d1d &&
-    d1x &&
-    !rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "NC" &&
-        item.Purge == "NonPurge" &&
-        item.Building == "D1X"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    !copper &&
-    noncopper &&
-    !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -7272,9 +7272,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -7328,9 +7328,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -7384,9 +7384,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -7441,9 +7441,9 @@ if( production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -7497,9 +7497,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -7553,9 +7553,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -7609,9 +7609,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -7665,9 +7665,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -7721,9 +7721,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -7777,9 +7777,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -7833,9 +7833,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -7889,9 +7889,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -7946,9 +7946,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -8004,9 +8004,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -8060,9 +8060,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -8118,9 +8118,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -8176,9 +8176,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -8232,9 +8232,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -8288,9 +8288,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -8346,9 +8346,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -8402,9 +8402,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -8458,9 +8458,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -8514,9 +8514,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -8570,9 +8570,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -8626,9 +8626,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -8638,349 +8638,6 @@ if( production &&
     
         if(item.Prod == "Prod" &&
         item.Contamination == "NC" &&
-        item.Purge == "NonPurge" &&
-        item.Building == "RP1"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-        
-
-if( production &&
-    !testWafer &&
-    !copper &&
-    noncopper &&
-    !purge &&
-    !nonpurge &&
-    deseg &&
-    !nonDeseg &&
-    !d1c &&
-    !d1d &&
-    !d1x &&
-    rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "NC" &&
-        item.Deseg == "Deseg" &&
-        item.Building == "RP1"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    !copper &&
-    noncopper &&
-    !purge &&
-    !nonpurge &&
-    !deseg &&
-    nonDeseg &&
-    !d1c &&
-    !d1d &&
-    !d1x &&
-    rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Contamination == "NC" &&
-        item.Deseg == "nonDeseg" &&
-        item.Building == "RP1"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( production &&
-    !testWafer &&
-    !copper &&
-    !noncopper &&
-    purge &&
-    !nonpurge &&
-    deseg &&
-    !nonDeseg &&
-    !d1c &&
-    !d1d &&
-    !d1x &&
-    rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Purge == "Purge" &&
-        item.Deseg == "Deseg" &&
-        item.Building == "RP1"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-        
-    
-if( production &&
-    !testWafer &&
-    !copper &&
-    !noncopper &&
-    purge &&
-    !nonpurge &&
-    !deseg &&
-    nonDeseg &&
-    !d1c &&
-    !d1d &&
-    !d1x &&
-    rp1){
-    
-        if(item.Prod == "Prod" &&
-        item.Purge == "Purge" &&
-        item.Deseg == "nonDeseg" &&
-        item.Building == "RP1"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-        
-
-
-if( !production &&
-    testWafer &&
-    copper &&
-    !noncopper &&
-    purge &&
-    !nonpurge &&
-    !deseg &&
-    !nonDeseg &&
-    !d1c &&
-    !d1d &&
-    !d1x &&
-    rp1){
-    
-        if(item.Prod == "TW" &&
-        item.Contamination == "Cu" &&
-        item.Purge == "Purge" &&
-        item.Building == "RP1"){
-        
-        // add row to the Table
-            var elm1 = document.createElement('tr')
-            document.querySelector('#newBody').appendChild(elm1);
-
-            // add cell to the table row
-            var elm2 = document.createElement('td');
-            elm2.setAttribute("id", elm2.id);
-
-            // define button attributes
-            var btn = document.createElement('button', 'snapshot.key');
-            btn.setAttribute("id", 'elm2-'+ snapshot.key);
-            btn.setAttribute("class", "tButton");
-            btn.setAttribute("type", "button");
-            btn.onclick = function() { toolButtons(snapshot.key) };
-
-            // add buttion to cell
-            document.querySelector('#newBody').appendChild(btn)
-            document.querySelector('#'+btn.id).textContent = snapshot.key;
-
-            // add second cell with building and bay
-            var elm3 = document.createElement('td');
-            elm3.id = 'elm3-'+ snapshot.key;
-            elm3.innerText = item.Building + " " + item.Bay;
-            elm3.style.fontSize = '18px';
-            document.querySelector('#newBody').appendChild(elm3);
-            
-            // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        }}
-
-if( !production &&
-    testWafer &&
-    copper &&
-    !noncopper &&
-    !purge &&
-    nonpurge &&
-    !deseg &&
-    !nonDeseg &&
-    !d1c &&
-    !d1d &&
-    !d1x &&
-    rp1){
-    
-        if(item.Prod == "TW" &&
-        item.Contamination == "Cu" &&
         item.Purge == "NonPurge" &&
         item.Building == "RP1"){
         
@@ -9024,12 +8681,355 @@ if( !production &&
 
         
 
+if( production &&
+    !testWafer &&
+    !copper &&
+    nonCopper &&
+    !purge &&
+    !nonPurge &&
+    deseg &&
+    !nonDeseg &&
+    !d1c &&
+    !d1d &&
+    !d1x &&
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    !copper &&
+    nonCopper &&
+    !purge &&
+    !nonPurge &&
+    !deseg &&
+    nonDeseg &&
+    !d1c &&
+    !d1d &&
+    !d1x &&
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Contamination == "NC" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( production &&
+    !testWafer &&
+    !copper &&
+    !nonCopper &&
+    purge &&
+    !nonPurge &&
+    deseg &&
+    !nonDeseg &&
+    !d1c &&
+    !d1d &&
+    !d1x &&
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "Deseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+    
+if( production &&
+    !testWafer &&
+    !copper &&
+    !nonCopper &&
+    purge &&
+    !nonPurge &&
+    !deseg &&
+    nonDeseg &&
+    !d1c &&
+    !d1d &&
+    !d1x &&
+    rp1){
+    
+        if(item.Prod == "Prod" &&
+        item.Purge == "Purge" &&
+        item.Deseg == "nonDeseg" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+
+
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
+    purge &&
+    !nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    !d1c &&
+    !d1d &&
+    !d1x &&
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "Purge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+if( !production &&
+    testWafer &&
+    copper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    !d1c &&
+    !d1d &&
+    !d1x &&
+    rp1){
+    
+        if(item.Prod == "TW" &&
+        item.Contamination == "Cu" &&
+        item.Purge == "NonPurge" &&
+        item.Building == "RP1"){
+        
+        // add row to the Table
+            var elm1 = document.createElement('tr')
+            document.querySelector('#newBody').appendChild(elm1);
+
+            // add cell to the table row
+            var elm2 = document.createElement('td');
+            elm2.setAttribute("id", elm2.id);
+
+            // define button attributes
+            var btn = document.createElement('button', 'snapshot.key');
+            btn.setAttribute("id", 'elm2-'+ snapshot.key);
+            btn.setAttribute("class", "tButton");
+            btn.setAttribute("type", "button");
+            btn.onclick = function() { toolButtons(snapshot.key) };
+
+            // add buttion to cell
+            document.querySelector('#newBody').appendChild(btn)
+            document.querySelector('#'+btn.id).textContent = snapshot.key;
+
+            // add second cell with building and bay
+            var elm3 = document.createElement('td');
+            elm3.id = 'elm3-'+ snapshot.key;
+            elm3.innerText = item.Building + " " + item.Bay;
+            elm3.style.fontSize = '18px';
+            document.querySelector('#newBody').appendChild(elm3);
+            
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        }}
+
+        
+
+if( !production &&
+    testWafer &&
+    copper &&
+    !nonCopper &&
+    !purge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9083,9 +9083,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -9139,9 +9139,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -9195,9 +9195,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9251,9 +9251,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9309,9 +9309,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9365,9 +9365,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -9422,9 +9422,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9480,9 +9480,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9536,9 +9536,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -9593,9 +9593,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9650,9 +9650,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -9706,9 +9706,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9762,9 +9762,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -9822,9 +9822,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9877,9 +9877,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9932,9 +9932,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -9987,9 +9987,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -10042,9 +10042,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10097,9 +10097,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10153,9 +10153,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10208,9 +10208,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -10262,9 +10262,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10318,9 +10318,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -10377,9 +10377,9 @@ if( production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10432,9 +10432,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10488,9 +10488,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10543,9 +10543,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -10598,9 +10598,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -10653,9 +10653,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10708,9 +10708,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10763,9 +10763,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10818,9 +10818,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -10874,9 +10874,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10929,9 +10929,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -10985,9 +10985,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -11044,9 +11044,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -11099,9 +11099,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -11154,9 +11154,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -11209,9 +11209,9 @@ if( !production &&
 if( !production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -11268,9 +11268,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -11325,9 +11325,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -11382,9 +11382,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -11439,9 +11439,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -11496,9 +11496,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -11553,9 +11553,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -11610,9 +11610,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -11667,9 +11667,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -11724,9 +11724,9 @@ if( production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -11781,9 +11781,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -11838,9 +11838,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -11896,9 +11896,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -11953,9 +11953,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -12010,9 +12010,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -12066,9 +12066,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     d1c &&
@@ -12123,9 +12123,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     d1c &&
@@ -12182,9 +12182,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -12239,9 +12239,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -12296,9 +12296,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -12353,9 +12353,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -12410,9 +12410,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -12467,9 +12467,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -12524,9 +12524,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -12581,9 +12581,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -12638,9 +12638,9 @@ if( production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -12695,9 +12695,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -12752,9 +12752,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -12809,9 +12809,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -12866,9 +12866,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -12923,9 +12923,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -12980,9 +12980,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -13037,9 +13037,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -13096,9 +13096,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -13153,9 +13153,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -13210,9 +13210,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -13267,9 +13267,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -13324,9 +13324,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -13381,9 +13381,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -13438,9 +13438,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -13495,9 +13495,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -13552,9 +13552,9 @@ if( production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -13609,9 +13609,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -13666,9 +13666,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -13723,9 +13723,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -13780,9 +13780,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -13837,9 +13837,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -13894,9 +13894,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -13951,9 +13951,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14010,9 +14010,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -14067,9 +14067,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14124,9 +14124,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14181,9 +14181,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14238,9 +14238,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -14295,9 +14295,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14352,9 +14352,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -14409,9 +14409,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14467,9 +14467,9 @@ if( production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -14524,9 +14524,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14581,9 +14581,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14638,9 +14638,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14695,9 +14695,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -14752,9 +14752,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14809,9 +14809,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -14866,9 +14866,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -14925,9 +14925,9 @@ if( !production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -14981,9 +14981,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -15037,9 +15037,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -15093,9 +15093,9 @@ if( production &&
 if( production &&
     !testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -15149,9 +15149,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -15205,9 +15205,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -15260,9 +15260,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -15315,9 +15315,9 @@ if( production &&
 if( production &&
     !testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -15371,9 +15371,9 @@ if( production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -15427,9 +15427,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -15483,9 +15483,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -15539,9 +15539,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     copper &&
-    !noncopper &&
+    !nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -15595,9 +15595,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -15650,9 +15650,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     purge &&
-    !nonpurge &&
+    !nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
@@ -15706,9 +15706,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     deseg &&
     !nonDeseg &&
     !d1c &&
@@ -15762,9 +15762,9 @@ if( !production &&
 if( !production &&
     testWafer &&
     !copper &&
-    noncopper &&
+    nonCopper &&
     !purge &&
-    nonpurge &&
+    nonPurge &&
     !deseg &&
     nonDeseg &&
     !d1c &&
