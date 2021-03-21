@@ -16098,6 +16098,7 @@ function toolButtons(e){
     document.getElementById('listTable').style.display = "none";
     document.getElementById('listTitle').style.display = "none";
     document.querySelector('#addBtn').innerHTML = "Back";
+    document.getElementById('hdTable').style.display = "none";
 
     toggle = 2;
 
@@ -16112,7 +16113,7 @@ function toolButtons(e){
     console.log('item.Contamination: ' + item.Contamination);
 
     if(e == snapshot.key){ 
-        document.querySelector('#tst').innerHTML = item.content + " Tool Info";
+        document.querySelector('#tst').innerHTML = snapshot.key + " Tool Info";
         if(item.Contamination === 'Cu'){document.querySelector('#q1').innerHTML = "Cu";}
         else {document.querySelector('#q1').innerHTML = "NC";}
         if(item.Purge === 'Purge'){document.querySelector('#q2').innerHTML = "Yes";}
@@ -16535,6 +16536,7 @@ function showForm() {
         toggle = 2;
         document.querySelector('#addForm').style.display = "inline";
         document.querySelector('#addBtn').innerHTML = "Done"; 
+        document.getElementById('hdTable').style.display = "block";
         clearAddItem(); 
         showEdit();
     }
