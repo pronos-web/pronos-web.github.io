@@ -16109,9 +16109,9 @@ function toolButtons(e){
     console.log('e: ' + e);
     console.log('snapshot: ' + snapshot);
     console.log('snapshot.key: ' + snapshot.key);
-    console.log('item.cu: ' + item.cu);
+    console.log('item.Contamination: ' + item.Contamination);
 
-    if(e == item.content){ 
+    if(e == item.snapshot.key){ 
         document.querySelector('#tst').innerHTML = item.content + " Tool Info";
         if(item.Contamination === 'Cu'){document.querySelector('#q1').innerHTML = "Cu";}
         else {document.querySelector('#q1').innerHTML = "NC";}
