@@ -16121,8 +16121,8 @@ function toolButtons(e){
         else{document.querySelector('#q3').innerHTML = "TW";}
         if(item.Deseg === 'Deseg'){document.querySelector('#q4').innerHTML = "Yes";}
         else {document.querySelector('#q4').innerHTML = "No";}
-        document.querySelector('#q5').innerHTML = item.building;
-        document.querySelector('#q6').innerHTML = item.bay;
+        document.querySelector('#q5').innerHTML = item.Building;
+        document.querySelector('#q6').innerHTML = item.Bay;
         if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
         else{document.querySelector('#q7').innerHTML = "No";}
        
