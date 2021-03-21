@@ -16073,6 +16073,7 @@ function getFromBrowserMemery() {
 
 function removeItem(e) {
     console.log("removeItem(e) called");
+    console.log(e);
 
      var databaseRef = firebase.database().ref("Tool");
      var item = databaseRef.child(e);
