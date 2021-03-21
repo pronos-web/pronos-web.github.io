@@ -16446,6 +16446,7 @@ function showEdit() {
     // Hide fileter buttons
     document.getElementById('filterTable').style.display = "none";
     document.getElementById('fltr').style.display = "none";
+    document.getElementById('listTitle').style.display = "none";
     
    // Read itemList and display all fo the items
    let html = `
