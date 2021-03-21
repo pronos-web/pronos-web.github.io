@@ -16095,6 +16095,7 @@ function toolButtons(e){
     document.getElementById('filterTable2').style.display = "block";
     document.getElementById('clrfltr').style.display = "none";
     document.getElementById('listTable').style.display = "none";
+    document.getElementById('listTitle').style.display = "none";
     document.querySelector('#addBtn').innerHTML = "Back";
 
     toggle = 2;
@@ -16503,6 +16504,7 @@ function showForm() {
         document.querySelector('#addForm').style.display = "none";
         document.querySelector('#addBtn').textContent = "Edit";
         document.getElementById('listTable').style.display = "block";
+        document.getElementById('listTitle').style.display = "block";
         clearAddItem();
         document.getElementById('filterTable2').style.display = "none";
         recreatTable();
