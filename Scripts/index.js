@@ -16578,7 +16578,7 @@ document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
 document.querySelector('#clrfltr').addEventListener('click', clearFilters);
 
-document.querySelector('#addBtn').addEventListener('click', showForm);
+document.querySelector('#edtbtn').addEventListener('click', showForm);
 window.addEventListener('load', getFromBrowserMemery);
 window.addEventListener('load', creatTableHeader);
 
