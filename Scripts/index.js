@@ -16604,8 +16604,8 @@ document.getElementById('D1D').addEventListener("click", function(e) {
         d1x = false;
         rp1 = false;
 
-        document.getElementById('D1C2').style.backgroundColor = "#000000";
-        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+        document.getElementById('D1D2').style.backgroundColor = "#000000";
+        document.getElementById('D1C2').style.backgroundColor = "#ffffff";
         document.getElementById('D1X2').style.backgroundColor = "#ffffff";
         document.getElementById('RP12').style.backgroundColor = "#ffffff";
     }
