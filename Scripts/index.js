@@ -16107,7 +16107,8 @@ function toolButtons(e){
     var item = snapshot.val(); 
 
     console.log('e: ' + e);
-    console.log('item.content: ' + item.key);
+    console.log('item: ' + item);
+    console.log('item.key: ' + item.key);
     console.log('item.content: ' + item.content);
     console.log('item.cu: ' + item.cu);
 
