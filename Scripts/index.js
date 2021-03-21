@@ -16577,7 +16577,6 @@ document.querySelector('#showNC2').addEventListener('click', showNC);
 document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
 document.querySelector('#clrfltr').addEventListener('click', clearFilters);
-document.querySelector('#edtbtn').addEventListener('click', showEdit);
 TODO: //add function & event listener for showDeseg & showNonDeseg
 
 
