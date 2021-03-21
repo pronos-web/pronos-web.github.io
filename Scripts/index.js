@@ -16529,9 +16529,8 @@ function displayList() {
 
 function showForm() {
     console.log("showForm() called");
-    alert("ShowFrom started");
+    
     clearFilters();
-    alert("ClearFilters Finished");
 
     //Display form for adding tools & change 'Edit' button to 'Done'
     if(toggle === 1){
