@@ -16729,11 +16729,7 @@ document.getElementById('RP12').addEventListener("click", function(e) {
     filterContent();
 })
 
-
-
-
-// More event listeners
-
+/**** More event listeners ****/
 document.getElementById('newList').addEventListener("click", function(e) {
     console.log("Event listener for newList: 'X' clicked");
 		removeItem(e.target.id);
