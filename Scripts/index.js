@@ -16549,12 +16549,195 @@ document.getElementById('theList').addEventListener("click", function(e) {
     } 
 })
 
-// Get the element, add a click listener...
+// Get the building element, add a click listener...
+document.getElementById('D1C').addEventListener("click", function(e) {
+        //Show Clear Filters button
+        document.getElementById('clrfltr').style.display = "block";
+        if(d1c == false) {
+            d1c = true;
+            d1d = false;
+            d1x = false;
+            rp1 = false;
+    
+            document.getElementById('D1C2').style.backgroundColor = "#000000";
+            document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+            document.getElementById('D1X2').style.backgroundColor = "#ffffff";
+            document.getElementById('RP12').style.backgroundColor = "#ffffff";
+        }
+        else {
+            document.getElementById('D1C2').style.backgroundColor = "#ffffff";
+            d1c = false;
+        }   
+    
+        filterContent();
+})
+
+document.getElementById('D1C2').addEventListener("click", function(e) {
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
+    if(d1c == false) {
+        d1c = true;
+        d1d = false;
+        d1x = false;
+        rp1 = false;
+
+        document.getElementById('D1C2').style.backgroundColor = "#000000";
+        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+        document.getElementById('RP12').style.backgroundColor = "#ffffff";
+    }
+    else {
+        document.getElementById('D1C2').style.backgroundColor = "#ffffff";
+        d1c = false;
+    }   
+
+    filterContent();
+})
+
+document.getElementById('D1D').addEventListener("click", function(e) {
+
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
+    if(d1d == false) {
+        d1d = true;
+        d1c = false;
+        d1x = false;
+        rp1 = false;
+
+        document.getElementById('D1C2').style.backgroundColor = "#000000";
+        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+        document.getElementById('D1X2').style.backgroundColor = "#ffffff";
+        document.getElementById('RP12').style.backgroundColor = "#ffffff";
+    }
+    else {
+        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+        d1c = false;
+    }   
+
+    filterContent();
+})
+document.getElementById('D1D2').addEventListener("click", function(e) {
+
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
+    if(d1d == false) {
+        d1d = true;
+        d1c = false;
+        d1x = false;
+        rp1 = false;
+
+        document.getElementById('D1D2').style.backgroundColor = "#000000";
+        document.getElementById('D1C2').style.backgroundColor = "#ffffff";
+        document.getElementById('D1X2').style.backgroundColor = "#ffffff";
+        document.getElementById('RP12').style.backgroundColor = "#ffffff";
+    }
+    else {
+        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+        d1c = false;
+    }   
+
+filterContent();
+})
+
+document.getElementById('D1X').addEventListener("click", function(e) {
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
+    if(d1x == false) {
+        d1x = true;
+        d1d = false;
+        d1c = false;
+        rp1 = false;
+
+        document.getElementById('D1X2').style.backgroundColor = "#000000";
+        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+        document.getElementById('D1C2').style.backgroundColor = "#ffffff";
+        document.getElementById('RP12').style.backgroundColor = "#ffffff";
+    }
+    else {
+        document.getElementById('D1X2').style.backgroundColor = "#ffffff";
+        d1x = false;
+    }   
+
+    filterContent();
+})
+
+document.getElementById('D1X2').addEventListener("click", function(e) {
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
+    if(d1x == false) {
+        d1x = true;
+        d1d = false;
+        d1c = false;
+        rp1 = false;
+
+        document.getElementById('D1X2').style.backgroundColor = "#000000";
+        document.getElementById('D1C2').style.backgroundColor = "#ffffff";
+        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+        document.getElementById('RP12').style.backgroundColor = "#ffffff";
+    }
+    else {
+        document.getElementById('D1X2').style.backgroundColor = "#ffffff";
+        d1x = false;
+    }   
+
+    filterContent();
+})
+
+document.getElementById('RP1').addEventListener("click", function(e) {
+
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
+    if(rp1 == false) {
+        rp1 = true;
+        d1c = false;
+        d1x = false;
+        d1d = false;
+
+        document.getElementById('RP12').style.backgroundColor = "#000000";
+        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+        document.getElementById('D1X2').style.backgroundColor = "#ffffff";
+        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+    }
+    else {
+        document.getElementById('RP12').style.backgroundColor = "#ffffff";
+        rp1 = false;
+    }   
+
+    filterContent();
+})
+
+document.getElementById('RP12').addEventListener("click", function(e) {
+
+    //Show Clear Filters button
+    document.getElementById('clrfltr').style.display = "block";
+    if(rp1 == false) {
+        rp1 = true;
+        d1c = false;
+        d1x = false;
+        d1d = false;
+
+        document.getElementById('RP12').style.backgroundColor = "#000000";
+        document.getElementById('D1C2').style.backgroundColor = "#ffffff";
+        document.getElementById('D1X2').style.backgroundColor = "#ffffff";
+        document.getElementById('D1D2').style.backgroundColor = "#ffffff";
+    }
+    else {
+        document.getElementById('RP12').style.backgroundColor = "#ffffff";
+        rp1 = false;
+    }   
+
+    filterContent();
+})
+
+
+
+
+// More event listeners
+
 document.getElementById('newList').addEventListener("click", function(e) {
     console.log("Event listener for newList: 'X' clicked");
 		removeItem(e.target.id);
 })
-
 
 document.getElementById('numb').addEventListener("click", function(e) {
 	document.getElementById('numb').value = ""; 
