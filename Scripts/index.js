@@ -16562,8 +16562,8 @@ function showForm() {
 document.querySelector('#addItem').addEventListener('click', addNewItem);
 document.querySelector('#showProd').addEventListener('click', showProd);
 document.querySelector('#showProd2').addEventListener('click', showProd);
-document.querySelector('#showTW').addEventListener('click', showTW);
 document.querySelector('#showTW2').addEventListener('click', showTW);
+document.querySelector('#showTW').addEventListener('click', showTW);
 document.querySelector('#showPurge').addEventListener('click', showPurge);
 document.querySelector('#showPurge2').addEventListener('click', showPurge);
 document.querySelector('#showNonPurge').addEventListener('click', showNonPurge);
@@ -16577,8 +16577,6 @@ document.querySelector('#showNC2').addEventListener('click', showNC);
 document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
 document.querySelector('#clrfltr').addEventListener('click', clearFilters);
-TODO: //add function & event listener for showDeseg & showNonDeseg
-
 
 document.querySelector('#addBtn').addEventListener('click', showForm);
 window.addEventListener('load', getFromBrowserMemery);
