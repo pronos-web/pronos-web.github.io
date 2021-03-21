@@ -16633,7 +16633,7 @@ document.getElementById('D1D2').addEventListener("click", function(e) {
     }
     else {
         document.getElementById('D1D2').style.backgroundColor = "#ffffff";
-        d1c = false;
+        d1d = false;
     }   
 
 filterContent();
