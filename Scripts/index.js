@@ -16107,20 +16107,19 @@ function toolButtons(e){
     var item = snapshot.val(); 
 
     console.log('e: ' + e);
-    console.log('item: ' + item);
-    console.log('item.key: ' + item.key);
-    console.log('item.content: ' + item.content);
+    console.log('snapshot: ' + snapshot);
+    console.log('snapshot.key: ' + snapshot.key);
     console.log('item.cu: ' + item.cu);
 
     if(e == item.content){ 
         document.querySelector('#tst').innerHTML = item.content + " Tool Info";
-        if(item.cu === true){document.querySelector('#q1').innerHTML = "Cu";}
+        if(item.Contamination === 'Cu'){document.querySelector('#q1').innerHTML = "Cu";}
         else {document.querySelector('#q1').innerHTML = "NC";}
-        if(item.purge === true){document.querySelector('#q2').innerHTML = "Yes";}
+        if(item.Purge === 'Purge'){document.querySelector('#q2').innerHTML = "Yes";}
         else {document.querySelector('#q2').innerHTML = "No";}
-        if(item.prod === true){document.querySelector('#q3').innerHTML = "Prod";}
+        if(item.ProdOrTW === 'Prod'){document.querySelector('#q3').innerHTML = "Prod";}
         else{document.querySelector('#q3').innerHTML = "TW";}
-        if(item.deseg === true){document.querySelector('#q4').innerHTML = "Yes";}
+        if(item.Deseg === 'Deseg'){document.querySelector('#q4').innerHTML = "Yes";}
         else {document.querySelector('#q4').innerHTML = "No";}
         document.querySelector('#q5').innerHTML = item.building;
         document.querySelector('#q6').innerHTML = item.bay;
