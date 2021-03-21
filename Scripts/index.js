@@ -16536,7 +16536,6 @@ function showForm() {
         toggle = 2;
         document.querySelector('#addForm').style.display = "inline";
         document.querySelector('#addBtn').innerHTML = "Done"; 
-        document.getElementById('hdTable').style.display = "block";
         clearAddItem(); 
         showEdit();
     }
@@ -16548,6 +16547,7 @@ function showForm() {
         document.querySelector('#addBtn').textContent = "Edit";
         document.getElementById('listTable').style.display = "block";
         document.getElementById('listTitle').style.display = "block";
+        document.getElementById('hdTable').style.display = "block";
         clearAddItem();
         document.getElementById('filterTable2').style.display = "none";
         recreatTable();
