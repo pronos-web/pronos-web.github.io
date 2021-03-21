@@ -20,6 +20,8 @@ let expand = false;
 let filters = 0;
 let exist = true;
 
+document.querySelector('#edtbtn').addEventListener('click', showForm);
+
 /****************************************************************/
 
 function  saveToFirebase(a, b, c, d, e, f, g) {
@@ -16578,7 +16580,7 @@ document.querySelector('#showCu').addEventListener('click', showCu);
 document.querySelector('#showCu2').addEventListener('click', showCu);
 document.querySelector('#clrfltr').addEventListener('click', clearFilters);
 
-document.querySelector('#edtbtn').addEventListener('click', showForm);
+
 window.addEventListener('load', getFromBrowserMemery);
 window.addEventListener('load', creatTableHeader);
 
