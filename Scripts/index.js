@@ -296,18 +296,18 @@ if( !production &&
 /**************** Building Only Filter Selsected *************************/
 
 /**************************** D1C *************************************/
-else if( !production,
-    !testWafer,
-    !copper,
-    !nonCopper,
-    !purge,
-    !nonPurge,
-    !deseg,
-    !nonDeseg,
-    d1c,
-    !d1d,
-    !d1x,
-    !rp1){
+if( !production,
+        !testWafer,
+        !copper,
+        !nonCopper,
+        !purge,
+        !nonPurge,
+        !deseg,
+        !nonDeseg,
+        d1c,
+        !d1d,
+        !d1x,
+        !rp1){
 
         console.log('D1C: ' + item.Building);
 
@@ -352,7 +352,7 @@ else if( !production,
         }}
         
 /**************************** D1D *************************************/
-else if( !production,
+if( !production,
     !testWafer,
     !copper,
     !nonCopper,
