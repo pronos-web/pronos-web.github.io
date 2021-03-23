@@ -291,7 +291,7 @@ if( !production &&
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
-        }
+        }}
 
 /**************** Building Only Filter Selsected *************************/
 
