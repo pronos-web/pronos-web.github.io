@@ -22038,11 +22038,11 @@ function toolButtons(e){
     console.log("toolButtons() called for " + e);
 
     if(edit == true){
-        console.log('size: ')
-        console.log(e.size);
+        console.log('length: ')
+        console.log(e.length);
         let newID = e[0];
         newID += e[1];
-        newID += 3[3];
+        newID += e[3];
         console.log(newID);
     }
     else{
