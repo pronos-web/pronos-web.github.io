@@ -22051,15 +22051,8 @@ function toolButtons(e){
         }
         console.log(newID);
 
-        var sel = document.getElementById('toolType');
-        for(var i = 0; i < newID.length; i++) {
-            var opt = document.createElement('option');
-            opt.innerHTML = newID[i];
-            opt.value = newID[i];
-            sel.appendChild(opt);
-
         document.getElementById('numb').value = newNum;
-        document.getElementById('numb').value = newNum;
+        document.getElementById('toolTyp').value = newID;
 
         var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) {
@@ -22068,7 +22061,7 @@ function toolButtons(e){
                 document.getElementById('numb').value = item.Bay;
             }
         });
-    }}
+    }
     else{
 
     //Hide list and buttons
