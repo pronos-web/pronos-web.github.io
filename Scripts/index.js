@@ -22046,7 +22046,7 @@ function toolButtons(e){
         }
         console.log(newID);
         let newNum;
-        for(i = 4; i <= 3; i++){
+        for(i = 4; i < e.length; i++){
             newNum += e[i];
         }
         console.log(newNum);
