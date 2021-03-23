@@ -22040,9 +22040,15 @@ function toolButtons(e){
     if(edit == true){
         console.log('length: ')
         console.log(e.length);
-        let newID = e[0];
-        newID += e[1];
-        newID += e[3];
+        let newID;
+        for(i = 0; i <= 3; i++){
+            newID = e[i];
+        }
+        console.log(newID);
+        let newNum;
+        for(i = 4; i <= 3; i++){
+            newNum = e[i];
+        }
         console.log(newID);
     }
     else{
