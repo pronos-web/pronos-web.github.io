@@ -1831,7 +1831,7 @@ purge &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Purge == "Purge"){
     
     // add row to the Table
@@ -1885,7 +1885,7 @@ nonPurge &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Purge == "NonPurge"){
     
     // add row to the Table
@@ -1939,7 +1939,7 @@ nonDeseg &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Deseg == "nonDeseg"){
     
     // add row to the Table
@@ -1993,7 +1993,7 @@ deseg &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Deseg == "Deseg"){
     
     // add row to the Table
@@ -7395,7 +7395,7 @@ d1c &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Purge == "Purge" &&
                    item.Building == "D1C"){
     
@@ -7450,7 +7450,7 @@ d1c &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Purge == "NonPurge" &&
                    item.Building == "D1C"){
     
@@ -7505,7 +7505,7 @@ d1c &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Deseg == "nonDeseg" &&
                    item.Building == "D1C"){
     
@@ -7560,7 +7560,7 @@ d1c &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Deseg == "Deseg" &&
                    item.Building == "D1C"){
     
@@ -8723,7 +8723,7 @@ d1d &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Purge == "Purge" &&
                    item.Building == "D1D"){
     
@@ -8778,7 +8778,7 @@ d1d &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Purge == "NonPurge" &&
                    item.Building == "D1D"){
     
@@ -8833,7 +8833,7 @@ d1d &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Deseg == "nonDeseg" &&
                    item.Building == "D1D"){
     
@@ -8888,7 +8888,7 @@ d1d &&
 !d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Deseg == "Deseg" &&
                    item.Building == "D1D"){
     
@@ -10050,7 +10050,7 @@ purge &&
 d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Purge == "Purge" &&
                    item.Building == "D1X"){
     
@@ -10105,7 +10105,7 @@ nonPurge &&
 d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Purge == "NonPurge" &&
                    item.Building == "D1X"){
     
@@ -10160,7 +10160,7 @@ nonDeseg &&
 d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Deseg == "nonDeseg" &&
                    item.Building == "D1X"){
     
@@ -10215,7 +10215,7 @@ deseg &&
 d1x &&
 !rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Deseg == "Deseg" &&
                    item.Building == "D1X"){
     
@@ -11377,7 +11377,7 @@ purge &&
 !d1x &&
 rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Purge == "Purge" &&
                    item.Building == "RP1"){
     
@@ -11432,7 +11432,7 @@ nonPurge &&
 !d1x &&
 rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Purge == "NonPurge" &&
                    item.Building == "RP1"){
     
@@ -11487,7 +11487,7 @@ nonDeseg &&
 !d1x &&
 rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Deseg == "nonDeseg" &&
                    item.Building == "RP1"){
     
@@ -11542,7 +11542,7 @@ deseg &&
 !d1x &&
 rp1){
 
-    if(item.Contamination == "NonCopper" &&
+    if(item.Contamination == "NC" &&
        item.Deseg == "Deseg" &&
                    item.Building == "RP1"){
     
