@@ -21980,22 +21980,19 @@ function clearAddItem() {
 function toolExist(toolID){
     let toolExist = false;
 
-    itemList.forEach(
-        tool => {
-            console.log("tool content: " + tool.content);
-            console.log("tool toolID: " + toolID);
-            if(toolID == tool.content){
+    var databaseRef = firebase.database().ref("Tool");
+        databaseRef.on('child_added', function(snapshot) {
+            var item = snapshot.val();
+            if(snapshot.key == tool.ID){
                 console.log("Tool already exist");
                 alert("Tool Already Exist")
                 return true;
             }
             else{
-                //Do Something
-                console.log("Tool not found");
+                console.log("Tool doesn't exist");
                 return false;
             }
-        }
-    );
+        });
 }
 
 function saveToBrowserMemorey() {
