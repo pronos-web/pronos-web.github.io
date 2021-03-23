@@ -19,6 +19,7 @@ let rp1 = false;
 let expand = false;
 let filters = 0;
 let exist = true;
+let edit = false; 
 
 /****************************************************************/
 
@@ -22036,6 +22037,16 @@ function removeItem(e) {
 function toolButtons(e){
     console.log("toolButtons() called for " + e);
 
+    if(edit == true){
+        console.log('size: ')
+        console.log(e.size);
+        let newID = e[0];
+        newID += e[1];
+        newID += 3[3];
+        console.log(newID);
+    }
+    else{
+
     //Hide list and buttons
     document.getElementById('theList').style.display = "none";
     document.getElementById('fltr').style.display = "none";
@@ -22055,61 +22066,43 @@ function toolButtons(e){
     listItems.length = 0;
     var databaseRef = firebase.database().ref("Tool");
     databaseRef.on('child_added', function(snapshot) {
-    var item = snapshot.val(); 
+        var item = snapshot.val(); 
 
-    console.log('e: ' + e);
-    console.log('snapshot: ' + snapshot);
-    console.log('snapshot.key: ' + snapshot.key);
-    console.log('item.Contamination: ' + item.Contamination);
+        console.log('e: ' + e);
+        console.log('snapshot: ' + snapshot);
+        console.log('snapshot.key: ' + snapshot.key);
+        console.log('item.Contamination: ' + item.Contamination);
 
-    if(e == snapshot.key){ 
-        document.querySelector('#tst').innerHTML = snapshot.key + " Tool Info";
-        if(item.Contamination === 'Cu'){document.querySelector('#q1').innerHTML = "Cu";}
-        else {document.querySelector('#q1').innerHTML = "NC";}
-        if(item.Purge === 'Purge'){document.querySelector('#q2').innerHTML = "Yes";}
-        else {document.querySelector('#q2').innerHTML = "No";}
-        if(item.ProdOrTW === 'Prod'){document.querySelector('#q3').innerHTML = "Prod";}
-        else{document.querySelector('#q3').innerHTML = "TW";}
-        if(item.Deseg === 'Deseg'){document.querySelector('#q4').innerHTML = "Yes";}
-        else {document.querySelector('#q4').innerHTML = "No";}
-        document.querySelector('#q5').innerHTML = item.Building;
-        document.querySelector('#q6').innerHTML = item.Bay;
-        if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
-        else{document.querySelector('#q7').innerHTML = "No";}
-       
+        if(e == snapshot.key){ 
+            document.querySelector('#tst').innerHTML = snapshot.key + " Tool Info";
+            if(item.Contamination === 'Cu'){document.querySelector('#q1').innerHTML = "Cu";}
+            else {document.querySelector('#q1').innerHTML = "NC";}
+            if(item.Purge === 'Purge'){document.querySelector('#q2').innerHTML = "Yes";}
+            else {document.querySelector('#q2').innerHTML = "No";}
+            if(item.ProdOrTW === 'Prod'){document.querySelector('#q3').innerHTML = "Prod";}
+            else{document.querySelector('#q3').innerHTML = "TW";}
+            if(item.Deseg === 'Deseg'){document.querySelector('#q4').innerHTML = "Yes";}
+            else {document.querySelector('#q4').innerHTML = "No";}
+            document.querySelector('#q5').innerHTML = item.Building;
+            document.querySelector('#q6').innerHTML = item.Bay;
+            if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
+            else{document.querySelector('#q7').innerHTML = "No";}
+        
+        }
+
+            // add the tool and details to the items list
+            listItems.push({
+                Tool: snapshot.key,
+                Building: item.Building, 
+                Bay: item.Bay,
+                Contamination: item.Contamination,
+                Deseg: item.Deseg,
+                ProdOrTW: item.ProdOrTW,
+                Purge: item.Purge
+            });
+        });
     }
 
-    // add the tool and details to the items list
-    listItems.push({
-        Tool: snapshot.key,
-        Building: item.Building, 
-        Bay: item.Bay,
-        Contamination: item.Contamination,
-        Deseg: item.Deseg,
-        ProdOrTW: item.ProdOrTW,
-        Purge: item.Purge
-    });
-});
-
-    //Display informaton for selected tool
-//     itemList.forEach(function(item) {
-//         if(e == item.content){ 
-//             document.querySelector('#tst').innerHTML = item.content + " Tool Info";
-//             if(item.cu === true){document.querySelector('#q1').innerHTML = "Cu";}
-//             else {document.querySelector('#q1').innerHTML = "NC";}
-//             if(item.purge === true){document.querySelector('#q2').innerHTML = "Yes";}
-//             else {document.querySelector('#q2').innerHTML = "No";}
-//             if(item.prod === true){document.querySelector('#q3').innerHTML = "Prod";}
-//             else{document.querySelector('#q3').innerHTML = "TW";}
-//             if(item.deseg === true){document.querySelector('#q4').innerHTML = "Yes";}
-//             else {document.querySelector('#q4').innerHTML = "No";}
-//             document.querySelector('#q5').innerHTML = item.building;
-//             document.querySelector('#q6').innerHTML = item.bay;
-//             if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
-//             else{document.querySelector('#q7').innerHTML = "No";}
-           
-//         }
-//    })
 }
 
 function showAll() {
@@ -22123,6 +22116,7 @@ function showAll() {
     deseg = false;
     nonDeseg = false;
     expand = false;
+    edit = false;
 
     //Collaps show filter bar ready to expand
     document.getElementById("fltr").innerHTML = "Filters +";
@@ -22434,6 +22428,7 @@ function displayTools() {
 
 function showEdit() {
     console.log("showEdit() called");
+    edit = true;
     filter = 3;
     // Reset filters so all tools are visible after edit
     clearFilters();
