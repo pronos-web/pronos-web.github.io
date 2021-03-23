@@ -22001,6 +22001,7 @@ function toolExist(toolID){
             else{
                 console.log("Tool doesn't exist");
                exist = false;
+            }
         });
 }
 
