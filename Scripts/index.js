@@ -296,7 +296,7 @@ if( !production &&
 /**************** Building Only Filter Selsected *************************/
 
 /**************************** D1C *************************************/
-else if( production,
+else if( !production,
     !testWafer,
     !copper,
     !nonCopper,
@@ -350,7 +350,7 @@ else if( production,
         }}
         
 /**************************** D1D *************************************/
-else if( production,
+else if( !production,
     !testWafer,
     !copper,
     !nonCopper,
@@ -403,7 +403,7 @@ else if( production,
             });
         }}
 /**************************** D1X *************************************/
-else if( production,
+else if( !production,
     !testWafer,
     !copper,
     !nonCopper,
@@ -457,7 +457,7 @@ else if( production,
         }}
 /**************************** RP1 *************************************/
 
-else if( production,
+else if( !production,
     !testWafer,
     !copper,
     !nonCopper,
