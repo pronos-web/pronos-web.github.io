@@ -21857,6 +21857,7 @@ function addNewItem() {
             toolID = toolID + toolNumb;
             //See if tool aready exist
             exist = toolExist(toolID);
+            if(exist == true){return false;}
         }
 
     if(document.getElementById('toolBld').value === ""){
