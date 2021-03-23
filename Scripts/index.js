@@ -291,22 +291,22 @@ if( !production &&
                 ProdOrTW: item.ProdOrTW,
                 Purge: item.Purge
             });
-        }}
+        }
 
 /**************** Building Only Filter Selsected *************************/
 
 /**************************** D1C *************************************/
-if( !production,
-        !testWafer,
-        !copper,
-        !nonCopper,
-        !purge,
-        !nonPurge,
-        !deseg,
-        !nonDeseg,
-        d1c,
-        !d1d,
-        !d1x,
+if( !production &&
+        !testWafer &&
+        !copper && 
+        !nonCopper &&
+        !purge &&
+        !nonPurge &&
+        !deseg &&
+        !nonDeseg &&
+        d1c &&
+        !d1d &&
+        !d1x &&
         !rp1){
 
         console.log('D1C: ' + item.Building);
@@ -352,17 +352,17 @@ if( !production,
         }}
         
 /**************************** D1D *************************************/
-if( !production,
-    !testWafer,
-    !copper,
-    !nonCopper,
-    !purge,
-    !nonPurge,
-    !deseg,
-    !nonDeseg,
-    !d1c,
-    d1d,
-    !d1x,
+if( !production &&
+    !testWafer &&
+    !copper && 
+    !nonCopper &&
+    !purge &&
+    !nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    !d1c &&
+    d1d &&
+    !d1x &&
     !rp1){
         console.log('D1D: ' + item.Building);
         if(item.Building == "D1D"){
@@ -405,17 +405,17 @@ if( !production,
             });
         }}
 /**************************** D1X *************************************/
-else if( !production,
-    !testWafer,
-    !copper,
-    !nonCopper,
-    !purge,
-    !nonPurge,
-    !deseg,
-    !nonDeseg,
-    !d1c,
-    !d1d,
-    d1x,
+else if( !production &&
+    !testWafer &&
+    !copper && 
+    !nonCopper &&
+    !purge &&
+    !nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    !d1c &&
+    !d1d &&
+    d1x &&
     !rp1){
         console.log('D1X: ' + item.Building);
         if(item.Building == "D1X"){
@@ -459,17 +459,17 @@ else if( !production,
         }}
 /**************************** RP1 *************************************/
 
-else if( !production,
-    !testWafer,
-    !copper,
-    !nonCopper,
-    !purge,
-    !nonPurge,
-    !deseg,
-    !nonDeseg,
-    !d1c,
-    !d1d,
-    !d1x,
+else if( !production &&
+    !testWafer &&
+    !copper && 
+    !nonCopper &&
+    !purge &&
+    !nonPurge &&
+    !deseg &&
+    !nonDeseg &&
+    !d1c &&
+    !d1d &&
+    !d1x &&
     rp1){
 
         if(item.Building == "RP1"){
@@ -514,17 +514,17 @@ else if( !production,
 /****************** One Filter *********************/
 
 /**** Production ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod"){
@@ -568,17 +568,17 @@ else if( production,
     }}
 
 /**** Test Wafer ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW"){
@@ -622,17 +622,17 @@ testWafer,
     }}
 
 /**** Copper ********/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu"){
@@ -676,17 +676,17 @@ copper,
     }}
 
 /**** NonCopper *****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC"){
@@ -731,17 +731,17 @@ nonCopper,
 
 /**** Purge ****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "Purge"){
@@ -786,17 +786,17 @@ purge,
 
 /**** NonPurge ****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "NonPurge"){
@@ -841,17 +841,17 @@ nonPurge,
 
 /**** Deseg ********/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Deseg == "Deseg"){
@@ -896,17 +896,17 @@ deseg,
 
 /**** NonDeseg *****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Deseg == "nonDeseg"){
@@ -951,17 +951,17 @@ nonDeseg,
 /****************** Two Filters *********************/
 
 /**** Production Copper ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -1005,17 +1005,17 @@ copper,
         });
     }}
 /**** Production NonCopper ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -1059,17 +1059,17 @@ nonCopper,
         });
     }}
 /**** Production Purge ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -1113,17 +1113,17 @@ purge,
         });
     }}
 /**** Production NonPurge ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -1167,17 +1167,17 @@ nonPurge,
         });
     }}
 /**** Production Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -1221,17 +1221,17 @@ deseg,
         });
     }}
 /**** Production NonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -1276,17 +1276,17 @@ nonDeseg,
     }}
 
 /**** Test Wafer Copper ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -1330,17 +1330,17 @@ copper,
         });
     }}
 /**** Test Wafer NonCopper ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -1384,17 +1384,17 @@ nonCopper,
         });
     }}
 /**** Test Wafer Purge ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -1438,17 +1438,17 @@ purge,
         });
     }}
 /**** Test Wafer NonPurge ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -1492,17 +1492,17 @@ nonPurge,
         });
     }}
 /**** Test Wafer Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -1546,17 +1546,17 @@ deseg,
         });
     }}
 /**** Test Wafer NonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -1601,17 +1601,17 @@ nonDeseg,
     }}
 
 /**** Copper Purge ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -1655,17 +1655,17 @@ purge,
         });
     }}
 /**** Copper NonPurge ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -1709,17 +1709,17 @@ nonPurge,
         });
     }}
 /**** Copper Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -1763,17 +1763,17 @@ deseg,
         });
     }}
 /**** Copper NonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -1818,17 +1818,17 @@ nonDeseg,
     }}
 
 /**** NonCopper Purge ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -1872,17 +1872,17 @@ purge,
         });
     }}
 /**** NonCopper NonPurge ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -1926,17 +1926,17 @@ nonPurge,
         });
     }}
 /**** NonCopper NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -1980,17 +1980,17 @@ nonDeseg,
         });
     }}
 /**** NonCopper Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -2035,17 +2035,17 @@ deseg,
     }}
 
 /**** Purge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -2089,17 +2089,17 @@ deseg,
         });
     }}
 /**** Purge NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -2144,17 +2144,17 @@ nonDeseg,
     }}
 
 /**** NonPurge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonPurge" &&
@@ -2198,17 +2198,17 @@ deseg,
         });
     }}
 /**** NonPurge NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "NonPurge" &&
@@ -2256,17 +2256,17 @@ nonDeseg,
 /****************** Three Filters *********************/
 
 /**** Production Copper Purge ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -2311,17 +2311,17 @@ purge,
         });
     }}
 /**** Production Copper nonPurge ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -2366,17 +2366,17 @@ nonPurge,
         });
     }}
 /**** Production Copper Deseg ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -2421,17 +2421,17 @@ deseg,
         });
     }}
 /**** Production Copper nonDeseg ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -2477,17 +2477,17 @@ nonDeseg,
     }}
 
 /**** Production nonCopper Purge ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -2532,17 +2532,17 @@ purge,
         });
     }}
 /**** Production nonCopper nonPurge ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -2588,17 +2588,17 @@ nonPurge,
     }}
 
 /**** Production nonCopper nonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -2644,17 +2644,17 @@ nonDeseg,
     }}
     
 /**** Production nonCopper Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -2700,17 +2700,17 @@ deseg,
     }}
 
 /**** Production Purge Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -2755,17 +2755,17 @@ deseg,
         });
     }}
 /**** Production Purge nonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -2811,17 +2811,17 @@ nonDeseg,
     }}
 
 /**** TestWafer Copper Purge ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -2866,17 +2866,17 @@ purge,
         });
     }}
 /**** TestWafer Copper nonPurge ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -2921,17 +2921,17 @@ nonPurge,
         });
     }}
 /**** TestWafer Copper Deseg ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -2976,17 +2976,17 @@ deseg,
         });
     }}
 /**** TestWafer Copper nonDeseg ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -3032,17 +3032,17 @@ nonDeseg,
     }}
 
 /**** TestWafer nonCopper Purge ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -3087,17 +3087,17 @@ purge,
         });
     }}
 /**** TestWafer nonCopper nonPurge ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -3142,17 +3142,17 @@ nonPurge,
         });
     }}
 /**** TestWafer nonCopper Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -3197,17 +3197,17 @@ deseg,
         });
     }}
 /**** TestWafer nonCopper nonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -3253,17 +3253,17 @@ nonDeseg,
     }}
 
 /**** TestWafer Purge Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -3308,17 +3308,17 @@ deseg,
         });
     }}
 /**** TestWafer Purge nonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -3364,17 +3364,17 @@ nonDeseg,
     }}
 
 /**** Copper Purge Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -3419,17 +3419,17 @@ deseg,
         });
     }}
 /**** Copper Purge nonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -3475,17 +3475,17 @@ nonDeseg,
     }}
 
 /**** Copper nonPurge Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -3530,17 +3530,17 @@ deseg,
         });
     }}
 /**** Copper nonPurge nonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -3586,17 +3586,17 @@ nonDeseg,
     }}
 
 /**** nonCopper Purge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -3641,17 +3641,17 @@ deseg,
         });
     }}
 /**** nonCopper Purge nonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -3697,17 +3697,17 @@ nonDeseg,
     }}
 
 /**** nonCopper nonPurge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -3752,17 +3752,17 @@ deseg,
         });
     }}
 /**** nonCopper nonPurge nonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -3810,17 +3810,17 @@ nonDeseg,
 /****************** Four Filters *********************/
 
 /**** Production Copper Purge Deseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -3866,17 +3866,17 @@ deseg,
         });
     }}
 /**** Production Copper Purge nonDeseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -3923,17 +3923,17 @@ nonDeseg,
     }}
 
 /**** Production Copper nonPurge Deseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -3979,17 +3979,17 @@ deseg,
         });
     }}
 /**** Production Copper nonPurge nonDeseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -4036,17 +4036,17 @@ nonDeseg,
     }}
 
 /**** Production nonCopper Purge Deseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -4092,17 +4092,17 @@ deseg,
         });
     }}
 /**** Production nonCopper Purge nonDeseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -4149,17 +4149,17 @@ nonDeseg,
     }}
 
 /**** Production nonCopper nonPurge Deseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -4205,17 +4205,17 @@ deseg,
         });
     }}
 /**** Production nonCopper nonPurge nonDeseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -4262,17 +4262,17 @@ nonDeseg,
     }}
 
 /**** TestWafer Copper Purge Deseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -4318,17 +4318,17 @@ deseg,
         });
     }}
 /**** TestWafer Copper Purge nonDeseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -4375,17 +4375,17 @@ nonDeseg,
     }}
 
 /**** TestWafer Copper nonPurge Deseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -4431,17 +4431,17 @@ deseg,
         });
     }}
 /**** TestWafer Copper nonPurge nonDeseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -4488,17 +4488,17 @@ nonDeseg,
     }}
 
 /**** TestWafer nonCopper Purge Deseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -4544,17 +4544,17 @@ deseg,
         });
     }}
 /**** TestWafer nonCopper Purge nonDeseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -4601,17 +4601,17 @@ nonDeseg,
     }}
 
 /**** TestWafer nonCopper nonPurge Deseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -4657,17 +4657,17 @@ deseg,
         });
     }}
 /**** TestWafer nonCopper nonPurge nonDeseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -4717,17 +4717,17 @@ nonDeseg,
 
 /************** D1C ********************/
 /**** Production ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -4772,17 +4772,17 @@ d1c,
     }}
 
 /**** Test Wafer ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -4827,17 +4827,17 @@ d1c,
     }}
 
 /**** Copper ********/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -4882,17 +4882,17 @@ d1c,
     }}
 
 /**** NonCopper *****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -4938,17 +4938,17 @@ d1c,
 
 /**** Purge ****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -4994,17 +4994,17 @@ d1c,
 
 /**** NonPurge ****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "NonPurge" &&
@@ -5050,17 +5050,17 @@ d1c,
 
 /**** Deseg ********/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Deseg == "Deseg" &&
@@ -5106,17 +5106,17 @@ d1c,
 
 /**** NonDeseg *****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Deseg == "nonDeseg" &&
@@ -5162,17 +5162,17 @@ d1c,
 
 /************** D1D ********************/
 /**** Production ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -5217,17 +5217,17 @@ d1d,
     }}
 
 /**** Test Wafer ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -5272,17 +5272,17 @@ d1d,
     }}
 
 /**** Copper ********/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -5327,17 +5327,17 @@ d1d,
     }}
 
 /**** NonCopper *****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -5383,17 +5383,17 @@ d1d,
 
 /**** Purge ****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -5439,17 +5439,17 @@ d1d,
 
 /**** NonPurge ****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "NonPurge" &&
@@ -5495,17 +5495,17 @@ d1d,
 
 /**** Deseg ********/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Deseg == "Deseg" &&
@@ -5551,17 +5551,17 @@ d1d,
 
 /**** NonDeseg *****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Deseg == "nonDeseg" &&
@@ -5607,17 +5607,17 @@ d1d,
 
 /************** D1X ********************/
 /**** Production ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -5662,17 +5662,17 @@ d1x,
     }}
 
 /**** Test Wafer ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -5717,17 +5717,17 @@ d1x,
     }}
 
 /**** Copper ********/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -5772,17 +5772,17 @@ d1x,
     }}
 
 /**** NonCopper *****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -5828,17 +5828,17 @@ d1x,
 
 /**** Purge ****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -5884,17 +5884,17 @@ d1x,
 
 /**** NonPurge ****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Purge == "NonPurge" &&
@@ -5940,17 +5940,17 @@ d1x,
 
 /**** Deseg ********/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Deseg == "Deseg" &&
@@ -5996,17 +5996,17 @@ d1x,
 
 /**** NonDeseg *****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Deseg == "nonDeseg" &&
@@ -6052,17 +6052,17 @@ d1x,
 
 /************** RP1 ********************/
 /**** Production ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -6107,17 +6107,17 @@ rp1){
     }}
 
 /**** Test Wafer ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -6162,17 +6162,17 @@ rp1){
     }}
 
 /**** Copper ********/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "Cu" &&
@@ -6217,17 +6217,17 @@ rp1){
     }}
 
 /**** NonCopper *****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "NC" &&
@@ -6273,17 +6273,17 @@ rp1){
 
 /**** Purge ****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Purge == "Purge" &&
@@ -6329,17 +6329,17 @@ rp1){
 
 /**** NonPurge ****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Purge == "NonPurge" &&
@@ -6385,17 +6385,17 @@ rp1){
 
 /**** Deseg ********/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Deseg == "Deseg" &&
@@ -6441,17 +6441,17 @@ rp1){
 
 /**** NonDeseg *****/
 
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Deseg == "nonDeseg" &&
@@ -6499,17 +6499,17 @@ rp1){
 
 /************** D1C ********************/
 /**** Production Copper ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -6554,17 +6554,17 @@ d1c,
         });
     }}
 /**** Production NonCopper ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -6609,17 +6609,17 @@ d1c,
         });
     }}
 /**** Production Purge ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -6664,17 +6664,17 @@ d1c,
         });
     }}
 /**** Production NonPurge ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -6719,17 +6719,17 @@ d1c,
         });
     }}
 /**** Production Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -6774,17 +6774,17 @@ d1c,
         });
     }}
 /**** Production NonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -6830,17 +6830,17 @@ d1c,
     }}
 
 /**** Test Wafer Copper ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -6885,17 +6885,17 @@ d1c,
         });
     }}
 /**** Test Wafer NonCopper ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -6940,17 +6940,17 @@ d1c,
         });
     }}
 /**** Test Wafer Purge ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -6995,17 +6995,17 @@ d1c,
         });
     }}
 /**** Test Wafer NonPurge ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -7050,17 +7050,17 @@ d1c,
         });
     }}
 /**** Test Wafer Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -7105,17 +7105,17 @@ d1c,
         });
     }}
 /**** Test Wafer NonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -7161,17 +7161,17 @@ d1c,
     }}
 
 /**** Copper Purge ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -7216,17 +7216,17 @@ d1c,
         });
     }}
 /**** Copper NonPurge ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -7271,17 +7271,17 @@ d1c,
         });
     }}
 /**** Copper Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -7326,17 +7326,17 @@ d1c,
         });
     }}
 /**** Copper NonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -7382,17 +7382,17 @@ d1c,
     }}
 
 /**** NonCopper Purge ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -7437,17 +7437,17 @@ d1c,
         });
     }}
 /**** NonCopper NonPurge ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -7492,17 +7492,17 @@ d1c,
         });
     }}
 /**** NonCopper NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -7547,17 +7547,17 @@ d1c,
         });
     }}
 /**** NonCopper Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -7603,17 +7603,17 @@ d1c,
     }}
 
 /**** Purge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -7658,17 +7658,17 @@ d1c,
         });
     }}
 /**** Purge NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -7714,17 +7714,17 @@ d1c,
     }}
 
 /**** NonPurge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonPurge" &&
@@ -7769,17 +7769,17 @@ d1c,
         });
     }}
 /**** NonPurge NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "NonPurge" &&
@@ -7826,17 +7826,17 @@ d1c,
 
 /************** D1D ********************/
 /**** Production Copper ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -7881,17 +7881,17 @@ d1d,
         });
     }}
 /**** Production NonCopper ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -7936,17 +7936,17 @@ d1d,
         });
     }}
 /**** Production Purge ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -7991,17 +7991,17 @@ d1d,
         });
     }}
 /**** Production NonPurge ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -8046,17 +8046,17 @@ d1d,
         });
     }}
 /**** Production Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -8101,17 +8101,17 @@ d1d,
         });
     }}
 /**** Production NonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -8157,17 +8157,17 @@ d1d,
     }}
 
 /**** Test Wafer Copper ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -8212,17 +8212,17 @@ d1d,
         });
     }}
 /**** Test Wafer NonCopper ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -8267,17 +8267,17 @@ d1d,
         });
     }}
 /**** Test Wafer Purge ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -8322,17 +8322,17 @@ d1d,
         });
     }}
 /**** Test Wafer NonPurge ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -8377,17 +8377,17 @@ d1d,
         });
     }}
 /**** Test Wafer Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -8433,17 +8433,17 @@ d1d,
     }}
     
 /**** Test Wafer NonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -8489,17 +8489,17 @@ d1d,
     }}
 
 /**** Copper Purge ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -8544,17 +8544,17 @@ d1d,
         });
     }}
 /**** Copper NonPurge ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -8599,17 +8599,17 @@ d1d,
         });
     }}
 /**** Copper Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -8654,17 +8654,17 @@ d1d,
         });
     }}
 /**** Copper NonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -8710,17 +8710,17 @@ d1d,
     }}
 
 /**** NonCopper Purge ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -8765,17 +8765,17 @@ d1d,
         });
     }}
 /**** NonCopper NonPurge ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -8820,17 +8820,17 @@ d1d,
         });
     }}
 /**** NonCopper NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -8875,17 +8875,17 @@ d1d,
         });
     }}
 /**** NonCopper Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -8931,17 +8931,17 @@ d1d,
     }}
 
 /**** Purge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -8986,17 +8986,17 @@ d1d,
         });
     }}
 /**** Purge NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -9042,17 +9042,17 @@ d1d,
     }}
 
 /**** NonPurge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NonPurge" &&
@@ -9097,17 +9097,17 @@ d1d,
         });
     }}
 /**** NonPurge NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Purge == "NonPurge" &&
@@ -9154,17 +9154,17 @@ d1d,
 
 /************** D1X ********************/
 /**** Production Copper ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -9209,17 +9209,17 @@ d1x,
         });
     }}
 /**** Production NonCopper ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -9264,17 +9264,17 @@ d1x,
         });
     }}
 /**** Production Purge ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -9319,17 +9319,17 @@ d1x,
         });
     }}
 /**** Production NonPurge ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -9374,17 +9374,17 @@ d1x,
         });
     }}
 /**** Production Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -9429,17 +9429,17 @@ d1x,
         });
     }}
 /**** Production NonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -9485,17 +9485,17 @@ d1x,
     }}
 
 /**** Test Wafer Copper ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -9540,17 +9540,17 @@ d1x,
         });
     }}
 /**** Test Wafer NonCopper ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -9595,17 +9595,17 @@ d1x,
         });
     }}
 /**** Test Wafer Purge ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -9650,17 +9650,17 @@ d1x,
         });
     }}
 /**** Test Wafer NonPurge ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -9705,17 +9705,17 @@ d1x,
         });
     }}
 /**** Test Wafer Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -9760,17 +9760,17 @@ d1x,
         });
     }}
 /**** Test Wafer NonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -9816,17 +9816,17 @@ d1x,
     }}
 
 /**** Copper Purge ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -9871,17 +9871,17 @@ d1x,
         });
     }}
 /**** Copper NonPurge ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -9926,17 +9926,17 @@ d1x,
         });
     }}
 /**** Copper Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -9981,17 +9981,17 @@ d1x,
         });
     }}
 /**** Copper NonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -10037,17 +10037,17 @@ d1x,
     }}
 
 /**** NonCopper Purge ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -10092,17 +10092,17 @@ d1x,
         });
     }}
 /**** NonCopper NonPurge ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -10147,17 +10147,17 @@ d1x,
         });
     }}
 /**** NonCopper NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -10202,17 +10202,17 @@ d1x,
         });
     }}
 /**** NonCopper Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -10258,17 +10258,17 @@ d1x,
     }}
 
 /**** Purge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -10313,17 +10313,17 @@ d1x,
         });
     }}
 /**** Purge NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Purge == "Purge" &&
@@ -10369,17 +10369,17 @@ d1x,
     }}
 
 /**** NonPurge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "NonPurge" &&
@@ -10424,17 +10424,17 @@ d1x,
         });
     }}
 /**** NonPurge NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Purge == "NonPurge" &&
@@ -10481,17 +10481,17 @@ d1x,
 
 /************** RP1 ********************/
 /**** Production Copper ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -10536,17 +10536,17 @@ rp1){
         });
     }}
 /**** Production NonCopper ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -10591,17 +10591,17 @@ rp1){
         });
     }}
 /**** Production Purge ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -10646,17 +10646,17 @@ rp1){
         });
     }}
 /**** Production NonPurge ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -10701,17 +10701,17 @@ rp1){
         });
     }}
 /**** Production Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -10756,17 +10756,17 @@ rp1){
         });
     }}
 /**** Production NonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -10812,17 +10812,17 @@ rp1){
     }}
 
 /**** Test Wafer Copper ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -10867,17 +10867,17 @@ rp1){
         });
     }}
 /**** Test Wafer NonCopper ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -10922,17 +10922,17 @@ rp1){
         });
     }}
 /**** Test Wafer Purge ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -10977,17 +10977,17 @@ rp1){
         });
     }}
 /**** Test Wafer NonPurge ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -11032,17 +11032,17 @@ rp1){
         });
     }}
 /**** Test Wafer Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -11087,17 +11087,17 @@ rp1){
         });
     }}
 /**** Test Wafer NonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -11143,17 +11143,17 @@ rp1){
     }}
 
 /**** Copper Purge ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "Cu" &&
@@ -11198,17 +11198,17 @@ rp1){
         });
     }}
 /**** Copper NonPurge ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "Cu" &&
@@ -11253,17 +11253,17 @@ rp1){
         });
     }}
 /**** Copper Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "Cu" &&
@@ -11308,17 +11308,17 @@ rp1){
         });
     }}
 /**** Copper NonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "Cu" &&
@@ -11364,17 +11364,17 @@ rp1){
     }}
 
 /**** NonCopper Purge ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -11419,17 +11419,17 @@ rp1){
         });
     }}
 /**** NonCopper NonPurge ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -11474,17 +11474,17 @@ rp1){
         });
     }}
 /**** NonCopper NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -11529,17 +11529,17 @@ rp1){
         });
     }}
 /**** NonCopper Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "NonCopper" &&
@@ -11585,17 +11585,17 @@ rp1){
     }}
 
 /**** Purge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Purge == "Purge" &&
@@ -11640,17 +11640,17 @@ rp1){
         });
     }}
 /**** Purge NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Purge == "Purge" &&
@@ -11696,17 +11696,17 @@ rp1){
     }}
 
 /**** NonPurge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "NonPurge" &&
@@ -11751,17 +11751,17 @@ rp1){
         });
     }}
 /**** NonPurge NonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Purge == "NonPurge" &&
@@ -11810,17 +11810,17 @@ rp1){
 
 /************** D1C ********************/
 /**** Production Copper Purge ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -11866,17 +11866,17 @@ d1c,
         });
     }}
 /**** Production Copper nonPurge ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -11922,17 +11922,17 @@ d1c,
         });
     }}
 /**** Production Copper Deseg ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -11978,17 +11978,17 @@ d1c,
         });
     }}
 /**** Production Copper nonDeseg ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -12035,17 +12035,17 @@ d1c,
     }}
 
 /**** Production nonCopper Purge ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -12091,17 +12091,17 @@ d1c,
         });
     }}
 /**** Production nonCopper nonPurge ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -12148,17 +12148,17 @@ d1c,
     }}
 
 /**** Production nonCopper nonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -12205,17 +12205,17 @@ d1c,
     }}
     
 /**** Production nonCopper Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -12262,17 +12262,17 @@ d1c,
     }}
 
 /**** Production Purge Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -12318,17 +12318,17 @@ d1c,
         });
     }}
 /**** Production Purge nonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -12375,17 +12375,17 @@ d1c,
     }}
 
 /**** TestWafer Copper Purge ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -12431,17 +12431,17 @@ d1c,
         });
     }}
 /**** TestWafer Copper nonPurge ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -12487,17 +12487,17 @@ d1c,
         });
     }}
 /**** TestWafer Copper Deseg ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -12543,17 +12543,17 @@ d1c,
         });
     }}
 /**** TestWafer Copper nonDeseg ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -12600,17 +12600,17 @@ d1c,
     }}
 
 /**** TestWafer nonCopper Purge ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -12656,17 +12656,17 @@ d1c,
         });
     }}
 /**** TestWafer nonCopper nonPurge ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -12712,17 +12712,17 @@ d1c,
         });
     }}
 /**** TestWafer nonCopper Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -12768,17 +12768,17 @@ d1c,
         });
     }}
 /**** TestWafer nonCopper nonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -12825,17 +12825,17 @@ d1c,
     }}
 
 /**** TestWafer Purge Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -12881,17 +12881,17 @@ d1c,
         });
     }}
 /**** TestWafer Purge nonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -12938,17 +12938,17 @@ d1c,
     }}
 
 /**** Copper Purge Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -12994,17 +12994,17 @@ d1c,
         });
     }}
 /**** Copper Purge nonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -13051,17 +13051,17 @@ d1c,
     }}
 
 /**** Copper nonPurge Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -13107,17 +13107,17 @@ d1c,
         });
     }}
 /**** Copper nonPurge nonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -13164,17 +13164,17 @@ d1c,
     }}
 
 /**** nonCopper Purge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -13220,17 +13220,17 @@ d1c,
         });
     }}
 /**** nonCopper Purge nonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -13277,17 +13277,17 @@ d1c,
     }}
 
 /**** nonCopper nonPurge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -13333,17 +13333,17 @@ d1c,
         });
     }}
 /**** nonCopper nonPurge nonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -13391,17 +13391,17 @@ d1c,
 
 /************** D1D ********************/
 /**** Production Copper Purge ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -13447,17 +13447,17 @@ d1d,
         });
     }}
 /**** Production Copper nonPurge ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -13503,17 +13503,17 @@ d1d,
         });
     }}
 /**** Production Copper Deseg ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -13559,17 +13559,17 @@ d1d,
         });
     }}
 /**** Production Copper nonDeseg ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -13616,17 +13616,17 @@ d1d,
     }}
 
 /**** Production nonCopper Purge ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -13672,17 +13672,17 @@ d1d,
         });
     }}
 /**** Production nonCopper nonPurge ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -13729,17 +13729,17 @@ d1d,
     }}
 
 /**** Production nonCopper nonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -13786,17 +13786,17 @@ d1d,
     }}
     
 /**** Production nonCopper Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -13843,17 +13843,17 @@ d1d,
     }}
 
 /**** Production Purge Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -13899,17 +13899,17 @@ d1d,
         });
     }}
 /**** Production Purge nonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -13956,17 +13956,17 @@ d1d,
     }}
 
 /**** TestWafer Copper Purge ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -14012,17 +14012,17 @@ d1d,
         });
     }}
 /**** TestWafer Copper nonPurge ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -14068,17 +14068,17 @@ d1d,
         });
     }}
 /**** TestWafer Copper Deseg ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -14124,17 +14124,17 @@ d1d,
         });
     }}
 /**** TestWafer Copper nonDeseg ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -14181,17 +14181,17 @@ d1d,
     }}
 
 /**** TestWafer nonCopper Purge ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -14237,17 +14237,17 @@ d1d,
         });
     }}
 /**** TestWafer nonCopper nonPurge ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -14293,17 +14293,17 @@ d1d,
         });
     }}
 /**** TestWafer nonCopper Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -14349,17 +14349,17 @@ d1d,
         });
     }}
 /**** TestWafer nonCopper nonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -14406,17 +14406,17 @@ d1d,
     }}
 
 /**** TestWafer Purge Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -14462,17 +14462,17 @@ d1d,
         });
     }}
 /**** TestWafer Purge nonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -14519,17 +14519,17 @@ d1d,
     }}
 
 /**** Copper Purge Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -14575,17 +14575,17 @@ d1d,
         });
     }}
 /**** Copper Purge nonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -14632,17 +14632,17 @@ d1d,
     }}
 
 /**** Copper nonPurge Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -14688,17 +14688,17 @@ d1d,
         });
     }}
 /**** Copper nonPurge nonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -14745,17 +14745,17 @@ d1d,
     }}
 
 /**** nonCopper Purge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -14801,17 +14801,17 @@ d1d,
         });
     }}
 /**** nonCopper Purge nonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -14858,17 +14858,17 @@ d1d,
     }}
 
 /**** nonCopper nonPurge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -14914,17 +14914,17 @@ d1d,
         });
     }}
 /**** nonCopper nonPurge nonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -14972,17 +14972,17 @@ d1d,
 
 /************** D1X ********************/
 /**** Production Copper Purge ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -15028,17 +15028,17 @@ d1x,
         });
     }}
 /**** Production Copper nonPurge ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -15084,17 +15084,17 @@ d1x,
         });
     }}
 /**** Production Copper Deseg ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -15140,17 +15140,17 @@ d1x,
         });
     }}
 /**** Production Copper nonDeseg ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -15197,17 +15197,17 @@ d1x,
     }}
 
 /**** Production nonCopper Purge ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -15253,17 +15253,17 @@ d1x,
         });
     }}
 /**** Production nonCopper nonPurge ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -15310,17 +15310,17 @@ d1x,
     }}
 
 /**** Production nonCopper nonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -15367,17 +15367,17 @@ d1x,
     }}
     
 /**** Production nonCopper Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -15424,17 +15424,17 @@ d1x,
     }}
 
 /**** Production Purge Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -15480,17 +15480,17 @@ d1x,
         });
     }}
 /**** Production Purge nonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -15537,17 +15537,17 @@ d1x,
     }}
 
 /**** TestWafer Copper Purge ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -15593,17 +15593,17 @@ d1x,
         });
     }}
 /**** TestWafer Copper nonPurge ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -15649,17 +15649,17 @@ d1x,
         });
     }}
 /**** TestWafer Copper Deseg ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -15705,17 +15705,17 @@ d1x,
         });
     }}
 /**** TestWafer Copper nonDeseg ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -15762,17 +15762,17 @@ d1x,
     }}
 
 /**** TestWafer nonCopper Purge ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -15818,17 +15818,17 @@ d1x,
         });
     }}
 /**** TestWafer nonCopper nonPurge ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -15874,17 +15874,17 @@ d1x,
         });
     }}
 /**** TestWafer nonCopper Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -15930,17 +15930,17 @@ d1x,
         });
     }}
 /**** TestWafer nonCopper nonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -15987,17 +15987,17 @@ d1x,
     }}
 
 /**** TestWafer Purge Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -16043,17 +16043,17 @@ d1x,
         });
     }}
 /**** TestWafer Purge nonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -16100,17 +16100,17 @@ d1x,
     }}
 
 /**** Copper Purge Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -16156,17 +16156,17 @@ d1x,
         });
     }}
 /**** Copper Purge nonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -16213,17 +16213,17 @@ d1x,
     }}
 
 /**** Copper nonPurge Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -16269,17 +16269,17 @@ d1x,
         });
     }}
 /**** Copper nonPurge nonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "Cu" &&
@@ -16326,17 +16326,17 @@ d1x,
     }}
 
 /**** nonCopper Purge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -16382,17 +16382,17 @@ d1x,
         });
     }}
 /**** nonCopper Purge nonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -16439,17 +16439,17 @@ d1x,
     }}
 
 /**** nonCopper nonPurge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -16495,17 +16495,17 @@ d1x,
         });
     }}
 /**** nonCopper nonPurge nonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.Contamination == "NC" &&
@@ -16553,17 +16553,17 @@ d1x,
 
 /************** RP1 ********************/
 /**** Production Copper Purge ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -16609,17 +16609,17 @@ rp1){
         });
     }}
 /**** Production Copper nonPurge ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -16665,17 +16665,17 @@ rp1){
         });
     }}
 /**** Production Copper Deseg ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -16721,17 +16721,17 @@ rp1){
         });
     }}
 /**** Production Copper nonDeseg ****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -16778,17 +16778,17 @@ rp1){
     }}
 
 /**** Production nonCopper Purge ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -16834,17 +16834,17 @@ rp1){
         });
     }}
 /**** Production nonCopper nonPurge ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -16891,17 +16891,17 @@ rp1){
     }}
 
 /**** Production nonCopper nonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -16948,17 +16948,17 @@ rp1){
     }}
     
 /**** Production nonCopper Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -17005,17 +17005,17 @@ rp1){
     }}
 
 /**** Production Purge Deseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -17061,17 +17061,17 @@ rp1){
         });
     }}
 /**** Production Purge nonDeseg ****/
-else if( production,
-!testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -17118,17 +17118,17 @@ rp1){
     }}
 
 /**** TestWafer Copper Purge ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -17174,17 +17174,17 @@ purge,
         });
     }}
 /**** TestWafer Copper nonPurge ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -17230,17 +17230,17 @@ rp1){
         });
     }}
 /**** TestWafer Copper Deseg ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -17286,17 +17286,17 @@ rp1){
         });
     }}
 /**** TestWafer Copper nonDeseg ****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -17343,17 +17343,17 @@ rp1){
     }}
 
 /**** TestWafer nonCopper Purge ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -17399,17 +17399,17 @@ rp1){
         });
     }}
 /**** TestWafer nonCopper nonPurge ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -17455,17 +17455,17 @@ rp1){
         });
     }}
 /**** TestWafer nonCopper Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -17511,17 +17511,17 @@ rp1){
         });
     }}
 /**** TestWafer nonCopper nonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -17568,17 +17568,17 @@ rp1){
     }}
 
 /**** TestWafer Purge Deseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -17624,17 +17624,17 @@ rp1){
         });
     }}
 /**** TestWafer Purge nonDeseg ****/
-else if( !production,
-testWafer,
-!copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -17681,17 +17681,17 @@ rp1){
     }}
 
 /**** Copper Purge Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "Cu" &&
@@ -17737,17 +17737,17 @@ rp1){
         });
     }}
 /**** Copper Purge nonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "Cu" &&
@@ -17794,17 +17794,17 @@ rp1){
     }}
 
 /**** Copper nonPurge Deseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "Cu" &&
@@ -17850,17 +17850,17 @@ rp1){
         });
     }}
 /**** Copper nonPurge nonDeseg ****/
-else if( !production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "Cu" &&
@@ -17907,17 +17907,17 @@ rp1){
     }}
 
 /**** nonCopper Purge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "NC" &&
@@ -17963,17 +17963,17 @@ rp1){
         });
     }}
 /**** nonCopper Purge nonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "NC" &&
@@ -18020,17 +18020,17 @@ rp1){
     }}
 
 /**** nonCopper nonPurge Deseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "NC" &&
@@ -18076,17 +18076,17 @@ rp1){
         });
     }}
 /**** nonCopper nonPurge nonDeseg ****/
-else if( !production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.Contamination == "NC" &&
@@ -18136,17 +18136,17 @@ rp1){
 
 /************** D1C ********************/
 /**** Production Copper Purge Deseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -18193,17 +18193,17 @@ d1c,
         });
     }}
 /**** Production Copper Purge nonDeseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -18251,17 +18251,17 @@ d1c,
     }}
 
 /**** Production Copper nonPurge Deseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -18308,17 +18308,17 @@ d1c,
         });
     }}
 /**** Production Copper nonPurge nonDeseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -18366,17 +18366,17 @@ d1c,
     }}
 
 /**** Production nonCopper Purge Deseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -18423,17 +18423,17 @@ d1c,
         });
     }}
 /**** Production nonCopper Purge nonDeseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -18481,17 +18481,17 @@ d1c,
     }}
 
 /**** Production nonCopper nonPurge Deseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -18538,17 +18538,17 @@ d1c,
         });
     }}
 /**** Production nonCopper nonPurge nonDeseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -18596,17 +18596,17 @@ d1c,
     }}
 
 /**** TestWafer Copper Purge Deseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -18653,17 +18653,17 @@ d1c,
         });
     }}
 /**** TestWafer Copper Purge nonDeseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -18711,17 +18711,17 @@ d1c,
     }}
 
 /**** TestWafer Copper nonPurge Deseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -18768,17 +18768,17 @@ d1c,
         });
     }}
 /**** TestWafer Copper nonPurge nonDeseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -18826,17 +18826,17 @@ d1c,
     }}
 
 /**** TestWafer nonCopper Purge Deseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -18883,17 +18883,17 @@ d1c,
         });
     }}
 /**** TestWafer nonCopper Purge nonDeseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -18941,17 +18941,17 @@ d1c,
     }}
 
 /**** TestWafer nonCopper nonPurge Deseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -18998,17 +18998,17 @@ d1c,
         });
     }}
 /**** TestWafer nonCopper nonPurge nonDeseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+d1c &&
+!d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -19057,17 +19057,17 @@ d1c,
 
 /************** D1D ********************/
 /**** Production Copper Purge Deseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -19114,17 +19114,17 @@ d1d,
         });
     }}
 /**** Production Copper Purge nonDeseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -19172,17 +19172,17 @@ d1d,
     }}
 
 /**** Production Copper nonPurge Deseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -19229,17 +19229,17 @@ d1d,
         });
     }}
 /**** Production Copper nonPurge nonDeseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -19287,17 +19287,17 @@ d1d,
     }}
 
 /**** Production nonCopper Purge Deseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -19344,17 +19344,17 @@ d1d,
         });
     }}
 /**** Production nonCopper Purge nonDeseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -19402,17 +19402,17 @@ d1d,
     }}
 
 /**** Production nonCopper nonPurge Deseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -19459,17 +19459,17 @@ d1d,
         });
     }}
 /**** Production nonCopper nonPurge nonDeseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -19517,17 +19517,17 @@ d1d,
     }}
 
 /**** TestWafer Copper Purge Deseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -19574,17 +19574,17 @@ d1d,
         });
     }}
 /**** TestWafer Copper Purge nonDeseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -19632,17 +19632,17 @@ d1d,
     }}
 
 /**** TestWafer Copper nonPurge Deseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -19689,17 +19689,17 @@ d1d,
         });
     }}
 /**** TestWafer Copper nonPurge nonDeseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -19747,17 +19747,17 @@ d1d,
     }}
 
 /**** TestWafer nonCopper Purge Deseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -19804,17 +19804,17 @@ d1d,
         });
     }}
 /**** TestWafer nonCopper Purge nonDeseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -19862,17 +19862,17 @@ d1d,
     }}
 
 /**** TestWafer nonCopper nonPurge Deseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -19919,17 +19919,17 @@ d1d,
         });
     }}
 /**** TestWafer nonCopper nonPurge nonDeseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+d1d &&
+!d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -19978,17 +19978,17 @@ d1d,
 
 /************** D1X ********************/
 /**** Production Copper Purge Deseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -20035,17 +20035,17 @@ d1x,
         });
     }}
 /**** Production Copper Purge nonDeseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -20093,17 +20093,17 @@ d1x,
     }}
 
 /**** Production Copper nonPurge Deseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -20150,17 +20150,17 @@ d1x,
         });
     }}
 /**** Production Copper nonPurge nonDeseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -20208,17 +20208,17 @@ d1x,
     }}
 
 /**** Production nonCopper Purge Deseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -20265,17 +20265,17 @@ d1x,
         });
     }}
 /**** Production nonCopper Purge nonDeseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -20323,17 +20323,17 @@ d1x,
     }}
 
 /**** Production nonCopper nonPurge Deseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -20380,17 +20380,17 @@ d1x,
         });
     }}
 /**** Production nonCopper nonPurge nonDeseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -20438,17 +20438,17 @@ d1x,
     }}
 
 /**** TestWafer Copper Purge Deseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -20495,17 +20495,17 @@ d1x,
         });
     }}
 /**** TestWafer Copper Purge nonDeseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -20553,17 +20553,17 @@ d1x,
     }}
 
 /**** TestWafer Copper nonPurge Deseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -20610,17 +20610,17 @@ d1x,
         });
     }}
 /**** TestWafer Copper nonPurge nonDeseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -20668,17 +20668,17 @@ d1x,
     }}
 
 /**** TestWafer nonCopper Purge Deseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -20725,17 +20725,17 @@ d1x,
         });
     }}
 /**** TestWafer nonCopper Purge nonDeseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -20783,17 +20783,17 @@ d1x,
     }}
 
 /**** TestWafer nonCopper nonPurge Deseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -20840,17 +20840,17 @@ d1x,
         });
     }}
 /**** TestWafer nonCopper nonPurge nonDeseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+d1x &&
 !rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -20899,17 +20899,17 @@ d1x,
 
 /************** RP1 ********************/
 /**** Production Copper Purge Deseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -20956,17 +20956,17 @@ rp1){
         });
     }}
 /**** Production Copper Purge nonDeseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -21014,17 +21014,17 @@ rp1){
     }}
 
 /**** Production Copper nonPurge Deseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -21071,17 +21071,17 @@ rp1){
         });
     }}
 /**** Production Copper nonPurge nonDeseg****/
-else if( production,
-!testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -21129,17 +21129,17 @@ rp1){
     }}
 
 /**** Production nonCopper Purge Deseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -21186,17 +21186,17 @@ rp1){
         });
     }}
 /**** Production nonCopper Purge nonDeseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -21244,17 +21244,17 @@ rp1){
     }}
 
 /**** Production nonCopper nonPurge Deseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -21301,17 +21301,17 @@ rp1){
         });
     }}
 /**** Production nonCopper nonPurge nonDeseg****/
-else if( production,
-!testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( production &&
+!testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "Prod" &&
@@ -21359,17 +21359,17 @@ rp1){
     }}
 
 /**** TestWafer Copper Purge Deseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -21416,17 +21416,17 @@ rp1){
         });
     }}
 /**** TestWafer Copper Purge nonDeseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -21474,17 +21474,17 @@ rp1){
     }}
 
 /**** TestWafer Copper nonPurge Deseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -21531,17 +21531,17 @@ rp1){
         });
     }}
 /**** TestWafer Copper nonPurge nonDeseg****/
-else if( !production,
-testWafer,
-copper,
-!nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+copper && 
+!nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -21589,17 +21589,17 @@ rp1){
     }}
 
 /**** TestWafer nonCopper Purge Deseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -21646,17 +21646,17 @@ rp1){
         });
     }}
 /**** TestWafer nonCopper Purge nonDeseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-purge,
-!nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+purge &&
+!nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -21704,17 +21704,17 @@ rp1){
     }}
 
 /**** TestWafer nonCopper nonPurge Deseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-deseg,
-!nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+deseg &&
+!nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
@@ -21761,17 +21761,17 @@ rp1){
         });
     }}
 /**** TestWafer nonCopper nonPurge nonDeseg****/
-else if( !production,
-testWafer,
-!copper,
-nonCopper,
-!purge,
-nonPurge,
-!deseg,
-nonDeseg,
-!d1c,
-!d1d,
-!d1x,
+else if( !production &&
+testWafer &&
+!copper && 
+nonCopper &&
+!purge &&
+nonPurge &&
+!deseg &&
+nonDeseg &&
+!d1c &&
+!d1d &&
+!d1x &&
 rp1){
 
     if(item.ProdOrTW == "TW" &&
