@@ -17127,7 +17127,7 @@ purge,
 !d1c,
 !d1d,
 !d1x,
-!rp){
+!rp1){
 
     if(item.ProdOrTW == "TW" &&
        item.Contamination== "Cu" &&
