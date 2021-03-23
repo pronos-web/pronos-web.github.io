@@ -21986,7 +21986,7 @@ function toolExist(toolID){
             if(snapshot.key == toolID){
                 console.log("Tool already exist");
                 let conf = confirm("Tool already exist! Do you want to update it?");
-                if(conf = true){
+                if(conf == true){
                     return true;
                 }
                 else{return false;}
