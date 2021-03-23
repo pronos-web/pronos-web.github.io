@@ -22044,12 +22044,10 @@ function toolButtons(e){
         for(i = 0; i < 3; i++){
             newID += e[i];
         }
-        console.log(newID);
         let newNum = "";
         for(i = 3; i < e.length; i++){
             newNum += e[i];
         }
-        console.log(newNum);
 
         document.getElementById('numb').value = newNum;
         document.getElementById('toolTyp').value = newID;
@@ -22060,6 +22058,23 @@ function toolButtons(e){
             if( e == snapshot.key){
                 document.getElementById('bay').value = item.Bay;
                 document.getElementById('toolBld').value = item.Building;
+                if(item.contamination == "Cu"){
+                    production = true;
+                    testWafer = false;
+
+                    document.getElementById('active2').style.backgroundColor = "#000000";
+                    document.getElementById('TW2').style.backgroundColor = "#ffffff";
+                }
+                else{
+                    document.getElementById('active2').style.backgroundColor = "#ffffff";
+                    production = false;
+                }
+                if(item.ProdOrTW == "Prod"){}
+                else{}
+                if(item.Purge == "Purge"){}
+                else{}
+                if(item.Deseg == "Deseg"){}
+                else{}
             }
         });
     }
@@ -22085,11 +22100,6 @@ function toolButtons(e){
     var databaseRef = firebase.database().ref("Tool");
     databaseRef.on('child_added', function(snapshot) {
         var item = snapshot.val(); 
-
-        console.log('e: ' + e);
-        console.log('snapshot: ' + snapshot);
-        console.log('snapshot.key: ' + snapshot.key);
-        console.log('item.Contamination: ' + item.Contamination);
 
         if(e == snapshot.key){ 
             document.querySelector('#tst').innerHTML = snapshot.key + " Tool Info";
