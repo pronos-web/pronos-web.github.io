@@ -22059,16 +22059,16 @@ function toolButtons(e){
                 document.getElementById('bay').value = item.Bay;
                 document.getElementById('toolBld').value = item.Building;
                 if(item.contamination == "Cu"){
-                    production = true;
-                    testWafer = false;
-                    document.getElementById('3').checked = true;
-                    document.getElementById('4').checked = false;
+                    copper = true;
+                    nonCopper = false;
+                    document.getElementById('1').checked = true;
+                    document.getElementById('2').checked = false;
                 }
                 else{
-                    production = false;
-                    testWafer = true;
-                    document.getElementById('3').checked = false;
-                    document.getElementById('4').checked = true;
+                    nonCopper = false;
+                    copper = true;
+                    document.getElementById('1').checked = false;
+                    document.getElementById('2').checked = true;
                 }
                 if(item.ProdOrTW == "Prod"){}
                 else{}
