@@ -22041,15 +22041,15 @@ function toolButtons(e){
         console.log('length: ')
         console.log(e.length);
         let newID;
-        for(i = 0; i <= 3; i++){
-            newID = e[i];
+        for(i = 0; i < 3; i++){
+            newID += e[i];
         }
         console.log(newID);
         let newNum;
         for(i = 4; i <= 3; i++){
-            newNum = e[i];
+            newNum += e[i];
         }
-        console.log(newID);
+        console.log(newNum);
 
         document.getElementById('numb').value = newNum;
         document.getElementById('toolTyp').value = newID;
