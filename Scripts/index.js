@@ -21983,7 +21983,7 @@ function toolExist(toolID){
     var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) {
             var item = snapshot.val();
-            if(snapshot.key == tool.ID){
+            if(snapshot.key == toolID){
                 console.log("Tool already exist");
                 alert("Tool Already Exist")
                 return true;
