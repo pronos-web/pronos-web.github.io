@@ -22061,13 +22061,14 @@ function toolButtons(e){
                 if(item.contamination == "Cu"){
                     production = true;
                     testWafer = false;
-
-                    document.getElementById('active2').style.backgroundColor = "#000000";
-                    document.getElementById('TW2').style.backgroundColor = "#ffffff";
+                    document.getElementById('3').checked = true;
+                    document.getElementById('4').checked = false;
                 }
                 else{
-                    document.getElementById('active2').style.backgroundColor = "#ffffff";
                     production = false;
+                    testWafer = true;
+                    document.getElementById('3').checked = false;
+                    document.getElementById('4').checked = true;
                 }
                 if(item.ProdOrTW == "Prod"){}
                 else{}
