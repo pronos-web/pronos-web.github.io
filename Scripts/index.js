@@ -22053,7 +22053,7 @@ function toolButtons(e){
 
         document.getElementById('toolTyp').innerHTML = newID;
         document.getElementById('toolTyp').value = newID;
-        document.getElementById('numb').innerHTML = newNum;
+        document.getElementById('numb').value = newNum;
     }
     else{
 
