@@ -22040,12 +22040,12 @@ function toolButtons(e){
     if(edit == true){
         console.log('length: ')
         console.log(e.length);
-        let newID;
+        let newID = "";
         for(i = 0; i < 3; i++){
             newID += e[i];
         }
         console.log(newID);
-        let newNum;
+        let newNum = "";
         for(i = 4; i < e.length; i++){
             newNum += e[i];
         }
@@ -22053,8 +22053,6 @@ function toolButtons(e){
 
         document.getElementById('numb').value = newNum;
         document.getElementById('toolTyp').value = newID;
-        document.getElementById('numb').innerText = newNum;
-        document.getElementById('toolTyp').innerText = newID;
 
         var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) {
