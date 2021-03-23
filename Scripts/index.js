@@ -21857,7 +21857,10 @@ function addNewItem() {
             toolID = toolID + toolNumb;
             //See if tool aready exist
             exist = toolExist(toolID);
-            if(exist == true){console.log("Aborting Add"); return;}
+            if(exist == true){
+                console.log("Aborting Add"); 
+                return;
+            }
         }
 
     if(document.getElementById('toolBld').value === ""){
@@ -21988,14 +21991,16 @@ function toolExist(toolID){
                 console.log("Tool already exist");
                 let conf = confirm("Tool already exist! Do you want to update it?");
                 if(conf == true){
-                    return true;
+                    exist = false;
+                    return;
                 }
-                else{return false;}
+                else{
+                    exist = true;
+                    return;}
             }
             else{
                 console.log("Tool doesn't exist");
-                return false;
-            }
+               exist = false;
         });
 }
 
