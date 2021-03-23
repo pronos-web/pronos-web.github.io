@@ -22053,8 +22053,8 @@ function toolButtons(e){
 
         document.getElementById('numb').value = newNum;
         document.getElementById('toolTyp').value = newID;
-        document.getElementById('numb').textContent = newNum;
-        document.getElementById('toolTyp').textContent = newID;
+        document.getElementById('numb').innerText = newNum;
+        document.getElementById('toolTyp').innerText = newID;
 
         var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) {
