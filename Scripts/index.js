@@ -309,6 +309,8 @@ else if( !production,
     !d1x,
     !rp1){
 
+        console.log('D1C: ' + item.Building);
+
         if(item.Building == "D1C"){
         
         // add row to the Table
@@ -362,7 +364,7 @@ else if( !production,
     d1d,
     !d1x,
     !rp1){
-
+        console.log('D1D: ' + item.Building);
         if(item.Building == "D1D"){
         
         // add row to the Table
@@ -415,7 +417,7 @@ else if( !production,
     !d1d,
     d1x,
     !rp1){
-
+        console.log('D1X: ' + item.Building);
         if(item.Building == "D1X"){
         
         // add row to the Table
