@@ -22428,7 +22428,7 @@ function displayTools() {
 
 function showEdit() {
     console.log("showEdit() called");
-    edit = true;
+
     filter = 3;
     // Reset filters so all tools are visible after edit
     clearFilters();
@@ -22467,6 +22467,7 @@ itemList.forEach(
 
 document.getElementById('listBody').innerHTML = html;
 document.getElementById('listBody').style.display = "none";
+edit = true;
 console.log("showEdit() called");
 }
 
