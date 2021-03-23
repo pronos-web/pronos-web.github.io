@@ -21985,8 +21985,11 @@ function toolExist(toolID){
             var item = snapshot.val();
             if(snapshot.key == toolID){
                 console.log("Tool already exist");
-                alert("Tool Already Exist")
-                return true;
+                let conf = confirm("Tool already exist! Do you want to update it?");
+                if(conf = true){
+                    return true;
+                }
+                else{return false;}
             }
             else{
                 console.log("Tool doesn't exist");
