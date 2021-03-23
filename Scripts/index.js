@@ -21856,7 +21856,6 @@ function addNewItem() {
         && document.getElementById('numb').value != ""){
             toolID = toolID + toolNumb;
             //See if tool aready exist
-            exist = toolExist(toolID);
             if(exist == true){
                 console.log("Aborting Add"); 
                 return;
