@@ -22050,6 +22050,10 @@ function toolButtons(e){
             newNum = e[i];
         }
         console.log(newID);
+
+        document.getElementById('toolTyp').innerHTML = newID;
+        document.getElementById('toolTyp').value = newID;
+        document.getElementById('numb').innerHTML = newNum;
     }
     else{
 
