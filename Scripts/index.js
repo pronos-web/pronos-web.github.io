@@ -22046,7 +22046,7 @@ function toolButtons(e){
         }
         console.log(newID);
         let newNum = "";
-        for(i = 4; i < e.length; i++){
+        for(i = 3; i < e.length; i++){
             newNum += e[i];
         }
         console.log(newNum);
@@ -22059,6 +22059,7 @@ function toolButtons(e){
             var item = snapshot.val();
             if( e == snapshot.key){
                 document.getElementById('bay').value = item.Bay;
+                document.getElementById('toolBld').value = item.Building;
             }
         });
     }
