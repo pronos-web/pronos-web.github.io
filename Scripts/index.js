@@ -22070,12 +22070,42 @@ function toolButtons(e){
                     document.getElementById('1').checked = false;
                     document.getElementById('2').checked = true;
                 }
-                if(item.ProdOrTW == "Prod"){}
-                else{}
-                if(item.Purge == "Purge"){}
-                else{}
-                if(item.Deseg == "Deseg"){}
-                else{}
+                if(item.ProdOrTW == "Prod"){
+                    production = true;
+                    testWafer = false;
+                    document.getElementById('3').checked = true;
+                    document.getElementById('4').checked = false;
+                }
+                else{
+                    production = false;
+                    testWafer = true;
+                    document.getElementById('3').checked = false;
+                    document.getElementById('4').checked = true;
+                }
+                if(item.Purge == "Purge"){
+                    purge = true;
+                    nonPurge = false;
+                    document.getElementById('5').checked = true;
+                    document.getElementById('6').checked = false;
+                }
+                else{
+                    purge = false;
+                    nonPurge = true;
+                    document.getElementById('5').checked = false;
+                    document.getElementById('6').checked = true;
+                }
+                if(item.Deseg == "Deseg"){
+                    deseg = true;
+                    nonDeseg = false;
+                    document.getElementById('7').checked = true;
+                    document.getElementById('8').checked = false;
+                }
+                else{
+                    deseg = false;
+                    nonDeseg = true;
+                    document.getElementById('7').checked = false;
+                    document.getElementById('8').checked = true;
+                }
             }
         });
     }
