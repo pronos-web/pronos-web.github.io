@@ -13,7 +13,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
-    background: url(../Images/intel_inside.jfif) no-repeat bottom;
+    background-image: url('../Images/intel_inside.jfif');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
