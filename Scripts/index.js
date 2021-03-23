@@ -22058,7 +22058,7 @@ function toolButtons(e){
             if( e == snapshot.key){
                 document.getElementById('bay').value = item.Bay;
                 document.getElementById('toolBld').value = item.Building;
-                if(item.contamination == "Cu"){
+                if(item.Contamination == "Cu"){
                     copper = true;
                     nonCopper = false;
                     document.getElementById('1').checked = true;
