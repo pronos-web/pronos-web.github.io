@@ -21995,11 +21995,13 @@ function toolExist(toolID){
                 }
                 else{
                     exist = true;
+                    return;
                 }
             }
             else{
                 console.log("Tool doesn't exist");
                exist = false;
+               return;
             }
         });
 }
@@ -22133,39 +22135,39 @@ function toolButtons(e){
 
     toggle = 2;
 
-    listItems.length = 0;
-    var databaseRef = firebase.database().ref("Tool");
-    databaseRef.on('child_added', function(snapshot) {
-        var item = snapshot.val(); 
+    // listItems.length = 0;
+    // var databaseRef = firebase.database().ref("Tool");
+    // databaseRef.on('child_added', function(snapshot) {
+    //     var item = snapshot.val(); 
 
-        if(e == snapshot.key){ 
-            document.querySelector('#tst').innerHTML = snapshot.key + " Tool Info";
-            if(item.Contamination === 'Cu'){document.querySelector('#q1').innerHTML = "Cu";}
-            else {document.querySelector('#q1').innerHTML = "NC";}
-            if(item.Purge === 'Purge'){document.querySelector('#q2').innerHTML = "Yes";}
-            else {document.querySelector('#q2').innerHTML = "No";}
-            if(item.ProdOrTW === 'Prod'){document.querySelector('#q3').innerHTML = "Prod";}
-            else{document.querySelector('#q3').innerHTML = "TW";}
-            if(item.Deseg === 'Deseg'){document.querySelector('#q4').innerHTML = "Yes";}
-            else {document.querySelector('#q4').innerHTML = "No";}
-            document.querySelector('#q5').innerHTML = item.Building;
-            document.querySelector('#q6').innerHTML = item.Bay;
-            if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
-            else{document.querySelector('#q7').innerHTML = "No";}
+        // if(e == snapshot.key){ 
+        //     document.querySelector('#tst').innerHTML = snapshot.key + " Tool Info";
+        //     if(item.Contamination === 'Cu'){document.querySelector('#q1').innerHTML = "Cu";}
+        //     else {document.querySelector('#q1').innerHTML = "NC";}
+        //     if(item.Purge === 'Purge'){document.querySelector('#q2').innerHTML = "Yes";}
+        //     else {document.querySelector('#q2').innerHTML = "No";}
+        //     if(item.ProdOrTW === 'Prod'){document.querySelector('#q3').innerHTML = "Prod";}
+        //     else{document.querySelector('#q3').innerHTML = "TW";}
+        //     if(item.Deseg === 'Deseg'){document.querySelector('#q4').innerHTML = "Yes";}
+        //     else {document.querySelector('#q4').innerHTML = "No";}
+        //     document.querySelector('#q5').innerHTML = item.Building;
+        //     document.querySelector('#q6').innerHTML = item.Bay;
+        //     if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
+        //     else{document.querySelector('#q7').innerHTML = "No";}
         
-        }
+        //}
 
             // add the tool and details to the items list
-            listItems.push({
-                Tool: snapshot.key,
-                Building: item.Building, 
-                Bay: item.Bay,
-                Contamination: item.Contamination,
-                Deseg: item.Deseg,
-                ProdOrTW: item.ProdOrTW,
-                Purge: item.Purge
-            });
-        });
+            // listItems.push({
+            //     Tool: snapshot.key,
+            //     Building: item.Building, 
+            //     Bay: item.Bay,
+            //     Contamination: item.Contamination,
+            //     Deseg: item.Deseg,
+            //     ProdOrTW: item.ProdOrTW,
+            //     Purge: item.Purge
+            // });
+        //});
     }
 
 }
