@@ -21992,6 +21992,7 @@ function toolExist(toolID){
                 let conf = confirm("Tool already exist! Do you want to update it?");
                 if(conf == true){
                     exist = false;
+                    return;
                 }
                 else{
                     exist = true;
