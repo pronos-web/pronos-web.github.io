@@ -30,7 +30,6 @@ th {
 
 .centered > tr {
   border-bottom: 1px solid black;
-  width: auto;
 }
 
 .listRows {
@@ -116,10 +115,11 @@ th {
 
 .centered > tbody > td{
   padding-right: 30px;
+  font-size: 20px;
 }
 
 #cell1, #cell2 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 #req1, #req2, #req3, #req4 {
