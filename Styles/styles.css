@@ -117,6 +117,10 @@ th {
   padding-right: 30px;
 }
 
+#cell1, #cell2 {
+  font-size: 18px;
+}
+
 #req1, #req2, #req3, #req4 {
   display: none;
   color: #ff0000;
