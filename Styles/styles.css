@@ -398,7 +398,7 @@ h2 {
     color: #ffffff;
     cursor: pointer;
     padding: 5px 18px;
-    width: 100%;
+    width: 90%;
     border: none;
     text-align: left;
     outline: none;
@@ -444,7 +444,7 @@ form {margin-top: 8px;}
     #item, #location, #numb {
       margin-left: 15px;
       padding-left: 5px;
-      width: 35%;
+      width: 10%;
       height: 22px;
       border-color:  var(--primary-color);
       font-size: 16px;
