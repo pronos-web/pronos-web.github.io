@@ -21984,11 +21984,12 @@ function clearAddItem() {
 
 function toolExist(toolID){
 
-    var databaseRef = firebase.database().ref("Tool");
-        databaseRef.on('child_added', function(snapshot) {
-            var item = snapshot.val();
+    var databaseRef = firebase.database().ref("Tool").equalTo(toolID).once("value", snapshot =>{
+        console.log(value);
+    })
+        //databaseRef.on('child_added', function(snapshot) {
+            //var item = snapshot.val();
             if(snapshot.key == toolID){
-                toolID = "";
                 console.log("Tool already exist");
                 let conf = confirm(`${toolID} already exist! Do you want to update it?`);
                 if(conf == true){
