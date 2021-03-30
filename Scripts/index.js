@@ -18,7 +18,7 @@ let d1x = false;
 let rp1 = false;
 let expand = false;
 let filters = 0;
-let exist = true;
+let exist = false;
 let edit = false; 
 
 /****************************************************************/
@@ -21983,20 +21983,14 @@ function clearAddItem() {
 }
 
 function toolExist(toolID){
-    let checked = false;
-    exist = false;
 
     var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) {
             var item = snapshot.val();
-            console.log('exist: ' + exist);
-            if(checked == true){return;}
             if(snapshot.key == toolID){
-                checked = true;
                 console.log("Tool already exist");
-                let conf = confirm("Tool already exist! Do you want to update it?");
+                let conf = confirm(`Tool ${toolID} already exist! Do you want to update it?`);
                 if(conf == true){
-                    exist = false;
                     return;
                 }
                 else{
@@ -22004,10 +21998,7 @@ function toolExist(toolID){
                     return;
                 }
             }
-            console.log(snapshot.key);
-            console.log('exist: ' + exist);
         });
-        console.log('exist: ' + exist);
 }
 
 function saveToBrowserMemorey() {
