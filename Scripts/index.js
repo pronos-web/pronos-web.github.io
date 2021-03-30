@@ -21850,9 +21850,7 @@ function addNewItem() {
         document.getElementById("numb").style.border = "thick solid #ff0000";
     }
     else {
-        let toolnumb = document.getElementById("numb").value;
-        toolNumb = toolnumb.toUpperCase();
-
+        toolNumb= document.getElementById("numb").value;
     }
     if (document.getElementById('toolTyp').value != "" 
         && document.getElementById('numb').value != ""){
@@ -21880,7 +21878,8 @@ function addNewItem() {
         document.getElementById("bay").style.border = "thick solid #ff0000";
     }
     else {
-        bay = document.getElementById('bay').value;
+        let Bay = document.getElementById('bay').value;
+        bay = Bay.toUpperCase();
     }
 
     if(!document.getElementById('1').checked  && !document.getElementById('2').checked ){
