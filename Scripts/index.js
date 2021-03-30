@@ -21983,13 +21983,16 @@ function clearAddItem() {
 }
 
 function toolExist(toolID){
+    let checked = false;
     exist = false;
 
     var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) {
             var item = snapshot.val();
             console.log('exist: ' + exist);
+            if(checked == true){return;}
             if(snapshot.key == toolID){
+                checked = true;
                 console.log("Tool already exist");
                 let conf = confirm("Tool already exist! Do you want to update it?");
                 if(conf == true){
