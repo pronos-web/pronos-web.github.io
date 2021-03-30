@@ -22456,35 +22456,35 @@ function showNonDeseg(){
 
 function displayTools() { 
     let toolLoc;
-    let html = `
-    <table>
-        <tr>
-            <th>Tool ID</th>
-            <th>Location</th>
-            <th></th>
-        </tr>
-    `;
+    // let html = `
+    // <table>
+    //     <tr>
+    //         <th>Tool ID</th>
+    //         <th>Location</th>
+    //         <th></th>
+    //     </tr>
+    // `;
 
-    itemList.forEach(
-        tool => {
-            if(tool.show){
-        html += 
-        `<tr class="listRows">
-            <td class="leftColumn">
-                <button class="tButton" type="button" id="toolBtn" onclick="toolButtons(${tool})"value="${tool.content}">${tool.content}</button>
-            </td>
-            <td class="listRows">${tool.building} ${tool.bay}</td>
-            <td class="rmvBtn">
-                <button type="button" id="removeItem" value="${tool.id}">X</button>
-            </td>
-        </tr>
-        `;
-            }
-        }  
-    );
-    html += '</table>';
+    // itemList.forEach(
+    //     tool => {
+    //         if(tool.show){
+    //     html += 
+    //     `<tr class="listRows">
+    //         <td class="leftColumn">
+    //             <button class="tButton" type="button" id="toolBtn" onclick="toolButtons(${tool})"value="${tool.content}">${tool.content}</button>
+    //         </td>
+    //         <td class="listRows">${tool.building} ${tool.bay}</td>
+    //         <td class="rmvBtn">
+    //             <button type="button" id="removeItem" value="${tool.id}">X</button>
+    //         </td>
+    //     </tr>
+    //     `;
+    //         }
+    //     }  
+    // );
+    // html += '</table>';
 
-    document.getElementById('listBody').innerHTML = html;
+    // document.getElementById('listBody').innerHTML = html;
     document.getElementById('listBody').style.display = "none";
     console.log("displayTools() called");
 }
@@ -22511,22 +22511,22 @@ function showEdit() {
    </tr>
 `;
 
-itemList.forEach(
-   tool => {
-       if(tool.complete == false){
-   html += 
-       `
-       <tr>
-           <td class="leftColumn">${tool.content}</td>
-            <td class="listRows">${tool.building} ${tool.bay}</td>
-           <td>
-               <button type="button" id="removeItem" value="${tool.id}">X</button>
-           </td>
-       </tr>
-       `;
-       }
-   }  
-);
+// itemList.forEach(
+//    tool => {
+//        if(tool.complete == false){
+//    html += 
+//        `
+//        <tr>
+//            <td class="leftColumn">${tool.content}</td>
+//             <td class="listRows">${tool.building} ${tool.bay}</td>
+//            <td>
+//                <button type="button" id="removeItem" value="${tool.id}">X</button>
+//            </td>
+//        </tr>
+//        `;
+//        }
+//    }  
+// );
 
 document.getElementById('listBody').innerHTML = html;
 document.getElementById('listBody').style.display = "none";
