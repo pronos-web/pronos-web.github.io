@@ -21982,7 +21982,7 @@ function clearAddItem() {
 }
 
 function toolExist(toolID){
-    let toolExist = false;
+    exist = false;
 
     var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) {
