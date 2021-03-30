@@ -21988,8 +21988,9 @@ function toolExist(toolID){
         databaseRef.on('child_added', function(snapshot) {
             var item = snapshot.val();
             if(snapshot.key == toolID){
+                toolID = "";
                 console.log("Tool already exist");
-                let conf = confirm(`Tool ${toolID} already exist! Do you want to update it?`);
+                let conf = confirm(`${toolID} already exist! Do you want to update it?`);
                 if(conf == true){
                     return;
                 }
