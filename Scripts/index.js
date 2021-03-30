@@ -21986,7 +21986,7 @@ function toolExist(toolID){
 
     var databaseRef = firebase.database().ref("Tool").equalTo(toolID).once("value", snapshot =>{
         console.log(value);
-    })
+    });
         //databaseRef.on('child_added', function(snapshot) {
             //var item = snapshot.val();
             if(snapshot.key == toolID){
@@ -22000,7 +22000,7 @@ function toolExist(toolID){
                     return;
                 }
             }
-        });
+        //});
 }
 
 function saveToBrowserMemorey() {
