@@ -21987,6 +21987,7 @@ function toolExist(toolID){
     var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) {
             var item = snapshot.val();
+            console.log('exist: ' + exist);
             if(snapshot.key == toolID){
                 console.log("Tool already exist");
                 let conf = confirm("Tool already exist! Do you want to update it?");
@@ -21999,7 +22000,10 @@ function toolExist(toolID){
                     return;
                 }
             }
+            console.log(snapshot.key);
+            console.log('exist: ' + exist);
         });
+        console.log('exist: ' + exist);
 }
 
 function saveToBrowserMemorey() {
