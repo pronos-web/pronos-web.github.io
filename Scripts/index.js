@@ -21850,7 +21850,7 @@ function addNewItem() {
         document.getElementById("numb").style.border = "thick solid #ff0000";
     }
     else {
-        toolnumb = document.getElementById("numb").value;
+        let toolnumb = document.getElementById("numb").value;
         toolNumb = toolnumb.toUpperCase();
 
     }
