@@ -20,6 +20,7 @@ let expand = false;
 let filters = 0;
 let exist = false;
 let edit = false; 
+let toolChecked = false;
 
 /****************************************************************/
 
@@ -21961,6 +21962,7 @@ function addNewItem() {
         //console.table(tool);
         clearAddItem();
     }
+    toolChecked = false;
 }
 
 function clearAddItem() {
@@ -21984,7 +21986,9 @@ function clearAddItem() {
 function toolExist(toolID){
 
     var databaseRef = firebase.database().ref("Tool");
-        databaseRef(function(snapshot) {
+        databaseRef.on('child_added', function(snapshot) {
+            if(toolChecked){return;}
+            else{toolChecked = true;}
             var item = snapshot.val();
             console.log("key: " + snapshot.key + " " + "toolID: " + toolID);
             if(snapshot.key == toolID){
