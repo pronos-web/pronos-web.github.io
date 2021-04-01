@@ -21856,7 +21856,7 @@ function addNewItem() {
         && document.getElementById('numb').value != ""){
             toolID = toolID + toolNumb;
             //See if tool aready exist
-            //toolExist(toolID);
+            toolExist(toolID);
             if(exist == true){
                 console.log("Aborting Add"); 
                 return;
@@ -21987,6 +21987,7 @@ function toolExist(toolID){
     var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) {
             var item = snapshot.val();
+            console.log("key: " + snapshot.key + " " + "toolID: " + toolID);
             if(snapshot.key == toolID){
                 console.log("Tool already exist");
                 let conf = confirm("Tool already exist! Do you want to update it?");
