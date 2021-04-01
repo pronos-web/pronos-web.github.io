@@ -21964,7 +21964,6 @@ function addNewItem() {
         clearAddItem();
     }
     toolChecked = false;
-    exist = false;
 }
 
 function clearAddItem() {
@@ -22816,6 +22815,7 @@ document.getElementById('listBody').addEventListener("click", function(e) {
 	// If it was a list item
     if(e.target && e.target.id == "toolBtn") {
         // List item found call toolButton() and pass tool name
+        edit = true;
         toolButtons(e.target.value);
         document.querySelector('#addBtn').innerHTML = "Back";
     }
