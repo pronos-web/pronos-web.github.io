@@ -22160,7 +22160,7 @@ function toolButtons(e){
             if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
             else{document.querySelector('#q7').innerHTML = "No";}
         
-        }}
+        }
 
             //add the tool and details to the items list
             // listItems.push({
