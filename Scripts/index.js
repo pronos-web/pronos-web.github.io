@@ -22142,8 +22142,8 @@ function toolButtons(e){
 
     // listItems.length = 0;
     // var databaseRef = firebase.database().ref("Tool");
-    databaseRef.on('child_added', function(snapshot) {
-        var item = snapshot.val(); 
+    var databaseRef = firebase.database().ref("Tool");
+        databaseRef.on('child_added', function(snapshot) { 
 
         if(e == snapshot.key){ 
             document.querySelector('#tst').innerHTML = snapshot.key + " Tool Info";
@@ -22160,7 +22160,7 @@ function toolButtons(e){
             if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
             else{document.querySelector('#q7').innerHTML = "No";}
         
-        }
+        }}
 
             //add the tool and details to the items list
             // listItems.push({
