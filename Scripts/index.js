@@ -21984,9 +21984,11 @@ function clearAddItem() {
 
 function toolExist(toolID){
 
-    var databaseRef = firebase.database().ref("Tool").equalTo(toolID).once("value", snapshot =>{
+    var databaseRef = firebase.database().ref.child("Tool").equalTo(toolID).once("value", snapshot =>{
         const toolData = snapshot.val();
-        console.log(toolData);
+
+        console.log("Test1" + toolData);
+        console.log("Test1" + databaseRef.key);
         
     });
         //databaseRef.on('child_added', function(snapshot) {
