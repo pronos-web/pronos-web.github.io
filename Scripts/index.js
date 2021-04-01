@@ -21963,6 +21963,7 @@ function addNewItem() {
         clearAddItem();
     }
     toolChecked = false;
+    exist = false;
 }
 
 function clearAddItem() {
