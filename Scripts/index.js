@@ -21858,8 +21858,9 @@ function addNewItem() {
             toolID = toolID + toolNumb;
             //See if tool aready exist
             toolExist(toolID);
-            if(exist == true){
-                console.log("Aborting Add"); 
+            if(exist){
+                console.log("Aborting Add");
+                exist = false; 
                 return;
             }
         }
