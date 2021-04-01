@@ -18,7 +18,7 @@ let d1x = false;
 let rp1 = false;
 let expand = false;
 let filters = 0;
-let exist = true;
+let exist = false;
 let edit = false; 
 
 /****************************************************************/
@@ -21991,12 +21991,16 @@ function toolExist(toolID){
             if(snapshot.key == toolID){
                 console.log("Tool already exist");
                 let conf = confirm("Tool already exist! Do you want to update it?");
+                console.log("Confirm: " + conf);
+                console.log("exist: " + exist);
                 if(conf == true){
                     exist = false;
+                    console.log("exist should be false : " + exist);
                     return;
                 }
                 else{
                     exist = true;
+                    console.log("exist should be true: " + exist);
                     return;
                 }
             }
