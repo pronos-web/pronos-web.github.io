@@ -22144,6 +22144,7 @@ function toolButtons(e){
     // var databaseRef = firebase.database().ref("Tool");
     var databaseRef = firebase.database().ref("Tool");
         databaseRef.on('child_added', function(snapshot) { 
+        var item = snapshot.val(); 
 
         if(e == snapshot.key){ 
             document.querySelector('#tst').innerHTML = snapshot.key + " Tool Info";
