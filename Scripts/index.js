@@ -21984,7 +21984,7 @@ function clearAddItem() {
 function toolExist(toolID){
 
     var databaseRef = firebase.database().ref("Tool");
-        databaseRef.on(function(snapshot) {
+        databaseRef(function(snapshot) {
             var item = snapshot.val();
             console.log("key: " + snapshot.key + " " + "toolID: " + toolID);
             if(snapshot.key == toolID){
