@@ -11,8 +11,8 @@
     left: 0;
     z-index: 2;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 460px;
+    height: 7600px;
     opacity: 0;
 }
 
@@ -21,13 +21,14 @@
     top: 0;
     left: 0;
     z-index: 1;
-    width: 60px;
-    height: 60px;
+    width: 460px;
+    height: 760px;
     padding: 1rem;
     background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
 }
 
 /* Hamburger line */
@@ -87,7 +88,7 @@
 }
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.4s ease;
 }
 
