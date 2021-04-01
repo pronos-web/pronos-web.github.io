@@ -72,6 +72,14 @@
     transform: rotate(90deg);
 }
 
+/* shrink menu & hamburger when checked*/
+.menu-wrap .toggler:checked + .hamburger,
+.menu-wrap .toggler:checked + .menu-wrap,
+.toggler {
+    width: 60px;
+    height: 60px;
+}
+
 /* Rotate on hover when checked */
 .menu-wrap .toggler:checked:hover + .hamburger > div {
     transform: rotate(225deg);
