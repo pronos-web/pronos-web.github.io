@@ -11,9 +11,9 @@
     left: 0;
     z-index: 2;
     cursor: pointer;
-    width: 63px;
-    height: 63px;
-    opacity: .25;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
 }
 
 .menu-wrap .hamburger {
@@ -21,14 +21,13 @@
     top: 0;
     left: 0;
     z-index: 1;
-    width: 62px;
-    height: 62px;
+    width: 60px;
+    height: 60px;
     padding: 1rem;
     background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 1;
 }
 
 /* Hamburger line */
