@@ -22050,7 +22050,7 @@ function removeItem(e) {
 function toolButtons(e){
     console.log("toolButtons() called for " + e);
 
-    if(edit == true){
+    if(edit){
         console.log('length: ')
         console.log(e.length);
         let newID = "";
@@ -22142,27 +22142,27 @@ function toolButtons(e){
 
     // listItems.length = 0;
     // var databaseRef = firebase.database().ref("Tool");
-    // databaseRef.on('child_added', function(snapshot) {
-    //     var item = snapshot.val(); 
+    databaseRef.on('child_added', function(snapshot) {
+        var item = snapshot.val(); 
 
-        // if(e == snapshot.key){ 
-        //     document.querySelector('#tst').innerHTML = snapshot.key + " Tool Info";
-        //     if(item.Contamination === 'Cu'){document.querySelector('#q1').innerHTML = "Cu";}
-        //     else {document.querySelector('#q1').innerHTML = "NC";}
-        //     if(item.Purge === 'Purge'){document.querySelector('#q2').innerHTML = "Yes";}
-        //     else {document.querySelector('#q2').innerHTML = "No";}
-        //     if(item.ProdOrTW === 'Prod'){document.querySelector('#q3').innerHTML = "Prod";}
-        //     else{document.querySelector('#q3').innerHTML = "TW";}
-        //     if(item.Deseg === 'Deseg'){document.querySelector('#q4').innerHTML = "Yes";}
-        //     else {document.querySelector('#q4').innerHTML = "No";}
-        //     document.querySelector('#q5').innerHTML = item.Building;
-        //     document.querySelector('#q6').innerHTML = item.Bay;
-        //     if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
-        //     else{document.querySelector('#q7').innerHTML = "No";}
+        if(e == snapshot.key){ 
+            document.querySelector('#tst').innerHTML = snapshot.key + " Tool Info";
+            if(item.Contamination === 'Cu'){document.querySelector('#q1').innerHTML = "Cu";}
+            else {document.querySelector('#q1').innerHTML = "NC";}
+            if(item.Purge === 'Purge'){document.querySelector('#q2').innerHTML = "Yes";}
+            else {document.querySelector('#q2').innerHTML = "No";}
+            if(item.ProdOrTW === 'Prod'){document.querySelector('#q3').innerHTML = "Prod";}
+            else{document.querySelector('#q3').innerHTML = "TW";}
+            if(item.Deseg === 'Deseg'){document.querySelector('#q4').innerHTML = "Yes";}
+            else {document.querySelector('#q4').innerHTML = "No";}
+            document.querySelector('#q5').innerHTML = item.Building;
+            document.querySelector('#q6').innerHTML = item.Bay;
+            if(item.flip === true){document.querySelector('#q7').innerHTML = "Yes";}
+            else{document.querySelector('#q7').innerHTML = "No";}
         
-        //}
+        }
 
-            // add the tool and details to the items list
+            //add the tool and details to the items list
             // listItems.push({
             //     Tool: snapshot.key,
             //     Building: item.Building, 
@@ -22172,7 +22172,7 @@ function toolButtons(e){
             //     ProdOrTW: item.ProdOrTW,
             //     Purge: item.Purge
             // });
-        //});
+        });
     }
 
 }
@@ -22815,7 +22815,6 @@ document.getElementById('listBody').addEventListener("click", function(e) {
 	// If it was a list item
     if(e.target && e.target.id == "toolBtn") {
         // List item found call toolButton() and pass tool name
-        edit = true;
         toolButtons(e.target.value);
         document.querySelector('#addBtn').innerHTML = "Back";
     }
