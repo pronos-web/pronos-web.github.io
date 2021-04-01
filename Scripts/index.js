@@ -18,7 +18,7 @@ let d1x = false;
 let rp1 = false;
 let expand = false;
 let filters = 0;
-let exist = false;
+let exist = true;
 let edit = false; 
 
 /****************************************************************/
@@ -21850,7 +21850,7 @@ function addNewItem() {
         document.getElementById("numb").style.border = "thick solid #ff0000";
     }
     else {
-        toolNumb= document.getElementById("numb").value;
+        toolNumb = document.getElementById("numb").value;
     }
     if (document.getElementById('toolTyp').value != "" 
         && document.getElementById('numb').value != ""){
@@ -21878,8 +21878,7 @@ function addNewItem() {
         document.getElementById("bay").style.border = "thick solid #ff0000";
     }
     else {
-        let Bay = document.getElementById('bay').value;
-        bay = Bay.toUpperCase();
+        bay = document.getElementById('bay').value;
     }
 
     if(!document.getElementById('1').checked  && !document.getElementById('2').checked ){
@@ -21983,20 +21982,16 @@ function clearAddItem() {
 }
 
 function toolExist(toolID){
+    let toolExist = false;
 
-    var databaseRef = firebase.database().ref.child("Tool").equalTo(toolID).once("value", snapshot =>{
-        const toolData = snapshot.val();
-
-        console.log("Test1" + toolData);
-        console.log("Test1" + databaseRef.key);
-        
-    });
-        //databaseRef.on('child_added', function(snapshot) {
-            //var item = snapshot.val();
-            if(/*snapshot.key*/ "a" == toolID){
+    var databaseRef = firebase.database().ref("Tool");
+        databaseRef.on('child_added', function(snapshot) {
+            var item = snapshot.val();
+            if(snapshot.key == toolID){
                 console.log("Tool already exist");
-                let conf = confirm(`${toolID} already exist! Do you want to update it?`);
+                let conf = confirm("Tool already exist! Do you want to update it?");
                 if(conf == true){
+                    exist = false;
                     return;
                 }
                 else{
@@ -22004,7 +21999,7 @@ function toolExist(toolID){
                     return;
                 }
             }
-        //});
+        });
 }
 
 function saveToBrowserMemorey() {
@@ -22461,35 +22456,35 @@ function showNonDeseg(){
 
 function displayTools() { 
     let toolLoc;
-    // let html = `
-    // <table>
-    //     <tr>
-    //         <th>Tool ID</th>
-    //         <th>Location</th>
-    //         <th></th>
-    //     </tr>
-    // `;
+    let html = `
+    <table>
+        <tr>
+            <th>Tool ID</th>
+            <th>Location</th>
+            <th></th>
+        </tr>
+    `;
 
-    // itemList.forEach(
-    //     tool => {
-    //         if(tool.show){
-    //     html += 
-    //     `<tr class="listRows">
-    //         <td class="leftColumn">
-    //             <button class="tButton" type="button" id="toolBtn" onclick="toolButtons(${tool})"value="${tool.content}">${tool.content}</button>
-    //         </td>
-    //         <td class="listRows">${tool.building} ${tool.bay}</td>
-    //         <td class="rmvBtn">
-    //             <button type="button" id="removeItem" value="${tool.id}">X</button>
-    //         </td>
-    //     </tr>
-    //     `;
-    //         }
-    //     }  
-    // );
-    // html += '</table>';
+    itemList.forEach(
+        tool => {
+            if(tool.show){
+        html += 
+        `<tr class="listRows">
+            <td class="leftColumn">
+                <button class="tButton" type="button" id="toolBtn" onclick="toolButtons(${tool})"value="${tool.content}">${tool.content}</button>
+            </td>
+            <td class="listRows">${tool.building} ${tool.bay}</td>
+            <td class="rmvBtn">
+                <button type="button" id="removeItem" value="${tool.id}">X</button>
+            </td>
+        </tr>
+        `;
+            }
+        }  
+    );
+    html += '</table>';
 
-    // document.getElementById('listBody').innerHTML = html;
+    document.getElementById('listBody').innerHTML = html;
     document.getElementById('listBody').style.display = "none";
     console.log("displayTools() called");
 }
@@ -22516,22 +22511,22 @@ function showEdit() {
    </tr>
 `;
 
-// itemList.forEach(
-//    tool => {
-//        if(tool.complete == false){
-//    html += 
-//        `
-//        <tr>
-//            <td class="leftColumn">${tool.content}</td>
-//             <td class="listRows">${tool.building} ${tool.bay}</td>
-//            <td>
-//                <button type="button" id="removeItem" value="${tool.id}">X</button>
-//            </td>
-//        </tr>
-//        `;
-//        }
-//    }  
-// );
+itemList.forEach(
+   tool => {
+       if(tool.complete == false){
+   html += 
+       `
+       <tr>
+           <td class="leftColumn">${tool.content}</td>
+            <td class="listRows">${tool.building} ${tool.bay}</td>
+           <td>
+               <button type="button" id="removeItem" value="${tool.id}">X</button>
+           </td>
+       </tr>
+       `;
+       }
+   }  
+);
 
 document.getElementById('listBody').innerHTML = html;
 document.getElementById('listBody').style.display = "none";
